@@ -1,0 +1,83 @@
+<cities>
+    <!-- Hauptstädte / große Zentren -->
+    <city name="Klagenfurt">
+        <lat>46.6247</lat>
+        <lon>14.3053</lon>
+    </city>
+    <city name="Villach">
+        <lat>46.6103</lat>
+        <lon>13.8558</lon>
+    </city>
+    <city name="Spittal an der Drau">
+        <lat>46.8006</lat>
+        <lon>13.4996</lon>
+    </city>
+    <city name="Lienz">
+        <lat>46.8284</lat>
+        <lon>12.7690</lon>
+    </city>
+
+    <!-- Regionale Zentren -->
+    <city name="Völkermarkt">
+        <lat>46.6622</lat>
+        <lon>14.6347</lon>
+    </city>
+    <city name="Friesach">
+        <lat>46.9542</lat>
+        <lon>14.4033</lon>
+    </city>
+    <city name="Hermagor">
+        <lat>46.6272</lat>
+        <lon>13.3672</lon>
+    </city>
+    <city name="Feldkirchen">
+        <lat>46.7237</lat>
+        <lon>14.0956</lon>
+    </city>
+    <city name="St. Veit an der Glan">
+        <lat>46.7686</lat>
+        <lon>14.3600</lon>
+    </city>
+
+    <!-- Touristische Hotspots (sehr wichtig für Preise!) -->
+    <city name="Velden am Wörthersee">
+        <lat>46.6130</lat>
+        <lon>14.0400</lon>
+    </city>
+    <city name="Pörtschach am Wörthersee">
+        <lat>46.6353</lat>
+        <lon>14.1450</lon>
+    </city>
+    <city name="Maria Wörth">
+        <lat>46.6160</lat>
+        <lon>14.1810</lon>
+    </city>
+    <city name="Krumpendorf">
+        <lat>46.6186</lat>
+        <lon>14.2143</lon>
+    </city>
+
+    <city name="Millstatt">
+        <lat>46.8040</lat>
+        <lon>13.5800</lon>
+    </city>
+    <city name="Seeboden">
+        <lat>46.8150</lat>
+        <lon>13.5140</lon>
+    </city>
+
+    <city name="Bad Kleinkirchheim">
+        <lat>46.8130</lat>
+        <lon>13.7800</lon>
+    </city>
+    <city name="Heiligenblut">
+        <lat>47.0390</lat>
+        <lon>12.8430</lon>
+    </city>
+
+    <!-- kleinere aber strategische Orte -->
+    <city name="Arriach">
+        <lat>46.7322</lat>
+        <lon>13.8639</lon>
+    </city>
+</cities>
