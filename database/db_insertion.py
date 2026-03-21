@@ -260,8 +260,9 @@ def insertFeatures(table, features, PAGE_SIZE, conn=None, cur=None):
                 INSERT INTO rent_features (id, norm_price, log_price, ppm2, log_ppm2, urban_ppm2, estate_ratio, rpm2,
                                            ppr, balcony_ratio, garden_ratio, loggia_ratio, wintergarden_ratio,
                                            terrace_ratio, rooms_per_property, distance_nearest_city, distance_villach,
-                                           distance_klagenfurt, distance_nearest_lake, is_urban, is_house, is_apartment) 
-                    VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                                           distance_klagenfurt, distance_nearest_lake, is_urban, is_house, is_apartment,
+                                           days_since_publish, area_per_room) 
+                    VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                     ON CONFLICT (id) DO NOTHING
                 """
     elif table == "buy_features":
@@ -269,8 +270,9 @@ def insertFeatures(table, features, PAGE_SIZE, conn=None, cur=None):
                 INSERT INTO buy_features (id, norm_price, log_price, ppm2, log_ppm2, urban_ppm2, estate_ratio, rpm2,
                                            ppr, balcony_ratio, garden_ratio, loggia_ratio, wintergarden_ratio,
                                            terrace_ratio, rooms_per_property, distance_nearest_city, distance_villach,
-                                           distance_klagenfurt, distance_nearest_lake, is_urban, is_house, is_apartment)
-                VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                                           distance_klagenfurt, distance_nearest_lake, is_urban, is_house, is_apartment,
+                                           days_since_publish, area_per_room)
+                VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                 ON CONFLICT (id) DO NOTHING
                 """
 
@@ -299,6 +301,8 @@ def insertFeatures(table, features, PAGE_SIZE, conn=None, cur=None):
         f["is_urban"],
         f["is_house"],
         f["is_apartment"],
+        f["days_since_publish"],
+        f["area_per_room"]
     ) for f in features
     ]
     execute_batch(cur, query, values, page_size=PAGE_SIZE)
