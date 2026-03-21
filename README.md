@@ -1,4 +1,4 @@
-# 🏠 Immopreis Regression
+# 🏠 Immopreis
 
 End-to-end machine learning pipeline for predicting real estate prices in Austria using scraped marketplace data.
 
