@@ -1,4 +1,4 @@
-from source1_scraper import baseScraper
+from scraper.source1_scraper import baseScraper
 from datamanipulation.cleanData import cleanData
 
 SOURCE_1 = True
