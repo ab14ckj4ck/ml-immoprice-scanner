@@ -1,18 +1,10 @@
 from scraper.source1_scraper import baseScraper
 from datamanipulation.cleanData import cleanData
+from mlModels.linearRegression.rent.logPrice.runLR import runModels
 
-SOURCE_1 = True
+SOURCE_1 = False
 SCRAPE_SOURCE_1 = False
-SOURCE_1_HOUSE_TYPES = {
-    "Bungalow", "Mehrfamilienhaus", "Einfamilienhaus", "Landhaus", "Villa",
-    "Doppelhaushälfte", "Schloss/Burg/Chalet", "Reihenhaus",
-    "Almhütte/Berghütte", "Bauernhaus", "Genossenschaftshaus"
-}
-SOURCE_1_APARTMENT_TYPES = {
-    "Dachgeschoßwohnung", "Erdgeschoßwohnung", "Garconniere",
-    "Genossenschaftswohnung", "Maisonette", "Penthauswohnung",
-    "Wohngung", "Zimmer/WG"
-}
+MODELS = True
 
 def main():
     """
@@ -29,6 +21,9 @@ def main():
 
         print("\n-------Starting Source 1 Data Cleaning-------")
         cleanData()
+
+    if MODELS:
+        runModels()
 
 if __name__ == "__main__":
     main()

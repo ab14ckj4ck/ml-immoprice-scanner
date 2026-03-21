@@ -116,7 +116,20 @@ CREATE TABLE rent_features
     is_ms                 INT,   -- maisonette
     is_phw                INT,   -- penthouse apt
     is_apt                INT,   -- apartment
-    is_wg                 INT    -- room / WG
+    is_wg                 INT,    -- room / WG
+
+    -- log data
+    log_living_area       FLOAT,
+    log_estate_size       FLOAT,
+    log_balcony_size      FLOAT,
+    log_garden_size       FLOAT,
+    log_terrace_size      FLOAT,
+    log_loggia_size       FLOAT,
+    log_wintergarden_size FLOAT,
+    log_distance_nearest_city FLOAT,
+    log_distance_nearest_lake FLOAT,
+    log_distance_villach FLOAT,
+    log_distance_klagenfurt FLOAT
 );
 
 CREATE TABLE buy_features
@@ -170,7 +183,18 @@ CREATE TABLE buy_features
     is_ms                 INT,   -- maisonette
     is_phw                INT,   -- penthouse apt
     is_apt                INT,   -- apartment
-    is_wg                 INT    -- room / WG
+    is_wg                 INT,    -- room / WG
 
-
+    -- log data
+    log_living_area       FLOAT,
+    log_estate_size       FLOAT,
+    log_balcony_size      FLOAT,
+    log_garden_size       FLOAT,
+    log_terrace_size      FLOAT,
+    log_loggia_size       FLOAT,
+    log_wintergarden_size FLOAT,
+    log_distance_nearest_city FLOAT,
+    log_distance_nearest_lake FLOAT,
+    log_distance_villach FLOAT,
+    log_distance_klagenfurt FLOAT
 );

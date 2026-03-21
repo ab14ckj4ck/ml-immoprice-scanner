@@ -125,6 +125,7 @@ def getUrbanPricePerM2(df):
     df["urban_ppm2"] = df["ppm2"] * df["is_urban"]
     return df
 
+
 def setHousingType(df):
     """Categorizes listings into based on property_type lists."""
     df["is_efh"] = (df["property_type"] == "Einfamilienhaus").astype(int)
@@ -147,6 +148,7 @@ def setHousingType(df):
     df["is_apt"] = (df["property_type"] == "Wohnung").astype(int)
     df["is_wg"] = (df["property_type"] == "WG").astype(int)
     return df
+
 
 def getAge(df):
     df = df.copy()
@@ -201,6 +203,18 @@ def cleanUp(df):
     df = getAge(df)
     df = getRatio(df, "living_area", "rooms", "area_per_room")
 
+    df["log_living_area"] = np.log(df["living_area"] + 1)
+    df["log_estate_size"] = np.log(df["estate_size"] + 1)
+    df["log_balcony_size"] = np.log(df["balcony_size"] + 1)
+    df["log_garden_size"] = np.log(df["garden_size"] + 1)
+    df["log_terrace_size"] = np.log(df["terrace_size"] + 1)
+    df["log_loggia_size"] = np.log(df["loggia_size"] + 1)
+    df["log_wintergarden_size"] = np.log(df["wintergarden_size"] + 1)
+    df["log_distance_nearest_city"] = np.log(df["distance_nearest_city"] + 1)
+    df["log_distance_nearest_lake"] = np.log(df["distance_nearest_lake"] + 1)
+    df["log_distance_villach"] = np.log(df["distance_villach"] + 1)
+    df["log_distance_klagenfurt"] = np.log(df["distance_klagenfurt"] + 1)
+
     df = df.replace([np.inf, -np.inf], np.nan)
     df[OPTIONAL_FEATURES] = df[OPTIONAL_FEATURES].fillna(0)
 
@@ -214,7 +228,10 @@ def cleanUp(df):
             "distance_villach", "distance_klagenfurt",
             "days_since_publish", "area_per_room", "is_efh",
             "is_mfh", "is_lh", "is_villa", "is_dhh", "is_sbc", "is_rh", "is_ab", "is_bh", "is_gh",
-            "is_dgw", "is_egw", "is_gc", "is_gw", "is_ms", "is_phw", "is_apt", "is_wg"
+            "is_dgw", "is_egw", "is_gc", "is_gw", "is_ms", "is_phw", "is_apt", "is_wg",
+            "log_living_area", "log_estate_size", "log_balcony_size", "log_garden_size", "log_terrace_size",
+            "log_loggia_size", "log_wintergarden_size", "log_distance_nearest_city", "log_distance_nearest_lake",
+            "log_distance_villach", "log_distance_klagenfurt"
         ]
     ]
 

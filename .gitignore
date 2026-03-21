@@ -5,3 +5,4 @@ data/source1.txt
 .venv/*
 __pycache__/*
 .idea/*
+mlCheatSheet.md
