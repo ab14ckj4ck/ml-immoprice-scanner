@@ -24,9 +24,11 @@ OPTIONAL_FEATURES = [
     "terrace_ratio"
 ]
 
+
 def loadData(conn):
     """Loads all records from the listings table."""
     return pd.read_sql("SELECT * FROM listings", conn)
+
 
 def quantileElimination(df, col, q_low_val=0.05, q_high_val=0.95):
     """Removes outliers from a dataframe based on quantile thresholds for a specific column."""
@@ -35,9 +37,10 @@ def quantileElimination(df, col, q_low_val=0.05, q_high_val=0.95):
     q_high = df[col].quantile(q_high_val)
     return df[(df[col] >= q_low) & (df[col] <= q_high)]
 
+
 def minMax(df, col):
-    min_val = df[col].min()
     """Applies Min-Max normalization to a column, creating a new 'norm_' prefixed column."""
+    min_val = df[col].min()
     max_val = df[col].max()
 
     if max_val == min_val:
@@ -47,21 +50,25 @@ def minMax(df, col):
 
     return df
 
+
 def getLogNorm(df, col):
     """Applies a natural logarithm transformation to a column."""
     df["log_" + col] = np.log(df[col].where(df[col] > 0))
     return df
+
 
 def getRatio(df, col1, col2, new_col):
     """Calculates the ratio between two columns and handles division by zero."""
     df[new_col] = df[col1] / df[col2].replace(0, np.nan)
     return df
 
+
 def getLocations():
     """Loads city and lake location data from XML files."""
     cities = loadLocationData(path="data/cities.xml", target="cities")
     lakes = loadLocationData(path="data/lakes.xml", target="lakes")
     return cities, lakes
+
 
 def haversine(lat1, lon1, lat2, lon2):
     """Calculates the great-circle distance between two points on Earth in kilometers."""
@@ -76,6 +83,7 @@ def haversine(lat1, lon1, lat2, lon2):
     c = 2 * np.arcsin(np.sqrt(a))
 
     return R * c
+
 
 def computeDistances(df, cities, lakes):
     """Computes distances from each listing to the nearest city, lake, and specific hubs."""
@@ -105,24 +113,65 @@ def computeDistances(df, cities, lakes):
 
     return df
 
+
 def getIsUrban(df):
     """Flags listings as urban if they are within the defined URBAN_THRESHOLD distance of a city."""
     df["is_urban"] = (df["distance_nearest_city"] <= URBAN_THRESHOLD).astype(int)
     return df
+
 
 def getUrbanPricePerM2(df):
     """Calculates price per m2 specifically for urban areas (0 for non-urban)."""
     df["urban_ppm2"] = df["ppm2"] * df["is_urban"]
     return df
 
-def setHousingType(df, APARTMENT_TYPES, HOUSE_TYPES):
-    """Categorizes listings into 'is_house' or 'is_apartment' based on property_type lists."""
-    df["is_house"] = df["property_type"].isin(HOUSE_TYPES).astype(int)
-    df["is_apartment"] = df["property_type"].isin(APARTMENT_TYPES).astype(int)
+def setHousingType(df):
+    """Categorizes listings into based on property_type lists."""
+    df["is_efh"] = (df["property_type"] == "Einfamilienhaus").astype(int)
+    df["is_mfh"] = (df["property_type"] == "Mehrfamilienhaus").astype(int)
+    df["is_lh"] = (df["property_type"] == "Landhaus").astype(int)
+    df["is_villa"] = (df["property_type"] == "Villa").astype(int)
+    df["is_dhh"] = (df["property_type"] == "Doppelhaushälfte").astype(int)
+    df["is_sbc"] = (df["property_type"] == "Schloss/Burg/Chalet").astype(int)
+    df["is_rh"] = (df["property_type"] == "Reihenhaus").astype(int)
+    df["is_ab"] = (df["property_type"] == "Almhütte/Berghütte").astype(int)
+    df["is_bh"] = (df["property_type"] == "Bauernhaus").astype(int)
+    df["is_gh"] = (df["property_type"] == "Genossenschaftshaus").astype(int)
+
+    df["is_dgw"] = (df["property_type"] == "Dachgeschoßwohnung").astype(int)
+    df["is_egw"] = (df["property_type"] == "Erdgeschoßwohnung").astype(int)
+    df["is_gc"] = (df["property_type"] == "Garconniere").astype(int)
+    df["is_gw"] = (df["property_type"] == "Genossenschaftswohnung").astype(int)
+    df["is_ms"] = (df["property_type"] == "Maisonette").astype(int)
+    df["is_phw"] = (df["property_type"] == "Penthauswohnung").astype(int)
+    df["is_apt"] = (df["property_type"] == "Wohnung").astype(int)
+    df["is_wg"] = (df["property_type"] == "WG").astype(int)
+    return df
+
+def getAge(df):
+    df = df.copy()
+
+    df["published"] = pd.to_datetime(
+        df["published"],
+        unit="ms",
+        errors="coerce"
+    )
+
+    df["scraped_at"] = pd.to_datetime(
+        df["scraped_at"],
+        errors="coerce"
+    )
+
+    df["days_since_publish"] = (
+            df["scraped_at"] - df["published"]
+    ).dt.days
+
+    df["days_since_publish"] = df["days_since_publish"].clip(lower=0)
 
     return df
 
-def cleanUp(df, APARTMENT_TYPES, HOUSE_TYPES):
+
+def cleanUp(df):
     """Orchestrates the feature engineering process for a dataframe."""
     df = minMax(df, "price")
     df = getLogNorm(df, "price")
@@ -148,10 +197,9 @@ def cleanUp(df, APARTMENT_TYPES, HOUSE_TYPES):
     df = getIsUrban(df)
     df = getUrbanPricePerM2(df)
 
-    df = setHousingType(df, APARTMENT_TYPES, HOUSE_TYPES)
-    df["days_since_publish"] = (df["scraped_at"] - df["published"]).dt.days
-    df["area_per_room"] = df["living_area"] / df["rooms"]
-
+    df = setHousingType(df)
+    df = getAge(df)
+    df = getRatio(df, "living_area", "rooms", "area_per_room")
 
     df = df.replace([np.inf, -np.inf], np.nan)
     df[OPTIONAL_FEATURES] = df[OPTIONAL_FEATURES].fillna(0)
@@ -164,11 +212,14 @@ def cleanUp(df, APARTMENT_TYPES, HOUSE_TYPES):
             "urban_ppm2", "is_urban",
             "distance_nearest_lake", "distance_nearest_city",
             "distance_villach", "distance_klagenfurt",
-            "is_house", "is_apartment", "days_since_publish", "area_per_room"
+            "days_since_publish", "area_per_room", "is_efh",
+            "is_mfh", "is_lh", "is_villa", "is_dhh", "is_sbc", "is_rh", "is_ab", "is_bh", "is_gh",
+            "is_dgw", "is_egw", "is_gc", "is_gw", "is_ms", "is_phw", "is_apt", "is_wg"
         ]
     ]
 
     return df_features
+
 
 def printProgressBar(current, total, bar_length=20):
     """Displays a progress bar in the console."""
@@ -183,6 +234,7 @@ def printProgressBar(current, total, bar_length=20):
 
     if current == total:
         print()
+
 
 def insertFeatureData(rent, buy, conn=None, cur=None):
     """Batches and inserts processed rent and buy features into their respective database tables."""
@@ -223,6 +275,7 @@ def insertFeatureData(rent, buy, conn=None, cur=None):
         conn.commit()
         printProgressBar(idx, total_batches)
 
+
 def deleteRequiredNull(df):
     """Removes rows that are missing essential values for feature calculation."""
     return df[
@@ -235,11 +288,13 @@ def deleteRequiredNull(df):
         df["postcode"].notna()
         ]
 
+
 def filterLowPrice(df, col="price", limit=10):
     """Filters out records with a price below a certain threshold."""
     return df[df[col] >= limit]
 
-def cleanData(APARTMENT_TYPES, HOUSE_TYPES):
+
+def cleanData():
     """Main entry point to load, clean, transform, and save the real estate data."""
     conn = get_connection()
     cur = conn.cursor()
@@ -256,8 +311,8 @@ def cleanData(APARTMENT_TYPES, HOUSE_TYPES):
     df_buy = deleteRequiredNull(df_buy)
     df_rent = deleteRequiredNull(df_rent)
 
-    df_rent_features = cleanUp(df_rent, APARTMENT_TYPES, HOUSE_TYPES)
-    df_buy_features = cleanUp(df_buy, APARTMENT_TYPES, HOUSE_TYPES)
+    df_rent_features = cleanUp(df_rent)
+    df_buy_features = cleanUp(df_buy)
 
     insertFeatureData(df_rent_features, df_buy_features, conn, cur)
 

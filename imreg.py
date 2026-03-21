@@ -2,7 +2,7 @@ from scraper.source1_scraper import baseScraper
 from datamanipulation.cleanData import cleanData
 
 SOURCE_1 = True
-SCRAPE_SOURCE_1 = True
+SCRAPE_SOURCE_1 = False
 SOURCE_1_HOUSE_TYPES = {
     "Bungalow", "Mehrfamilienhaus", "Einfamilienhaus", "Landhaus", "Villa",
     "Doppelhaushälfte", "Schloss/Burg/Chalet", "Reihenhaus",
@@ -28,7 +28,7 @@ def main():
             baseScraper(pages=7, scrape_details=True, rows=100)
 
         print("\n-------Starting Source 1 Data Cleaning-------")
-        cleanData(APARTMENT_TYPES=SOURCE_1_APARTMENT_TYPES, HOUSE_TYPES=SOURCE_1_HOUSE_TYPES)
+        cleanData()
 
 if __name__ == "__main__":
     main()
