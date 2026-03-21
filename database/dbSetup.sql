@@ -92,7 +92,9 @@ CREATE TABLE rent_features (
                                is_urban INT,
 
                                is_house INT,
-                               is_apartment INT
+                               is_apartment INT,
+                               days_since_publish FLOAT,
+                               area_per_room FLOAT
 );
 
 CREATE TABLE buy_features (
@@ -122,5 +124,7 @@ CREATE TABLE buy_features (
                               is_urban INT,
 
                               is_house INT,
-                              is_apartment INT
+                              is_apartment INT,
+                              days_since_publish FLOAT,
+                              area_per_room FLOAT
 );

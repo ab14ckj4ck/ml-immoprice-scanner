@@ -141,6 +141,7 @@ python imreg.py
 ├── datamanipulation/       # cleaning & feature engineering
 ├── database/               # DB connection & insertion
 ├── data/                   # source configuration
+├── models/                 # ML models
 ├── imreg.py
 ```
 

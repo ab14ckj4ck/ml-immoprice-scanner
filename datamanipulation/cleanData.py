@@ -149,6 +149,9 @@ def cleanUp(df, APARTMENT_TYPES, HOUSE_TYPES):
     df = getUrbanPricePerM2(df)
 
     df = setHousingType(df, APARTMENT_TYPES, HOUSE_TYPES)
+    df["days_since_publish"] = (df["scraped_at"] - df["published"]).dt.days
+    df["area_per_room"] = df["living_area"] / df["rooms"]
+
 
     df = df.replace([np.inf, -np.inf], np.nan)
     df[OPTIONAL_FEATURES] = df[OPTIONAL_FEATURES].fillna(0)
@@ -161,7 +164,7 @@ def cleanUp(df, APARTMENT_TYPES, HOUSE_TYPES):
             "urban_ppm2", "is_urban",
             "distance_nearest_lake", "distance_nearest_city",
             "distance_villach", "distance_klagenfurt",
-            "is_house", "is_apartment"
+            "is_house", "is_apartment", "days_since_publish", "area_per_room"
         ]
     ]
 
