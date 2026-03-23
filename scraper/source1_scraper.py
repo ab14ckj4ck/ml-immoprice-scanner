@@ -11,7 +11,7 @@ from datetime import date
 
 from datamanipulation.loaders import loadBaseLinks
 from database.db import get_connection
-from database.db_insertion import insertListings
+from database.db_insertion import upsertListings, insertHistory
 from scraper.source1_detail_scraper import detailScraper, fetch
 
 STATES = ("kaernten",)
@@ -105,8 +105,6 @@ def buildPageUrls(base_links, pages=UPPER_PAGE_RANGE, rows=ROWS):
                     "url": page_url,
                     "fin_type": l["fin_type"],
                 })
-
-        urls.append(urls)
     return urls
 
 
@@ -483,10 +481,17 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
 
         try:
             if len(buffer) >= BATCH_SIZE or i == len(urls):
-                insertListings(buffer, conn=conn, cur=cur, PAGE_SIZE=PAGE_SIZE, scrape_details=scrape_details)
-                buffer.clear()
-                conn.commit()
+                history_buffer = [
+                    {k: d[k] for k in ["id", "price", "rent", "scraped_at", "safety_deposit"]}
+                    for d in buffer
+                ]
+                upsertListings(buffer, conn=conn, cur=cur, PAGE_SIZE=PAGE_SIZE, scrape_details=scrape_details)
+                insertHistory(history_buffer, conn=conn, cur=cur, PAGE_SIZE=PAGE_SIZE)
                 logging.info("Transfer %d listings into Database", len(buffer))
+
+                conn.commit()
+
+                buffer.clear()
         except Exception:
             conn.rollback()
             logging.exception("Failed to insert batch into Database")

@@ -1,7 +1,7 @@
 from psycopg2.extras import execute_batch
 
 
-def insertListings(listings, PAGE_SIZE, scrape_details=True, conn=None, cur=None):
+def upsertListings(listings, PAGE_SIZE, scrape_details=True, conn=None, cur=None):
     """
     Inserts a list of real estate listings into the database.
 
@@ -69,9 +69,12 @@ def insertListings(listings, PAGE_SIZE, scrape_details=True, conn=None, cur=None
                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
                         %s,
                         %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-                ON CONFLICT (id) DO NOTHING
+                ON CONFLICT (id) DO UPDATE SET
+                    price = EXCLUDED.price,
+                    rent = EXCLUDED.rent,
+                    safety_deposit = EXCLUDED.safety_deposit,
+                    scraped_at = EXCLUDED.scraped_at
                 """
-
         values = [
             (
                 l["id"],
@@ -239,6 +242,38 @@ def insertListings(listings, PAGE_SIZE, scrape_details=True, conn=None, cur=None
         ]
     execute_batch(cur, query, values, page_size=PAGE_SIZE)
 
+
+def insertHistory(listings, PAGE_SIZE, conn=None, cur=None):
+    """
+    Inserts a snapshot of listing prices into the history_listings table.
+
+    Args:
+        listings (list): A list of dictionaries containing listing data.
+        PAGE_SIZE (int): The number of rows to insert per batch.
+        conn: The psycopg2 connection object.
+        cur: The psycopg2 cursor object.
+    """
+    query = """
+            INSERT INTO history_listings (
+                id,
+                price,
+                rent,
+                safety_deposit,
+                scraped_at)
+            VALUES (%s, %s, %s, %s, %s)
+            ON CONFLICT (id, scraped_at) DO NOTHING \
+            """
+    values = [
+        (
+            l["id"],
+            l["price"],
+            l["rent"],
+            l["safety_deposit"],
+            l["scraped_at"],
+        )
+        for l in listings
+    ]
+    execute_batch(cur, query, values, page_size=PAGE_SIZE)
 
 def insertFeatures(table, features, PAGE_SIZE, conn=None, cur=None):
     """

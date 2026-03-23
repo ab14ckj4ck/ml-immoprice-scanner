@@ -66,6 +66,17 @@ CREATE TABLE listings
     fgEE_class        INT
 );
 
+CREATE TABLE history_listings (
+    hist_id SERIAL PRIMARY KEY,
+    id TEXT REFERENCES listings (id),
+
+    price FLOAT,
+    rent FLOAT,
+    safety_deposit FLOAT,
+
+    scraped_at DATE
+);
+
 CREATE TABLE rent_features
 (
     id                    TEXT PRIMARY KEY REFERENCES listings (id),
