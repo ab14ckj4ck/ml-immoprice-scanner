@@ -1,7 +1,11 @@
 import xml.etree.ElementTree as ET
+import logging
 
 VALID_IMMO_TYPES = ("house", "apartment", "projects")
 VALID_FIN_TYPES = ("rent", "buy")  # TODO implement "project" handling
+
+logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 def readSource(path="data/source1-name.txt"):
     """
@@ -12,8 +16,11 @@ def readSource(path="data/source1-name.txt"):
     Returns:
         str: The content of the file.
     """
-    with open(path, "r", encoding="utf-8") as f:
-        return f.read().strip()
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return f.read().strip()
+    except ValueError:
+        logging.exception("Source file not found.")
 
 def loadBaseLinks(path="data/base-links.xml"):
     """

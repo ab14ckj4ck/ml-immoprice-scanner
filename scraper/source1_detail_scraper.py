@@ -6,7 +6,7 @@ attributes like price, deposit (Kaution), energy certificates (HWB, fGEE), and g
 listing attributes from the page structure.
 """
 
-import requests, re, time, random
+import requests, re, time, random, logging
 from bs4 import BeautifulSoup
 
 ENERGY_MAP = {
@@ -20,6 +20,10 @@ ENERGY_MAP = {
     "F": 2,
     "G": 1
 }
+
+
+logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 def readSource(path="data/source1.txt"):
     """
@@ -181,6 +185,7 @@ def detailScraper(url):
     """
     html = fetch(url)
     if not html:
+        logging.warning("Unreachable detail page in listings: %s", url)
         return {}
 
     soup = BeautifulSoup(html, "lxml")

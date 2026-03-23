@@ -5,7 +5,7 @@ and optionally scrapes detailed information for each listing.
 The data is then cleaned and stored in a database.
 """
 
-import re, json
+import re, json, logging
 import numpy as np
 from datetime import date
 
@@ -44,6 +44,9 @@ OPTIONAL_DATA = [
     "fgee",
     "fgee_class"
 ]
+
+logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 
 def fillOptionalData(result):
@@ -442,9 +445,13 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
     conn = get_connection()
     cur = conn.cursor()
 
+    if not conn or not cur:
+        logging.error("Connection and / or cursor to db failed")
+        return
+
     urls = buildPageUrls(base_links, pages=pages, rows=rows)
     total_items = len(urls) * rows
-    processed_items = 0  # ✅ jetzt lokal sauber
+    processed_items = 0
 
     print(f"Scraping {len(urls)} pages...\n")
 
@@ -456,11 +463,11 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
 
         if "<title>" in html:
             title = html.split("<title>")[1].split("</title>")[0]
-            raise f"[ERROR] {title}"
+            logging.error("Blocked by Bot-stop INFO: %s", title)
 
         data = extractNewData(html)
         if not data:
-            print("No NEXT_DATA")
+            logging.info("No NEXT_DATA found in %s page %d. Skipping...", u["url"], i)
             continue
 
         page_data, processed_items = parseNextData(
@@ -474,10 +481,15 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
         page_data = cleanDuplicates(page_data, seen_ids)
         buffer.extend(page_data)
 
-        if len(buffer) >= BATCH_SIZE or i == len(urls):
-            insertListings(buffer, conn=conn, cur=cur, PAGE_SIZE=PAGE_SIZE, scrape_details=scrape_details)
-            buffer.clear()
-            conn.commit()
+        try:
+            if len(buffer) >= BATCH_SIZE or i == len(urls):
+                insertListings(buffer, conn=conn, cur=cur, PAGE_SIZE=PAGE_SIZE, scrape_details=scrape_details)
+                buffer.clear()
+                conn.commit()
+                logging.info("Transfer %d listings into Database", len(buffer))
+        except Exception:
+            conn.rollback()
+            logging.exception("Failed to insert batch into Database")
 
     cur.close()
     conn.close()

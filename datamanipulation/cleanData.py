@@ -12,7 +12,7 @@ from database.db_insertion import insertFeatures
 from datamanipulation.loaders import loadLocationData
 import pandas as pd
 import numpy as np
-import sys
+import sys, logging
 
 URBAN_THRESHOLD = 25
 PAGES = 20
@@ -23,6 +23,9 @@ OPTIONAL_FEATURES = [
     "wintergarden_ratio",
     "terrace_ratio"
 ]
+
+logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 
 def loadData(conn):
@@ -255,6 +258,7 @@ def printProgressBar(current, total, bar_length=20):
 
 def insertFeatureData(rent, buy, conn=None, cur=None):
     """Batches and inserts processed rent and buy features into their respective database tables."""
+    logging.info("Insert detail data into database")
     if conn is None or cur is None:
         raise ValueError("Connection and cursor required")
 
@@ -265,14 +269,20 @@ def insertFeatureData(rent, buy, conn=None, cur=None):
     for idx, i in enumerate(range(0, len(rent_records), PAGES), 1):
         batch = rent_records[i:i + PAGES]
 
-        insertFeatures(
-            table="rent_features",
-            features=batch,
-            PAGE_SIZE=PAGES,
-            conn=conn,
-            cur=cur
-        )
-        conn.commit()
+        try:
+            insertFeatures(
+                table="rent_features",
+                features=batch,
+                PAGE_SIZE=PAGES,
+                conn=conn,
+                cur=cur
+            )
+            conn.commit()
+            logging.info("Inserted %d listings into Rent Data", len(batch))
+        except Exception:
+            conn.rollback()
+            logging.exception("Failed to insert batch into Rent Data")
+
         printProgressBar(idx, total_batches)
 
     buy_records = buy.to_dict(orient="records")
@@ -282,14 +292,21 @@ def insertFeatureData(rent, buy, conn=None, cur=None):
 
     for idx, j in enumerate(range(0, len(buy_records), PAGES), 1):
         batch = buy_records[j:j + PAGES]
-        insertFeatures(
-            table="buy_features",
-            features=batch,
-            PAGE_SIZE=PAGES,
-            conn=conn,
-            cur=cur
-        )
-        conn.commit()
+        try:
+            insertFeatures(
+                table="buy_features",
+                features=batch,
+                PAGE_SIZE=PAGES,
+                conn=conn,
+                cur=cur
+            )
+            conn.commit()
+            logging.info("Inserted %d listings into Buy Data", len(batch))
+
+        except Exception:
+            conn.rollback()
+            logging.exception("Failed to insert batch into Buy Data")
+
         printProgressBar(idx, total_batches)
 
 
@@ -313,17 +330,22 @@ def filterLowPrice(df, col="price", limit=10):
 
 def cleanData():
     """Main entry point to load, clean, transform, and save the real estate data."""
+    logging.info("Scraping detail listings...")
     conn = get_connection()
     cur = conn.cursor()
+
+    if not conn or not cur:
+        logging.error("Connection and / or cursor to db failed")
+        return
 
     df = loadData(conn)
     df = filterLowPrice(df, "price", 10)
     df = quantileElimination(df, "price")
 
     df_rent = df[df["finance_type"] == "rent"].copy()
-    print("Amount Rent Data: " + str(len(df_rent["id"])))
+    logging.info("Amount rent data: %d", len(df_rent["id"]))
     df_buy = df[df["finance_type"] == "buy"].copy()
-    print("Amount Buy Data: " + str(len(df_buy["id"])))
+    logging.info("Amount buy data: %d", len(df_buy["id"]))
 
     df_buy = deleteRequiredNull(df_buy)
     df_rent = deleteRequiredNull(df_rent)
