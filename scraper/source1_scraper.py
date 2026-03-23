@@ -476,8 +476,12 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
             processed_items=processed_items
         )
 
-        page_data = cleanDuplicates(page_data, seen_ids)
-        buffer.extend(page_data)
+        page_data = [
+            d for d in buffer
+            if d.get("lat") is not None and d.get("lon") is not None
+        ]
+        cleaned_page_data = cleanDuplicates(page_data, seen_ids)
+        buffer.extend(cleaned_page_data)
 
         try:
             if len(buffer) >= BATCH_SIZE or i == len(urls):

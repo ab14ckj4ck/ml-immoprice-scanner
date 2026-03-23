@@ -17,7 +17,7 @@ def getData():
 
     df = df[
         [
-            "living_area", "estate_size", "rooms", "has_carport", "has_elevator", "has_kitchen",
+            "id", "living_area", "estate_size", "rooms", "has_carport", "has_elevator", "has_kitchen",
             "has_garage",
             "has_cellar", "has_parking", "has_closet", "has_balcony", "balcony_size", "has_garden", "garden_size",
             "has_terrace", "terrace_size", "has_loggia", "loggia_size", "has_wintergarden", "wintergarden_size",
@@ -86,7 +86,7 @@ def getLinearRegressionData(df):
     df_y = df["log_price"]
 
     df_X = df.drop(columns=[
-        "log_price", "living_area", "estate_size", "balcony_size",
+        "id", "log_price", "living_area", "estate_size", "balcony_size",
         "garden_size", "terrace_size", "loggia_size", "wintergarden_size",
         "distance_nearest_city", "distance_villach", "distance_klagenfurt", "distance_nearest_lake",
         "rpm2", "rooms_per_property", "area_per_room"

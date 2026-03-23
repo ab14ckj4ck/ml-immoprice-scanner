@@ -220,7 +220,7 @@ def cleanUp(df):
     df["log_distance_villach"] = np.log(df["distance_villach"] + 1)
     df["log_distance_klagenfurt"] = np.log(df["distance_klagenfurt"] + 1)
 
-    df = df.replace([np.inf, -np.inf], np.nan)
+    df = df.dropna(subset=["lat", "lon"])
     df[OPTIONAL_FEATURES] = df[OPTIONAL_FEATURES].fillna(0)
 
     df_features = df[

@@ -6,3 +6,4 @@ data/source1.txt
 __pycache__/*
 .idea/*
 mlCheatSheet.md
+mlModels/kmeans/k-cheatsheet.md

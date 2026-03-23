@@ -4,7 +4,6 @@ import psycopg2
 
 load_dotenv("database/.env")
 
-
 def get_connection():
     """
     Establishes and returns a connection to the PostgreSQL database using environment variables.
