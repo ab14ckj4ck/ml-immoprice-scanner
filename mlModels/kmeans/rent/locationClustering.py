@@ -78,7 +78,6 @@ def findKMethod(coords, random_state, lower_range, upper_range):
 
     return ellbow_vals, silhouette_vals, gap_vals, davies_vals, calinski_vals
 
-
 def ellbow(coords, random_state, lower, upper):
     """
     Calculates the sum of squared distances (inertia) for each K.
