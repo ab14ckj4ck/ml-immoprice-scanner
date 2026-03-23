@@ -14,6 +14,8 @@ import pandas as pd
 import numpy as np
 import sys, logging
 
+CITIES_FILE = "data/cities.xml"
+LAKES_FILE = "data/lakes.xml"
 URBAN_THRESHOLD = 25
 PAGES = 20
 OPTIONAL_FEATURES = [
@@ -68,8 +70,8 @@ def getRatio(df, col1, col2, new_col):
 
 def getLocations():
     """Loads city and lake location data from XML files."""
-    cities = loadLocationData(path="data/cities.xml", target="cities")
-    lakes = loadLocationData(path="data/lakes.xml", target="lakes")
+    cities = loadLocationData(path=CITIES_FILE, target="cities")
+    lakes = loadLocationData(path=LAKES_FILE, target="lakes")
     return cities, lakes
 
 
