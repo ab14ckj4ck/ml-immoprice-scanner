@@ -9,7 +9,7 @@ logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
 def runCluster():
     df = getData()
     logging.info("Starting K-Means Clustering locations")
-    print("-------Starting K-Means Clustering locations-------")
     kmeans_label_results = locationClustering(df)
+    logging.info("Finished K-Means Clustering locations")
 
     return kmeans_label_results

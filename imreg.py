@@ -15,25 +15,31 @@ def main():
     using the baseScraper and then performs data cleaning on the results
     based on defined house and apartment types.
     """
-
+    asciiArt()
     logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
                         format='%(asctime)s - %(levelname)s - %(message)s')
 
     if SOURCE_1:
         if SCRAPE_SOURCE_1:
             logging.info("Starting Source 1 Scraper")
-            print("\n-------Starting Source 1 Scraper-------")
             baseScraper(pages=12, scrape_details=True, rows=100)
             logging.info("Finished scraping Source 1")
 
         logging.info("Starting Source 1 Data Cleaning")
-        print("\n-------Starting Source 1 Data Cleaning-------")
         cleanData()
         logging.info("Finished Source 1 Data Cleaning")
 
     if MODELS:
         logging.info("Starting Models")
         runModels()
+
+def asciiArt():
+    print(r".___                        _________                                  ")
+    print(r"|   | _____   _____   ____ /   _____/ ________________  ______   ____  ")
+    print(r"|   |/     \ /     \ /  _ \\_____  \_/ ___\_  __ \__  \ \____ \_/ __ \ ")
+    print(r"|   |  Y Y  \  Y Y  (  <_> )        \  \___|  | \// __ \|  |_> >  ___/ ")
+    print(r"|___|__|_|  /__|_|  /\____/_______  /\___  >__|  (____  /   __/ \___  >")
+    print(r"          \/      \/              \/     \/           \/|__|        \/ ")
 
 if __name__ == "__main__":
     main()

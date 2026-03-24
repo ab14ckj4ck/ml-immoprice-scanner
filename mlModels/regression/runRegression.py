@@ -37,7 +37,6 @@ def runModels():
 
         if HOUSES:
             logging.info("Starting XGBR logPrice Houses")
-            print("-------XGBR logPrice Houses-------")
             if RENT:
                 logging.info("XGBR Rent logPrice Houses")
                 rentPriceXgbrModel(df=df_rent_log_features, drop_cols=DROP_COLS_HOUSE, accommodation="house", k=4)
@@ -45,12 +44,15 @@ def runModels():
                 logging.info("XGBR Buy logPrice Houses")
                 buyPriceXgbrModel(df=df_buy_log_features, drop_cols=DROP_COLS_HOUSE, accommodation="house", k=14)
 
+            logging.info("Finished XGBR logPrice Houses")
+
         if APARTMENTS:
             logging.info("Starting XGBR logPrice Apartments")
-            print("-------XGBR logPrice Apartments-------")
             if RENT:
                 logging.info("XGBR Rent logPrice Apartments")
                 rentPriceXgbrModel(df=df_rent_log_features, drop_cols=DROP_COLS_APT, accommodation="apt", k=4)
             if BUY:
                 logging.info("XGBR Buy logPrice Apartments")
                 buyPriceXgbrModel(df=df_buy_log_features, drop_cols=DROP_COLS_APT, accommodation="apt", k=14)
+
+            logging.info("Finished XGBR logPrice Apartments")

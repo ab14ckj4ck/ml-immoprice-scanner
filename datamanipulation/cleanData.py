@@ -266,7 +266,7 @@ def insertFeatureData(rent, buy, conn=None, cur=None):
 
     rent_records = rent.to_dict(orient="records")
     total_batches = (len(rent_records) + PAGES - 1) // PAGES
-    print("\n-------Transfer Rent Data-------")
+    print("-------Transfer Rent Data-------")
 
     for idx, i in enumerate(range(0, len(rent_records), PAGES), 1):
         batch = rent_records[i:i + PAGES]
@@ -290,7 +290,7 @@ def insertFeatureData(rent, buy, conn=None, cur=None):
     buy_records = buy.to_dict(orient="records")
     total_batches = (len(buy_records) + PAGES - 1) // PAGES
     print()
-    print("\n-------Transfer Buy Data-------")
+    print("-------Transfer Buy Data-------")
 
     for idx, j in enumerate(range(0, len(buy_records), PAGES), 1):
         batch = buy_records[j:j + PAGES]
