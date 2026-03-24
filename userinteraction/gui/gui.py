@@ -1,4 +1,5 @@
 from mlModels.kmeans.locationClustering import addLocationFeature
+from userinteraction.gui.guiData import getColumnList, getRentAptFeatures, getBuyAptFeatures
 from datamanipulation.cleanData import getLogNorm, getRatio, computeDistances, getIsUrban, getLocations
 from geopy.geocoders import Nominatim
 from sklearn.cluster import KMeans
@@ -29,6 +30,20 @@ def getCoordinates(addr):
 def getFloat(entry, default=0):
     value = entry.get().strip()
     return float(value) if value != "" else default
+
+def featureSelection(df, feature_list):
+    if feature_list is None:
+        logging.warning("No features has been selected due to property and finance type mismatch")
+        return df
+
+    df_features = df.copy()
+    df_features = df_features[[col for col in feature_list if col in df_features.columns]]
+    for col in feature_list:
+        if col not in df_features.columns:
+            df_features[col] = 0
+
+    df_features = df_features[feature_list]
+    return df_features
 
 
 def gui():
@@ -448,23 +463,7 @@ def gui():
 
             logging.info(f"Prediction called with parameters: {features}")
 
-            features = pd.DataFrame(features,
-                                    columns=['id', 'living_area', 'estate_size', 'rooms', 'lat', 'lon', 'postcode', 'has_carport',
-                                             'has_elevator', 'has_kitchen', 'has_garage',
-                                             'has_cellar', 'has_parking', 'has_closet', 'has_balcony', 'balcony_size',
-                                             'has_garden', 'garden_size', 'has_terrace', 'terrace_size', 'has_loggia',
-                                             'loggia_size', 'has_wintergarden',
-                                             'wintergarden_size', 'is_oil', 'is_bio', 'is_electro', 'is_pellets',
-                                             'is_photovoltaik', 'is_geothermal',
-                                             'is_air_heating',
-                                             'is_floor', 'is_central',
-                                             'is_ceiling', 'is_oven', 'is_infrared', 'hwb', 'hwb_class', 'fgee',
-                                             'fgee_class', 'is_mfh',
-                                             'is_efh', 'is_lh', 'is_villa',
-                                             'is_dhh', 'is_sbc', 'is_rh', 'is_ab', 'is_bh', 'is_gh',
-                                             'is_dgw', 'is_egw', 'is_gc', 'is_gw',
-                                             'is_ms', 'is_phw', 'is_apt', 'is_wg',
-                                             ])
+            features = pd.DataFrame(features, columns=getColumnList())
 
             features = getRatio(features, "balcony_size", "living_area", "balcony_ratio")
             features = getRatio(features, "terrace_size", "living_area", "terrace_ratio")
@@ -480,33 +479,6 @@ def gui():
             features = computeDistances(features, cities, lakes)
             features = getIsUrban(features)
 
-            logging.info(f"Features: {features.columns}")
-            logging.info(f"Features engineered: {features}")
-
-            rent_features = [
-                'rooms', 'has_carport', 'has_elevator', 'has_garage', 'has_cellar', 'has_parking', 'has_closet',
-                'has_balcony',
-                'has_terrace', 'has_wintergarden', 'is_pellets', 'is_photovoltaik', 'is_floor',
-                'is_oven', 'balcony_ratio', 'terrace_ratio', 'is_urban', 'is_egw', 'is_ms', 'is_apt', 'log_living_area',
-                'log_estate_size', 'log_balcony_size', 'log_garden_size', 'log_terrace_size', 'log_loggia_size',
-                'log_distance_nearest_city', 'log_distance_nearest_lake', 'log_distance_villach', 'log_distance_klagenfurt',
-                'loc_14_0', 'loc_14_1', 'loc_14_2', 'loc_14_3', 'loc_14_4', 'loc_14_5', 'loc_14_9', 'loc_14_10',
-                'loc_14_11', 'loc_14_12',
-                'loc_14_13']
-
-            buy_features = ['rooms', 'has_carport', 'has_elevator', 'has_garage', 'has_cellar',
-                            'has_parking', 'has_closet', 'has_balcony', 'has_garden', 'has_terrace',
-                            'has_loggia', 'has_wintergarden', 'is_oil', 'is_pellets',
-                            'is_photovoltaik', 'is_geothermal', 'is_air_heating', 'is_floor',
-                            'is_central', 'is_oven', 'is_infrared', 'balcony_ratio', 'garden_ratio',
-                            'terrace_ratio', 'is_urban', 'is_mfh', 'is_efh', 'is_lh', 'is_dgw',
-                            'log_living_area', 'log_estate_size', 'log_balcony_size',
-                            'log_garden_size', 'log_terrace_size', 'log_loggia_size',
-                            'log_distance_nearest_city', 'log_distance_nearest_lake',
-                            'log_distance_villach', 'log_distance_klagenfurt', 'loc_14_0',
-                            'loc_14_1', 'loc_14_2', 'loc_14_3', 'loc_14_4', 'loc_14_5', 'loc_14_9',
-                            'loc_14_11', 'loc_14_12', 'loc_14_13']
-
             model, scaler, kmeans = chooseModel()
             df_cluster = pd.DataFrame([[input_id, lat, lon]], columns=["id", "lat", "lon"])
             df_cluster_features = addLocationFeature(df_cluster, scaler, kmeans, n_clusters=14)
@@ -514,32 +486,15 @@ def gui():
             features = pd.concat([features, df_cluster_features], axis=1)
             features = features.loc[:, ~features.columns.duplicated()]
 
-            df_rent_features = features.copy()
+            df_features = featureSelection(features,
+                                           getRentAptFeatures() if (rent_var.get() == 1 and apt_var == 1)
+                                           else getBuyAptFeatures() if (rent_var.get() == 0 and apt_var == 1)
+                                           else getRentHouseFeatures() if (rent_var.get() == 1 and apt_var == 0)
+                                           else getBuyHouseFeatures() if (rent_var.get() == 0 and apt_var == 0)
+                                           else None
+                                           )
 
-            df_rent_features = df_rent_features[[col for col in rent_features if col in df_rent_features.columns]]
-
-            for col in rent_features:
-                if col not in df_rent_features.columns:
-                    df_rent_features[col] = 0
-
-            df_rent_features = df_rent_features[rent_features]
-
-            df_buy_features = features.copy()
-
-            df_buy_features = df_buy_features[[col for col in buy_features if col in df_buy_features.columns]]
-
-            for col in buy_features:
-                if col not in df_buy_features.columns:
-                    df_buy_features[col] = 0
-
-            df_buy_features = df_buy_features[buy_features]
-
-            prediction = None
-
-            if rent_var.get() == 0:
-                prediction = model.predict(df_rent_features)[0]
-            elif rent_var.get() == 1:
-                prediction = model.predict(df_buy_features)[0]
+            prediction = model.predict(df_features)[0]
 
             if prediction:
                 prediction = np.exp(prediction) - 1
