@@ -8,14 +8,38 @@ segmentation.
 
 import numpy as np
 import pandas as pd
-import math
+import math, joblib
 
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score, davies_bouldin_score, calinski_harabasz_score
 from sklearn.preprocessing import StandardScaler
 from kneed import KneeLocator
 
-def locationClustering(df, seed=42, lower=2, upper=15):
+def trainLocationModel(df, n_clusters=14, seed=42):
+    coords = df[["lat", "lon"]].values
+    scaler = StandardScaler()
+    coords_scaled = scaler.fit_transform(coords)
+
+    kmeans = KMeans(n_clusters=n_clusters, random_state=seed)
+    kmeans.fit(coords_scaled)
+
+    joblib.dump(scaler, "mlModels/kmeans/data/scaler.pkl")
+    joblib.dump(kmeans, "mlModels/kmeans/data/kmeans.pkl")
+
+    return scaler, kmeans
+
+def addLocationFeature(df, scaler, kmeans, n_clusters=14):
+    coords = df[["lat", "lon"]].values
+    coords_scaled = scaler.transform(coords)
+    clusters = kmeans.predict(coords_scaled)
+
+    df = df.copy()
+
+    for i in range(n_clusters):
+        df[f"loc_{n_clusters}_{i}"] = (clusters == i).astype(int)
+    return df
+
+def findBestFittingK(df, seed=42, lower=2, upper=15):
     """
     Performs K-Means clustering on latitude and longitude coordinates using multiple
     evaluation metrics to find optimal cluster counts.

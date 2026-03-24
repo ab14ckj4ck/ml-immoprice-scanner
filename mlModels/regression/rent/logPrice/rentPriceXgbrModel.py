@@ -27,7 +27,7 @@ def rentPriceXgbrModel(df, drop_cols, accommodation="house", k=2):
         k (int): Cluster identifier used for logging purposes. Defaults to 2.
 
     Returns:
-        None: TODO return model for GUI and usage
+        Model: returns a trained model
 
         Prints evaluation metrics (MAE, RMSE, R2) and feature importances to the console.
     """
@@ -84,3 +84,5 @@ def rentPriceXgbrModel(df, drop_cols, accommodation="house", k=2):
     logging.info(f"MAE:  {mae:.4f}")
     logging.info(f"RMSE: {rmse:.4f}")
     logging.info(f"R2:   {r2:.4f}\n")
+
+    return model

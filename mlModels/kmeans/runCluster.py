@@ -1,4 +1,4 @@
-from mlModels.kmeans.locationClustering import locationClustering
+from mlModels.kmeans.locationClustering import trainLocationModel, addLocationFeature
 from mlModels.kmeans.data.data import getData
 import logging
 
@@ -9,7 +9,8 @@ logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
 def runCluster():
     df = getData()
     logging.info("Starting K-Means Clustering locations")
-    kmeans_label_results = locationClustering(df)
+    scaler, kmeans = trainLocationModel(df)
+    location_features = addLocationFeature(df, scaler, kmeans)
     logging.info("Finished K-Means Clustering locations")
 
-    return kmeans_label_results
+    return location_features

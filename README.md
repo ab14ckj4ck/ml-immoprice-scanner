@@ -53,13 +53,13 @@ This project covers the full workflow from **data acquisition → preprocessing 
 
 ---
 
-
 ## 🛠️ Setup
 
 ### 1. Requirements
 
 * Python 3.x
 * PostgreSQL
+* Tkinter
 * Install dependencies:
 
 ```bash

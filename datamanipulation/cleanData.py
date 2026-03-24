@@ -58,7 +58,7 @@ def minMax(df, col):
 
 def getLogNorm(df, col):
     """Applies a natural logarithm transformation to a column."""
-    df["log_" + col] = np.log(df[col].where(df[col] > 0))
+    df["log_" + col] = np.log(df[col] + 1)
     return df
 
 
