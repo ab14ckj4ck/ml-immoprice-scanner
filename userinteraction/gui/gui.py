@@ -9,6 +9,7 @@ from tkinter import ttk
 
 import tkinter as tk
 import pandas as pd
+import numpy as np
 import joblib, threading, logging
 
 geolocator = Nominatim(user_agent="ImmoScraper")
@@ -20,6 +21,7 @@ def getCoordinates(addr):
     logging.info(f"Getting coordinates for address {addr}")
     location = geolocator.geocode(addr)
     if location:
+        logging.info(f"Coordinates found: {location.latitude}, {location.longitude}")
         return location.latitude, location.longitude
     else:
         return None, None
@@ -352,6 +354,7 @@ def gui():
 
     def chooseModel():
         base_path = "mlModels/regression/data/"
+
         if apt_var.get() == 1 and rent_var.get() == 0:
             model = "rent_house_model.pkl"
         elif apt_var.get() == 1 and rent_var.get() == 1:
@@ -379,7 +382,7 @@ def gui():
             living_area = getFloat(entry_living_area)
             estate_size = living_area
             rooms = getFloat(entry_rooms)
-            lat, lon = getCoordinates(entry_address.get())
+            lat, lon = getCoordinates(entry_address.get() + "," + entry_postcode.get())
             postcode = getFloat(entry_postcode)
             has_carport = has_carport_var.get()
             has_elevator = has_elevator_var.get()
@@ -477,17 +480,14 @@ def gui():
             features = computeDistances(features, cities, lakes)
             features = getIsUrban(features)
 
-            featureset_rent = features.copy()
-            featureset_buy = features.copy()
+            logging.info(f"Features: {features.columns}")
             logging.info(f"Features engineered: {features}")
 
             rent_features = [
                 'rooms', 'has_carport', 'has_elevator', 'has_garage', 'has_cellar', 'has_parking', 'has_closet',
                 'has_balcony',
                 'has_terrace', 'has_wintergarden', 'is_pellets', 'is_photovoltaik', 'is_floor',
-                'is_oven', 'balcony_ratio', 'terrace_ratio', 'is_urban', 'is_mfh', 'is_efh', 'is_lh', 'is_villa', 'is_dhh',
-                'is_sbc', 'is_rh',
-                'is_ab', 'is_bh', 'is_gh', 'is_egw', 'is_ms', 'is_apt', 'log_living_area',
+                'is_oven', 'balcony_ratio', 'terrace_ratio', 'is_urban', 'is_egw', 'is_ms', 'is_apt', 'log_living_area',
                 'log_estate_size', 'log_balcony_size', 'log_garden_size', 'log_terrace_size', 'log_loggia_size',
                 'log_distance_nearest_city', 'log_distance_nearest_lake', 'log_distance_villach', 'log_distance_klagenfurt',
                 'loc_14_0', 'loc_14_1', 'loc_14_2', 'loc_14_3', 'loc_14_4', 'loc_14_5', 'loc_14_9', 'loc_14_10',
@@ -500,7 +500,6 @@ def gui():
                             'is_photovoltaik', 'is_geothermal', 'is_air_heating', 'is_floor',
                             'is_central', 'is_oven', 'is_infrared', 'balcony_ratio', 'garden_ratio',
                             'terrace_ratio', 'is_urban', 'is_mfh', 'is_efh', 'is_lh', 'is_dgw',
-                            'is_egw', 'is_gc', 'is_gw', 'is_ms', 'is_phw', 'is_apt', 'is_wg',
                             'log_living_area', 'log_estate_size', 'log_balcony_size',
                             'log_garden_size', 'log_terrace_size', 'log_loggia_size',
                             'log_distance_nearest_city', 'log_distance_nearest_lake',
@@ -510,21 +509,40 @@ def gui():
 
             model, scaler, kmeans = chooseModel()
             df_cluster = pd.DataFrame([[input_id, lat, lon]], columns=["id", "lat", "lon"])
-            df_buy_cluster_features = addLocationFeature(df_cluster, scaler, kmeans, n_clusters=14)
-            df_rent_cluster_features = addLocationFeature(df_cluster, scaler, kmeans, n_clusters=14)
+            df_cluster_features = addLocationFeature(df_cluster, scaler, kmeans, n_clusters=14)
 
-            featureset_buy = pd.concat([featureset_buy, df_buy_cluster_features], axis=1)
-            featureset_rent = pd.concat([featureset_rent, df_rent_cluster_features], axis=1)
+            features = pd.concat([features, df_cluster_features], axis=1)
+            features = features.loc[:, ~features.columns.duplicated()]
 
-            df_rent_features = featureset_rent.reindex(columns=rent_features, fill_value=0)
-            df_buy_features = featureset_buy.reindex(columns=buy_features, fill_value=0)
+            df_rent_features = features.copy()
+
+            df_rent_features = df_rent_features[[col for col in rent_features if col in df_rent_features.columns]]
+
+            for col in rent_features:
+                if col not in df_rent_features.columns:
+                    df_rent_features[col] = 0
+
+            df_rent_features = df_rent_features[rent_features]
+
+            df_buy_features = features.copy()
+
+            df_buy_features = df_buy_features[[col for col in buy_features if col in df_buy_features.columns]]
+
+            for col in buy_features:
+                if col not in df_buy_features.columns:
+                    df_buy_features[col] = 0
+
+            df_buy_features = df_buy_features[buy_features]
 
             prediction = None
 
-            if rent_0.get():
+            if rent_var.get() == 0:
                 prediction = model.predict(df_rent_features)[0]
-            elif rent_1.get():
+            elif rent_var.get() == 1:
                 prediction = model.predict(df_buy_features)[0]
+
+            if prediction:
+                prediction = np.exp(prediction)
 
             output_var.set(f"{prediction:.2f} €" if prediction is not None else "No model")
 
