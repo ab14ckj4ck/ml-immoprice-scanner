@@ -542,7 +542,7 @@ def gui():
                 prediction = model.predict(df_buy_features)[0]
 
             if prediction:
-                prediction = np.exp(prediction)
+                prediction = np.exp(prediction) - 1
 
             output_var.set(f"{prediction:.2f} €" if prediction is not None else "No model")
 
