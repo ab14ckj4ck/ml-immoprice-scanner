@@ -1,25 +1,41 @@
 from database.db import get_connection
 import pandas as pd
+import logging
 
+logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
-def getData():
+def getData(filter_type: str, filter_val: str, table: str):
     """
     Fetches and merges rental features and listings from the database.
+    Args:
+        filter_type: filter for specific data category
+        filter_val: value to filter for
+        table: db table to fetch from
 
     Returns:
         pd.DataFrame: A dataframe containing selected features and target variables.
     """
     conn = get_connection()
-    df_features = pd.read_sql("SELECT * FROM rent_features", conn)
+    df_features = None
+    if table == "rent_features":
+        df_features = pd.read_sql(f"SELECT * FROM rent_features", conn)
+    elif table == "buy_features":
+        df_features = pd.read_sql(f"SELECT * FROM buy_features", conn)
+    else:
+        logging.error("Invalid table name to fetch data for clustering from")
+
     df_listings = pd.read_sql("SELECT * FROM listings", conn)
 
     df = df_features.merge(df_listings, on="id")
+    df = df[df[filter_type] == filter_val]
 
     df = df[
         [
             "id", "living_area", "estate_size", "rooms", "has_carport", "has_elevator", "has_kitchen",
-            "has_garage",
-            "has_cellar", "has_parking", "has_closet", "has_balcony", "balcony_size", "has_garden", "garden_size",
+            "has_garage", "finance_type",
+            "has_cellar", "has_parking", "has_closet", "has_balcony", "balcony_size", "has_garden",
+            "garden_size",
             "has_terrace", "terrace_size", "has_loggia", "loggia_size", "has_wintergarden", "wintergarden_size",
             "is_oil", "is_bio", "is_electro", "is_pellets", "is_photovoltaik", "is_geothermal", "is_air_heating",
             "is_floor", "is_central", "is_ceiling", "is_oven", "is_infrared", "hwb", "fgee",

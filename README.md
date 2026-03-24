@@ -23,7 +23,7 @@ This project covers the full workflow from **data acquisition → preprocessing 
 
 ## 🧱 Tech Stack
 
-* Python (Requests, BeautifulSoup, Pandas, NumPy)
+* Python (Requests, BeautifulSoup, Pandas, NumPy, sklearn)
 * PostgreSQL
 * XML-based configuration for data sources
 
@@ -35,7 +35,6 @@ This project covers the full workflow from **data acquisition → preprocessing 
 
   * 1 Austrian state at a time
   * 1 data source (configurable)
-* No ML model training included yet (planned next step)
 
 ---
 
