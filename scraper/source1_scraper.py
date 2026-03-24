@@ -477,7 +477,7 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
         )
 
         page_data = [
-            d for d in buffer
+            d for d in page_data
             if d.get("lat") is not None and d.get("lon") is not None
         ]
         cleaned_page_data = cleanDuplicates(page_data, seen_ids)

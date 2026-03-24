@@ -49,7 +49,7 @@ def locationClustering(df, seed=42, lower=2, upper=15):
 
     for c in candidates:
         df_temp = df.copy()
-        labels = KMeans(n_clusters=c, random_state=random_state).fit_predict(scaled_coords)
+        labels = KMeans(n_clusters=c, random_state=seed).fit_predict(scaled_coords)
         df_temp[f"cluster_{c}"] = labels
         df_temp = pd.get_dummies(df_temp, columns=[f"cluster_{c}"], prefix=f"loc_{c}")
         results[c] = df_temp

@@ -1,7 +1,7 @@
 from scraper.source1_scraper import baseScraper
 from datamanipulation.cleanData import cleanData
 from mlModels.kmeans.rent.runCluster import runCluster
-from mlModels.linearRegression.rent.logPrice.runLR import runModels
+from mlModels.regression.rent.logPrice.runLogPrice import runModels
 import logging
 
 SOURCE_1 = False
@@ -34,7 +34,6 @@ def main():
 
     if MODELS:
         logging.info("Starting Models")
-        results = runCluster()
         runModels()
 
 if __name__ == "__main__":

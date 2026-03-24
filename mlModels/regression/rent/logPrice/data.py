@@ -67,10 +67,16 @@ def housingTypeSplit(df_X, df_y):
     df_apt_X = df_X[apt_mask]
     df_apt_y = df_y[apt_mask]
 
+    df_apt_X = df_apt_X.drop(columns=house_mask, errors="ignore")
+    df_apt_y = df_apt_y.drop(columns=house_mask, errors="ignore")
+
+    df_house_X = df_house_X.drop(columns=apt_mask, errors="ignore")
+    df_house_y = df_house_y.drop(columns=apt_mask, errors="ignore")
+
     return df_house_X, df_house_y, df_apt_X, df_apt_y
 
 
-def getLinearRegressionData(df):
+def getRegressionData(df):
     """
     Prepares the data for linear regression by dropping redundant columns and
     splitting by housing type.
@@ -89,7 +95,7 @@ def getLinearRegressionData(df):
         "id", "log_price", "living_area", "estate_size", "balcony_size",
         "garden_size", "terrace_size", "loggia_size", "wintergarden_size",
         "distance_nearest_city", "distance_villach", "distance_klagenfurt", "distance_nearest_lake",
-        "rpm2", "rooms_per_property", "area_per_room"
+        "rpm2", "rooms_per_property", "area_per_room", "lat", "lon", "hwb",
     ])
 
     df_house_X, df_house_y, df_apt_X, df_apt_y = housingTypeSplit(df_X, df_y)
