@@ -8,3 +8,5 @@ __pycache__/*
 mlCheatSheet.md
 kCheatsheet.md
 *.log
+mlModels/kmeans/data/*.pkl
+mlModels/regression/data/*.pkl
