@@ -1,4 +1,4 @@
-# 🏠 Immopreis
+# 🏠 ImmoScraper
 
 End-to-end machine learning pipeline for predicting real estate prices in Austria using scraped marketplace data.
 
@@ -37,6 +37,22 @@ This project covers the full workflow from **data acquisition → preprocessing 
   * 1 data source (configurable)
 
 ---
+
+## ⚙️ TODOs
+
+    [x] Create a scraper
+    [x] Create a data cleaning pipeline
+    [x] Create a feature engineering pipeline
+    [x] Create a database
+    [x] Create urban classification feature
+    [x] Add geospatial features
+    [x] Implement log_price model
+    [ ] Implement ppm2 model
+    [ ] Add history module
+    [ ] Add GUI
+
+---
+
 
 ## 🛠️ Setup
 
@@ -136,12 +152,14 @@ python imreg.py
 
 ```
 .
-├── scraper/                 # scraping logic
+├── scraper/                # scraping logic
 ├── datamanipulation/       # cleaning & feature engineering
 ├── database/               # DB connection & insertion
 ├── data/                   # source configuration
-├── models/                 # ML models
-├── imreg.py
+├── mlModels/               # ML models
+├── tests/                  # unit tests
+├── userinteraction/        # GUI & user interaction modules
+├── imreg.py                # main backend script
 ```
 
 ---
