@@ -1,9 +1,12 @@
 import unittest
 from unittest.mock import patch
+
 from bs4 import BeautifulSoup
+
 from scraper.source1_detail_scraper import (
-    parsePriceInfo, parseEnergy, parseAttributes, detailScraper, ENERGY_MAP
+    parsePriceInfo, parseEnergy, parseAttributes, detailScraper
 )
+
 
 class TestSource1DetailScraper(unittest.TestCase):
 

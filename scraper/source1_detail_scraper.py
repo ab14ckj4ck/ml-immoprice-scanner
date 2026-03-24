@@ -82,6 +82,8 @@ def fetch(url, retries=3):
 
     return None
 
+
+# noinspection PyArgumentList
 def parsePriceInfo(soup):
     """
     Extracts pricing information not found in standard attribute lists, specifically 'Kaution'.
@@ -102,6 +104,8 @@ def parsePriceInfo(soup):
 
     return data
 
+
+# noinspection PyArgumentList
 def parseEnergy(soup):
     """
     Parses energy certificate details (HWB and fGEE) and their respective classes.

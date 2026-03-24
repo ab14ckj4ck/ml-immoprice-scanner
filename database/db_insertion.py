@@ -243,7 +243,7 @@ def upsertListings(listings, PAGE_SIZE, scrape_details=True, conn=None, cur=None
     execute_batch(cur, query, values, page_size=PAGE_SIZE)
 
 
-def insertHistory(listings, PAGE_SIZE, conn=None, cur=None):
+def insertHistory(listings, PAGE_SIZE, cur=None):
     """
     Inserts a snapshot of listing prices into the history_listings table.
 
@@ -275,6 +275,8 @@ def insertHistory(listings, PAGE_SIZE, conn=None, cur=None):
     ]
     execute_batch(cur, query, values, page_size=PAGE_SIZE)
 
+
+# noinspection PyUnusedLocal
 def insertFeatures(table, features, PAGE_SIZE, conn=None, cur=None):
     """
     Inserts calculated features into the specified database table.

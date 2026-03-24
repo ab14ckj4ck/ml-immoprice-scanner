@@ -490,7 +490,7 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
                     for d in buffer
                 ]
                 upsertListings(buffer, conn=conn, cur=cur, PAGE_SIZE=PAGE_SIZE, scrape_details=scrape_details)
-                insertHistory(history_buffer, conn=conn, cur=cur, PAGE_SIZE=PAGE_SIZE)
+                insertHistory(history_buffer, cur=cur, PAGE_SIZE=PAGE_SIZE)
                 logging.info("Transfer %d listings into Database", len(buffer))
 
                 conn.commit()

@@ -14,6 +14,7 @@ logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 
+# noinspection DuplicatedCode
 def buyPriceXgbrModel(df, drop_cols, accommodation="house", k=2):
     """
     Trains and evaluates an XGBoost Regressor for rental prices.

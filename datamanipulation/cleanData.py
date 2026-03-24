@@ -258,6 +258,7 @@ def printProgressBar(current, total, bar_length=20):
         print()
 
 
+# noinspection PyBroadException
 def insertFeatureData(rent, buy, conn=None, cur=None):
     """Batches and inserts processed rent and buy features into their respective database tables."""
     logging.info("Insert detail data into database")
