@@ -261,7 +261,7 @@ def insertHistory(listings, PAGE_SIZE, cur=None):
                 safety_deposit,
                 scraped_at)
             VALUES (%s, %s, %s, %s, %s)
-            ON CONFLICT (id, scraped_at) DO NOTHING \
+            ON CONFLICT (id, scraped_at) DO NOTHING
             """
     values = [
         (

@@ -5,6 +5,7 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 from xgboost import XGBRegressor
 from imreg import main
+from tkinter import ttk
 
 import joblib, threading
 import tkinter as tk
@@ -12,13 +13,396 @@ import pandas as pd
 
 geolocator = Nominatim(user_agent="ImmoScraper")
 
+
+def gui():
+    main = tk.Tk()
+    main.title("ImmoScraper")
+    main.config(bg="#E4E2E2")
+    main.geometry("1280x665")
+    main.update_idletasks()
+
+    geometryX = 0
+    geometryY = 0
+
+    main.geometry("+%d+%d"%(geometryX, geometryY))
+
+
+    style = ttk.Style(main)
+    style.theme_use("clam")
+
+    menu = tk.Menu(main)
+
+    frame = tk.Frame(master=main)
+    frame.config(bg="#BCBCBC")
+    frame.place(x=26, y=494, width=1230, height=143)
+
+    style.configure("scraping.TCheckbutton", background="#E4E2E2", foreground="#000")
+    style.map("scraping.TCheckbutton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+
+    scraping = ttk.Checkbutton(master=frame, text="Scraping", style="scraping.TCheckbutton")
+
+
+    scraping.place(x=26, y=26, width=120, height=30)
+
+    style.configure("clean_data.TCheckbutton", background="#E4E2E2", foreground="#000")
+    style.map("clean_data.TCheckbutton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+
+    clean_data = ttk.Checkbutton(master=frame, text="Clean Data", style="clean_data.TCheckbutton")
+
+
+    clean_data.place(x=26, y=78, width=120, height=30)
+
+    style.configure("train_model.TCheckbutton", background="#E4E2E2", foreground="#000")
+    style.map("train_model.TCheckbutton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+
+    train_model = ttk.Checkbutton(master=frame, text="Train Model", style="train_model.TCheckbutton")
+
+
+    train_model.place(x=182, y=26, width=120, height=30)
+
+    style.configure("button.TButton", background="#E4E2E2", foreground="#000")
+    style.map("button.TButton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+
+    button = ttk.Button(master=frame, text="Start Backend", style="button.TButton", command=backendRun)
+    button.place(x=1101, y=78, height=40)
+
+    frame_left = tk.Frame(master=main)
+    frame_left.config(bg="#BCBCBC")
+    frame_left.place(x=26, y=26, width=600, height=450)
+
+    style.configure("carport.TCheckbutton", background="#E4E2E2", foreground="#000")
+    style.map("carport.TCheckbutton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+
+    carport = ttk.Checkbutton(master=frame_left, text="Carport", style="carport.TCheckbutton")
+
+
+    carport.place(x=26, y=26, width=120, height=30)
+
+    style.configure("elevator.TCheckbutton", background="#E4E2E2", foreground="#000")
+    style.map("elevator.TCheckbutton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+
+    elevator = ttk.Checkbutton(master=frame_left, text="Elevator", style="elevator.TCheckbutton")
+
+
+    elevator.place(x=26, y=52, width=120, height=30)
+
+    style.configure("kitchen.TCheckbutton", background="#E4E2E2", foreground="#000")
+    style.map("kitchen.TCheckbutton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+
+    kitchen = ttk.Checkbutton(master=frame_left, text="Kitchen", style="kitchen.TCheckbutton")
+
+
+    kitchen.place(x=26, y=78, width=120, height=30)
+
+    style.configure("garage.TCheckbutton", background="#E4E2E2", foreground="#000")
+    style.map("garage.TCheckbutton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+
+    garage = ttk.Checkbutton(master=frame_left, text="Garage", style="garage.TCheckbutton")
+
+
+    garage.place(x=26, y=104, width=120, height=30)
+
+    style.configure("cellar.TCheckbutton", background="#E4E2E2", foreground="#000")
+    style.map("cellar.TCheckbutton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+
+    cellar = ttk.Checkbutton(master=frame_left, text="Cellar", style="cellar.TCheckbutton")
+
+
+    cellar.place(x=26, y=130, width=120, height=30)
+
+    style.configure("parking.TCheckbutton", background="#E4E2E2", foreground="#000")
+    style.map("parking.TCheckbutton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+
+    parking = ttk.Checkbutton(master=frame_left, text="Parking", style="parking.TCheckbutton")
+
+
+    parking.place(x=26, y=156, width=120, height=30)
+
+    style.configure("closet.TCheckbutton", background="#E4E2E2", foreground="#000")
+    style.map("closet.TCheckbutton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+
+    closet = ttk.Checkbutton(master=frame_left, text="Closet", style="closet.TCheckbutton")
+
+
+    closet.place(x=26, y=182, width=120, height=30)
+
+    style.configure("wintergarden.TCheckbutton", background="#E4E2E2", foreground="#000")
+    style.map("wintergarden.TCheckbutton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+
+    wintergarden = ttk.Checkbutton(master=frame_left, text="Wintergarden", style="wintergarden.TCheckbutton")
+
+
+    wintergarden.place(x=21, y=399, width=120, height=30)
+
+    style.configure("loggia.TCheckbutton", background="#E4E2E2", foreground="#000")
+    style.map("loggia.TCheckbutton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+
+    loggia = ttk.Checkbutton(master=frame_left, text="Loggia", style="loggia.TCheckbutton")
+
+
+    loggia.place(x=21, y=357, width=120, height=30)
+
+    style.configure("terrace.TCheckbutton", background="#E4E2E2", foreground="#000")
+    style.map("terrace.TCheckbutton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+
+    terrace = ttk.Checkbutton(master=frame_left, text="Terrace", style="terrace.TCheckbutton")
+
+
+    terrace.place(x=21, y=315, width=120, height=30)
+
+    style.configure("garden.TCheckbutton", background="#E4E2E2", foreground="#000")
+    style.map("garden.TCheckbutton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+
+    garden = ttk.Checkbutton(master=frame_left, text="Garden", style="garden.TCheckbutton")
+
+
+    garden.place(x=21, y=273, width=120, height=30)
+
+    style.configure("balcony.TCheckbutton", background="#E4E2E2", foreground="#000")
+    style.map("balcony.TCheckbutton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+
+    balcony = ttk.Checkbutton(master=frame_left, text="Balcony", style="balcony.TCheckbutton")
+
+
+    balcony.place(x=21, y=231, width=120, height=30)
+
+    style.configure("balcony_size.TEntry", fieldbackground="#fff", foreground="#000")
+
+    balcony_size = ttk.Entry(master=frame_left, style="balcony_size.TEntry")
+    balcony_size.place(x=336, y=231, width=129, height=25)
+
+    style.configure("garden_size.TEntry", fieldbackground="#fff", foreground="#000")
+
+    garden_size = ttk.Entry(master=frame_left, style="garden_size.TEntry")
+    garden_size.place(x=336, y=273, width=129, height=25)
+
+    style.configure("terrace_size.TEntry", fieldbackground="#fff", foreground="#000")
+
+    terrace_size = ttk.Entry(master=frame_left, style="terrace_size.TEntry")
+    terrace_size.place(x=336, y=315, width=129, height=25)
+
+    style.configure("loggia_size.TEntry", fieldbackground="#fff", foreground="#000")
+
+    loggia_size = ttk.Entry(master=frame_left, style="loggia_size.TEntry")
+    loggia_size.place(x=336, y=357, width=130, height=25)
+
+    style.configure("wintergarden_size.TEntry", fieldbackground="#fff", foreground="#000")
+
+    wintergarden_size = ttk.Entry(master=frame_left, style="wintergarden_size.TEntry")
+    wintergarden_size.place(x=336, y=399, width=130, height=25)
+
+    frame_right = tk.Frame(master=main)
+    frame_right.config(bg="#BCBCBC")
+    frame_right.place(x=650, y=26, width=600, height=450)
+
+    frame_output = tk.Frame(master=frame_right)
+    frame_output.config(bg="#EDECEC")
+    frame_output.place(x=26, y=234, width=546, height=198)
+
+    style.configure("living_area.TEntry", fieldbackground="#fff", foreground="#000")
+
+    living_area = ttk.Entry(master=frame_right, style="living_area.TEntry")
+    living_area.place(x=26, y=26, width=155, height=25)
+
+    style.configure("rooms.TEntry", fieldbackground="#fff", foreground="#000")
+
+    rooms = ttk.Entry(master=frame_right, style="rooms.TEntry")
+    rooms.place(x=26, y=78, width=155, height=25)
+
+    style.configure("address.TEntry", fieldbackground="#fff", foreground="#000")
+
+    address = ttk.Entry(master=frame_right, style="address.TEntry")
+    address.place(x=26, y=182, width=313, height=25)
+
+    style.configure("postcode.TEntry", fieldbackground="#fff", foreground="#000")
+
+    postcode = ttk.Entry(master=frame_right, style="postcode.TEntry")
+    postcode.place(x=26, y=130, width=155, height=25)
+
+    # Rent & Buy
+    rent_var = tk.IntVar()
+    style.configure("rent.TRadiobutton", background="#E4E2E2", foreground="#000")
+    style.map("rent.TRadiobutton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+
+    rent_0 = ttk.Radiobutton(master=frame_right, variable=rent_var, text="Rent", value=0, style="rent.TRadiobutton")
+    rent_0.place(x=495, y=26, width=80, height=24)
+
+    rent_1 = ttk.Radiobutton(master=frame_right, variable=rent_var, text="Buy", value=1, style="rent.TRadiobutton")
+    rent_1.place(x=495, y=50, width=80, height=24)
+
+    # Apartment & House
+    apt_var = tk.IntVar()
+    style.configure("apt.TRadiobutton", background="#E4E2E2", foreground="#000")
+    style.map("apt.TRadiobutton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+
+    apt_0 = ttk.Radiobutton(master=frame_right, variable=apt_var, text="Apartment", value=0, style="apt.TRadiobutton")
+    apt_0.place(x=475, y=84, width=110, height=24)
+
+    apt_1 = ttk.Radiobutton(master=frame_right, variable=apt_var, text="House", value=1, style="apt.TRadiobutton")
+    apt_1.place(x=475, y=108, width=110, height=24)
+
+
+    # Predict Button
+    style.configure("button1.TButton", background="#E4E2E2", foreground="#000")
+    style.map("button1.TButton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+
+    button1 = ttk.Button(master=frame_right, text="Predict", style="button1.TButton")
+    button1.place(x=495, y=176, width=80, height=40)
+
+    # Living Area
+    tk.Label(frame_right, text="Living Area:", bg="#BCBCBC").place(x=26, y=6)
+    living_area = ttk.Entry(master=frame_right, style="living_area.TEntry")
+    living_area.place(x=26, y=26, width=155, height=25)
+
+    # Rooms
+    tk.Label(frame_right, text="Rooms:", bg="#BCBCBC").place(x=26, y=58)
+    rooms = ttk.Entry(master=frame_right, style="rooms.TEntry")
+    rooms.place(x=26, y=78, width=155, height=25)
+
+    # Postcode
+    tk.Label(frame_right, text="Postcode:", bg="#BCBCBC").place(x=26, y=110)
+    postcode = ttk.Entry(master=frame_right, style="postcode.TEntry")
+    postcode.place(x=26, y=130, width=155, height=25)
+
+    # Address
+    tk.Label(frame_right, text="Address:", bg="#BCBCBC").place(x=26, y=162)
+    address = ttk.Entry(master=frame_right, style="address.TEntry")
+    address.place(x=26, y=182, width=313, height=25)
+
+    # Balcony Size:
+    tk.Label(frame_left, text="Balcony Size:", bg="#BCBCBC").place(x=200, y=231)
+    balcony_size = ttk.Entry(master=frame_left, style="balcony_size.TEntry")
+    balcony_size.place(x=335, y=231, width=130, height=25)
+
+    # Garden Size:
+    tk.Label(frame_left, text="Garden Size:", bg="#BCBCBC").place(x=200, y=273)
+    garden_size = ttk.Entry(master=frame_left, style="garden_size.TEntry")
+    garden_size.place(x=336, y=273, width=130, height=25)
+
+    # Terrace Size:
+    tk.Label(frame_left, text="Terrace Size:", bg="#BCBCBC").place(x=200, y=315)
+    terrace_size = ttk.Entry(master=frame_left, style="terrace_size.TEntry")
+    terrace_size.place(x=336, y=315, width=130, height=25)
+
+    # Loggia Size:
+    tk.Label(frame_left, text="Loggia Size:", bg="#BCBCBC").place(x=200, y=357)
+    loggia_size = ttk.Entry(master=frame_left, style="loggia_size.TEntry")
+    loggia_size.place(x=336, y=357, width=130, height=25)
+
+    # Wintergarden Size:
+    tk.Label(frame_left, text="Wintergarden Size:", bg="#BCBCBC").place(x=200, y=399)
+    wintergarden_size = ttk.Entry(master=frame_left, style="wintergarden_size.TEntry")
+    wintergarden_size.place(x=336, y=399, width=130, height=25)
+
+    # Heating Source dropdown
+    tk.Label(frame_left, text="Heating Source:", bg="#BCBCBC").place(x=336, y=26)
+    heating_source_var = tk.StringVar()
+    heating_source = ttk.Combobox(
+        frame_left,
+        textvariable=heating_source_var,
+        state="readonly",
+        values=["Select", "Oil", "Electric", "Gas"]
+    )
+    heating_source.place(x=336, y=51, width=155, height=25)
+    heating_source.current(0)
+
+    # Heating Type dropdown
+    tk.Label(frame_left, text="Heating Type:", bg="#BCBCBC").place(x=336, y=85)
+    heating_type_var = tk.StringVar()
+    heating_type = ttk.Combobox(
+        frame_left,
+        textvariable=heating_type_var,
+        state="readonly",
+        values=["Select", "Floor", "Central", "Ceiling", "Oven", "Infrared"]
+    )
+    heating_type.place(x=336, y=110, width=155, height=25)
+    heating_type.current(0)
+
+
+    # --- HWB / fgEE Block ---
+    # HWB + fgEE
+    tk.Label(frame_right, text="HWB:", bg="#BCBCBC").place(x=200, y=6)
+    hwb = ttk.Entry(frame_right)
+    hwb.place(x=200, y=26, width=120, height=25)
+
+    tk.Label(frame_right, text="fgEE:", bg="#BCBCBC").place(x=340, y=6)
+    fgee = ttk.Entry(frame_right)
+    fgee.place(x=340, y=26, width=120, height=25)
+
+
+    # HWB Class + fgEE Class
+    tk.Label(frame_right, text="HWB Class:", bg="#BCBCBC").place(x=200, y=58)
+    hwb_class = ttk.Entry(frame_right)
+    hwb_class.place(x=200, y=78, width=120, height=25)
+
+    tk.Label(frame_right, text="fgEE Class:", bg="#BCBCBC").place(x=340, y=58)
+    fgee_class = ttk.Entry(frame_right)
+    fgee_class.place(x=340, y=78, width=120, height=25)
+
+    # --- Property Type Dropdown (dynamic) ---
+    property_type_var = tk.StringVar()
+    property_type_label = tk.Label(frame_right, text="Property Type:", bg="#BCBCBC")
+    property_type_dropdown = ttk.Combobox(
+        frame_right,
+        textvariable=property_type_var,
+        state="readonly"
+    )
+    apartment_types = [
+        "Select",
+        "Roof Apartment", "Ground Floor Apartment", "Garconniere",
+        "Coop Apartment", "Maisonette", "Penthouse", "Apartment", "Room"
+    ]
+    house_types = [
+        "Select"
+        "Multifamily House", "Single Family House", "Landhaus",
+        "Villa", "Double House", "Castle/Chalet",
+        "Row House", "Mountain Cabin", "Farmer House", "Cooperative House"
+    ]
+    def update_property_dropdown():
+        val = apt_var.get()
+
+        if val == 0:  # Apartment
+            property_type_dropdown["values"] = apartment_types
+            property_type_dropdown.current(0)
+
+            property_type_label.place(x=200, y=110)
+            property_type_dropdown.place(x=200, y=130, width=200, height=25)
+
+        elif val == 1:  # House
+            property_type_dropdown["values"] = house_types
+            property_type_dropdown.current(0)
+
+            property_type_label.place(x=200, y=110)
+            property_type_dropdown.place(x=200, y=130, width=200, height=25)
+
+        else:
+            property_type_label.place_forget()
+            property_type_dropdown.place_forget()
+
+    apt_var.trace_add("write", lambda *args: update_property_dropdown())
+    update_property_dropdown()
+
+    # Output
+    output_var = tk.StringVar()
+    output_label = tk.Label(
+        frame_output,
+        textvariable=output_var,
+        bg="#EDECEC",
+        font=("Arial", 20, "bold"),
+        fg="#2E7D32"
+    )
+    output_label.place(x=20, y=20)
+
+    main.mainloop()
+
+
 def backendRun():
     threading.Thread(target=_backendRun).start()
 
 
 def _backendRun():
-    if do_scraping.get():
-        do_cleaning.set(True)
+    if scraping.get():
+        clean_data.set(True)
     main(SOURCE_1=source1.get(), SCRAPE_SOURCE_1=do_scraping.get(), MODELS=do_training.get())
 
 
@@ -50,6 +434,7 @@ def chooseModel(is_house, is_apartment):
 
     data = joblib.load(log_model)
     return data, scaler, kmeans
+
 
 def makePrediction():
     is_house = False
@@ -148,7 +533,7 @@ def makePrediction():
                      is_floor, is_central, is_ceiling, is_oven, is_infrared, hwb, hwb_class, fgee, fgee_class, is_mfh,
                      is_efh, is_lh, is_villa, is_dhh, is_sbc, is_rh, is_ab, is_bh, is_gh,
                      is_dgw, is_egw, is_gc, is_gw, is_ms, is_phw, is_apt, is_wg,
-                    ]]
+                     ]]
 
         features = pd.DataFrame(features,
                                 columns=['id', 'area', 'rooms', 'lat', 'lon', 'postcode', 'has_carport',
@@ -233,162 +618,3 @@ def makePrediction():
 
     except ValueError:
         output_var.set("Invalid input")
-
-
-def create_checkbox(parent, text):
-    var = tk.BooleanVar()
-    tk.Checkbutton(parent, text=text, variable=var).pack(anchor="w")
-    return var
-
-
-def create_entry(parent, text):
-    tk.Label(parent, text=text).pack(anchor="w")
-    entry = tk.Entry(parent)
-    entry.pack(anchor="w")
-    return entry
-
-def create_button(parent, text, command, side):
-    tk.Button(parent, text=text, command=command).pack(side=side, padx=10)
-
-root = tk.Tk()
-root.title("ImmoScraper")
-root.geometry("1280x720")
-root.resizable(False, False)
-
-left_frame = tk.Frame(root)
-left_frame.pack(side="left", fill="both", expand=True, padx=20, pady=20)
-left_left_frame = tk.Frame(left_frame)
-left_left_frame.pack(side="left", pady=20)
-left_right_frame = tk.Frame(left_frame)
-left_right_frame.pack(side="right", pady=20)
-
-right_frame = tk.Frame(root)
-right_frame.pack(side="right", fill="both", expand=True, padx=20, pady=20)
-right_left_frame = tk.Frame(right_frame)
-right_left_frame.pack(side="left", pady=20)
-right_right_frame = tk.Frame(right_frame)
-right_right_frame.pack(side="right", pady=20)
-
-bottom_frame = tk.Frame(root)
-bottom_frame.pack(side="bottom", fill="both", expand=True, pady=20)
-
-# Frontend
-rent_checkbox = create_checkbox(right_left_frame, "Rent")
-buy_checkbox = create_checkbox(right_left_frame, "Buy")
-# ------------------------
-# Basic Data
-# ------------------------
-
-living_area = create_entry(right_right_frame, "Living Area")
-entry_rooms = create_entry(right_right_frame, "Rooms")
-address = create_entry(right_right_frame, "Address")
-postcode = create_entry(right_right_frame, "Postcode")
-
-# ------------------------
-# Basic Features
-# ------------------------
-has_carport = create_checkbox(left_left_frame, "Carport")
-has_elevator = create_checkbox(left_left_frame, "Elevator")
-has_kitchen = create_checkbox(left_left_frame, "Kitchen")
-has_garage = create_checkbox(left_left_frame, "Garage")
-has_cellar = create_checkbox(left_left_frame, "Cellar")
-has_parking = create_checkbox(left_left_frame, "Parking")
-has_closet = create_checkbox(left_left_frame, "Closet")
-
-has_balcony = create_checkbox(left_left_frame, "Balcony")
-balcony_size = create_entry(right_right_frame, "Balcony Size")
-
-has_garden = create_checkbox(left_left_frame, "Garden")
-garden_size = create_entry(right_right_frame, "Garden Size")
-
-has_terrace = create_checkbox(left_left_frame, "Terrace")
-terrace_size = create_entry(right_right_frame, "Terrace Size")
-
-has_loggia = create_checkbox(left_left_frame, "Loggia")
-loggia_size = create_entry(right_right_frame, "Loggia Size")
-
-has_wintergarden = create_checkbox(left_left_frame, "Wintergarden")
-wintergarden_size = create_entry(right_right_frame, "Wintergarden Size")
-
-# ------------------------
-# Heating Source
-# ------------------------
-
-is_oil = create_checkbox(left_left_frame, "Oil Heating")
-is_bio = create_checkbox(left_left_frame, "Bio Heating")
-is_electro = create_checkbox(left_left_frame, "Electro Heating")
-is_pellets = create_checkbox(left_left_frame, "Pellets Heating")
-is_photovoltaik = create_checkbox(left_left_frame, "Photovoltaik")
-is_geothermal = create_checkbox(left_left_frame, "Geothermal")
-is_air_heating = create_checkbox(left_left_frame, "Air Heating")
-
-# ------------------------
-# Heating Type
-# ------------------------
-
-is_floor = create_checkbox(left_left_frame, "Floor Heating")
-is_central = create_checkbox(left_left_frame, "Central Heating")
-is_ceiling = create_checkbox(left_left_frame, "Ceiling Heating")
-is_oven = create_checkbox(left_left_frame, "Oven Heating")
-is_infrared = create_checkbox(left_left_frame, "Infrared Heating")
-
-# ------------------------
-# Houses
-# ------------------------
-
-is_mfh = create_checkbox(left_right_frame, "Multifamily House")
-is_efh = create_checkbox(left_right_frame, "Single Family House")
-is_lh = create_checkbox(left_right_frame, "Landhaus")
-is_villa = create_checkbox(left_right_frame, "Villa")
-is_dhh = create_checkbox(left_right_frame, "Double House")
-is_sbc = create_checkbox(left_right_frame, "Castle/Chalet")
-is_rh = create_checkbox(left_right_frame, "Row House")
-is_ab = create_checkbox(left_right_frame, "Mountain Cabin")
-is_bh = create_checkbox(left_right_frame, "Farmer House")
-is_gh = create_checkbox(left_right_frame, "Cooperative House")
-
-# ------------------------
-# Apartments
-# ------------------------
-
-is_dgw = create_checkbox(left_right_frame, "Roof Apartment")
-is_egw = create_checkbox(left_right_frame, "Ground Floor Apartment")
-is_gc = create_checkbox(left_right_frame, "Garconniere")
-is_gw = create_checkbox(left_right_frame, "Coop Apartment")
-is_ms = create_checkbox(left_right_frame, "Maisonette")
-is_phw = create_checkbox(left_right_frame, "Penthouse")
-is_apt = create_checkbox(left_right_frame, "Apartment")
-is_wg = create_checkbox(left_right_frame, "WG / Room")
-
-# ------------------------
-# Energy Values
-# ------------------------
-
-hwb = create_entry(right_right_frame, "HWB")
-hwb_class = create_entry(right_right_frame, "HWB Class")
-fgee = create_entry(right_right_frame, "fgEE")
-fgee_class = create_entry(right_right_frame, "fgEE Class")
-
-# ------------------------
-# Example: Collect Values
-# ------------------------
-
-
-
-# Backend
-# Checkboxes for backend configuration
-
-do_scraping = create_checkbox(bottom_frame, "Scrape")
-do_cleaning = create_checkbox(bottom_frame, "Clean Data")
-do_training = create_checkbox(bottom_frame, "Model Training")
-source1 = create_checkbox(bottom_frame, "Source 1")
-
-create_button(bottom_frame, "Predict", makePrediction, side="left")
-create_button(bottom_frame, "Start Backend", backendRun, side="right")
-
-
-output_var = tk.StringVar()
-output_label = tk.Label(bottom_frame, textvariable=output_var, font=("Arial", 14))
-output_label.pack(side="bottom", padx=20)
-
-root.mainloop()
