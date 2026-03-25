@@ -546,7 +546,7 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
                 updateListings(history_buffer, cur=cur, PAGE_SIZE=PAGE_SIZE)
 
                 if counter_new_listings > 100 or counter_known_listings > 100:
-                    logging.info(f"Transfered {counter_new_listings} new listings and {counter_known_listings} known listings")
+                    logging.info(f"Transferred {counter_new_listings} new listings and {counter_known_listings} known listings")
                     counter_new_listings = 0
                     counter_known_listings = 0
 
