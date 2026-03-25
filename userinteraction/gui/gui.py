@@ -1,5 +1,5 @@
 from mlModels.kmeans.locationClustering import addLocationFeature
-from userinteraction.gui.guiData import getColumnList, getRentAptFeatures, getBuyAptFeatures
+from userinteraction.gui.guiData import getColumnList, getRentAptFeatures, getBuyAptFeatures, getRentHouseFeatures, getBuyHouseFeatures
 from datamanipulation.cleanData import getLogNorm, getRatio, computeDistances, getIsUrban, getLocations
 from geopy.geocoders import Nominatim
 from sklearn.cluster import KMeans
@@ -487,10 +487,10 @@ def gui():
             features = features.loc[:, ~features.columns.duplicated()]
 
             df_features = featureSelection(features,
-                                           getRentAptFeatures() if (rent_var.get() == 1 and apt_var == 1)
-                                           else getBuyAptFeatures() if (rent_var.get() == 0 and apt_var == 1)
-                                           else getRentHouseFeatures() if (rent_var.get() == 1 and apt_var == 0)
-                                           else getBuyHouseFeatures() if (rent_var.get() == 0 and apt_var == 0)
+                                           getRentAptFeatures() if (rent_var.get() == 0 and apt_var.get() == 0)
+                                           else getBuyAptFeatures() if (rent_var.get() == 1 and apt_var.get() == 0)
+                                           else getRentHouseFeatures() if (rent_var.get() == 0 and apt_var.get() == 1)
+                                           else getBuyHouseFeatures() if (rent_var.get() == 1 and apt_var.get() == 1)
                                            else None
                                            )
 
@@ -500,6 +500,7 @@ def gui():
                 prediction = np.exp(prediction) - 1
 
             output_var.set(f"{prediction:.2f} €" if prediction is not None else "No model")
+            logging.info(f"-------Finished prediction with prediction {prediction}-------")
 
         except ValueError:
             logging.exception("Value Error")
