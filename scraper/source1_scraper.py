@@ -7,11 +7,12 @@ The data is then cleaned and stored in a database.
 
 import re, json, logging
 import numpy as np
+import pandas as pd
 from datetime import date
 
 from datamanipulation.loaders import loadBaseLinks
 from database.db import get_connection
-from database.db_insertion import upsertListings, insertHistory
+from database.db_insertion import upsertListings, insertHistory, updateListings
 from scraper.source1_detail_scraper import detailScraper, fetch
 from userinteraction.gui.guiData import getTerminateFlag
 
@@ -108,8 +109,20 @@ def buildPageUrls(base_links, pages=UPPER_PAGE_RANGE, rows=ROWS):
                 })
     return urls
 
+def extractId(url):
+    """
+    Extracts the numerical ID from the end of a listing URL.
 
-def parseNextData(data, fin_type, scrape_details, total_items, processed_items):
+    Args:
+        url (str): The URL of the listing.
+
+    Returns:
+        int|None: The extracted ID as an integer, or None if no match is found.
+    """
+    match = re.search(r'-(\d+)/?$', url)
+    return match.group(1) if match else None
+
+def parseNextData(data, fin_type, scrape_details, total_items, processed_items, known_ids: set):
     """
     Parses the JSON data extracted from the __NEXT_DATA__ script tag.
 
@@ -119,10 +132,13 @@ def parseNextData(data, fin_type, scrape_details, total_items, processed_items):
         scrape_details (bool): Whether to fetch additional details from the listing's own page.
         total_items (int): Total expected items for progress tracking.
         processed_items (int): Current count of processed items.
+        known_ids (set(df["id"].values)): A set of already scraped ids.
     Returns:
         tuple: (list of parsed results, updated processed_items count).
+        known_ids: a set of known ids
     """
     results = []
+    known_results = []
     seen = set()
 
     try:
@@ -142,7 +158,18 @@ def parseNextData(data, fin_type, scrape_details, total_items, processed_items):
         processed_items += 1
 
         detail_link = getLink(item)
+        detail_id = extractId(detail_link)
         progressBar(processed_items, total_items, detail_link or "no-link")
+
+        if detail_id in known_ids:
+            seen.add(detail_id)
+            known_results.append({
+                "id" : detail_id,
+                "price" : getPrice(item),
+                "rent" : getPrice(item),
+                "scraped_at" : date.today(),
+            })
+            continue
 
         try:
             detail_data = detailScraper(detail_link) if (detail_link and scrape_details) else None
@@ -188,7 +215,7 @@ def parseNextData(data, fin_type, scrape_details, total_items, processed_items):
             print("Parse error: ", e)
             continue
 
-    return results, processed_items
+    return results, processed_items, known_results
 
 
 def extractNewData(html):
@@ -426,6 +453,16 @@ def progressBar(current, total, url, length=30):
 
     print(f"\r[{bar}] {current}/{total} | {url}", end="", flush=True)
 
+def getAllIds(conn):
+    """
+    Retrieves all existing listing IDs from the database to know which listings has been seen already
+    and which we only need to update.
+
+    Args:
+        conn: Database connection object.
+    """
+    return pd.read_sql("SELECT id, price, scraped_at FROM listings", conn)
+
 
 def baseScraper(pages, scrape_details=True, rows=ROWS):
     """
@@ -439,10 +476,17 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
     """
     base_links = loadBaseLinks()
     buffer = []
+    history_buffer = []
     seen_ids = set()
+    known_listings = 0
+    new_listings = 0
+
+    counter_known_listings = 0
+    counter_new_listings = 0
 
     conn = get_connection()
     cur = conn.cursor()
+    df_known_ids = getAllIds(conn)
 
     if not conn or not cur:
         logging.error("Connection and / or cursor to db failed")
@@ -455,7 +499,6 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
     print(f"Scraping {len(urls)} pages...\n")
 
     for i, u in enumerate(urls, start=1):
-
         html = fetch(u["url"])
         if not html:
             continue
@@ -469,13 +512,19 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
             logging.info("No NEXT_DATA found in %s page %d. Skipping...", u["url"], i)
             continue
 
-        page_data, processed_items = parseNextData(
+        page_data, processed_items, known_page_data = parseNextData(
             data,
             u["fin_type"],
             scrape_details=scrape_details,
             total_items=total_items,
-            processed_items=processed_items
+            processed_items=processed_items,
+            known_ids=set(df_known_ids["id"].values)
         )
+        known_listings += len(known_page_data)
+        new_listings += len(page_data)
+
+        counter_new_listings += len(page_data)
+        counter_known_listings += len(known_page_data)
 
         page_data = [
             d for d in page_data
@@ -483,6 +532,7 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
         ]
         cleaned_page_data = cleanDuplicates(page_data, seen_ids)
         buffer.extend(cleaned_page_data)
+        history_buffer.extend(known_page_data)
 
         if getTerminateFlag():
             cur.close()
@@ -490,22 +540,26 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
             return
 
         try:
-            if len(buffer) >= BATCH_SIZE or i == len(urls):
-                history_buffer = [
-                    {k: d[k] for k in ["id", "price", "rent", "scraped_at", "safety_deposit"]}
-                    for d in buffer
-                ]
-                upsertListings(buffer, conn=conn, cur=cur, PAGE_SIZE=PAGE_SIZE, scrape_details=scrape_details)
+            if len(buffer) >= BATCH_SIZE or i == len(urls) or len(history_buffer) >= BATCH_SIZE:
+                upsertListings(buffer, conn=conn, cur=cur, PAGE_SIZE=PAGE_SIZE)
                 insertHistory(history_buffer, cur=cur, PAGE_SIZE=PAGE_SIZE)
-                logging.info("Transfer %d listings into Database", len(buffer))
+                updateListings(history_buffer, cur=cur, PAGE_SIZE=PAGE_SIZE)
+
+                if counter_new_listings > 100 or counter_known_listings > 100:
+                    logging.info(f"Transfered {counter_new_listings} new listings and {counter_known_listings} known listings")
+                    counter_new_listings = 0
+                    counter_known_listings = 0
 
                 conn.commit()
 
+                history_buffer.clear()
                 buffer.clear()
 
         except Exception:
             conn.rollback()
             logging.exception("Failed to insert batch into Database")
+
+    logging.info(f"Found {known_listings} known listings and {new_listings} new listings")
 
     cur.close()
     conn.close()

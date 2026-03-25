@@ -364,7 +364,7 @@ def gui():
         time.sleep(3)
         if do_scraping.get():
             do_clean_data.set(True)
-        main(SOURCE_1=True, SCRAPE_SOURCE_1=do_scraping.get(), CLEAN_DATA=do_clean_data.get(), MODELS=do_train_model.get())
+        main(SOURCE_1=True, SCRAPE_SOURCE_1=do_scraping.get(), CLEAN_DATA=do_clean_data.get(), MODELS=do_train_model.get()) # TODO create entries for ROWS and PAGES
         subprocess.run(["sudo", "systemctl", "stop", "postgresql"])
 
 
