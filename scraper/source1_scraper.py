@@ -11,10 +11,11 @@ import pandas as pd
 from datetime import date
 
 from datamanipulation.loaders import loadBaseLinks
-from database.db import get_connection
+from database.db import getConnection
 from database.db_insertion import upsertListings, insertHistory, updateListings
 from scraper.source1_detail_scraper import detailScraper, fetch
 from userinteraction.gui.guiData import getTerminateFlag
+from data.enums import Listings, Mappings
 
 STATES = ("kaernten",)
 UPPER_PAGE_RANGE = 3
@@ -22,30 +23,6 @@ ID_LENGTH = 4
 ROWS = 100
 BATCH_SIZE = 20
 PAGE_SIZE = 20
-
-OPTIONAL_DATA = [
-    "has_carport",
-    "has_elevator",
-    "has_kitchen",
-    "has_garage",
-    "has_cellar",
-    "has_parking",
-    "has_closet",
-    "has_balcony",
-    "has_garden",
-    "has_terrace",
-    "has_loggia",
-    "has_wintergarden",
-    "balcony_size",
-    "garden_size",
-    "terrace_size",
-    "loggia_size",
-    "wintergarden_size",
-    "hwb",
-    "hwb_class",
-    "fgee",
-    "fgee_class"
-]
 
 logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
                     format='%(asctime)s - %(levelname)s - %(message)s')
@@ -61,13 +38,14 @@ def fillOptionalData(result):
     Returns:
         dict: The updated dictionary with filled optional fields.
     """
-    for key in OPTIONAL_DATA:
+    for key in Mappings.OPTIONAL_DATA:
         val = result.get(key)
 
         if val is None or (isinstance(val, float) and np.isnan(val)):
             result[key] = 0
 
     return result
+
 
 def readSource(path="data/source1.txt"):
     """
@@ -80,7 +58,6 @@ def readSource(path="data/source1.txt"):
     """
     with open(path, "r", encoding="utf-8") as f:
         return f.read().strip()
-
 
 
 def buildPageUrls(base_links, pages=UPPER_PAGE_RANGE, rows=ROWS):
@@ -97,17 +74,18 @@ def buildPageUrls(base_links, pages=UPPER_PAGE_RANGE, rows=ROWS):
     urls = []
     for l in base_links:
         for s in STATES:
-            url = l["url"]
+            url = l[Listings.URL]
 
             url = url + s + "?rows=" + str(rows)
 
             for page in range(1, pages + 1):
                 page_url = f"{url}&page={page}"
                 urls.append({
-                    "url": page_url,
+                    Listings.URL: page_url,
                     "fin_type": l["fin_type"],
                 })
     return urls
+
 
 def extractId(url):
     """
@@ -122,6 +100,7 @@ def extractId(url):
     match = re.search(r'-(\d+)/?$', url)
     return match.group(1) if match else None
 
+
 def parseNextData(data, fin_type, scrape_details, total_items, processed_items, known_ids: set):
     """
     Parses the JSON data extracted from the __NEXT_DATA__ script tag.
@@ -132,7 +111,7 @@ def parseNextData(data, fin_type, scrape_details, total_items, processed_items, 
         scrape_details (bool): Whether to fetch additional details from the listing's own page.
         total_items (int): Total expected items for progress tracking.
         processed_items (int): Current count of processed items.
-        known_ids (set(df["id"].values)): A set of already scraped ids.
+        known_ids (set(df[Listings.ID].values)): A set of already scraped ids.
     Returns:
         tuple: (list of parsed results, updated processed_items count).
         known_ids: a set of known ids
@@ -164,10 +143,10 @@ def parseNextData(data, fin_type, scrape_details, total_items, processed_items, 
         if detail_id in known_ids:
             seen.add(detail_id)
             known_results.append({
-                "id" : detail_id,
-                "price" : getPrice(item),
-                "rent" : getPrice(item),
-                "scraped_at" : date.today(),
+                Listings.ID: detail_id,
+                Listings.PRICE: getPrice(item),
+                Listings.RENT: getPrice(item),
+                Listings.SCRAPED_AT: date.today(),
             })
             continue
 
@@ -177,7 +156,7 @@ def parseNextData(data, fin_type, scrape_details, total_items, processed_items, 
             if detail_data:
                 detail_data = {k.lower(): v for k, v in detail_data.items()}
 
-            id_ = str(item.get("id"))
+            id_ = str(item.get(Listings.ID))
             if not id_ or id_ in seen:
                 continue
             seen.add(id_)
@@ -185,22 +164,23 @@ def parseNextData(data, fin_type, scrape_details, total_items, processed_items, 
             lat, lon = getCoordinates(item)
 
             result = {
-                "id": id_,
-                "link": detail_link,
-                "price": getPrice(item),
-                "rent": getRent(item),
-                "safety_deposit": getSafetyDeposit(detail_data),
-                "living_area": getLivingArea(item),
-                "estate_size": getEstateSize(item),
-                "rooms": getRooms(item),
-                "postcode": getPostcode(item),
-                "lat": lat,
-                "lon": lon,
-                "location_quality": getLocationQuality(item),
-                "property_type": getPropertyType(item),
-                "finance_type": fin_type,
-                "published": getPublished(item),
-                "scraped_at": date.today(),
+                Listings.ID: id_,
+                Listings.LINK: detail_link,
+                Listings.PRICE: getPrice(item),
+                Listings.RENT: getRent(item),
+                Listings.SAFETY_DEPOSIT: getSafetyDeposit(detail_data),
+                Listings.LIVING_AREA: getLivingArea(item),
+                Listings.ESTATE_SIZE: getEstateSize(item),
+                Listings.ROOMS: getRooms(item),
+                Listings.POSTCODE: getPostcode(item),
+                Listings.STATE: data["query"]["seopath"][1],
+                Listings.LAT: lat,
+                Listings.LON: lon,
+                Listings.LOCATION_QUALITY: getLocationQuality(item),
+                Listings.PROPERTY_TYPE: getPropertyType(item),
+                Listings.FINANCE_TYPE: fin_type,
+                Listings.PUBLISHED: getPublished(item),
+                Listings.SCRAPED_AT: date.today(),
             }
 
             if detail_link:
@@ -342,18 +322,18 @@ def getPublished(item):
 def getHeating(item):
     h = item.get("heizung", "").lower() if item else ""
     return {
-        "oil": int("öl" in h),
-        "bio": int("bio" in h),
-        "electro": int("elektrisch" in h),
-        "pellets": int("pellets" in h),
-        "photovoltaik": int("photovoltaik" in h),
-        "geothermal": int("erdwärme" in h),
-        "air_heating": int("luftwärmepumpe" in h),
-        "floor_heating": int("fußbodenheizung" in h),
-        "central_heating": int("hauszentralheizung" in h),
-        "ceiling_heating": int("deckenheizung" in h),
-        "oven_heating": int("holzofen" in h),
-        "infrared_heating": int("infrarotheizung" in h)
+        Listings.IS_OIL: int("öl" in h),
+        Listings.IS_BIO: int("bio" in h),
+        Listings.IS_ELECTRO: int("elektrisch" in h),
+        Listings.IS_PELLETS: int("pellets" in h),
+        Listings.PHOTOVOLTAIK: int("photovoltaik" in h),
+        Listings.IS_GEOTHERMAL: int("erdwärme" in h),
+        Listings.IS_AIR_HEATING: int("luftwärmepumpe" in h),
+        Listings.IS_FLOOR: int("fußbodenheizung" in h),
+        Listings.IS_CENTRAL: int("hauszentralheizung" in h),
+        Listings.IS_CEILING: int("deckenheizung" in h),
+        Listings.IS_OVEN: int("holzofen" in h),
+        Listings.IS_INFRARED: int("infrarotheizung" in h)
     }
 
 
@@ -387,29 +367,29 @@ def getAccommodations(item):
         return {}
 
     return {
-        "has_carport": hasFeature(item, "carport"),
-        "has_elevator": hasFeature(item, "fahrstuhl"),
-        "has_kitchen": hasFeature(item, "küche"),
-        "has_garage": hasFeature(item, "garage"),
-        "has_cellar": hasFeature(item, "keller"),
-        "has_parking": hasFeature(item, "parkplatz"),
-        "has_closet": hasFeature(item, "abstellraum"),
-        "has_balcony": hasFeature(item, "balkon"),
-        "has_garden": hasFeature(item, "garten"),
-        "has_terrace": hasFeature(item, "terrasse"),
-        "has_loggia": hasFeature(item, "loggia"),
-        "has_wintergarden": hasFeature(item, "wintergarten"),
+        Listings.HAS_CARPORT: hasFeature(item, "carport"),
+        Listings.HAS_ELEVATOR: hasFeature(item, "fahrstuhl"),
+        Listings.HAS_KITCHEN: hasFeature(item, "küche"),
+        Listings.HAS_GARAGE: hasFeature(item, "garage"),
+        Listings.HAS_CELLAR: hasFeature(item, "keller"),
+        Listings.HAS_PARKING: hasFeature(item, "parkplatz"),
+        Listings.HAS_CLOSET: hasFeature(item, "abstellraum"),
+        Listings.HAS_BALCONY: hasFeature(item, "balkon"),
+        Listings.HAS_GARDEN: hasFeature(item, "garten"),
+        Listings.HAS_TERRACE: hasFeature(item, "terrasse"),
+        Listings.HAS_LOGGIA: hasFeature(item, "loggia"),
+        Listings.HAS_WINTERGARDEN: hasFeature(item, "wintergarten"),
 
-        "balcony_size": getFeatureNumber(item.get("balkon")),
-        "terrace_size": getFeatureNumber(item.get("terrasse")),
-        "garden_size": getFeatureNumber(item.get("garten")),
-        "loggia_size": getFeatureNumber(item.get("loggia")),
-        "wintergarden_size": getFeatureNumber(item.get("wintergarten")),
+        Listings.BALCONY_SIZE: getFeatureNumber(item.get("balkon")),
+        Listings.TERRACE_SIZE: getFeatureNumber(item.get("terrasse")),
+        Listings.GARDEN_SIZE: getFeatureNumber(item.get("garten")),
+        Listings.LOGGIA_SIZE: getFeatureNumber(item.get("loggia")),
+        Listings.WINTERGARDEN_SIZE: getFeatureNumber(item.get("wintergarten")),
 
-        "hwb": getFeatureNumber(item.get("hwb")),
-        "hwb_class": item.get("hwb energieklasse") if item else None,
-        "fgee": getFeatureNumber(item.get("fgee")),
-        "fgee_class": item.get("fgee energieklasse") if item else None,
+        Listings.HWB: getFeatureNumber(item.get("hwb")),
+        Listings.HWB_CLASS: item.get("hwb energieklasse") if item else None,
+        Listings.FGEE: getFeatureNumber(item.get("fgee")),
+        Listings.FGEE_CLASS: item.get("fgee energieklasse") if item else None,
     }
 
 
@@ -425,14 +405,14 @@ def cleanDuplicates(buffer, seen_ids):
     """
     new_buffer = []
     for l in buffer:
-        if l["id"] in seen_ids:
+        if l[Listings.ID] in seen_ids:
             continue
-        elif l["price"] is None:
+        elif l[Listings.PRICE] is None:
             continue
-        elif l["living_area"] is None:
+        elif l[Listings.LIVING_AREA] is None:
             continue
         else:
-            seen_ids.add(l["id"])
+            seen_ids.add(l[Listings.ID])
             new_buffer.append(l)
     return new_buffer
 
@@ -452,6 +432,7 @@ def progressBar(current, total, url, length=30):
     bar = bar.ljust(length)
 
     print(f"\r[{bar}] {current}/{total} | {url}", end="", flush=True)
+
 
 def getAllIds(conn):
     """
@@ -484,7 +465,7 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
     counter_known_listings = 0
     counter_new_listings = 0
 
-    conn = get_connection()
+    conn = getConnection()
     cur = conn.cursor()
     df_known_ids = getAllIds(conn)
 
@@ -499,7 +480,7 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
     print(f"Scraping {len(urls)} pages...\n")
 
     for i, u in enumerate(urls, start=1):
-        html = fetch(u["url"])
+        html = fetch(u[Listings.URL])
         if not html:
             continue
 
@@ -509,7 +490,7 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
 
         data = extractNewData(html)
         if not data:
-            logging.info("No NEXT_DATA found in %s page %d. Skipping...", u["url"], i)
+            logging.info("No NEXT_DATA found in %s page %d. Skipping...", u[Listings.URL], i)
             continue
 
         page_data, processed_items, known_page_data = parseNextData(
@@ -518,7 +499,7 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
             scrape_details=scrape_details,
             total_items=total_items,
             processed_items=processed_items,
-            known_ids=set(df_known_ids["id"].values)
+            known_ids=set(df_known_ids[Listings.ID].values)
         )
         known_listings += len(known_page_data)
         new_listings += len(page_data)
@@ -528,7 +509,7 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
 
         page_data = [
             d for d in page_data
-            if d.get("lat") is not None and d.get("lon") is not None
+            if d.get(Listings.LAT) is not None and d.get(Listings.LON) is not None
         ]
         cleaned_page_data = cleanDuplicates(page_data, seen_ids)
         buffer.extend(cleaned_page_data)
@@ -546,7 +527,8 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
                 updateListings(history_buffer, cur=cur, PAGE_SIZE=PAGE_SIZE)
 
                 if counter_new_listings > 100 or counter_known_listings > 100:
-                    logging.info(f"Transferred {counter_new_listings} new listings and {counter_known_listings} known listings")
+                    logging.info(
+                        f"Transferred {counter_new_listings} new listings and {counter_known_listings} known listings")
                     counter_new_listings = 0
                     counter_known_listings = 0
 

@@ -1,4 +1,4 @@
-from database.db import get_connection
+from database.db import getConnection
 import pandas as pd
 import logging
 
@@ -16,7 +16,7 @@ def getData(filter_type: str, filter_val: str, table: str):
     Returns:
         pd.DataFrame: A dataframe containing selected features and target variables.
     """
-    conn = get_connection()
+    conn = getConnection()
     df_features = None
     if table == "rent_features":
         df_features = pd.read_sql(f"SELECT * FROM rent_features", conn)

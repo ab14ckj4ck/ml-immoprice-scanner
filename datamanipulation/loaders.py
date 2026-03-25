@@ -63,20 +63,13 @@ def loadLocationData(path, target):
     Loads geographic coordinates for specific locations from an XML file.
 
     :param path: Path to the XML file.
-    :param target: The type of location to extract ('cities' or 'lakes').
+    :param target: The type of location to extract.
     :return: A list of dictionaries with name, latitude, and longitude.
     """
     tree = ET.parse(path)
     root = tree.getroot()
 
-    dataset = []
-
-    if target == "cities":
-        elements = root.findall("city")
-    elif target == "lakes":
-        elements = root.findall("lake")
-    else:
-        elements = []
+    dataset = root.findall(target)
 
     for d in elements:
         data = {

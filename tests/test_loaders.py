@@ -92,11 +92,6 @@ class TestLoaders(unittest.TestCase):
         self.assertEqual(cities[0]["name"], "Vienna")
         self.assertEqual(cities[0]["lat"], 48.2082)
 
-        # Test lakes
-        lakes = loadLocationData("dummy_path", "lakes")
-        self.assertEqual(len(lakes), 1)
-        self.assertEqual(lakes[0]["name"], "Wörthersee")
-
         # Test invalid target
         none = loadLocationData("dummy_path", "invalid")
         self.assertEqual(len(none), 0)

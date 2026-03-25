@@ -10,7 +10,7 @@ warnings.filterwarnings(
 
 load_dotenv("database/.env")
 
-def get_connection():
+def getConnection():
     """
     Establishes and returns a connection to the PostgreSQL database using environment variables.
 

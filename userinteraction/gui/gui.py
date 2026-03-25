@@ -14,6 +14,7 @@ import numpy as np
 import joblib, threading, logging, subprocess, time
 
 geolocator = Nominatim(user_agent="ImmoScraper")
+is_running = False
 
 logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
                     format='%(asctime)s - %(levelname)s - %(message)s')
@@ -489,9 +490,9 @@ def gui():
             features = getLogNorm(features, "loggia_size")
 
 
-            cities, lakes = getLocations()
-            features = computeDistances(features, cities, lakes)
-            features = getIsUrban(features)
+            # TODO cities, lakes = getLocations()
+            # TODO features = computeDistances(features, cities, lakes)
+            # TODO features = getIsUrban(features)
 
             model, scaler, kmeans = chooseModel()
             df_cluster = pd.DataFrame([[input_id, lat, lon]], columns=["id", "lat", "lon"])

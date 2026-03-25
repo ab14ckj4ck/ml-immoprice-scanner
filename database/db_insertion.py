@@ -1,4 +1,5 @@
 from psycopg2.extras import execute_batch
+from data.enums import Listings, Features
 
 
 def upsertListings(listings, PAGE_SIZE, conn=None, cur=None):
@@ -24,6 +25,7 @@ def upsertListings(listings, PAGE_SIZE, conn=None, cur=None):
                                   estate_size,
                                   rooms,
                                   postcode,
+                                  state,
                                   lat,
                                   lon,
                                   location_quality,
@@ -66,7 +68,7 @@ def upsertListings(listings, PAGE_SIZE, conn=None, cur=None):
                                   fgEE_class)
             VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
                     %s,
-                    %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                    %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             ON CONFLICT (id) DO UPDATE SET price          = EXCLUDED.price,
                                            rent           = EXCLUDED.rent,
                                            safety_deposit = EXCLUDED.safety_deposit,
@@ -74,39 +76,40 @@ def upsertListings(listings, PAGE_SIZE, conn=None, cur=None):
             """
     values = [
         (
-            l["id"],
-            l["link"],
-            l["price"],
-            l["rent"],
-            l["safety_deposit"],
-            l["living_area"],
-            l["estate_size"],
-            l["rooms"],
-            l["postcode"],
-            l["lat"],
-            l["lon"],
-            l["location_quality"],
-            l["property_type"],
-            l["finance_type"],
-            l["published"],
-            l["scraped_at"],
-            l["has_carport"],
-            l["has_elevator"],
-            l["has_kitchen"],
-            l["has_garage"],
-            l["has_cellar"],
-            l["has_parking"],
-            l["has_closet"],
-            l["has_balcony"],
-            l["balcony_size"],
-            l["has_garden"],
-            l["garden_size"],
-            l["has_terrace"],
-            l["terrace_size"],
-            l["has_loggia"],
-            l["loggia_size"],
-            l["has_wintergarden"],
-            l["wintergarden_size"],
+            l[Listings.ID],
+            l[Listings.LINK],
+            l[Listings.PRICE],
+            l[Listings.RENT],
+            l[Listings.SAFETY_DEPOSIT],
+            l[Listings.LIVING_AREA],
+            l[Listings.ESTATE_SIZE],
+            l[Listings.ROOMS],
+            l[Listings.POSTCODE],
+            l[Listings.STATE],
+            l[Listings.LAT],
+            l[Listings.LON],
+            l[Listings.LOCATION_QUALITY],
+            l[Listings.PROPERTY_TYPE],
+            l[Listings.FINANCE_TYPE],
+            l[Listings.PUBLISHED],
+            l[Listings.SCRAPED_AT],
+            l[Listings.HAS_CARPORT],
+            l[Listings.HAS_ELEVATOR],
+            l[Listings.HAS_KITCHEN],
+            l[Listings.HAS_GARAGE],
+            l[Listings.HAS_CELLAR],
+            l[Listings.HAS_PARKING],
+            l[Listings.HAS_CLOSET],
+            l[Listings.HAS_BALCONY],
+            l[Listings.BALCONY_SIZE],
+            l[Listings.HAS_GARDEN],
+            l[Listings.GARDEN_SIZE],
+            l[Listings.HAS_TERRACE],
+            l[Listings.TERRACE_SIZE],
+            l[Listings.HAS_LOGGIA],
+            l[Listings.LOGGIA_SIZE],
+            l[Listings.HAS_WINTERGARDEN],
+            l[Listings.WINTERGARDEN_SIZE],
             l["oil"],
             l["bio"],
             l["electro"],
@@ -149,10 +152,10 @@ def insertHistory(listings, PAGE_SIZE, cur=None):
             """
     values = [
         (
-            l["id"],
-            l["price"],
-            l["rent"],
-            l["scraped_at"],
+            l[Listings.ID],
+            l[Listings.PRICE],
+            l[Listings.RENT],
+            l[Listings.SCRAPED_AT],
         )
         for l in listings
     ]
@@ -169,21 +172,21 @@ def updateListings(listings, PAGE_SIZE, conn=None, cur=None):
             ON CONFLICT (id) DO UPDATE SET price      = EXCLUDED.price,
                                            rent       = EXCLUDED.rent,
                                            scraped_at = EXCLUDED.scraped_at \
-
+ \
             """
     values = [
         (
-            l["id"],
-            l["price"],
-            l["rent"],
-            l["scraped_at"],
+            l[Listings.ID],
+            l[Listings.PRICE],
+            l[Listings.RENT],
+            l[Listings.SCRAPED_AT],
         ) for l in listings
     ]
     execute_batch(cur, query, values, page_size=PAGE_SIZE)
 
 
 # noinspection PyUnusedLocal
-def insertFeatures(table, features, PAGE_SIZE, conn=None, cur=None):
+def insertFeatures(features, PAGE_SIZE, conn=None, cur=None):
     """
     Inserts calculated features into the specified database table.
 
@@ -197,97 +200,54 @@ def insertFeatures(table, features, PAGE_SIZE, conn=None, cur=None):
     if conn is None or cur is None:
         raise ValueError("Connection and cursor required - " + table)
 
-    query = ""
-    if table == "rent_features":
-        query = """
-                INSERT INTO rent_features (id, norm_price, log_price, ppm2, log_ppm2, urban_ppm2, estate_ratio, rpm2,
-                                           ppr, balcony_ratio, garden_ratio, loggia_ratio, wintergarden_ratio,
-                                           terrace_ratio, rooms_per_property, distance_nearest_city, distance_villach,
-                                           distance_klagenfurt, distance_nearest_lake, is_urban,
-                                           days_since_publish, area_per_room, is_mfh, is_efh, is_lh, is_villa, is_dhh,
-                                           is_sbc, is_rh, is_ab, is_bh, is_gh, is_dgw, is_egw, is_gc, is_gw, is_ms,
-                                           is_phw, is_apt, is_wg, log_living_area, log_estate_size, log_balcony_size,
-                                           log_garden_size, log_terrace_size, log_loggia_size, log_wintergarden_size,
-                                           log_distance_nearest_city, log_distance_nearest_lake,
-                                           log_distance_villach, log_distance_klagenfurt)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
-                        %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
-                        %s, %s, %s, %s, %s)
-                ON CONFLICT (id) DO NOTHING
-                """
-    elif table == "buy_features":
-        query = """
-                INSERT INTO buy_features (id, norm_price, log_price, ppm2, log_ppm2, urban_ppm2, estate_ratio, rpm2,
-                                          ppr, balcony_ratio, garden_ratio, loggia_ratio, wintergarden_ratio,
-                                          terrace_ratio, rooms_per_property, distance_nearest_city, distance_villach,
-                                          distance_klagenfurt, distance_nearest_lake, is_urban,
-                                          days_since_publish, area_per_room, is_mfh, is_efh, is_lh, is_villa, is_dhh,
-                                          is_sbc, is_rh, is_ab, is_bh, is_gh, is_dgw, is_egw, is_gc, is_gw, is_ms,
-                                          is_phw, is_apt, is_wg, log_living_area, log_estate_size, log_balcony_size,
-                                          log_garden_size, log_terrace_size, log_loggia_size, log_wintergarden_size,
-                                          log_distance_nearest_city, log_distance_nearest_lake,
-                                          log_distance_villach, log_distance_klagenfurt)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
-                        %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
-                        %s, %s, %s, %s, %s)
-                ON CONFLICT (id) DO NOTHING
-                """
-
-    else:
-        raise ValueError("Query failed features")
-
-    values = [(
-        f["id"],
-        f["norm_price"],
-        f["log_price"],
-        f["ppm2"],
-        f["log_ppm2"],
-        f["urban_ppm2"],
-        f["estate_ratio"],
-        f["rpm2"],
-        f["ppr"],
-        f["balcony_ratio"],
-        f["garden_ratio"],
-        f["loggia_ratio"],
-        f["wintergarden_ratio"],
-        f["terrace_ratio"],
-        f["rooms_per_property"],
-        f["distance_nearest_city"],
-        f["distance_villach"],
-        f["distance_klagenfurt"],
-        f["distance_nearest_lake"],
-        f["is_urban"],
-        f["days_since_publish"],
-        f["area_per_room"],
-        f["is_mfh"],
-        f["is_efh"],
-        f["is_lh"],
-        f["is_villa"],
-        f["is_dhh"],
-        f["is_sbc"],
-        f["is_rh"],
-        f["is_ab"],
-        f["is_bh"],
-        f["is_gh"],
-        f["is_dgw"],
-        f["is_egw"],
-        f["is_gc"],
-        f["is_gw"],
-        f["is_ms"],
-        f["is_phw"],
-        f["is_apt"],
-        f["is_wg"],
-        f["log_living_area"],
-        f["log_estate_size"],
-        f["log_balcony_size"],
-        f["log_garden_size"],
-        f["log_terrace_size"],
-        f["log_loggia_size"],
-        f["log_wintergarden_size"],
-        f["log_distance_nearest_city"],
-        f["log_distance_nearest_lake"],
-        f["log_distance_villach"],
-        f["log_distance_klagenfurt"]
-    ) for f in features
+    query = """
+            INSERT INTO features (log_ppm2,
+                                  log_estate_ratio,
+                                  location_cluster,
+                                  log_distance_to_nearest_city,
+                                  log_distance_to_major_city,
+                                  log_distance_to_tourism,
+                                  log_distance_train_station,
+                                  state_vie,
+                                  state_noe,
+                                  state_ooe,
+                                  state_sbg,
+                                  state_bgl,
+                                  state_stk,
+                                  state_ktn,
+                                  state_trl,
+                                  state_vbg,
+                                  log_balcony_size,
+                                  log_garden_size,
+                                  log_terrace_size,
+                                  log_loggia_size,
+                                  log_wintergarden_size)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s) \
+            """
+    values = [
+        (
+            f[Features.LOG_PPM2],
+            f[Features.LOG_ESTATE_RATIO],
+            f[Features.LOCATION_CLUSTER],
+            f[Features.LOG_DISTANCE_TO_NEAREST_CITY],
+            f[Features.LOG_DISTANCE_TO_MAJOR_CITY],
+            f[Features.LOG_DISTANCE_TO_TOURISM],
+            f[Features.LOG_DISTANCE_TRAIN_STATION],
+            f[Features.STATE_VIE],
+            f[Features.STATE_NOE],
+            f[Features.STATE_OOE],
+            f[Features.STATE_SBG],
+            f[Features.STATE_BGL],
+            f[Features.STATE_STK],
+            f[Features.STATE_KTN],
+            f[Features.STATE_TRL],
+            f[Features.STATE_VBG],
+            f[Features.LOG_BALCONY_SIZE],
+            f[Features.LOG_GARDEN_SIZE],
+            f[Features.LOG_TERRACE_SIZE],
+            f[Features.LOG_LOGGIA_SIZE],
+            f[Features.LOG_WINTERGARDEN_SIZE]
+        ) for f in features
     ]
+
     execute_batch(cur, query, values, page_size=PAGE_SIZE)

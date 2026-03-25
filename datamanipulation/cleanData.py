@@ -7,7 +7,7 @@ It includes functionality for:
 - Filtering outliers and handling missing values.
 - Inserting processed features back into the database.
 """
-from database.db import get_connection
+from database.db import getConnection
 from database.db_insertion import insertFeatures
 from datamanipulation.loaders import loadLocationData
 import pandas as pd
@@ -26,13 +26,7 @@ OPTIONAL_FEATURES = [
     "terrace_ratio"
 ]
 
-logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
-                    format='%(asctime)s - %(levelname)s - %(message)s')
 
-
-def loadData(conn):
-    """Loads all records from the listings table."""
-    return pd.read_sql("SELECT * FROM listings", conn)
 
 
 def quantileElimination(df, col, q_low_val=0.05, q_high_val=0.95):
@@ -267,7 +261,7 @@ def insertFeatureData(rent, buy, conn=None, cur=None):
 
     rent_records = rent.to_dict(orient="records")
     total_batches = (len(rent_records) + PAGES - 1) // PAGES
-    print("-------Transfer Rent Data-------")
+    print("\n-------Transfer Rent Data-------")
 
     for idx, i in enumerate(range(0, len(rent_records), PAGES), 1):
         batch = rent_records[i:i + PAGES]
@@ -334,7 +328,7 @@ def filterLowPrice(df, col="price", limit=10):
 def cleanData():
     """Main entry point to load, clean, transform, and save the real estate data."""
     logging.info("Scraping detail listings...")
-    conn = get_connection()
+    conn = getConnection()
     cur = conn.cursor()
 
     if not conn or not cur:

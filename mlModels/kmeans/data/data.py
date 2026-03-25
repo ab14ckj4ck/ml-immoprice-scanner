@@ -1,9 +1,9 @@
-from database.db import get_connection
+from database.db import getConnection
 import pandas as pd
 
 
 def getData():
-    conn = get_connection()
+    conn = getConnection()
     df = pd.read_sql("SELECT * FROM listings", conn)
 
     df = df[

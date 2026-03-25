@@ -14,7 +14,7 @@ This project covers the full workflow from **data acquisition → preprocessing 
 
   * price per m²
   * log transformations
-  * geospatial features (distance to cities & lakes)
+  * geospatial features 
   * urban classification
 * 🗄️ PostgreSQL integration with structured schema
 * ⚙️ Batch processing & duplicate handling
