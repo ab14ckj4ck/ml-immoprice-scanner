@@ -74,14 +74,14 @@ def fetch(url, retries=3):
                 return response.text
 
             if response.status_code == 429:
-                print("⚠️ Rate limited → sleeping...")
+                logging.warning("⚠️ Rate limited → sleeping...")
                 time.sleep(random.uniform(20, 60))
 
             else:
                 logging.warning(f"Triggered response code {response.status_code}")
 
         except Exception as e:
-            print("Fetch error:", e)
+            logging.exception("Fetch error:", e)
 
     return None
 

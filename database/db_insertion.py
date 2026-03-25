@@ -1,245 +1,131 @@
 from psycopg2.extras import execute_batch
 
 
-def upsertListings(listings, PAGE_SIZE, scrape_details=True, conn=None, cur=None):
+def upsertListings(listings, PAGE_SIZE, conn=None, cur=None):
     """
     Inserts a list of real estate listings into the database.
 
     Args:
         listings (list): A list of dictionaries containing listing data.
         PAGE_SIZE (int): The number of rows to insert per batch.
-        scrape_details (bool): If True, includes detailed features (heating, amenities, etc.).
         conn: The psycopg2 connection object.
         cur: The psycopg2 cursor object.
     """
     if conn is None or cur is None:
         raise ValueError("Connection and cursor required")
 
-    if scrape_details:
-        query = """
-                INSERT INTO listings (id,
-                                      link,
-                                      price,
-                                      rent,
-                                      safety_deposit,
-                                      living_area,
-                                      estate_size,
-                                      rooms,
-                                      postcode,
-                                      lat,
-                                      lon,
-                                      location_quality,
-                                      property_type,
-                                      finance_type,
-                                      published,
-                                      scraped_at,
-                                      has_carport,
-                                      has_elevator,
-                                      has_kitchen,
-                                      has_garage,
-                                      has_cellar,
-                                      has_parking,
-                                      has_closet,
-                                      has_balcony,
-                                      balcony_size,
-                                      has_garden,
-                                      garden_size,
-                                      has_terrace,
-                                      terrace_size,
-                                      has_loggia,
-                                      loggia_size,
-                                      has_wintergarden,
-                                      wintergarden_size,
-                                      is_oil,
-                                      is_bio,
-                                      is_electro,
-                                      is_pellets,
-                                      is_photovoltaik,
-                                      is_geothermal,
-                                      is_air_heating,
-                                      is_floor,
-                                      is_central,
-                                      is_ceiling,
-                                      is_oven,
-                                      is_infrared,
-                                      HWB,
-                                      HWB_class,
-                                      fgEE,
-                                      fgEE_class)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
-                        %s,
-                        %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-                ON CONFLICT (id) DO UPDATE SET
-                    price = EXCLUDED.price,
-                    rent = EXCLUDED.rent,
-                    safety_deposit = EXCLUDED.safety_deposit,
-                    scraped_at = EXCLUDED.scraped_at
-                """
-        values = [
-            (
-                l["id"],
-                l["link"],
-                l["price"],
-                l["rent"],
-                l["safety_deposit"],
-                l["living_area"],
-                l["estate_size"],
-                l["rooms"],
-                l["postcode"],
-                l["lat"],
-                l["lon"],
-                l["location_quality"],
-                l["property_type"],
-                l["finance_type"],
-                l["published"],
-                l["scraped_at"],
-                l["has_carport"],
-                l["has_elevator"],
-                l["has_kitchen"],
-                l["has_garage"],
-                l["has_cellar"],
-                l["has_parking"],
-                l["has_closet"],
-                l["has_balcony"],
-                l["balcony_size"],
-                l["has_garden"],
-                l["garden_size"],
-                l["has_terrace"],
-                l["terrace_size"],
-                l["has_loggia"],
-                l["loggia_size"],
-                l["has_wintergarden"],
-                l["wintergarden_size"],
-                l["oil"],
-                l["bio"],
-                l["electro"],
-                l["pellets"],
-                l["photovoltaik"],
-                l["geothermal"],
-                l["air_heating"],
-                l["floor_heating"],
-                l["central_heating"],
-                l["ceiling_heating"],
-                l["oven_heating"],
-                l["infrared_heating"],
-                l["hwb"],
-                l["hwb_class"],
-                l["fgee"],
-                l["fgee_class"],
-            )
-            for l in listings
-        ]
-    else:
-        query = """
-                INSERT INTO listings (id,
-                                      link,
-                                      price,
-                                      rent,
-                                      safety_deposit,
-                                      living_area,
-                                      estate_size,
-                                      rooms,
-                                      postcode,
-                                      lat,
-                                      lon,
-                                      location_quality,
-                                      property_type,
-                                      finance_type,
-                                      published,
-                                      scraped_at,
-                                      has_carport,
-                                      has_elevator,
-                                      has_kitchen,
-                                      has_garage,
-                                      has_cellar,
-                                      has_parking,
-                                      has_closet,
-                                      has_balcony,
-                                      balcony_size,
-                                      has_garden,
-                                      garden_size,
-                                      has_terrace,
-                                      terrace_size,
-                                      has_loggia,
-                                      loggia_size,
-                                      has_wintergarden,
-                                      wintergarden_size,
-                                      is_oil,
-                                      is_bio,
-                                      is_electro,
-                                      is_pellets,
-                                      is_photovoltaik,
-                                      is_geothermal,
-                                      is_air_heating,
-                                      is_floor,
-                                      is_central,
-                                      is_ceiling,
-                                      is_oven,
-                                      is_infrared,
-                                      HWB,
-                                      HWB_class,
-                                      fgEE,
-                                      fgEE_class)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
-                        %s,
-                        %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-                ON CONFLICT (id) DO NOTHING
-                """
-
-        values = [
-            (
-                l["id"],
-                l["link"],
-                l["price"],
-                l["rent"],
-                l["safety_deposit"],
-                l["living_area"],
-                l["estate_size"],
-                l["rooms"],
-                l["postcode"],
-                l["lat"],
-                l["lon"],
-                l["location_quality"],
-                l["property_type"],
-                l["finance_type"],
-                l["published"],
-                l["scraped_at"],
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-            )
-            for l in listings
-        ]
+    query = """
+            INSERT INTO listings (id,
+                                  link,
+                                  price,
+                                  rent,
+                                  safety_deposit,
+                                  living_area,
+                                  estate_size,
+                                  rooms,
+                                  postcode,
+                                  lat,
+                                  lon,
+                                  location_quality,
+                                  property_type,
+                                  finance_type,
+                                  published,
+                                  scraped_at,
+                                  has_carport,
+                                  has_elevator,
+                                  has_kitchen,
+                                  has_garage,
+                                  has_cellar,
+                                  has_parking,
+                                  has_closet,
+                                  has_balcony,
+                                  balcony_size,
+                                  has_garden,
+                                  garden_size,
+                                  has_terrace,
+                                  terrace_size,
+                                  has_loggia,
+                                  loggia_size,
+                                  has_wintergarden,
+                                  wintergarden_size,
+                                  is_oil,
+                                  is_bio,
+                                  is_electro,
+                                  is_pellets,
+                                  is_photovoltaik,
+                                  is_geothermal,
+                                  is_air_heating,
+                                  is_floor,
+                                  is_central,
+                                  is_ceiling,
+                                  is_oven,
+                                  is_infrared,
+                                  HWB,
+                                  HWB_class,
+                                  fgEE,
+                                  fgEE_class)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
+                    %s,
+                    %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            ON CONFLICT (id) DO UPDATE SET price          = EXCLUDED.price,
+                                           rent           = EXCLUDED.rent,
+                                           safety_deposit = EXCLUDED.safety_deposit,
+                                           scraped_at     = EXCLUDED.scraped_at
+            """
+    values = [
+        (
+            l["id"],
+            l["link"],
+            l["price"],
+            l["rent"],
+            l["safety_deposit"],
+            l["living_area"],
+            l["estate_size"],
+            l["rooms"],
+            l["postcode"],
+            l["lat"],
+            l["lon"],
+            l["location_quality"],
+            l["property_type"],
+            l["finance_type"],
+            l["published"],
+            l["scraped_at"],
+            l["has_carport"],
+            l["has_elevator"],
+            l["has_kitchen"],
+            l["has_garage"],
+            l["has_cellar"],
+            l["has_parking"],
+            l["has_closet"],
+            l["has_balcony"],
+            l["balcony_size"],
+            l["has_garden"],
+            l["garden_size"],
+            l["has_terrace"],
+            l["terrace_size"],
+            l["has_loggia"],
+            l["loggia_size"],
+            l["has_wintergarden"],
+            l["wintergarden_size"],
+            l["oil"],
+            l["bio"],
+            l["electro"],
+            l["pellets"],
+            l["photovoltaik"],
+            l["geothermal"],
+            l["air_heating"],
+            l["floor_heating"],
+            l["central_heating"],
+            l["ceiling_heating"],
+            l["oven_heating"],
+            l["infrared_heating"],
+            l["hwb"],
+            l["hwb_class"],
+            l["fgee"],
+            l["fgee_class"],
+        )
+        for l in listings
+    ]
     execute_batch(cur, query, values, page_size=PAGE_SIZE)
 
 
@@ -254,13 +140,11 @@ def insertHistory(listings, PAGE_SIZE, cur=None):
         cur: The psycopg2 cursor object.
     """
     query = """
-            INSERT INTO history_listings (
-                id,
-                price,
-                rent,
-                safety_deposit,
-                scraped_at)
-            VALUES (%s, %s, %s, %s, %s)
+            INSERT INTO history_listings (id,
+                                          price,
+                                          rent,
+                                          scraped_at)
+            VALUES (%s, %s, %s, %s)
             ON CONFLICT (id, scraped_at) DO NOTHING
             """
     values = [
@@ -268,10 +152,32 @@ def insertHistory(listings, PAGE_SIZE, cur=None):
             l["id"],
             l["price"],
             l["rent"],
-            l["safety_deposit"],
             l["scraped_at"],
         )
         for l in listings
+    ]
+    execute_batch(cur, query, values, page_size=PAGE_SIZE)
+
+
+def updateListings(listings, PAGE_SIZE, conn=None, cur=None):
+    query = """
+            INSERT INTO listings (id,
+                                  price,
+                                  rent,
+                                  scraped_at)
+            VALUES (%s, %s, %s, %s)
+            ON CONFLICT (id) DO UPDATE SET price      = EXCLUDED.price,
+                                           rent       = EXCLUDED.rent,
+                                           scraped_at = EXCLUDED.scraped_at \
+
+            """
+    values = [
+        (
+            l["id"],
+            l["price"],
+            l["rent"],
+            l["scraped_at"],
+        ) for l in listings
     ]
     execute_batch(cur, query, values, page_size=PAGE_SIZE)
 
