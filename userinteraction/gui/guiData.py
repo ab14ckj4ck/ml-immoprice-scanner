@@ -1,3 +1,13 @@
+TERMINATE_FLAG = False
+
+def setTerminateFlag(val):
+    global TERMINATE_FLAG
+    TERMINATE_FLAG = val
+
+def getTerminateFlag():
+    return TERMINATE_FLAG
+
+
 def getColumnList():
     return ['id', 'living_area', 'estate_size', 'rooms', 'lat', 'lon', 'postcode', 'has_carport',
             'has_elevator', 'has_kitchen', 'has_garage',

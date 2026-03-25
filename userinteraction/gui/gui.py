@@ -1,5 +1,5 @@
 from mlModels.kmeans.locationClustering import addLocationFeature
-from userinteraction.gui.guiData import getColumnList, getRentAptFeatures, getBuyAptFeatures, getRentHouseFeatures, getBuyHouseFeatures
+from userinteraction.gui.guiData import getColumnList, getRentAptFeatures, getBuyAptFeatures, getRentHouseFeatures, getBuyHouseFeatures, setTerminateFlag
 from datamanipulation.cleanData import getLogNorm, getRatio, computeDistances, getIsUrban, getLocations
 from geopy.geocoders import Nominatim
 from sklearn.cluster import KMeans
@@ -11,7 +11,7 @@ from tkinter import ttk
 import tkinter as tk
 import pandas as pd
 import numpy as np
-import joblib, threading, logging
+import joblib, threading, logging, subprocess, time
 
 geolocator = Nominatim(user_agent="ImmoScraper")
 
@@ -360,12 +360,26 @@ def gui():
 
 
     def _backendRun():
+        subprocess.run(["sudo", "systemctl", "start", "postgresql"])
+        time.sleep(3)
         if do_scraping.get():
             do_clean_data.set(True)
-        main(SOURCE_1=source1.get(), SCRAPE_SOURCE_1=do_scraping.get(), MODELS=do_training.get())
+        main(SOURCE_1=True, SCRAPE_SOURCE_1=do_scraping.get(), CLEAN_DATA=do_clean_data.get(), MODELS=do_train_model.get())
+        subprocess.run(["sudo", "systemctl", "stop", "postgresql"])
+
 
     def backendRun():
-        threading.Thread(target=_backendRun).start()
+        global is_running
+        if is_running:
+            return
+        is_running = True
+
+        def run():
+            global is_running
+            _backendRun()
+            setTerminateFlag(False)
+            is_running = False
+        threading.Thread(target=run).start()
 
     def chooseModel():
         base_path = "mlModels/regression/data/"
@@ -516,7 +530,13 @@ def gui():
     style.configure("button.TButton", background="#E4E2E2", foreground="#000")
     style.map("button.TButton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
     button = ttk.Button(master=frame, text="Start Backend", style="button.TButton", command=backendRun)
-    button.place(x=1101, y=78, height=40)
+    button.place(x=1101, y=78, height=40, width=120)
+
+    # Terminate Button
+    style.configure("button.TButton", background="#E4E2E2", foreground="#000")
+    style.map("button.TButton", background=[("active", "#E4E2E2")], foreground=[("active", "#000")])
+    terminate_button = ttk.Button(master=frame, text="Stop Backend", style="button.TButton", command=lambda: setTerminateFlag(True))
+    terminate_button.place(x=1101, y=28, height=40, width=120)
 
     root.mainloop()
 

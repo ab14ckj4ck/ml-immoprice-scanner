@@ -13,6 +13,7 @@ from datamanipulation.loaders import loadBaseLinks
 from database.db import get_connection
 from database.db_insertion import upsertListings, insertHistory
 from scraper.source1_detail_scraper import detailScraper, fetch
+from userinteraction.gui.guiData import getTerminateFlag
 
 STATES = ("kaernten",)
 UPPER_PAGE_RANGE = 3
@@ -483,6 +484,11 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
         cleaned_page_data = cleanDuplicates(page_data, seen_ids)
         buffer.extend(cleaned_page_data)
 
+        if getTerminateFlag():
+            cur.close()
+            conn.close()
+            return
+
         try:
             if len(buffer) >= BATCH_SIZE or i == len(urls):
                 history_buffer = [
@@ -496,6 +502,7 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
                 conn.commit()
 
                 buffer.clear()
+
         except Exception:
             conn.rollback()
             logging.exception("Failed to insert batch into Database")

@@ -3,7 +3,7 @@ from datamanipulation.cleanData import cleanData
 from mlModels.regression.runRegression import runModels
 import logging
 
-def main(SOURCE_1=False, SCRAPE_SOURCE_1=False, MODELS=False):
+def main(SOURCE_1=False, SCRAPE_SOURCE_1=False, CLEAN_DATA=False, MODELS=False):
     """
     Main entry point for the scraper application.
 
@@ -21,6 +21,7 @@ def main(SOURCE_1=False, SCRAPE_SOURCE_1=False, MODELS=False):
             baseScraper(pages=12, scrape_details=True, rows=100)
             logging.info("Finished scraping Source 1")
 
+    if CLEAN_DATA:
         logging.info("Starting Source 1 Data Cleaning")
         cleanData()
         logging.info("Finished Source 1 Data Cleaning")
