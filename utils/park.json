@@ -1,0 +1,788 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-03-26T00:50:29Z",
+    "timestamp_areas_base": "2026-03-25T12:08:00Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+    {
+      "type": "node",
+      "id": 1526007218,
+      "lat": 48.1966438,
+      "lon": 16.3950905,
+      "tags": {
+        "leisure": "park",
+        "name": "Alma Mahler-Werfel-Park",
+        "name:wikipedia": "de:Alma Mahler-Werfel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1838650638,
+      "lat": 47.8658796,
+      "lon": 16.0960689,
+      "tags": {
+        "amenity": "bench",
+        "backrest": "yes",
+        "leisure": "park",
+        "name": "Alter Kalkofen",
+        "operator": "DEV Dreistetten"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2207161902,
+      "lat": 47.0131425,
+      "lon": 15.4627140,
+      "tags": {
+        "addr:city": "Graz",
+        "addr:country": "AT",
+        "addr:housenumber": "900",
+        "addr:postcode": "8041",
+        "addr:street": "Eichbachgasse",
+        "landuse": "recreation_ground",
+        "leisure": "park",
+        "name": "Naherholungsgebiet Auwiesen;Murwiesen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2477247463,
+      "lat": 47.5814610,
+      "lon": 13.2387844,
+      "tags": {
+        "leisure": "park",
+        "name": "Liegewiese"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2545080204,
+      "lat": 48.2688318,
+      "lon": 14.8085838,
+      "tags": {
+        "leisure": "park",
+        "name": "Kurpark"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2677699632,
+      "lat": 47.4106964,
+      "lon": 15.1968423,
+      "tags": {
+        "leisure": "park",
+        "name": "Europaplatzerl"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2889693913,
+      "lat": 47.5794480,
+      "lon": 12.1781138,
+      "tags": {
+        "leisure": "park",
+        "name": "Motorikpark Kufstein",
+        "website": "http://www.stadt.kufstein.at/Motorikpark_Kufstein"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3223255110,
+      "lat": 48.2067509,
+      "lon": 16.2573937,
+      "tags": {
+        "alt_name": "Paradiesgründe",
+        "leisure": "park",
+        "name": "Erholungsgebiet Paradies"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3685110458,
+      "lat": 48.4925764,
+      "lon": 14.9584006,
+      "tags": {
+        "leisure": "park",
+        "name": "Busserlpark"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3704981000,
+      "lat": 47.3661619,
+      "lon": 12.5089243,
+      "tags": {
+        "addr:city": "Hinterglemm",
+        "addr:country": "AT",
+        "addr:housenumber": "367",
+        "addr:postcode": "5754",
+        "addr:street": "Talschlussweg",
+        "leisure": "park",
+        "name": "Glemmtaler Baumzipfelweg",
+        "phone": "+43 6217 29029",
+        "website": "https://www.baumzipfelweg.at/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4178676439,
+      "lat": 48.3446343,
+      "lon": 15.5383312,
+      "tags": {
+        "leisure": "park",
+        "name": "Beim toten Mann"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4642113457,
+      "lat": 47.3734826,
+      "lon": 15.4829156,
+      "tags": {
+        "addr:city": "Breitenau am Hochlantsch",
+        "addr:housenumber": "1",
+        "addr:postcode": "8614",
+        "addr:street": "An der Teichalmstraße",
+        "check_date:opening_hours": "2023-07-31",
+        "leisure": "park",
+        "name": "Waldpark Hochreiter",
+        "opening_hours": "Mo-Su 09:30-18:00",
+        "operator": "Waldpark Hochreiter"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4670599653,
+      "lat": 46.9097512,
+      "lon": 15.7715247,
+      "tags": {
+        "addr:city": "Gnas",
+        "addr:housenumber": "6",
+        "addr:place": "Wörth",
+        "addr:postcode": "8342",
+        "leisure": "park",
+        "name": "Paintball Palace"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4842473196,
+      "lat": 48.6705727,
+      "lon": 15.1159803,
+      "tags": {
+        "leisure": "park",
+        "name": "Begrüßungssteine"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4846425421,
+      "lat": 46.7870260,
+      "lon": 15.5354473,
+      "tags": {
+        "leisure": "park",
+        "name": "Sportplatz Forstgarten"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4907324475,
+      "lat": 47.1862602,
+      "lon": 15.4868923,
+      "tags": {
+        "leisure": "park",
+        "name": "Kräutergarten \"Pflanze Mensch\""
+      }
+    },
+    {
+      "type": "node",
+      "id": 5059773103,
+      "lat": 46.5659077,
+      "lon": 14.6189419,
+      "tags": {
+        "leisure": "park",
+        "name": "Strandbad Gösselsdorfer See",
+        "sport": "swimming",
+        "water_park": "beach",
+        "water_slide": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6068929132,
+      "lat": 47.4092626,
+      "lon": 9.7518266,
+      "tags": {
+        "ele": "476",
+        "guidepost": "hiking",
+        "hiking": "yes",
+        "leisure": "park",
+        "name": "Dornbirn Oberdorf",
+        "ref": "VWW 20.033",
+        "source": "survey 11.2018 and Vogis 2015",
+        "website": "https://apps.vorarlberg.at/wegweiser/20_Dornbirn/20.033.pdf"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6109690333,
+      "lat": 47.2444479,
+      "lon": 13.1978617,
+      "tags": {
+        "leisure": "park",
+        "name": "Spielplatz Unterberg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6184852680,
+      "lat": 47.5209149,
+      "lon": 12.3604152,
+      "tags": {
+        "leisure": "park",
+        "name": "Blaikner Urkraftplatz"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6404205450,
+      "lat": 48.2518696,
+      "lon": 16.3586737,
+      "tags": {
+        "leisure": "park",
+        "name": "Rothschildgarten",
+        "wikidata": "Q105953139",
+        "wikipedia": "de:Rothschildgärten"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6551785949,
+      "lat": 47.1124711,
+      "lon": 11.3158045,
+      "tags": {
+        "free_flying:hanggliding": "yes",
+        "free_flying:official": "yes",
+        "free_flying:paragliding": "yes",
+        "free_flying:school": "yes",
+        "free_flying:site": "landing",
+        "free_flying:tandem": "yes",
+        "leisure": "park",
+        "name": "Paragleiter Landeplatz Neustift",
+        "operator": "APC Alpin Paragliding Center Stubai",
+        "sport": "free_flying"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6896808177,
+      "lat": 48.6014386,
+      "lon": 15.7054091,
+      "tags": {
+        "leisure": "park",
+        "name": "Spielplatz"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7562839024,
+      "lat": 48.2482310,
+      "lon": 14.6427460,
+      "tags": {
+        "leisure": "park",
+        "name": "Seyr Park"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7592682496,
+      "lat": 48.1978744,
+      "lon": 16.3401219,
+      "tags": {
+        "fixme": "Area",
+        "leisure": "park",
+        "name": "Sophienpark",
+        "name:etymology": "Sophie Friederike von Bayern",
+        "name:etymology:wikidata": "Q57653",
+        "name:etymology:wikipedia": "de:Sophie Friederike von Bayern"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7669540776,
+      "lat": 47.0540573,
+      "lon": 14.5341620,
+      "tags": {
+        "leisure": "park",
+        "name": "Zirbitzruh"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7707265060,
+      "lat": 47.1192276,
+      "lon": 12.8292215,
+      "tags": {
+        "description": "Durch die Klimaveränderungen mögliche Zukunft dieses Standortes. Serie von Gemälden der Künstlerin Anna Meyer, 2020.",
+        "leisure": "park",
+        "name": "Kunstwerk Anna Meyer",
+        "operator": "Serpentine: In touch of heaven (and hell)",
+        "website": "https://heavenandhell.tracingspaces.net/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7707265061,
+      "lat": 47.1191208,
+      "lon": 12.8288018,
+      "tags": {
+        "leisure": "park",
+        "name": "Kunstwerk Ralo Mayer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8046290495,
+      "lat": 47.1015078,
+      "lon": 15.4621498,
+      "tags": {
+        "leisure": "park",
+        "name": "Ökopark Eugenie-Schmiedl-Hain"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8294326798,
+      "lat": 48.1798437,
+      "lon": 16.3344668,
+      "tags": {
+        "addr:city": "Wien",
+        "addr:postcode": "1120",
+        "addr:street": "Mandlgasse",
+        "leisure": "park",
+        "name": "Biodiversitätsoase Mandlgasse",
+        "opening_hours": "24/7",
+        "operator": "grätzloase",
+        "website": "https://grätzloase.at"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8565450056,
+      "lat": 46.9392941,
+      "lon": 14.5646917,
+      "tags": {
+        "leisure": "park",
+        "name": "Gossener Linde"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8678870011,
+      "lat": 48.2176157,
+      "lon": 14.3559292,
+      "tags": {
+        "leisure": "park",
+        "name": "Sunbangl",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8833769586,
+      "lat": 47.3705442,
+      "lon": 16.1104858,
+      "tags": {
+        "leisure": "park",
+        "name": "Stadtpark"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9124776080,
+      "lat": 48.1808438,
+      "lon": 16.3335401,
+      "tags": {
+        "addr:city": "Wien",
+        "addr:housenumber": "3",
+        "addr:postcode": "1120",
+        "addr:street": "Rosaliagasse",
+        "leisure": "park",
+        "name": "Klima-Grätzl Oase Rosaliagasse",
+        "opening_hours": "24/7",
+        "operator": "parxs",
+        "website": "https://parxs.at"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9248959229,
+      "lat": 46.9095578,
+      "lon": 15.6936826,
+      "tags": {
+        "leisure": "park",
+        "name": "Stefansberg/Hirschenblick"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9248959230,
+      "lat": 46.9006296,
+      "lon": 15.6875846,
+      "tags": {
+        "leisure": "park",
+        "name": "Rast zum Marterl/Zweitälerblick"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9505277100,
+      "lat": 47.4738560,
+      "lon": 12.1154889,
+      "tags": {
+        "leisure": "park",
+        "name": "Hochbehälter Pinnersdorf"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10704379410,
+      "lat": 47.3281900,
+      "lon": 13.2997400,
+      "tags": {
+        "description": "die Bergbahnen von Snow Space Salzburg bieten im Winter eine neue Dimension zum Skifahren & Snowboarden und im Sommer ein traumhaftes Wandergebiet.",
+        "email": "info@snow-space.com",
+        "leisure": "park",
+        "name": "Snow Space Salzburg",
+        "opening_hours": "Mo-Su 08:30-16:15",
+        "phone": "+43 59 221",
+        "website": "https://www.snow-space.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10736809548,
+      "lat": 47.4590491,
+      "lon": 11.8893783,
+      "tags": {
+        "leisure": "park",
+        "name": "Barrierefreier Bewegungspark",
+        "operator": "Alpbachtal.at",
+        "operator:type": "public",
+        "playground": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11208842225,
+      "lat": 47.3717638,
+      "lon": 16.1235013,
+      "tags": {
+        "leisure": "park",
+        "name": "Hauptplatz"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11208850381,
+      "lat": 47.3713869,
+      "lon": 16.1248199,
+      "tags": {
+        "leisure": "park",
+        "name": "Josefipark"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11208862045,
+      "lat": 47.3670323,
+      "lon": 16.1250872,
+      "tags": {
+        "leisure": "park",
+        "name": "Hauptschulpark"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11208863171,
+      "lat": 47.3709487,
+      "lon": 16.1249263,
+      "tags": {
+        "leisure": "park",
+        "name": "Kirchenpark"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11208869200,
+      "lat": 47.3664925,
+      "lon": 16.1253738,
+      "tags": {
+        "leisure": "park",
+        "name": "Schlosspark"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11390573640,
+      "lat": 47.0987371,
+      "lon": 11.2827936,
+      "tags": {
+        "leisure": "park",
+        "name": "Weihnachtsmarkt Milders"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11459448111,
+      "lat": 47.1284501,
+      "lon": 10.2642990,
+      "tags": {
+        "addr:city": "St. Anton am Arlberg",
+        "addr:postcode": "6580",
+        "addr:street": "Hannes-Schneider-Weg",
+        "leisure": "park",
+        "name": "Nozawa Onsen Platz"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11569615642,
+      "lat": 48.1909973,
+      "lon": 15.6321928,
+      "tags": {
+        "leisure": "park",
+        "name": "GREEN PARK St. Pölten"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11804452586,
+      "lat": 47.3096201,
+      "lon": 10.8370852,
+      "tags": {
+        "leisure": "park",
+        "name": "Mühlsprung"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11978154077,
+      "lat": 47.7793556,
+      "lon": 13.0747017,
+      "tags": {
+        "access": "yes",
+        "addr:city": "Salzburg",
+        "addr:postcode": "5020",
+        "addr:street": "Billrothstraße",
+        "leisure": "park",
+        "name": "Waldspielplatz",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12035516424,
+      "lat": 47.0156113,
+      "lon": 15.4207233,
+      "tags": {
+        "description": "Kleiner schöner Rastplatz mit Blick auf den Schöckl",
+        "leisure": "park",
+        "name": "Rastplatz"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12074699871,
+      "lat": 47.3698223,
+      "lon": 11.1652966,
+      "tags": {
+        "leisure": "park",
+        "name": "Pavillonplatz",
+        "operator": "Gemeide Leutasch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12098677068,
+      "lat": 47.3979858,
+      "lon": 11.7982012,
+      "tags": {
+        "leisure": "park",
+        "name": "Klettergarten Wiesing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12195792337,
+      "lat": 47.2807074,
+      "lon": 11.0062472,
+      "tags": {
+        "leisure": "park",
+        "name": "Brunnen Windfang"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12336973001,
+      "lat": 48.5042969,
+      "lon": 15.7155606,
+      "tags": {
+        "leisure": "park",
+        "name": "Drei Teiche"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12337045800,
+      "lat": 48.2035255,
+      "lon": 16.3522004,
+      "tags": {
+        "leisure": "park",
+        "name": "Urbanize"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12458790109,
+      "lat": 47.8235723,
+      "lon": 13.0392297,
+      "tags": {
+        "addr:city": "Salzburg",
+        "addr:housenumber": "30",
+        "addr:postcode": "5020",
+        "addr:street": "Schillerstraße",
+        "check_date": "2024-12-16",
+        "leisure": "park",
+        "man_made": "courtyard",
+        "name": "Innenhof TechnoZ",
+        "operator": "Techno-Z Salzburg",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12520224954,
+      "lat": 48.1758135,
+      "lon": 16.3731526,
+      "tags": {
+        "leisure": "park",
+        "name": "Hochbeete der Parkbetreuung Favoriten",
+        "operator": "Wiener Kinderfreunde aktiv",
+        "operator:type": "community",
+        "website": "https://wienerkinderfreunde-aktiv.at/neuigkeiten/garteln-in-favoriten-1"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12684470215,
+      "lat": 47.5046992,
+      "lon": 9.7376141,
+      "tags": {
+        "leisure": "park",
+        "name": "Festspielhaus Bregenz"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12800754325,
+      "lat": 47.3177763,
+      "lon": 11.0889092,
+      "tags": {
+        "addr:city": "Telfs",
+        "addr:housenumber": "43",
+        "addr:postcode": "6410",
+        "addr:street": "Unterbirkenberg",
+        "leisure": "park",
+        "name": "*",
+        "opening_hours": "24/7",
+        "operator": "*",
+        "operator:type": "private"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12969339158,
+      "lat": 48.4879058,
+      "lon": 16.6756793,
+      "tags": {
+        "addr:city": "Sulz im Weinviertel",
+        "addr:postcode": "2224",
+        "addr:street": "Niedersulz L17",
+        "description": "Österreichs erster und einziger Phänologischer Naschgarten. Genießen Sie die Vielfalt der Natur zwischen einer Vielzahl an alten Obstsorten, welche gleichzeitig als natürliche Messinstrumente dienen. Greifen Sie getrost bei den köstlichen Früchten zu!",
+        "email": "gemeinde@sulz-weinviertel.gv.at",
+        "leisure": "park",
+        "name": "Phänologischer Naschgarten",
+        "opening_hours": "24/7",
+        "operator": "Marktgemeinde Sulz im Weinviertel",
+        "operator:type": "public",
+        "phone": "+43 2534 217"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13057527924,
+      "lat": 47.4934237,
+      "lon": 9.7452187,
+      "tags": {
+        "addr:street": "G. Sauter-Weg",
+        "leisure": "park",
+        "name": "Die Schweigespirale",
+        "operator": "Vorarlberger Landesbibliothek",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13181244288,
+      "lat": 47.3181656,
+      "lon": 11.0081147,
+      "tags": {
+        "leisure": "park",
+        "name": "Eisn' Pepi Park"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13273725934,
+      "lat": 46.9199197,
+      "lon": 13.8716466,
+      "tags": {
+        "leisure": "park",
+        "name": "MTB-Rastplatz Wildgehege mit Holzplattform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13516855016,
+      "lat": 46.9403716,
+      "lon": 15.3355116,
+      "tags": {
+        "leisure": "park",
+        "name": "Alte Kläranlage",
+        "operator": "Marktgemeinde Lannach"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13520064013,
+      "lat": 47.1539816,
+      "lon": 9.8229164,
+      "tags": {
+        "access": "private",
+        "addr:city": "Bludenz",
+        "addr:housenumber": "2",
+        "addr:postcode": "6700",
+        "addr:street": "Kapuzinerstraße",
+        "leisure": "park",
+        "name": "Franziskaner Klosterpark"
+      }
+    }
+
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-03-26T00:51:36Z",
+    "timestamp_areas_base": "2026-03-25T12:08:00Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+    {
+      "type": "node",
+      "id": 388660534,
+      "lat": 48.0140207,
+      "lon": 15.5921884,
+      "tags": {
+        "name": "Ziwa Lilienfeld",
+        "shop": "mall",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 457621235,
+      "lat": 48.2021722,
+      "lon": 16.3722949,
+      "tags": {
+        "addr:city": "Wien",
+        "addr:country": "AT",
+        "addr:housenumber": "11-13",
+        "addr:postcode": "1010",
+        "addr:street": "Kärntner Ring",
+        "name": "Ringstraßen-Galerien",
+        "shop": "mall",
+        "website": "https://www.ringstrassen-galerien.at/",
+        "wheelchair": "yes",
+        "wheelchair:description": "Im Gebäude gibt es einen Aufzug. Die Geschäfte sind von innen barrierefrei. Von der Straße gelangt man nur über eine Stufe in die Geschäfte.Die Drehtüre am Eingang lässt sich per Knopfdruck verlangsamen.",
+        "wikidata": "Q50349856"
+      }
+    },
+    {
+      "type": "node",
+      "id": 870408946,
+      "lat": 48.1134746,
+      "lon": 13.1539519,
+      "tags": {
+        "name": "Parkkauf",
+        "shop": "mall"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1044741289,
+      "lat": 47.4148672,
+      "lon": 13.6756752,
+      "tags": {
+        "name": "Kaufhaus Plut",
+        "shop": "mall"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1465641560,
+      "lat": 48.3112517,
+      "lon": 16.5150275,
+      "tags": {
+        "addr:city": "Deutsch-Wagram",
+        "addr:country": "AT",
+        "addr:housenumber": "8",
+        "addr:place": "Stallingerfeld",
+        "addr:postcode": "2232",
+        "contact:email": "deutsch-wagram@rosenberger.cc",
+        "contact:phone": "+43 2247 511 11",
+        "name": "Rosehill Foodpark",
+        "opening_hours": "Mo-Su 06:00-24:00",
+        "shop": "mall",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1731501717,
+      "lat": 48.1896188,
+      "lon": 16.3650924,
+      "tags": {
+        "addr:city": "Wien",
+        "addr:country": "AT",
+        "addr:housenumber": "76",
+        "addr:postcode": "1040",
+        "addr:street": "Wiedner Hauptstraße",
+        "check_date:opening_hours": "2024-08-27",
+        "level": "0",
+        "name": "Galerie Wieden",
+        "opening_hours:signed": "no",
+        "shop": "mall",
+        "toilets": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2138688292,
+      "lat": 48.2470574,
+      "lon": 14.6256001,
+      "tags": {
+        "name": "Hagebaumarkt Altzinger",
+        "shop": "mall",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2965640966,
+      "lat": 47.5833039,
+      "lon": 12.1688513,
+      "tags": {
+        "check_date": "2024-06-27",
+        "name": "Kiss",
+        "shop": "mall",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5571620381,
+      "lat": 47.4110222,
+      "lon": 13.2174003,
+      "tags": {
+        "addr:city": "Bischofshofen",
+        "addr:housenumber": "32",
+        "addr:postcode": "5500",
+        "addr:street": "Molkereistraße",
+        "name": "EKZ Süd",
+        "opening_hours": "Mo-Fr 07:15-19:30; Sa 07:15-18:00",
+        "shop": "mall",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6116044291,
+      "lat": 47.2078047,
+      "lon": 10.1421697,
+      "tags": {
+        "addr:city": "Lech",
+        "addr:country": "AT",
+        "addr:housenumber": "229",
+        "addr:postcode": "6764",
+        "addr:street": "Dorf",
+        "name": "Strolz am Rüfiplatz",
+        "name:de": "Strolz am Rüfiplatz",
+        "operator": "Strolz GmbH",
+        "shop": "mall"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6181162787,
+      "lat": 47.4199852,
+      "lon": 13.3817655,
+      "tags": {
+        "addr:city": "Eben im Pongau",
+        "addr:housenumber": "181",
+        "addr:postcode": "5531",
+        "addr:street": "Gasthofberg",
+        "check_date": "2023-07-07",
+        "clothes": "sports;women;men;children;denim;fashion",
+        "name": "Tauern Outlet",
+        "name:de": "Tauern Outlet",
+        "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-18:00; Su off",
+        "shop": "mall"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6235890859,
+      "lat": 48.1475588,
+      "lon": 16.3438004,
+      "tags": {
+        "addr:city": "Wien",
+        "addr:country": "AT",
+        "addr:housenumber": "3",
+        "addr:postcode": "1230",
+        "addr:street": "Sterngasse",
+        "description": "Fachmarktzentrum",
+        "name": "C23",
+        "shop": "mall"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6299245075,
+      "lat": 48.1372783,
+      "lon": 16.3628078,
+      "tags": {
+        "addr:city": "Wien",
+        "addr:housenumber": "5a",
+        "addr:postcode": "1230",
+        "addr:street": "Heizwerkstraße",
+        "name": "F-Eins",
+        "shop": "mall"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7557154206,
+      "lat": 48.3010979,
+      "lon": 15.8937486,
+      "tags": {
+        "name": "Zentrum Heiligeneich",
+        "operator": "Peter Schaider",
+        "shop": "mall"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8715051548,
+      "lat": 48.2004935,
+      "lon": 15.4024485,
+      "tags": {
+        "addr:city": "Loosdorf",
+        "addr:country": "AT",
+        "addr:housenumber": "21",
+        "addr:postcode": "3382",
+        "addr:street": "Wiener Straße",
+        "name": "ZIWA Loosdorf",
+        "shop": "mall",
+        "website": "https://www.ziwa.at/ziwa-parks/ziwa-loosdorf/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9948088328,
+      "lat": 48.2187940,
+      "lon": 16.3315404,
+      "tags": {
+        "addr:city": "Wien",
+        "addr:housenumber": "12",
+        "addr:postcode": "1170",
+        "addr:street": "Elterleinplatz",
+        "email": "centermanagement@krocon.at",
+        "name": "Einkaufszentrum Hernals",
+        "opening_hours": "Mo-Fr 09:00-18:00; Sa 09:00-17:00",
+        "operator": "Krokon Asset",
+        "shop": "mall",
+        "toilets": "no",
+        "website": "https://www.zentrum-hernals.at/",
+        "wheelchair": "yes",
+        "wikimedia_commons": "File:Alszauberbrunnen 0373.JPG"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11536610180,
+      "lat": 48.1042903,
+      "lon": 13.1487665,
+      "tags": {
+        "name": "MCenter",
+        "shop": "mall"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11725643077,
+      "lat": 48.1835209,
+      "lon": 16.3261681,
+      "tags": {
+        "check_date": "2026-03-07",
+        "check_date:opening_hours": "2026-03-07",
+        "layer": "-1",
+        "level": "0;1;-1",
+        "name": "Vio Plaza",
+        "opening_date": "2023",
+        "opening_hours": "Mo-Fr 07:00-19:30; Sa 07:00-18:00",
+        "shop": "mall",
+        "source": "https://www.meinbezirk.at/meidling/c-lokales/das-vio-plaza-startet-am-19-dezember-seinen-betrieb_a6438928",
+        "website": "https://www.vioplaza.at/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11731633110,
+      "lat": 47.7863406,
+      "lon": 13.0657522,
+      "tags": {
+        "name": "Zentrum Herrnau",
+        "shop": "mall",
+        "website": "https://zentrumherrnau.at/"
+      }
+    }
+
+  ]
+}
