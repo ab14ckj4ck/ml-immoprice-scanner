@@ -1,0 +1,7563 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pois>
+    <poi name="Westliche Fuchslochlacke">
+        <lat>47.7922133</lat>
+        <lon>16.8555765</lon>
+    </poi>
+    <poi name="Östliche Wörthenlacke">
+        <lat>47.7786208</lat>
+        <lon>16.876586</lon>
+    </poi>
+    <poi name="Zicklacke">
+        <lat>47.7708171</lat>
+        <lon>16.7926847</lon>
+    </poi>
+    <poi name="Zicklacke">
+        <lat>47.7710707</lat>
+        <lon>16.780807</lon>
+    </poi>
+    <poi name="Lange Lacke">
+        <lat>47.7670638</lat>
+        <lon>16.8807547</lon>
+    </poi>
+    <poi name="Lange Lacke">
+        <lat>47.7567239</lat>
+        <lon>16.8722553</lon>
+    </poi>
+    <poi name="Lange Lacke">
+        <lat>47.7586789</lat>
+        <lon>16.8598055</lon>
+    </poi>
+    <poi name="Große Neubruchlacke">
+        <lat>47.7880957</lat>
+        <lon>16.8401165</lon>
+    </poi>
+    <poi name="Ochsenbrunnlacke">
+        <lat>47.8134722</lat>
+        <lon>16.8440278</lon>
+    </poi>
+    <poi name="Birnbaumlacke">
+        <lat>47.8190278</lat>
+        <lon>16.8651389</lon>
+    </poi>
+    <poi name="Privater Badesee">
+        <lat>47.8076974</lat>
+        <lon>16.2795523</lon>
+    </poi>
+    <poi name="Badesee">
+        <lat>47.1313153</lat>
+        <lon>16.2250304</lon>
+    </poi>
+    <poi name="Sonnensee">
+        <lat>47.6313494</lat>
+        <lon>16.4713395</lon>
+    </poi>
+    <poi name="Bauernsee">
+        <lat>47.8621962</lat>
+        <lon>16.3830664</lon>
+    </poi>
+    <poi name="Stausee Forchtenstein">
+        <lat>47.7073181</lat>
+        <lon>16.3548563</lon>
+    </poi>
+    <poi name="Römersee">
+        <lat>47.7625429</lat>
+        <lon>16.3450259</lon>
+    </poi>
+    <poi name="Öffentlicher Badesee">
+        <lat>47.8062308</lat>
+        <lon>16.276843</lon>
+    </poi>
+    <poi name="Untere Hölllacke">
+        <lat>47.8225525</lat>
+        <lon>16.8083603</lon>
+    </poi>
+    <poi name="Obere Hölllacke">
+        <lat>47.8254403</lat>
+        <lon>16.8078677</lon>
+    </poi>
+    <poi name="Unterer Stinkersee">
+        <lat>47.8029838</lat>
+        <lon>16.7857608</lon>
+    </poi>
+    <poi name="Mittlerer Stinkersee">
+        <lat>47.8070739</lat>
+        <lon>16.7889074</lon>
+    </poi>
+    <poi name="Runde Lacke">
+        <lat>47.7859306</lat>
+        <lon>16.7941007</lon>
+    </poi>
+    <poi name="Südlicher Silbersee">
+        <lat>47.789871</lat>
+        <lon>16.7790241</lon>
+    </poi>
+    <poi name="Nördlicher Silbersee">
+        <lat>47.7970525</lat>
+        <lon>16.7816995</lon>
+    </poi>
+    <poi name="Oberer Stinkersee">
+        <lat>47.818579</lat>
+        <lon>16.7944878</lon>
+    </poi>
+    <poi name="Oberer Stinkersee">
+        <lat>47.8093926</lat>
+        <lon>16.7883619</lon>
+    </poi>
+    <poi name="Badesee Burg">
+        <lat>47.215513</lat>
+        <lon>16.410018</lon>
+    </poi>
+    <poi name="Unterer Weißsee">
+        <lat>47.7284106</lat>
+        <lon>16.8191616</lon>
+    </poi>
+    <poi name="Apetloner Meierhoflacke">
+        <lat>47.7213161</lat>
+        <lon>16.8210592</lon>
+    </poi>
+    <poi name="Fünf Schoppen">
+        <lat>47.7910209</lat>
+        <lon>16.7152045</lon>
+    </poi>
+    <poi name="Kirchsee">
+        <lat>47.7570791</lat>
+        <lon>16.7891605</lon>
+    </poi>
+    <poi name="Oberer Schrändlsee">
+        <lat>47.7510187</lat>
+        <lon>16.7948514</lon>
+    </poi>
+    <poi name="Unterer Schrändlsee">
+        <lat>47.7505732</lat>
+        <lon>16.7958798</lon>
+    </poi>
+    <poi name="Albersee">
+        <lat>47.772798</lat>
+        <lon>16.7676093</lon>
+    </poi>
+    <poi name="Kiesgrube">
+        <lat>47.8278461</lat>
+        <lon>16.8680186</lon>
+    </poi>
+    <poi name="Kiesgrube">
+        <lat>47.8294825</lat>
+        <lon>16.856483</lon>
+    </poi>
+    <poi name="Auerlacke">
+        <lat>47.788131</lat>
+        <lon>16.8867108</lon>
+    </poi>
+    <poi name="Kühbrunnlacke">
+        <lat>47.7929144</lat>
+        <lon>16.8769216</lon>
+    </poi>
+    <poi name="Sechsmahdlacke">
+        <lat>47.7847434</lat>
+        <lon>16.8803244</lon>
+    </poi>
+    <poi name="Lacke südlich Stundlacke">
+        <lat>47.7941575</lat>
+        <lon>16.8676578</lon>
+    </poi>
+    <poi name="Badesee Apetlon">
+        <lat>47.7838188</lat>
+        <lon>16.8370687</lon>
+    </poi>
+    <poi name="Katschitzllacke">
+        <lat>47.7671574</lat>
+        <lon>16.8726531</lon>
+    </poi>
+    <poi name="Südliche Martenhoflacke">
+        <lat>47.750512</lat>
+        <lon>16.8567386</lon>
+    </poi>
+    <poi name="Krautingsee">
+        <lat>47.7558436</lat>
+        <lon>16.7802104</lon>
+    </poi>
+    <poi name="Hutweidenlacke">
+        <lat>47.767084</lat>
+        <lon>16.8682236</lon>
+    </poi>
+    <poi name="Lettengrube">
+        <lat>47.8165298</lat>
+        <lon>16.7973734</lon>
+    </poi>
+    <poi name="Teufelsschoppen">
+        <lat>47.7844399</lat>
+        <lon>16.7112408</lon>
+    </poi>
+    <poi name="Ladislaussee">
+        <lat>47.8556618</lat>
+        <lon>16.388266</lon>
+    </poi>
+    <poi name="Nikolaussee">
+        <lat>47.8536253</lat>
+        <lon>16.3880046</lon>
+    </poi>
+    <poi name="Paulsee">
+        <lat>47.853015</lat>
+        <lon>16.3878051</lon>
+    </poi>
+    <poi name="Naturpark-Badesee">
+        <lat>47.5959805</lat>
+        <lon>16.3652513</lon>
+    </poi>
+    <poi name="Leopoldinesee">
+        <lat>47.8554326</lat>
+        <lon>16.3875056</lon>
+    </poi>
+    <poi name="Union Yacht Club Neusiedlersee">
+        <lat>47.9312213</lat>
+        <lon>16.8334699</lon>
+    </poi>
+    <poi name="Badeteich Rohrbach">
+        <lat>47.7165604</lat>
+        <lon>16.4324515</lon>
+    </poi>
+    <poi name="Pergersee">
+        <lat>47.8259132</lat>
+        <lon>16.5754078</lon>
+    </poi>
+    <poi name="Esterhazysee">
+        <lat>47.8290969</lat>
+        <lon>16.579871</lon>
+    </poi>
+    <poi name="Kneipp-Bach">
+        <lat>47.3368347</lat>
+        <lon>16.223303</lon>
+    </poi>
+    <poi name="Grüne Lacke">
+        <lat>47.6554946</lat>
+        <lon>16.4157893</lon>
+    </poi>
+    <poi name="Tiefenwasserbelüftung">
+        <lat>47.8378987</lat>
+        <lon>16.3797807</lon>
+    </poi>
+    <poi name="B0">
+        <lat>47.735382</lat>
+        <lon>16.7209787</lon>
+    </poi>
+    <poi name="Herrnsee">
+        <lat>47.7467599</lat>
+        <lon>16.7681501</lon>
+    </poi>
+    <poi name="Heiglschibü">
+        <lat>47.8368777</lat>
+        <lon>16.7328858</lon>
+    </poi>
+    <poi name="Schwarzlacke">
+        <lat>47.8838216</lat>
+        <lon>16.4935746</lon>
+    </poi>
+    <poi name="Madárvárta-sziget">
+        <lat>47.6756727</lat>
+        <lon>16.7942138</lon>
+    </poi>
+    <poi name="Scheibenlacke">
+        <lat>47.8278002</lat>
+        <lon>16.8041503</lon>
+    </poi>
+    <poi name="Krötenlacke">
+        <lat>47.7845397</lat>
+        <lon>16.7959687</lon>
+    </poi>
+    <poi name="Westliche Arbesthaulacke">
+        <lat>47.7268482</lat>
+        <lon>16.8431932</lon>
+    </poi>
+    <poi name="Östliche Arbesthaulacke">
+        <lat>47.7248041</lat>
+        <lon>16.8641002</lon>
+    </poi>
+    <poi name="Lacke östlich Oberer Stinkersee">
+        <lat>47.8108747</lat>
+        <lon>16.8008101</lon>
+    </poi>
+    <poi name="Zwillingslacke">
+        <lat>47.8078986</lat>
+        <lon>16.7992659</lon>
+    </poi>
+    <poi name="Haidlacke">
+        <lat>47.7896024</lat>
+        <lon>16.8920079</lon>
+    </poi>
+    <poi name="Hottergrube">
+        <lat>47.7812901</lat>
+        <lon>16.8340272</lon>
+    </poi>
+    <poi name="Obere Fürstenlacke">
+        <lat>47.777519</lat>
+        <lon>16.8794551</lon>
+    </poi>
+    <poi name="Mittlere Fürstenlacke">
+        <lat>47.7762498</lat>
+        <lon>16.8808113</lon>
+    </poi>
+    <poi name="Untere Fürstenlacke">
+        <lat>47.7735509</lat>
+        <lon>16.8840783</lon>
+    </poi>
+    <poi name="Südlicher Stinkersee">
+        <lat>47.7915497</lat>
+        <lon>16.7824423</lon>
+    </poi>
+    <poi name="Oggauer Schoppen">
+        <lat>47.8372444</lat>
+        <lon>16.7314118</lon>
+    </poi>
+    <poi name="Yachthafen Jois">
+        <lat>47.941372</lat>
+        <lon>16.7924663</lon>
+    </poi>
+    <poi name="Neusiedler See / Fertő">
+        <lat>47.7385315</lat>
+        <lon>16.7380437</lon>
+    </poi>
+    <poi name="Neusiedler See / Fertő">
+        <lat>47.829618</lat>
+        <lon>16.725817</lon>
+    </poi>
+    <poi name="Neusiedler See / Fertő">
+        <lat>47.9259249</lat>
+        <lon>16.8148764</lon>
+    </poi>
+    <poi name="Neusiedler See / Fertő">
+        <lat>47.8461245</lat>
+        <lon>16.8163104</lon>
+    </poi>
+    <poi name="Angelteich Oggau">
+        <lat>47.8360556</lat>
+        <lon>16.6742619</lon>
+    </poi>
+    <poi name="Zicksee">
+        <lat>47.7955403</lat>
+        <lon>16.9045607</lon>
+    </poi>
+    <poi name="Zicksee">
+        <lat>47.7819514</lat>
+        <lon>16.897883</lon>
+    </poi>
+    <poi name="Darscho">
+        <lat>47.7732719</lat>
+        <lon>16.8404145</lon>
+    </poi>
+    <poi name="Hochwasserrückhaltebecken Nodbach Zagersdorf">
+        <lat>47.7590571</lat>
+        <lon>16.5091656</lon>
+    </poi>
+    <poi name="Hochwasser-Rückhaltebecken">
+        <lat>47.5718388</lat>
+        <lon>16.5252053</lon>
+    </poi>
+    <poi name="Neufelder See">
+        <lat>47.8664421</lat>
+        <lon>16.3853316</lon>
+    </poi>
+    <poi name="Neufelder See">
+        <lat>47.880783</lat>
+        <lon>16.3882193</lon>
+    </poi>
+    <poi name="Pöttschinger See">
+        <lat>47.8157225</lat>
+        <lon>16.3751578</lon>
+    </poi>
+    <poi name="Segelhafen West">
+        <lat>47.932448</lat>
+        <lon>16.8372327</lon>
+    </poi>
+    <poi name="Steinbrunner See, Bruch 2">
+        <lat>47.8377894</lat>
+        <lon>16.3784784</lon>
+    </poi>
+    <poi name="Bio-Fischteichanlage">
+        <lat>47.3803826</lat>
+        <lon>16.3461853</lon>
+    </poi>
+    <poi name="Burgsee">
+        <lat>47.4076405</lat>
+        <lon>16.4260501</lon>
+    </poi>
+    <poi name="Rückhalte Biotop">
+        <lat>47.7123839</lat>
+        <lon>16.4925908</lon>
+    </poi>
+    <poi name="Löschteichanlage">
+        <lat>47.8860678</lat>
+        <lon>16.5059001</lon>
+    </poi>
+    <poi name="Weißsee">
+        <lat>47.0155894</lat>
+        <lon>13.006852</lon>
+    </poi>
+    <poi name="Badesee St. Johann">
+        <lat>46.5371289</lat>
+        <lon>14.2159208</lon>
+    </poi>
+    <poi name="Turrachsee">
+        <lat>46.922194</lat>
+        <lon>13.8724109</lon>
+    </poi>
+    <poi name="Gösselsdorfer See">
+        <lat>46.5611033</lat>
+        <lon>14.6231026</lon>
+    </poi>
+    <poi name="Rauschelesee">
+        <lat>46.5859297</lat>
+        <lon>14.2152089</lon>
+    </poi>
+    <poi name="Hafnersee">
+        <lat>46.5860296</lat>
+        <lon>14.1343472</lon>
+    </poi>
+    <poi name="Baßgeigensee">
+        <lat>46.5873414</lat>
+        <lon>14.2012641</lon>
+    </poi>
+    <poi name="Brettersee">
+        <lat>47.0887038</lat>
+        <lon>12.8272519</lon>
+    </poi>
+    <poi name="Brennsee">
+        <lat>46.7740042</lat>
+        <lon>13.7504746</lon>
+    </poi>
+    <poi name="Brennsee">
+        <lat>46.7644443</lat>
+        <lon>13.7542094</lon>
+    </poi>
+    <poi name="Afritzer See">
+        <lat>46.750383</lat>
+        <lon>13.7630753</lon>
+    </poi>
+    <poi name="Afritzer See">
+        <lat>46.7434292</lat>
+        <lon>13.7712159</lon>
+    </poi>
+    <poi name="Ossiacher See">
+        <lat>46.6499829</lat>
+        <lon>13.8944989</lon>
+    </poi>
+    <poi name="Ossiacher See">
+        <lat>46.6621792</lat>
+        <lon>13.9226838</lon>
+    </poi>
+    <poi name="Ossiacher See">
+        <lat>46.6854894</lat>
+        <lon>13.9790918</lon>
+    </poi>
+    <poi name="Ossiacher See">
+        <lat>46.6870986</lat>
+        <lon>14.0130632</lon>
+    </poi>
+    <poi name="Ossiacher See">
+        <lat>46.6652815</lat>
+        <lon>13.9733137</lon>
+    </poi>
+    <poi name="Maltschacher See">
+        <lat>46.7046789</lat>
+        <lon>14.1421869</lon>
+    </poi>
+    <poi name="Vassacher See">
+        <lat>46.634736</lat>
+        <lon>13.8595742</lon>
+    </poi>
+    <poi name="Leonharder See">
+        <lat>46.6289717</lat>
+        <lon>13.8592464</lon>
+    </poi>
+    <poi name="Turnersee">
+        <lat>46.5816304</lat>
+        <lon>14.5761533</lon>
+    </poi>
+    <poi name="Kleinsee">
+        <lat>46.6089798</lat>
+        <lon>14.5647315</lon>
+    </poi>
+    <poi name="Klopeiner See">
+        <lat>46.607542</lat>
+        <lon>14.5818898</lon>
+    </poi>
+    <poi name="Klopeiner See">
+        <lat>46.6068792</lat>
+        <lon>14.5949947</lon>
+    </poi>
+    <poi name="Griffner See">
+        <lat>46.6924923</lat>
+        <lon>14.7191808</lon>
+    </poi>
+    <poi name="Pressegger See">
+        <lat>46.626742</lat>
+        <lon>13.447241</lon>
+    </poi>
+    <poi name="Pressegger See">
+        <lat>46.627342</lat>
+        <lon>13.43553</lon>
+    </poi>
+    <poi name="Egger-Alm-See">
+        <lat>46.5824202</lat>
+        <lon>13.4023311</lon>
+    </poi>
+    <poi name="Sankt Urbaner See">
+        <lat>46.7446628</lat>
+        <lon>14.1594834</lon>
+    </poi>
+    <poi name="Goggausee">
+        <lat>46.7969565</lat>
+        <lon>14.1499603</lon>
+    </poi>
+    <poi name="Feistritzer Stausee">
+        <lat>46.53586</lat>
+        <lon>14.168675</lon>
+    </poi>
+    <poi name="Feistritzer Stausee">
+        <lat>46.5316139</lat>
+        <lon>14.1409984</lon>
+    </poi>
+    <poi name="Feistritzer Stausee">
+        <lat>46.5372545</lat>
+        <lon>14.1501005</lon>
+    </poi>
+    <poi name="Penkensee">
+        <lat>46.5818802</lat>
+        <lon>14.1237084</lon>
+    </poi>
+    <poi name="Tigringer See">
+        <lat>46.6829343</lat>
+        <lon>14.1768368</lon>
+    </poi>
+    <poi name="Aichwaldsee">
+        <lat>46.555687</lat>
+        <lon>13.946312</lon>
+    </poi>
+    <poi name="Saissersee">
+        <lat>46.6293033</lat>
+        <lon>14.0371474</lon>
+    </poi>
+    <poi name="Schwarzsee">
+        <lat>46.7031341</lat>
+        <lon>13.7599155</lon>
+    </poi>
+    <poi name="Schwarzsee">
+        <lat>47.005012</lat>
+        <lon>13.0165686</lon>
+    </poi>
+    <poi name="Schwarzsee">
+        <lat>46.9202745</lat>
+        <lon>13.8820975</lon>
+    </poi>
+    <poi name="Schwarzsee">
+        <lat>46.9218309</lat>
+        <lon>13.9560274</lon>
+    </poi>
+    <poi name="Schwarzsee">
+        <lat>46.9451013</lat>
+        <lon>13.3468897</lon>
+    </poi>
+    <poi name="Schwarzsee">
+        <lat>46.8500523</lat>
+        <lon>13.1140017</lon>
+    </poi>
+    <poi name="Farchtensee">
+        <lat>46.683843</lat>
+        <lon>13.47212</lon>
+    </poi>
+    <poi name="Zlaner Stausee">
+        <lat>46.7236852</lat>
+        <lon>13.5800672</lon>
+    </poi>
+    <poi name="Längsee">
+        <lat>46.7872175</lat>
+        <lon>14.4201382</lon>
+    </poi>
+    <poi name="Längsee">
+        <lat>46.7877181</lat>
+        <lon>14.4302637</lon>
+    </poi>
+    <poi name="Kraiger See">
+        <lat>46.8038971</lat>
+        <lon>14.3661062</lon>
+    </poi>
+    <poi name="Baderbauersee">
+        <lat>46.9225769</lat>
+        <lon>14.6456372</lon>
+    </poi>
+    <poi name="Feldsee">
+        <lat>47.0026653</lat>
+        <lon>13.0605195</lon>
+    </poi>
+    <poi name="Feldsee">
+        <lat>46.8374802</lat>
+        <lon>13.0998834</lon>
+    </poi>
+    <poi name="Kegelesee">
+        <lat>47.0090614</lat>
+        <lon>12.9764439</lon>
+    </poi>
+    <poi name="Grüneckersee">
+        <lat>47.03656</lat>
+        <lon>13.1750477</lon>
+    </poi>
+    <poi name="Zmulner See">
+        <lat>46.7029014</lat>
+        <lon>14.2500587</lon>
+    </poi>
+    <poi name="Badesee Greifenburg">
+        <lat>46.7476538</lat>
+        <lon>13.1957709</lon>
+    </poi>
+    <poi name="Drauschleife">
+        <lat>46.6145394</lat>
+        <lon>13.923505</lon>
+    </poi>
+    <poi name="Wolayer See - Lago Volaia">
+        <lat>46.6115617</lat>
+        <lon>12.8695485</lon>
+    </poi>
+    <poi name="Laußnitzsee">
+        <lat>47.0172328</lat>
+        <lon>13.6892922</lon>
+    </poi>
+    <poi name="Meerauge/Jezerce">
+        <lat>46.4718522</lat>
+        <lon>14.2177413</lon>
+    </poi>
+    <poi name="Silberner See">
+        <lat>46.6251257</lat>
+        <lon>13.8840379</lon>
+    </poi>
+    <poi name="Baggersee">
+        <lat>46.6014113</lat>
+        <lon>13.9521709</lon>
+    </poi>
+    <poi name="Baggersee;Freibad Wernberg">
+        <lat>46.6028754</lat>
+        <lon>13.9524348</lon>
+    </poi>
+    <poi name="Pirkdorfer See">
+        <lat>46.5578156</lat>
+        <lon>14.7492361</lon>
+    </poi>
+    <poi name="Pfannsee">
+        <lat>46.8846382</lat>
+        <lon>13.7553958</lon>
+    </poi>
+    <poi name="Friesenhalssee">
+        <lat>46.9487786</lat>
+        <lon>13.7721479</lon>
+    </poi>
+    <poi name="Vorderer Bodensee">
+        <lat>46.5898475</lat>
+        <lon>13.2829448</lon>
+    </poi>
+    <poi name="Dösener See">
+        <lat>46.9896265</lat>
+        <lon>13.2675029</lon>
+    </poi>
+    <poi name="Konradlacke">
+        <lat>46.987392</lat>
+        <lon>13.234263</lon>
+    </poi>
+    <poi name="Ochsenaugensee">
+        <lat>46.8591451</lat>
+        <lon>13.8239047</lon>
+    </poi>
+    <poi name="Stappitzer See">
+        <lat>47.0180746</lat>
+        <lon>13.1959263</lon>
+    </poi>
+    <poi name="Wildsee">
+        <lat>46.8015783</lat>
+        <lon>12.9693</lon>
+    </poi>
+    <poi name="Stübelesee">
+        <lat>47.0176177</lat>
+        <lon>13.020876</lon>
+    </poi>
+    <poi name="Mernigsee">
+        <lat>47.0083802</lat>
+        <lon>13.0247893</lon>
+    </poi>
+    <poi name="Unterer-Schwarzhornsee">
+        <lat>47.0565111</lat>
+        <lon>13.2801194</lon>
+    </poi>
+    <poi name="Oberer-Schwarzhornsee">
+        <lat>47.0599303</lat>
+        <lon>13.2774251</lon>
+    </poi>
+    <poi name="Pleßnitzsee">
+        <lat>47.0487629</lat>
+        <lon>13.2661285</lon>
+    </poi>
+    <poi name="Brunnkarsee">
+        <lat>47.0505552</lat>
+        <lon>13.3147063</lon>
+    </poi>
+    <poi name="Samersee">
+        <lat>47.0699142</lat>
+        <lon>13.3224124</lon>
+    </poi>
+    <poi name="Unterer Langkarsee">
+        <lat>47.0641076</lat>
+        <lon>13.325581</lon>
+    </poi>
+    <poi name="Vorderer Langtalsee">
+        <lat>47.0084095</lat>
+        <lon>12.7891989</lon>
+    </poi>
+    <poi name="Mittlerer Langtalsee">
+        <lat>46.9955191</lat>
+        <lon>12.7801974</lon>
+    </poi>
+    <poi name="Hinterer Langtalsee">
+        <lat>46.9894748</lat>
+        <lon>12.770619</lon>
+    </poi>
+    <poi name="Siebler Bad">
+        <lat>46.6317231</lat>
+        <lon>13.5307335</lon>
+    </poi>
+    <poi name="Mittersee">
+        <lat>46.9565715</lat>
+        <lon>12.7840361</lon>
+    </poi>
+    <poi name="Vordersee">
+        <lat>46.9569523</lat>
+        <lon>12.7924794</lon>
+    </poi>
+    <poi name="Großer Gradensee">
+        <lat>46.9538217</lat>
+        <lon>12.7780065</lon>
+    </poi>
+    <poi name="Striedensee">
+        <lat>46.8778317</lat>
+        <lon>13.124671</lon>
+    </poi>
+    <poi name="Poliniksee">
+        <lat>46.8866461</lat>
+        <lon>13.1384895</lon>
+    </poi>
+    <poi name="Bodensee">
+        <lat>46.904661</lat>
+        <lon>13.1536093</lon>
+    </poi>
+    <poi name="Trögersee">
+        <lat>46.8731415</lat>
+        <lon>13.1442966</lon>
+    </poi>
+    <poi name="Trögersee">
+        <lat>46.8537703</lat>
+        <lon>13.0310794</lon>
+    </poi>
+    <poi name="Glanzsee">
+        <lat>46.8334771</lat>
+        <lon>13.1216508</lon>
+    </poi>
+    <poi name="Zwei Seen">
+        <lat>46.801172</lat>
+        <lon>13.1485479</lon>
+    </poi>
+    <poi name="Einsee">
+        <lat>46.799437</lat>
+        <lon>13.131414</lon>
+    </poi>
+    <poi name="Unterer Zwenberger See">
+        <lat>46.9458501</lat>
+        <lon>13.3085618</lon>
+    </poi>
+    <poi name="Unterer Pfaffenberger See">
+        <lat>46.9721789</lat>
+        <lon>13.2967996</lon>
+    </poi>
+    <poi name="Hundstrichsee">
+        <lat>46.6557737</lat>
+        <lon>12.7888482</lon>
+    </poi>
+    <poi name="Falkertsee">
+        <lat>46.8610568</lat>
+        <lon>13.8266298</lon>
+    </poi>
+    <poi name="Dietrichsteiner See">
+        <lat>46.7278172</lat>
+        <lon>14.1256464</lon>
+    </poi>
+    <poi name="Windebensee">
+        <lat>46.8883277</lat>
+        <lon>13.8033317</lon>
+    </poi>
+    <poi name="Lasörnsee">
+        <lat>47.0355744</lat>
+        <lon>13.5060103</lon>
+    </poi>
+    <poi name="Grünsee">
+        <lat>46.9083634</lat>
+        <lon>13.881966</lon>
+    </poi>
+    <poi name="Grünsee">
+        <lat>46.6222322</lat>
+        <lon>13.8914309</lon>
+    </poi>
+    <poi name="Grünsee">
+        <lat>46.9003918</lat>
+        <lon>13.4266574</lon>
+    </poi>
+    <poi name="Waidischer See">
+        <lat>46.5109381</lat>
+        <lon>14.3301702</lon>
+    </poi>
+    <poi name="Zollnersee">
+        <lat>46.6035883</lat>
+        <lon>13.0804303</lon>
+    </poi>
+    <poi name="St. Andräer See">
+        <lat>46.7430498</lat>
+        <lon>14.8400677</lon>
+    </poi>
+    <poi name="Anderlesee">
+        <lat>46.9958528</lat>
+        <lon>13.7062251</lon>
+    </poi>
+    <poi name="Magdalensee">
+        <lat>46.6186262</lat>
+        <lon>13.8902264</lon>
+    </poi>
+    <poi name="Sonnegger See">
+        <lat>46.5535437</lat>
+        <lon>14.6260124</lon>
+    </poi>
+    <poi name="Fleetsee">
+        <lat>46.6237398</lat>
+        <lon>13.8883075</lon>
+    </poi>
+    <poi name="Hinterer Bodensee">
+        <lat>46.5900809</lat>
+        <lon>13.2854887</lon>
+    </poi>
+    <poi name="Gößsee">
+        <lat>46.9904218</lat>
+        <lon>13.3027699</lon>
+    </poi>
+    <poi name="Melcher See">
+        <lat>46.6144247</lat>
+        <lon>13.887336</lon>
+    </poi>
+    <poi name="Badesee">
+        <lat>46.5827544</lat>
+        <lon>14.6233289</lon>
+    </poi>
+    <poi name="Kreuzsee">
+        <lat>46.9275589</lat>
+        <lon>12.7947612</lon>
+    </poi>
+    <poi name="Lasseinbucht">
+        <lat>46.6141693</lat>
+        <lon>14.5300015</lon>
+    </poi>
+    <poi name="Zwergsee">
+        <lat>46.8003969</lat>
+        <lon>13.5902717</lon>
+    </poi>
+    <poi name="Flattnitzer See">
+        <lat>46.9386615</lat>
+        <lon>14.0375179</lon>
+    </poi>
+    <poi name="Gschweiftsee">
+        <lat>46.9288504</lat>
+        <lon>13.9491287</lon>
+    </poi>
+    <poi name="Winklerner Almsee">
+        <lat>46.8924872</lat>
+        <lon>12.8521832</lon>
+    </poi>
+    <poi name="L18">
+        <lat>46.6642892</lat>
+        <lon>14.1504791</lon>
+    </poi>
+    <poi name="Sandersee">
+        <lat>47.0694861</lat>
+        <lon>12.7457446</lon>
+    </poi>
+    <poi name="Sandersee">
+        <lat>47.0784748</lat>
+        <lon>12.7326092</lon>
+    </poi>
+    <poi name="Baggersee Lendorf">
+        <lat>46.8306813</lat>
+        <lon>13.4122521</lon>
+    </poi>
+    <poi name="Blauer Tumpf">
+        <lat>47.0294205</lat>
+        <lon>13.3915878</lon>
+    </poi>
+    <poi name="Nassbodensee">
+        <lat>46.8758686</lat>
+        <lon>13.7260362</lon>
+    </poi>
+    <poi name="Unterer Lanischsee">
+        <lat>47.0717915</lat>
+        <lon>13.4296856</lon>
+    </poi>
+    <poi name="Hörzendorfer See">
+        <lat>46.7242978</lat>
+        <lon>14.3366985</lon>
+    </poi>
+    <poi name="Grüner See">
+        <lat>46.542906</lat>
+        <lon>14.2254805</lon>
+    </poi>
+    <poi name="Birkenhofsee">
+        <lat>46.5404667</lat>
+        <lon>14.2276393</lon>
+    </poi>
+    <poi name="Millstätter See">
+        <lat>46.8147231</lat>
+        <lon>13.5225812</lon>
+    </poi>
+    <poi name="Millstätter See">
+        <lat>46.8019683</lat>
+        <lon>13.5696207</lon>
+    </poi>
+    <poi name="Millstätter See">
+        <lat>46.78154</lat>
+        <lon>13.6228649</lon>
+    </poi>
+    <poi name="Millstätter See">
+        <lat>46.76349</lat>
+        <lon>13.631495</lon>
+    </poi>
+    <poi name="Naturbadesee Lavamünd">
+        <lat>46.6493707</lat>
+        <lon>14.9310531</lon>
+    </poi>
+    <poi name="Schwimmbad">
+        <lat>46.5841681</lat>
+        <lon>14.6238738</lon>
+    </poi>
+    <poi name="Egelsee">
+        <lat>46.7847763</lat>
+        <lon>13.559369</lon>
+    </poi>
+    <poi name="Brettsee">
+        <lat>47.0374194</lat>
+        <lon>12.9548612</lon>
+    </poi>
+    <poi name="L6">
+        <lat>46.6640851</lat>
+        <lon>14.1574611</lon>
+    </poi>
+    <poi name="L16">
+        <lat>46.6622908</lat>
+        <lon>14.1553186</lon>
+    </poi>
+    <poi name="Kleiner Tauernsee">
+        <lat>47.0404492</lat>
+        <lon>13.1827676</lon>
+    </poi>
+    <poi name="Oberer See">
+        <lat>46.9397237</lat>
+        <lon>13.3659562</lon>
+    </poi>
+    <poi name="Gippersee">
+        <lat>46.8241815</lat>
+        <lon>12.9993677</lon>
+    </poi>
+    <poi name="Schöngößsee">
+        <lat>46.8229147</lat>
+        <lon>13.0433917</lon>
+    </poi>
+    <poi name="Gurksee">
+        <lat>46.9115444</lat>
+        <lon>13.9447764</lon>
+    </poi>
+    <poi name="Torersee">
+        <lat>46.9089015</lat>
+        <lon>13.9431609</lon>
+    </poi>
+    <poi name="Kasersee">
+        <lat>46.9078035</lat>
+        <lon>13.9159027</lon>
+    </poi>
+    <poi name="Atzensberger See">
+        <lat>47.0094137</lat>
+        <lon>13.6808049</lon>
+    </poi>
+    <poi name="Bösecksee">
+        <lat>46.9857851</lat>
+        <lon>13.0977624</lon>
+    </poi>
+    <poi name="Lussenlacke">
+        <lat>46.9868214</lat>
+        <lon>13.0296581</lon>
+    </poi>
+    <poi name="Oberer Karsee">
+        <lat>46.9539853</lat>
+        <lon>13.4102728</lon>
+    </poi>
+    <poi name="Tröskasee">
+        <lat>46.9588762</lat>
+        <lon>13.4052263</lon>
+    </poi>
+    <poi name="Unterer Karsee">
+        <lat>46.9502331</lat>
+        <lon>13.4131421</lon>
+    </poi>
+    <poi name="Bockriegelsee">
+        <lat>46.9162904</lat>
+        <lon>13.4076723</lon>
+    </poi>
+    <poi name="Großer Melniksee">
+        <lat>47.0469442</lat>
+        <lon>13.4477663</lon>
+    </poi>
+    <poi name="Kleiner Melniksee">
+        <lat>47.0440742</lat>
+        <lon>13.4539082</lon>
+    </poi>
+    <poi name="Mittlerer Hochalmsee">
+        <lat>47.0051955</lat>
+        <lon>13.371212</lon>
+    </poi>
+    <poi name="Oberer Hochalmsee">
+        <lat>47.0094315</lat>
+        <lon>13.3577538</lon>
+    </poi>
+    <poi name="Preimlsee">
+        <lat>47.0260565</lat>
+        <lon>13.3506925</lon>
+    </poi>
+    <poi name="Unterer Hochalmsee">
+        <lat>47.0089934</lat>
+        <lon>13.3697168</lon>
+    </poi>
+    <poi name="Meeraugen">
+        <lat>46.8589053</lat>
+        <lon>14.6486083</lon>
+    </poi>
+    <poi name="Hochalmsee">
+        <lat>46.8570735</lat>
+        <lon>13.107533</lon>
+    </poi>
+    <poi name="Hüttensee">
+        <lat>46.8522461</lat>
+        <lon>13.1302213</lon>
+    </poi>
+    <poi name="Hartriegelsee">
+        <lat>46.9037406</lat>
+        <lon>13.390392</lon>
+    </poi>
+    <poi name="Lamnitzsee">
+        <lat>46.8004893</lat>
+        <lon>13.0337814</lon>
+    </poi>
+    <poi name="Plattachsee">
+        <lat>46.8114991</lat>
+        <lon>13.0366362</lon>
+    </poi>
+    <poi name="Kesselsee">
+        <lat>46.8852714</lat>
+        <lon>13.1981048</lon>
+    </poi>
+    <poi name="Seidernitzsee">
+        <lat>46.7858092</lat>
+        <lon>13.0553839</lon>
+    </poi>
+    <poi name="Knappensee">
+        <lat>46.7833558</lat>
+        <lon>13.0373329</lon>
+    </poi>
+    <poi name="Eckensee">
+        <lat>46.809922</lat>
+        <lon>13.0741515</lon>
+    </poi>
+    <poi name="Schönangersee">
+        <lat>46.9685206</lat>
+        <lon>13.3284849</lon>
+    </poi>
+    <poi name="Lussensee">
+        <lat>46.8134044</lat>
+        <lon>12.9385336</lon>
+    </poi>
+    <poi name="Oberer Langkarsee">
+        <lat>47.0488439</lat>
+        <lon>13.3268199</lon>
+    </poi>
+    <poi name="L8">
+        <lat>46.6647345</lat>
+        <lon>14.1567291</lon>
+    </poi>
+    <poi name="Tümpel">
+        <lat>46.6252708</lat>
+        <lon>14.4515551</lon>
+    </poi>
+    <poi name="Steinsee">
+        <lat>46.9218703</lat>
+        <lon>12.8483139</lon>
+    </poi>
+    <poi name="Felsensee">
+        <lat>46.6912428</lat>
+        <lon>13.9229465</lon>
+    </poi>
+    <poi name="kleiner Bergsee">
+        <lat>46.6990133</lat>
+        <lon>13.9200205</lon>
+    </poi>
+    <poi name="Blinder See">
+        <lat>46.5621615</lat>
+        <lon>13.2602432</lon>
+    </poi>
+    <poi name="Ochsenauge">
+        <lat>46.4719233</lat>
+        <lon>14.2177644</lon>
+    </poi>
+    <poi name="Keutschacher See">
+        <lat>46.5831845</lat>
+        <lon>14.1497605</lon>
+    </poi>
+    <poi name="Keutschacher See">
+        <lat>46.5900839</lat>
+        <lon>14.1592032</lon>
+    </poi>
+    <poi name="Keutschacher See">
+        <lat>46.5836245</lat>
+        <lon>14.166961</lon>
+    </poi>
+    <poi name="Fraßbach">
+        <lat>46.8740585</lat>
+        <lon>14.9351656</lon>
+    </poi>
+    <poi name="Treffner Bach">
+        <lat>46.6666475</lat>
+        <lon>13.8527106</lon>
+    </poi>
+    <poi name="Arlingbach">
+        <lat>46.8406628</lat>
+        <lon>14.801163</lon>
+    </poi>
+    <poi name="Arlingbach">
+        <lat>46.8386979</lat>
+        <lon>14.8193093</lon>
+    </poi>
+    <poi name="Arlingbach">
+        <lat>46.8333615</lat>
+        <lon>14.8323931</lon>
+    </poi>
+    <poi name="Wörthersee">
+        <lat>46.6100938</lat>
+        <lon>14.0531299</lon>
+    </poi>
+    <poi name="Wörthersee">
+        <lat>46.6357957</lat>
+        <lon>14.1268924</lon>
+    </poi>
+    <poi name="Wörthersee">
+        <lat>46.618751</lat>
+        <lon>14.204503</lon>
+    </poi>
+    <poi name="Wörthersee">
+        <lat>46.6111272</lat>
+        <lon>14.2175127</lon>
+    </poi>
+    <poi name="Wörthersee">
+        <lat>46.6211447</lat>
+        <lon>14.1375801</lon>
+    </poi>
+    <poi name="Faaker See">
+        <lat>46.5725606</lat>
+        <lon>13.9164774</lon>
+    </poi>
+    <poi name="Faaker See">
+        <lat>46.585193</lat>
+        <lon>13.932174</lon>
+    </poi>
+    <poi name="Faaker See">
+        <lat>46.5684293</lat>
+        <lon>13.926385</lon>
+    </poi>
+    <poi name="Silbersee">
+        <lat>46.6071327</lat>
+        <lon>13.9102926</lon>
+    </poi>
+    <poi name="Wangenitzsee">
+        <lat>46.9290507</lat>
+        <lon>12.7970911</lon>
+    </poi>
+    <poi name="Ratzteich">
+        <lat>46.5355117</lat>
+        <lon>14.2660944</lon>
+    </poi>
+    <poi name="Hebalm See">
+        <lat>46.9227616</lat>
+        <lon>15.0161951</lon>
+    </poi>
+    <poi name="Mitterteich">
+        <lat>46.660197</lat>
+        <lon>14.159927</lon>
+    </poi>
+    <poi name="Linsendorfer See">
+        <lat>46.56525</lat>
+        <lon>14.4691678</lon>
+    </poi>
+    <poi name="Linsendorfer See">
+        <lat>46.5660763</lat>
+        <lon>14.4572255</lon>
+    </poi>
+    <poi name="Weißensee">
+        <lat>46.7044949</lat>
+        <lon>13.3998822</lon>
+    </poi>
+    <poi name="Weißensee">
+        <lat>46.7102049</lat>
+        <lon>13.3021688</lon>
+    </poi>
+    <poi name="Weißensee">
+        <lat>46.7202799</lat>
+        <lon>13.2679174</lon>
+    </poi>
+    <poi name="Weißensee">
+        <lat>46.7169234</lat>
+        <lon>13.284656</lon>
+    </poi>
+    <poi name="Weißensee">
+        <lat>46.7154977</lat>
+        <lon>13.3138646</lon>
+    </poi>
+    <poi name="Oberer Lanischsee">
+        <lat>47.0716252</lat>
+        <lon>13.4275517</lon>
+    </poi>
+    <poi name="Ödenlanischsee">
+        <lat>47.0517468</lat>
+        <lon>13.4588366</lon>
+    </poi>
+    <poi name="Fischteich">
+        <lat>46.8170503</lat>
+        <lon>13.4390782</lon>
+    </poi>
+    <poi name="Tatschnigteich">
+        <lat>46.7778239</lat>
+        <lon>14.2912007</lon>
+    </poi>
+    <poi name="Kleiner See">
+        <lat>46.6202631</lat>
+        <lon>14.1936553</lon>
+    </poi>
+    <poi name="Kleiner See">
+        <lat>46.6348389</lat>
+        <lon>14.0641192</lon>
+    </poi>
+    <poi name="Flatschacher See">
+        <lat>46.7266901</lat>
+        <lon>14.0616505</lon>
+    </poi>
+    <poi name="Grafenlacke">
+        <lat>46.5844556</lat>
+        <lon>14.250689</lon>
+    </poi>
+    <poi name="Klippitzsee">
+        <lat>46.9525182</lat>
+        <lon>14.6836426</lon>
+    </poi>
+    <poi name="Erlaufsee">
+        <lat>47.795626</lat>
+        <lon>15.2644744</lon>
+    </poi>
+    <poi name="Erlaufsee">
+        <lat>47.7918902</lat>
+        <lon>15.2811062</lon>
+    </poi>
+    <poi name="Herrensee">
+        <lat>48.9586659</lat>
+        <lon>15.0456736</lon>
+    </poi>
+    <poi name="Herrensee">
+        <lat>48.9466871</lat>
+        <lon>15.0424325</lon>
+    </poi>
+    <poi name="Thurnberger Stausee">
+        <lat>48.6042636</lat>
+        <lon>15.4743092</lon>
+    </poi>
+    <poi name="Thurnberger Stausee">
+        <lat>48.5887125</lat>
+        <lon>15.4551872</lon>
+    </poi>
+    <poi name="Dorflacke">
+        <lat>48.3321921</lat>
+        <lon>16.1055557</lon>
+    </poi>
+    <poi name="Mlnarskywasser">
+        <lat>48.2879558</lat>
+        <lon>16.4787097</lon>
+    </poi>
+    <poi name="Badesee Kreuzenstein">
+        <lat>48.3669016</lat>
+        <lon>16.3061061</lon>
+    </poi>
+    <poi name="Badeteich Bisamberg">
+        <lat>48.3524067</lat>
+        <lon>16.3474608</lon>
+    </poi>
+    <poi name="Hüttenboden">
+        <lat>48.3501406</lat>
+        <lon>16.3060594</lon>
+    </poi>
+    <poi name="Seeschlacht">
+        <lat>48.2942938</lat>
+        <lon>16.3560714</lon>
+    </poi>
+    <poi name="Kleiner Viehofner See">
+        <lat>48.226751</lat>
+        <lon>15.6509198</lon>
+    </poi>
+    <poi name="Großer Viehofner See">
+        <lat>48.2248425</lat>
+        <lon>15.6462096</lon>
+    </poi>
+    <poi name="Groß-Enzersdorfer Arm">
+        <lat>48.1896964</lat>
+        <lon>16.5400536</lon>
+    </poi>
+    <poi name="Hahnsee">
+        <lat>48.0550452</lat>
+        <lon>16.5560918</lon>
+    </poi>
+    <poi name="Badesee">
+        <lat>48.0198843</lat>
+        <lon>16.6240736</lon>
+    </poi>
+    <poi name="Fürstenwasser">
+        <lat>48.049039</lat>
+        <lon>16.5551795</lon>
+    </poi>
+    <poi name="Eberschüttwasser">
+        <lat>48.1681141</lat>
+        <lon>16.538093</lon>
+    </poi>
+    <poi name="Zögernsee">
+        <lat>48.3922033</lat>
+        <lon>16.1556421</lon>
+    </poi>
+    <poi name="Badesee Oberzögersdorf">
+        <lat>48.3894311</lat>
+        <lon>16.1566719</lon>
+    </poi>
+    <poi name="Babenbergersee II">
+        <lat>48.0305371</lat>
+        <lon>16.4076219</lon>
+    </poi>
+    <poi name="Großer Gemeindesee">
+        <lat>48.0255498</lat>
+        <lon>16.3993611</lon>
+    </poi>
+    <poi name="Kienersee I">
+        <lat>48.0252241</lat>
+        <lon>16.4162805</lon>
+    </poi>
+    <poi name="Neuhofsee I">
+        <lat>48.0298016</lat>
+        <lon>16.4316545</lon>
+    </poi>
+    <poi name="Neuhofsee II">
+        <lat>48.0299241</lat>
+        <lon>16.4294691</lon>
+    </poi>
+    <poi name="Fasanensee">
+        <lat>48.0342204</lat>
+        <lon>16.4223884</lon>
+    </poi>
+    <poi name="Bauersee">
+        <lat>48.036341</lat>
+        <lon>16.4284957</lon>
+    </poi>
+    <poi name="Blahasee">
+        <lat>48.0354195</lat>
+        <lon>16.4302004</lon>
+    </poi>
+    <poi name="Dichtlwasser">
+        <lat>48.3705495</lat>
+        <lon>16.2544896</lon>
+    </poi>
+    <poi name="See Vösendorf">
+        <lat>48.1124278</lat>
+        <lon>16.3485752</lon>
+    </poi>
+    <poi name="Kafkasee I">
+        <lat>48.1027426</lat>
+        <lon>16.452862</lon>
+    </poi>
+    <poi name="Schloßsee I">
+        <lat>47.9878665</lat>
+        <lon>16.3058877</lon>
+    </poi>
+    <poi name="Plackenwasser">
+        <lat>48.3396481</lat>
+        <lon>16.0508971</lon>
+    </poi>
+    <poi name="Bie">
+        <lat>48.341549</lat>
+        <lon>16.2028032</lon>
+    </poi>
+    <poi name="Felser See">
+        <lat>48.4319471</lat>
+        <lon>15.8466246</lon>
+    </poi>
+    <poi name="Wurmsaumlacke">
+        <lat>48.3780542</lat>
+        <lon>15.721554</lon>
+    </poi>
+    <poi name="Wurmsaumlacke">
+        <lat>48.3835941</lat>
+        <lon>15.7118899</lon>
+    </poi>
+    <poi name="Wurmsaumlacke">
+        <lat>48.3822545</lat>
+        <lon>15.6962788</lon>
+    </poi>
+    <poi name="Aubad Hohenau">
+        <lat>48.611922</lat>
+        <lon>16.9131545</lon>
+    </poi>
+    <poi name="Mittersee">
+        <lat>47.8276416</lat>
+        <lon>15.0750205</lon>
+    </poi>
+    <poi name="Erlaufstausee">
+        <lat>47.8337337</lat>
+        <lon>15.2819135</lon>
+    </poi>
+    <poi name="Erlaufstausee">
+        <lat>47.8210208</lat>
+        <lon>15.2956429</lon>
+    </poi>
+    <poi name="Kleiner Gemeindesee">
+        <lat>48.0236914</lat>
+        <lon>16.4055341</lon>
+    </poi>
+    <poi name="Geschirrwasser">
+        <lat>48.3356032</lat>
+        <lon>15.9702638</lon>
+    </poi>
+    <poi name="Geschirrwasser">
+        <lat>48.3208249</lat>
+        <lon>16.3266836</lon>
+    </poi>
+    <poi name="Geschirrwasser">
+        <lat>48.3315078</lat>
+        <lon>16.3104367</lon>
+    </poi>
+    <poi name="Geschirrwasser">
+        <lat>48.3004038</lat>
+        <lon>16.340573</lon>
+    </poi>
+    <poi name="Erlauf">
+        <lat>48.0118748</lat>
+        <lon>15.1617437</lon>
+    </poi>
+    <poi name="Kalblsaumlacke">
+        <lat>48.3808513</lat>
+        <lon>15.7633527</lon>
+    </poi>
+    <poi name="Marktwasser">
+        <lat>48.3719113</lat>
+        <lon>15.7178856</lon>
+    </poi>
+    <poi name="Ratzersdorfer See">
+        <lat>48.2237329</lat>
+        <lon>15.6539857</lon>
+    </poi>
+    <poi name="Schwemme">
+        <lat>48.3551711</lat>
+        <lon>16.7569302</lon>
+    </poi>
+    <poi name="Badeteich Kronsegg">
+        <lat>48.5035435</lat>
+        <lon>15.6178237</lon>
+    </poi>
+    <poi name="FKK Badesee">
+        <lat>48.1319728</lat>
+        <lon>15.0418011</lon>
+    </poi>
+    <poi name="Minarskywasser">
+        <lat>48.2864854</lat>
+        <lon>16.4636354</lon>
+    </poi>
+    <poi name="Breitensee">
+        <lat>48.2480233</lat>
+        <lon>16.8665973</lon>
+    </poi>
+    <poi name="Breitensee">
+        <lat>48.2702134</lat>
+        <lon>16.9258718</lon>
+    </poi>
+    <poi name="Heuparz">
+        <lat>48.3466777</lat>
+        <lon>16.8483112</lon>
+    </poi>
+    <poi name="Rohrwiese">
+        <lat>48.3322279</lat>
+        <lon>16.8608607</lon>
+    </poi>
+    <poi name="Sandparz">
+        <lat>48.3365763</lat>
+        <lon>16.849171</lon>
+    </poi>
+    <poi name="Zillingdorfer See, Bruch 1">
+        <lat>47.8414352</lat>
+        <lon>16.3797436</lon>
+    </poi>
+    <poi name="Achtersee">
+        <lat>47.8176362</lat>
+        <lon>16.2034082</lon>
+    </poi>
+    <poi name="Anemonensee">
+        <lat>47.8103631</lat>
+        <lon>16.2036862</lon>
+    </poi>
+    <poi name="Föhrensee">
+        <lat>47.8116025</lat>
+        <lon>16.1990356</lon>
+    </poi>
+    <poi name="Am See Deutsch Brodersdorf">
+        <lat>47.9451126</lat>
+        <lon>16.4478749</lon>
+    </poi>
+    <poi name="Marina Raderbauer">
+        <lat>48.1867185</lat>
+        <lon>14.8300755</lon>
+    </poi>
+    <poi name="Bergwerksee">
+        <lat>48.8446487</lat>
+        <lon>15.7244367</lon>
+    </poi>
+    <poi name="Schwarze Lacke">
+        <lat>47.8294758</lat>
+        <lon>14.980117</lon>
+    </poi>
+    <poi name="Schwarze Lacke">
+        <lat>47.7703304</lat>
+        <lon>15.1118668</lon>
+    </poi>
+    <poi name="Pielachtaler Sehnsucht">
+        <lat>48.0834307</lat>
+        <lon>15.4965472</lon>
+    </poi>
+    <poi name="Alpenbad Mitterbach">
+        <lat>47.8103412</lat>
+        <lon>15.2908277</lon>
+    </poi>
+    <poi name="Reiterer See">
+        <lat>47.8155663</lat>
+        <lon>16.1955796</lon>
+    </poi>
+    <poi name="Großer See">
+        <lat>48.5899079</lat>
+        <lon>16.9222958</lon>
+    </poi>
+    <poi name="Kleiner See">
+        <lat>48.8417486</lat>
+        <lon>15.7278787</lon>
+    </poi>
+    <poi name="Stausee Wienerbruck">
+        <lat>47.8609492</lat>
+        <lon>15.3055029</lon>
+    </poi>
+    <poi name="Ausee 3">
+        <lat>48.1183036</lat>
+        <lon>14.9958725</lon>
+    </poi>
+    <poi name="Ausee 2">
+        <lat>48.1178667</lat>
+        <lon>14.9910925</lon>
+    </poi>
+    <poi name="Ausee 1">
+        <lat>48.1159693</lat>
+        <lon>14.9865309</lon>
+    </poi>
+    <poi name="Waldbad">
+        <lat>48.7856353</lat>
+        <lon>15.3876784</lon>
+    </poi>
+    <poi name="Naturbadeteich St. Martin (NÖ)">
+        <lat>48.6640716</lat>
+        <lon>14.8182039</lon>
+    </poi>
+    <poi name="Liliensee">
+        <lat>48.525256</lat>
+        <lon>16.9324196</lon>
+    </poi>
+    <poi name="Röhringsee">
+        <lat>48.5383128</lat>
+        <lon>16.9274393</lon>
+    </poi>
+    <poi name="BARA Agrana Zucker GmbH">
+        <lat>48.2375266</lat>
+        <lon>16.7051662</lon>
+    </poi>
+    <poi name="Rudolfsee">
+        <lat>47.9603608</lat>
+        <lon>16.4656572</lon>
+    </poi>
+    <poi name="Weingartlwasser">
+        <lat>48.3694571</lat>
+        <lon>15.8593796</lon>
+    </poi>
+    <poi name="Forellenhof">
+        <lat>48.5576925</lat>
+        <lon>15.5114741</lon>
+    </poi>
+    <poi name="Waldviertler Forellenhof">
+        <lat>48.5574046</lat>
+        <lon>15.5127945</lon>
+    </poi>
+    <poi name="Jägerlacke">
+        <lat>48.0225433</lat>
+        <lon>15.3324258</lon>
+    </poi>
+    <poi name="Pfeil">
+        <lat>48.952526</lat>
+        <lon>15.107046</lon>
+    </poi>
+    <poi name="Steinfurth">
+        <lat>48.9536805</lat>
+        <lon>15.1020934</lon>
+    </poi>
+    <poi name="Große Binn">
+        <lat>48.123743</lat>
+        <lon>16.6806929</lon>
+    </poi>
+    <poi name="Weißenbachsee">
+        <lat>47.7598706</lat>
+        <lon>15.1009908</lon>
+    </poi>
+    <poi name="Seewiese">
+        <lat>48.5391536</lat>
+        <lon>15.7325021</lon>
+    </poi>
+    <poi name="Bärenlacke">
+        <lat>47.5648929</lat>
+        <lon>15.9013726</lon>
+    </poi>
+    <poi name="Badeteich">
+        <lat>48.2677917</lat>
+        <lon>15.0319685</lon>
+    </poi>
+    <poi name="Geißsee">
+        <lat>48.5312939</lat>
+        <lon>16.92422</lon>
+    </poi>
+    <poi name="Donauarm">
+        <lat>48.2717572</lat>
+        <lon>15.3806156</lon>
+    </poi>
+    <poi name="Donauarm">
+        <lat>48.2652357</lat>
+        <lon>15.3726062</lon>
+    </poi>
+    <poi name="Donauarm">
+        <lat>48.2518257</lat>
+        <lon>15.3576489</lon>
+    </poi>
+    <poi name="Steinbruchgrube">
+        <lat>48.8112839</lat>
+        <lon>15.1278056</lon>
+    </poi>
+    <poi name="Watzelsdorfer See">
+        <lat>48.7017308</lat>
+        <lon>15.9785341</lon>
+    </poi>
+    <poi name="Kleiner Breitensee">
+        <lat>48.2668618</lat>
+        <lon>16.931192</lon>
+    </poi>
+    <poi name="Maritz">
+        <lat>48.3025689</lat>
+        <lon>16.8831825</lon>
+    </poi>
+    <poi name="Maritz">
+        <lat>48.2909079</lat>
+        <lon>16.887136</lon>
+    </poi>
+    <poi name="Maritz">
+        <lat>48.3246638</lat>
+        <lon>16.8766128</lon>
+    </poi>
+    <poi name="Maritz">
+        <lat>48.3166224</lat>
+        <lon>16.8881038</lon>
+    </poi>
+    <poi name="Alter Donauarm (Ostteil)">
+        <lat>48.3318744</lat>
+        <lon>16.0272316</lon>
+    </poi>
+    <poi name="Schleuse Persenbeug">
+        <lat>48.1913804</lat>
+        <lon>15.0714915</lon>
+    </poi>
+    <poi name="Lake Frank">
+        <lat>47.9763873</lat>
+        <lon>16.3920852</lon>
+    </poi>
+    <poi name="Hundebadeteich">
+        <lat>48.4679918</lat>
+        <lon>14.9697375</lon>
+    </poi>
+    <poi name="Mühldumpf">
+        <lat>48.1440822</lat>
+        <lon>16.6984714</lon>
+    </poi>
+    <poi name="Altau">
+        <lat>48.5238029</lat>
+        <lon>16.9315183</lon>
+    </poi>
+    <poi name="Lunzer See">
+        <lat>47.8556889</lat>
+        <lon>15.061753</lon>
+    </poi>
+    <poi name="Lunzer See">
+        <lat>47.8530019</lat>
+        <lon>15.0400971</lon>
+    </poi>
+    <poi name="Schleuse Melk">
+        <lat>48.2257682</lat>
+        <lon>15.3000943</lon>
+    </poi>
+    <poi name="Schleuse Altenwörth">
+        <lat>48.3786375</lat>
+        <lon>15.8548091</lon>
+    </poi>
+    <poi name="Biberlacke">
+        <lat>48.2176158</lat>
+        <lon>14.5779536</lon>
+    </poi>
+    <poi name="Weite Lacke">
+        <lat>48.1991419</lat>
+        <lon>14.5977107</lon>
+    </poi>
+    <poi name="Sailerlacke">
+        <lat>48.1948724</lat>
+        <lon>14.5951868</lon>
+    </poi>
+    <poi name="Hechtenlacke">
+        <lat>48.1965316</lat>
+        <lon>14.5820506</lon>
+    </poi>
+    <poi name="Hans Wahl-Lacke">
+        <lat>48.199267</lat>
+        <lon>14.5839818</lon>
+    </poi>
+    <poi name="Hausbauernlacke">
+        <lat>48.2129026</lat>
+        <lon>14.5722391</lon>
+    </poi>
+    <poi name="Entenlacke">
+        <lat>48.214722</lat>
+        <lon>14.5817931</lon>
+    </poi>
+    <poi name="Alte Taja">
+        <lat>48.6174992</lat>
+        <lon>16.9132014</lon>
+    </poi>
+    <poi name="Schottergrube Jettsdorf">
+        <lat>48.3941342</lat>
+        <lon>15.7514328</lon>
+    </poi>
+    <poi name="Schläger Wehr">
+        <lat>48.9612214</lat>
+        <lon>15.0114917</lon>
+    </poi>
+    <poi name="Wrchni See">
+        <lat>48.6091424</lat>
+        <lon>16.9392189</lon>
+    </poi>
+    <poi name="Pommersee">
+        <lat>48.5745573</lat>
+        <lon>16.9292403</lon>
+    </poi>
+    <poi name="Pommersee">
+        <lat>48.589644</lat>
+        <lon>16.9293961</lon>
+    </poi>
+    <poi name="Maritz Bach">
+        <lat>48.2873263</lat>
+        <lon>16.9019973</lon>
+    </poi>
+    <poi name="Todte Waßer">
+        <lat>48.2919727</lat>
+        <lon>16.8989045</lon>
+    </poi>
+    <poi name="Große Lacke">
+        <lat>48.5815619</lat>
+        <lon>16.9171932</lon>
+    </poi>
+    <poi name="Salamander-Laichtümpel">
+        <lat>48.0753435</lat>
+        <lon>16.261636</lon>
+    </poi>
+    <poi name="Großer Beitsee">
+        <lat>48.5477756</lat>
+        <lon>16.9418596</lon>
+    </poi>
+    <poi name="Antonisee">
+        <lat>47.9600231</lat>
+        <lon>15.1984989</lon>
+    </poi>
+    <poi name="Seebachbad">
+        <lat>47.8581151</lat>
+        <lon>15.0340017</lon>
+    </poi>
+    <poi name="Meerauge">
+        <lat>47.9974014</lat>
+        <lon>16.0191577</lon>
+    </poi>
+    <poi name="See B">
+        <lat>47.9836365</lat>
+        <lon>16.3123821</lon>
+    </poi>
+    <poi name="See A">
+        <lat>47.9841886</lat>
+        <lon>16.3114984</lon>
+    </poi>
+    <poi name="See C">
+        <lat>47.9832775</lat>
+        <lon>16.3135744</lon>
+    </poi>
+    <poi name="Kneippanlage">
+        <lat>48.7012443</lat>
+        <lon>14.8847347</lon>
+    </poi>
+    <poi name="Hennerfeindlacke">
+        <lat>47.5717305</lat>
+        <lon>15.8879584</lon>
+    </poi>
+    <poi name="Tiefenwasserbelüftung">
+        <lat>47.8378987</lat>
+        <lon>16.3797807</lon>
+    </poi>
+    <poi name="Hechtenloch">
+        <lat>48.345496</lat>
+        <lon>16.2155665</lon>
+    </poi>
+    <poi name="Großer-Schlammsee">
+        <lat>48.5808987</lat>
+        <lon>16.9219735</lon>
+    </poi>
+    <poi name="Großer Schlammsee">
+        <lat>48.578529</lat>
+        <lon>16.9166098</lon>
+    </poi>
+    <poi name="Altsee">
+        <lat>48.5814147</lat>
+        <lon>16.9173264</lon>
+    </poi>
+    <poi name="Schwarzawa">
+        <lat>48.5929544</lat>
+        <lon>16.9130311</lon>
+    </poi>
+    <poi name="Schwarzawa">
+        <lat>48.584004</lat>
+        <lon>16.9180558</lon>
+    </poi>
+    <poi name="Krummer See">
+        <lat>48.5460119</lat>
+        <lon>16.9405587</lon>
+    </poi>
+    <poi name="gerundete Gruben">
+        <lat>48.5372687</lat>
+        <lon>16.9354188</lon>
+    </poi>
+    <poi name="Teufelsbründl">
+        <lat>47.4480134</lat>
+        <lon>16.1865411</lon>
+    </poi>
+    <poi name="Bärntaler Lacke">
+        <lat>48.0472699</lat>
+        <lon>15.5277937</lon>
+    </poi>
+    <poi name="Badesee Dürnrohr">
+        <lat>48.3359875</lat>
+        <lon>15.9069847</lon>
+    </poi>
+    <poi name="Babenbergersee I">
+        <lat>48.0285359</lat>
+        <lon>16.4062129</lon>
+    </poi>
+    <poi name="Kalbsaumlacke">
+        <lat>48.3821048</lat>
+        <lon>15.7471419</lon>
+    </poi>
+    <poi name="Kalbsaumlacke">
+        <lat>48.3801709</lat>
+        <lon>15.7661123</lon>
+    </poi>
+    <poi name="Parksee">
+        <lat>48.516579</lat>
+        <lon>15.6226746</lon>
+    </poi>
+    <poi name="Kleinparksee">
+        <lat>48.5165024</lat>
+        <lon>15.6225127</lon>
+    </poi>
+    <poi name="Marias Landsee">
+        <lat>47.7580904</lat>
+        <lon>15.914544</lon>
+    </poi>
+    <poi name="Kleine Binn">
+        <lat>48.1295748</lat>
+        <lon>16.6993797</lon>
+    </poi>
+    <poi name="Kleine Binn">
+        <lat>48.1247109</lat>
+        <lon>16.6720617</lon>
+    </poi>
+    <poi name="Kleine Binn">
+        <lat>48.1301098</lat>
+        <lon>16.680867</lon>
+    </poi>
+    <poi name="Silbersee">
+        <lat>48.781308</lat>
+        <lon>15.009765</lon>
+    </poi>
+    <poi name="Luisenquelle">
+        <lat>47.7021429</lat>
+        <lon>15.7394978</lon>
+    </poi>
+    <poi name="Moor-Auge">
+        <lat>47.7737583</lat>
+        <lon>14.9607822</lon>
+    </poi>
+    <poi name="Lido Alfredo">
+        <lat>48.7814724</lat>
+        <lon>15.0049692</lon>
+    </poi>
+    <poi name="Schlossteich">
+        <lat>48.0697213</lat>
+        <lon>16.3771468</lon>
+    </poi>
+    <poi name="Schlossteich">
+        <lat>48.0630392</lat>
+        <lon>16.3689699</lon>
+    </poi>
+    <poi name="Dürrsee">
+        <lat>48.0344678</lat>
+        <lon>16.4107511</lon>
+    </poi>
+    <poi name="Donausee Weitenegg">
+        <lat>48.2302903</lat>
+        <lon>15.3069542</lon>
+    </poi>
+    <poi name="Donausee Weitenegg">
+        <lat>48.2278647</lat>
+        <lon>15.2969984</lon>
+    </poi>
+    <poi name="Moorbad">
+        <lat>48.7956787</lat>
+        <lon>15.0785718</lon>
+    </poi>
+    <poi name="Ebersdorfer See">
+        <lat>48.166076</lat>
+        <lon>15.549198</lon>
+    </poi>
+    <poi name="Seeteich">
+        <lat>48.604186</lat>
+        <lon>15.220245</lon>
+    </poi>
+    <poi name="Schloßgraben">
+        <lat>47.9517688</lat>
+        <lon>16.2319587</lon>
+    </poi>
+    <poi name="Badeteich Poysdorf">
+        <lat>48.6660025</lat>
+        <lon>16.6109198</lon>
+    </poi>
+    <poi name="Haschendorfer See">
+        <lat>47.8910689</lat>
+        <lon>16.3314669</lon>
+    </poi>
+    <poi name="Lenauteich">
+        <lat>48.0821867</lat>
+        <lon>16.1864869</lon>
+    </poi>
+    <poi name="Birkensee">
+        <lat>48.0322791</lat>
+        <lon>16.3995408</lon>
+    </poi>
+    <poi name="Stadtteich">
+        <lat>48.8143975</lat>
+        <lon>15.2515682</lon>
+    </poi>
+    <poi name="Gemeindeteich Parbasdorf">
+        <lat>48.279548</lat>
+        <lon>16.6041621</lon>
+    </poi>
+    <poi name="Geißbachteich">
+        <lat>48.8379395</lat>
+        <lon>15.1101186</lon>
+    </poi>
+    <poi name="Biotop Retz">
+        <lat>48.7545181</lat>
+        <lon>15.9746954</lon>
+    </poi>
+    <poi name="Hausschachenteich">
+        <lat>48.6912194</lat>
+        <lon>14.8890934</lon>
+    </poi>
+    <poi name="Pirschlwiesen Teich">
+        <lat>48.1491271</lat>
+        <lon>14.9889385</lon>
+    </poi>
+    <poi name="Bildeichen Teich">
+        <lat>48.154657</lat>
+        <lon>14.9805418</lon>
+    </poi>
+    <poi name="Obersee">
+        <lat>47.8051272</lat>
+        <lon>15.076326</lon>
+    </poi>
+    <poi name="Blockheideteich">
+        <lat>48.7773745</lat>
+        <lon>14.996676</lon>
+    </poi>
+    <poi name="Seidlteich">
+        <lat>48.7149619</lat>
+        <lon>14.9105652</lon>
+    </poi>
+    <poi name="Pfarrerteich">
+        <lat>48.6850715</lat>
+        <lon>15.0821167</lon>
+    </poi>
+    <poi name="Kienersee II">
+        <lat>48.0273193</lat>
+        <lon>16.4162553</lon>
+    </poi>
+    <poi name="Ulrichsteich">
+        <lat>48.7073874</lat>
+        <lon>14.9250457</lon>
+    </poi>
+    <poi name="Doblhoffteich">
+        <lat>48.0083991</lat>
+        <lon>16.2244012</lon>
+    </poi>
+    <poi name="Steinbrunner See, Bruch 2">
+        <lat>47.8377894</lat>
+        <lon>16.3784784</lon>
+    </poi>
+    <poi name="Rinnwiesen Teich">
+        <lat>48.1804681</lat>
+        <lon>15.0351361</lon>
+    </poi>
+    <poi name="Stickelberger See">
+        <lat>47.5153662</lat>
+        <lon>16.1991155</lon>
+    </poi>
+    <poi name="Hegerhausteich II">
+        <lat>48.7650168</lat>
+        <lon>15.0522495</lon>
+    </poi>
+    <poi name="Hegerhausteich">
+        <lat>48.7651645</lat>
+        <lon>15.0508296</lon>
+    </poi>
+    <poi name="Holzteich">
+        <lat>48.7650753</lat>
+        <lon>15.0487368</lon>
+    </poi>
+    <poi name="Villateich">
+        <lat>47.8392838</lat>
+        <lon>16.295425</lon>
+    </poi>
+    <poi name="Teich II">
+        <lat>47.9650129</lat>
+        <lon>16.2854175</lon>
+    </poi>
+    <poi name="Teich IV">
+        <lat>47.9654624</lat>
+        <lon>16.2869393</lon>
+    </poi>
+    <poi name="Stadtsee Allentsteig">
+        <lat>48.6856443</lat>
+        <lon>15.3300801</lon>
+    </poi>
+    <poi name="Phönixteich">
+        <lat>48.2907104</lat>
+        <lon>16.3506973</lon>
+    </poi>
+    <poi name="Kampleitenteich">
+        <lat>48.376147</lat>
+        <lon>15.0659763</lon>
+    </poi>
+    <poi name="Aignerteich">
+        <lat>48.1193143</lat>
+        <lon>15.1232606</lon>
+    </poi>
+    <poi name="Rohrbacher Teich">
+        <lat>48.8686351</lat>
+        <lon>15.1782884</lon>
+    </poi>
+    <poi name="Landschaftsteich Grafenschlag">
+        <lat>48.4879882</lat>
+        <lon>15.1428225</lon>
+    </poi>
+    <poi name="Badeteich Arbesbach">
+        <lat>48.4912649</lat>
+        <lon>14.9583236</lon>
+    </poi>
+    <poi name="Traisen">
+        <lat>48.3696747</lat>
+        <lon>15.8422212</lon>
+    </poi>
+    <poi name="Traisen">
+        <lat>48.3579588</lat>
+        <lon>15.8501722</lon>
+    </poi>
+    <poi name="Traisen">
+        <lat>48.3586198</lat>
+        <lon>15.8639326</lon>
+    </poi>
+    <poi name="Kleiner Schlammsee">
+        <lat>48.5758762</lat>
+        <lon>16.9196003</lon>
+    </poi>
+    <poi name="Irrsee">
+        <lat>47.9319479</lat>
+        <lon>13.3017223</lon>
+    </poi>
+    <poi name="Irrsee">
+        <lat>47.902144</lat>
+        <lon>13.3114691</lon>
+    </poi>
+    <poi name="Irrsee">
+        <lat>47.8940207</lat>
+        <lon>13.3030561</lon>
+    </poi>
+    <poi name="Irrsee">
+        <lat>47.9128493</lat>
+        <lon>13.3019664</lon>
+    </poi>
+    <poi name="Schwarzensee">
+        <lat>47.7565919</lat>
+        <lon>13.4890537</lon>
+    </poi>
+    <poi name="Hinterer Langbathsee">
+        <lat>47.8329443</lat>
+        <lon>13.6568524</lon>
+    </poi>
+    <poi name="Mondsee">
+        <lat>47.852012</lat>
+        <lon>13.3537738</lon>
+    </poi>
+    <poi name="Mondsee">
+        <lat>47.8141982</lat>
+        <lon>13.4016705</lon>
+    </poi>
+    <poi name="Mondsee">
+        <lat>47.7991464</lat>
+        <lon>13.406108</lon>
+    </poi>
+    <poi name="Mondsee">
+        <lat>47.8202296</lat>
+        <lon>13.366987</lon>
+    </poi>
+    <poi name="Mondsee">
+        <lat>47.8434427</lat>
+        <lon>13.3422816</lon>
+    </poi>
+    <poi name="Hinterer Gosausee">
+        <lat>47.5007511</lat>
+        <lon>13.5521841</lon>
+    </poi>
+    <poi name="Großer Weikerlsee">
+        <lat>48.266596</lat>
+        <lon>14.3680196</lon>
+    </poi>
+    <poi name="Pichlinger See">
+        <lat>48.2409316</lat>
+        <lon>14.3792042</lon>
+    </poi>
+    <poi name="Feldkirchner Badesee IV">
+        <lat>48.3242963</lat>
+        <lon>14.0690151</lon>
+    </poi>
+    <poi name="Oedtersee">
+        <lat>48.2145201</lat>
+        <lon>14.222119</lon>
+    </poi>
+    <poi name="Salmsee">
+        <lat>48.2726187</lat>
+        <lon>14.3983343</lon>
+    </poi>
+    <poi name="Pleschinger See">
+        <lat>48.3207078</lat>
+        <lon>14.3299105</lon>
+    </poi>
+    <poi name="Kleiner Weikerlsee">
+        <lat>48.2649311</lat>
+        <lon>14.3623275</lon>
+    </poi>
+    <poi name="Elisabethsee">
+        <lat>47.7771594</lat>
+        <lon>14.169252</lon>
+    </poi>
+    <poi name="Offensee">
+        <lat>47.7505346</lat>
+        <lon>13.8355484</lon>
+    </poi>
+    <poi name="Traun">
+        <lat>48.2487507</lat>
+        <lon>14.3270077</lon>
+    </poi>
+    <poi name="Höllerersee">
+        <lat>48.0227043</lat>
+        <lon>12.8898039</lon>
+    </poi>
+    <poi name="Badeteich Bad Zell">
+        <lat>48.3490245</lat>
+        <lon>14.6712845</lon>
+    </poi>
+    <poi name="Rodl">
+        <lat>48.3289045</lat>
+        <lon>14.1698277</lon>
+    </poi>
+    <poi name="Badesee Rechberg">
+        <lat>48.3231901</lat>
+        <lon>14.715059</lon>
+    </poi>
+    <poi name="Ibmer See / Heratinger See">
+        <lat>48.0703924</lat>
+        <lon>12.9465819</lon>
+    </poi>
+    <poi name="Seeleitensee">
+        <lat>48.0589815</lat>
+        <lon>12.9644668</lon>
+    </poi>
+    <poi name="Großer Ödsee">
+        <lat>47.7669316</lat>
+        <lon>14.0183611</lon>
+    </poi>
+    <poi name="Kleiner Ödsee">
+        <lat>47.7608137</lat>
+        <lon>14.0182551</lon>
+    </poi>
+    <poi name="Badesee Tragwein">
+        <lat>48.3358803</lat>
+        <lon>14.6217204</lon>
+    </poi>
+    <poi name="Vorderer Langbathsee">
+        <lat>47.8355321</lat>
+        <lon>13.688221</lon>
+    </poi>
+    <poi name="Mönichsee">
+        <lat>47.7693511</lat>
+        <lon>13.452987</lon>
+    </poi>
+    <poi name="Goldwörther See">
+        <lat>48.3230176</lat>
+        <lon>14.0871604</lon>
+    </poi>
+    <poi name="Prameter Badesee">
+        <lat>48.1258489</lat>
+        <lon>13.5209455</lon>
+    </poi>
+    <poi name="Feldkirchner Badesee II">
+        <lat>48.3253637</lat>
+        <lon>14.0713142</lon>
+    </poi>
+    <poi name="Feldkirchner Badesee I">
+        <lat>48.327855</lat>
+        <lon>14.0766345</lon>
+    </poi>
+    <poi name="Imsee">
+        <lat>48.0207937</lat>
+        <lon>13.1346472</lon>
+    </poi>
+    <poi name="Schottergrube">
+        <lat>48.3332348</lat>
+        <lon>14.1347739</lon>
+    </poi>
+    <poi name="Greitersee">
+        <lat>48.3256763</lat>
+        <lon>14.0338284</lon>
+    </poi>
+    <poi name="Baggersee">
+        <lat>48.2714933</lat>
+        <lon>13.1928457</lon>
+    </poi>
+    <poi name="Baggersee">
+        <lat>47.985494</lat>
+        <lon>13.6903357</lon>
+    </poi>
+    <poi name="Schobersee">
+        <lat>48.0209724</lat>
+        <lon>13.5280036</lon>
+    </poi>
+    <poi name="Aschenbrenner See">
+        <lat>48.2185434</lat>
+        <lon>14.4341945</lon>
+    </poi>
+    <poi name="Fredisee">
+        <lat>47.677968</lat>
+        <lon>14.3492965</lon>
+    </poi>
+    <poi name="Rutzinger See">
+        <lat>48.2018016</lat>
+        <lon>14.1724396</lon>
+    </poi>
+    <poi name="Badesee St. Konrad">
+        <lat>47.9118467</lat>
+        <lon>13.9050296</lon>
+    </poi>
+    <poi name="Badesee Leithen">
+        <lat>48.164053</lat>
+        <lon>13.6635679</lon>
+    </poi>
+    <poi name="Urlsee">
+        <lat>48.7040239</lat>
+        <lon>13.8663415</lon>
+    </poi>
+    <poi name="Klaffersee">
+        <lat>48.700223</lat>
+        <lon>13.8666518</lon>
+    </poi>
+    <poi name="Silbersee">
+        <lat>48.6379337</lat>
+        <lon>13.9458472</lon>
+    </poi>
+    <poi name="Silbersee">
+        <lat>48.5956715</lat>
+        <lon>14.6084851</lon>
+    </poi>
+    <poi name="Entenlacke">
+        <lat>48.1922702</lat>
+        <lon>14.7939755</lon>
+    </poi>
+    <poi name="Haleswiessee">
+        <lat>47.7692855</lat>
+        <lon>13.5385554</lon>
+    </poi>
+    <poi name="Mittersee">
+        <lat>47.773341</lat>
+        <lon>13.4484052</lon>
+    </poi>
+    <poi name="Laudachsee">
+        <lat>47.8806934</lat>
+        <lon>13.8526569</lon>
+    </poi>
+    <poi name="Egelsee">
+        <lat>47.8329742</lat>
+        <lon>13.5040102</lon>
+    </poi>
+    <poi name="Eglsee">
+        <lat>47.7969809</lat>
+        <lon>13.3957271</lon>
+    </poi>
+    <poi name="Ort">
+        <lat>47.9111959</lat>
+        <lon>13.7925564</lon>
+    </poi>
+    <poi name="Colorado See">
+        <lat>48.0729477</lat>
+        <lon>12.8153424</lon>
+    </poi>
+    <poi name="Puckinger See">
+        <lat>48.1939884</lat>
+        <lon>14.1968768</lon>
+    </poi>
+    <poi name="Deis">
+        <lat>48.291218</lat>
+        <lon>13.281169</lon>
+    </poi>
+    <poi name="Badesee Mühlheim">
+        <lat>48.281908</lat>
+        <lon>13.205994</lon>
+    </poi>
+    <poi name="Brunnsteinersee">
+        <lat>47.6512509</lat>
+        <lon>14.2675473</lon>
+    </poi>
+    <poi name="Gleinkersee">
+        <lat>47.6887239</lat>
+        <lon>14.2971611</lon>
+    </poi>
+    <poi name="Herzerlsee">
+        <lat>47.7941882</lat>
+        <lon>14.3256011</lon>
+    </poi>
+    <poi name="Kreidensee">
+        <lat>47.6218483</lat>
+        <lon>13.6642299</lon>
+    </poi>
+    <poi name="Taferlklaussee">
+        <lat>47.8434795</lat>
+        <lon>13.6267744</lon>
+    </poi>
+    <poi name="Schwemme">
+        <lat>48.4079512</lat>
+        <lon>14.7460544</lon>
+    </poi>
+    <poi name="Däumelsee">
+        <lat>47.5194219</lat>
+        <lon>13.7027129</lon>
+    </poi>
+    <poi name="Freizeitanlage Rainbach i.M">
+        <lat>48.5596982</lat>
+        <lon>14.4894151</lon>
+    </poi>
+    <poi name="Badesee Steyregg">
+        <lat>48.2790315</lat>
+        <lon>14.3682614</lon>
+    </poi>
+    <poi name="Kressl">
+        <lat>47.5744983</lat>
+        <lon>13.5258745</lon>
+    </poi>
+    <poi name="Egellacke">
+        <lat>47.7008368</lat>
+        <lon>13.6213954</lon>
+    </poi>
+    <poi name="Vorderer Gosausee">
+        <lat>47.5252478</lat>
+        <lon>13.5161747</lon>
+    </poi>
+    <poi name="Vorderer Gosausee">
+        <lat>47.53056</lat>
+        <lon>13.5064955</lon>
+    </poi>
+    <poi name="Anlegestelle Untermühl">
+        <lat>48.4248849</lat>
+        <lon>13.9780889</lon>
+    </poi>
+    <poi name="Kleiner Huckinger See">
+        <lat>48.0899859</lat>
+        <lon>12.8633815</lon>
+    </poi>
+    <poi name="Drachensee">
+        <lat>47.8335825</lat>
+        <lon>13.3593551</lon>
+    </poi>
+    <poi name="Badesee">
+        <lat>47.9630202</lat>
+        <lon>13.7451888</lon>
+    </poi>
+    <poi name="Rauher Boschensee">
+        <lat>48.0926717</lat>
+        <lon>12.8671193</lon>
+    </poi>
+    <poi name="Badeteich">
+        <lat>48.2372622</lat>
+        <lon>14.9595447</lon>
+    </poi>
+    <poi name="ehem. Steinbruch Gloxwald">
+        <lat>48.2355931</lat>
+        <lon>14.9637154</lon>
+    </poi>
+    <poi name="Gemeindeschottergrube">
+        <lat>48.310883</lat>
+        <lon>14.0866453</lon>
+    </poi>
+    <poi name="Litzlberg">
+        <lat>47.9334766</lat>
+        <lon>13.5584097</lon>
+    </poi>
+    <poi name="Tannguterlacke">
+        <lat>47.7426678</lat>
+        <lon>14.3165416</lon>
+    </poi>
+    <poi name="Hochmoos I">
+        <lat>47.7534891</lat>
+        <lon>13.6523406</lon>
+    </poi>
+    <poi name="Hochmoos II">
+        <lat>47.752217</lat>
+        <lon>13.6521505</lon>
+    </poi>
+    <poi name="Maisenbergseelein">
+        <lat>47.500456</lat>
+        <lon>13.7300227</lon>
+    </poi>
+    <poi name="Badesee Sonnberg">
+        <lat>48.5230161</lat>
+        <lon>14.4677709</lon>
+    </poi>
+    <poi name="Unterer Eissee">
+        <lat>47.4971185</lat>
+        <lon>13.6373166</lon>
+    </poi>
+    <poi name="Gosaulacke">
+        <lat>47.5155173</lat>
+        <lon>13.5303</lon>
+    </poi>
+    <poi name="Oberer Eissee">
+        <lat>47.4936628</lat>
+        <lon>13.6254358</lon>
+    </poi>
+    <poi name="Woody's">
+        <lat>48.403936</lat>
+        <lon>13.7757075</lon>
+    </poi>
+    <poi name="Eizendorfer See">
+        <lat>48.1865498</lat>
+        <lon>14.7718292</lon>
+    </poi>
+    <poi name="Seekarsee">
+        <lat>47.5377136</lat>
+        <lon>13.5469232</lon>
+    </poi>
+    <poi name="Laah">
+        <lat>48.5413211</lat>
+        <lon>14.5077466</lon>
+    </poi>
+    <poi name="Löckersee">
+        <lat>47.5544836</lat>
+        <lon>13.5459152</lon>
+    </poi>
+    <poi name="Holzöstersee">
+        <lat>48.057798</lat>
+        <lon>12.9025989</lon>
+    </poi>
+    <poi name="Rotkreuzsee">
+        <lat>48.3677394</lat>
+        <lon>13.6681102</lon>
+    </poi>
+    <poi name="Mattsee">
+        <lat>47.9726166</lat>
+        <lon>13.105823</lon>
+    </poi>
+    <poi name="Mattsee">
+        <lat>47.9863637</lat>
+        <lon>13.1113303</lon>
+    </poi>
+    <poi name="Mattsee">
+        <lat>47.9903792</lat>
+        <lon>13.1339379</lon>
+    </poi>
+    <poi name="Mattsee">
+        <lat>47.9893697</lat>
+        <lon>13.1461803</lon>
+    </poi>
+    <poi name="Egersee">
+        <lat>48.0851409</lat>
+        <lon>13.5110128</lon>
+    </poi>
+    <poi name="Borsee">
+        <lat>47.7641851</lat>
+        <lon>14.6067718</lon>
+    </poi>
+    <poi name="Schneebergseelein">
+        <lat>47.4802076</lat>
+        <lon>13.6753512</lon>
+    </poi>
+    <poi name="Zone A - Baden">
+        <lat>48.2014422</lat>
+        <lon>14.1764289</lon>
+    </poi>
+    <poi name="Brandl Lacke">
+        <lat>48.2217778</lat>
+        <lon>14.5991187</lon>
+    </poi>
+    <poi name="Rückstau Enns">
+        <lat>47.8191235</lat>
+        <lon>14.6356867</lon>
+    </poi>
+    <poi name="Der Gnom mit dem Kristall">
+        <lat>47.9170603</lat>
+        <lon>13.7972783</lon>
+    </poi>
+    <poi name="water_hazard">
+        <lat>48.1388804</lat>
+        <lon>14.1023386</lon>
+    </poi>
+    <poi name="Rote Lacke">
+        <lat>48.0459063</lat>
+        <lon>13.5250879</lon>
+    </poi>
+    <poi name="Wiesensee">
+        <lat>47.7377977</lat>
+        <lon>13.7920965</lon>
+    </poi>
+    <poi name="Rumplerseelein">
+        <lat>47.5014285</lat>
+        <lon>13.6744259</lon>
+    </poi>
+    <poi name="Windhagersee">
+        <lat>47.6851933</lat>
+        <lon>14.2496218</lon>
+    </poi>
+    <poi name="Lacknerseelein">
+        <lat>47.4723479</lat>
+        <lon>13.6985068</lon>
+    </poi>
+    <poi name="Hallstätter See">
+        <lat>47.5662152</lat>
+        <lon>13.6505815</lon>
+    </poi>
+    <poi name="Hallstätter See">
+        <lat>47.5493575</lat>
+        <lon>13.6758616</lon>
+    </poi>
+    <poi name="Hallstätter See">
+        <lat>47.5579414</lat>
+        <lon>13.6665228</lon>
+    </poi>
+    <poi name="Hallstätter See">
+        <lat>47.6077026</lat>
+        <lon>13.6460935</lon>
+    </poi>
+    <poi name="Hallstätter See">
+        <lat>47.5967525</lat>
+        <lon>13.6474092</lon>
+    </poi>
+    <poi name="Traunsee">
+        <lat>47.9111959</lat>
+        <lon>13.7925564</lon>
+    </poi>
+    <poi name="Traunsee">
+        <lat>47.8921754</lat>
+        <lon>13.8064178</lon>
+    </poi>
+    <poi name="Traunsee">
+        <lat>47.8525353</lat>
+        <lon>13.8133378</lon>
+    </poi>
+    <poi name="Traunsee">
+        <lat>47.8136864</lat>
+        <lon>13.78033</lon>
+    </poi>
+    <poi name="Traunsee">
+        <lat>47.8525169</lat>
+        <lon>13.7797099</lon>
+    </poi>
+    <poi name="Au-See">
+        <lat>48.2499778</lat>
+        <lon>14.411066</lon>
+    </poi>
+    <poi name="Brandstätter See">
+        <lat>48.3430669</lat>
+        <lon>14.016969</lon>
+    </poi>
+    <poi name="Attersee">
+        <lat>47.9201491</lat>
+        <lon>13.5437135</lon>
+    </poi>
+    <poi name="Attersee">
+        <lat>47.9089888</lat>
+        <lon>13.5700229</lon>
+    </poi>
+    <poi name="Attersee">
+        <lat>47.8161999</lat>
+        <lon>13.5464049</lon>
+    </poi>
+    <poi name="Attersee">
+        <lat>47.8012613</lat>
+        <lon>13.485253</lon>
+    </poi>
+    <poi name="Attersee">
+        <lat>47.8577842</lat>
+        <lon>13.5306549</lon>
+    </poi>
+    <poi name="Wolfgangsee">
+        <lat>47.7206482</lat>
+        <lon>13.4839295</lon>
+    </poi>
+    <poi name="Wolfgangsee">
+        <lat>47.7428793</lat>
+        <lon>13.4323363</lon>
+    </poi>
+    <poi name="Wolfgangsee">
+        <lat>47.7728506</lat>
+        <lon>13.3769207</lon>
+    </poi>
+    <poi name="Wolfgangsee">
+        <lat>47.7589961</lat>
+        <lon>13.3685147</lon>
+    </poi>
+    <poi name="Lamberger Teich">
+        <lat>47.7059978</lat>
+        <lon>14.4173216</lon>
+    </poi>
+    <poi name="Planasee">
+        <lat>48.0955931</lat>
+        <lon>13.9393201</lon>
+    </poi>
+    <poi name="Nussensee">
+        <lat>47.7043235</lat>
+        <lon>13.5687514</lon>
+    </poi>
+    <poi name="Klärteich">
+        <lat>48.0802291</lat>
+        <lon>14.0609969</lon>
+    </poi>
+    <poi name="Feichtauer Seen">
+        <lat>47.7923638</lat>
+        <lon>14.3171254</lon>
+    </poi>
+    <poi name="Almsee">
+        <lat>47.7458755</lat>
+        <lon>13.9592904</lon>
+    </poi>
+    <poi name="Almsee">
+        <lat>47.7646608</lat>
+        <lon>13.956932</lon>
+    </poi>
+    <poi name="Wildenauer Badesee">
+        <lat>48.1987849</lat>
+        <lon>13.3259582</lon>
+    </poi>
+    <poi name="Huckinger See">
+        <lat>48.0878239</lat>
+        <lon>12.8589123</lon>
+    </poi>
+    <poi name="Angelsee Ranftl">
+        <lat>48.279037</lat>
+        <lon>13.2289534</lon>
+    </poi>
+    <poi name="Schiederweiher">
+        <lat>47.6913153</lat>
+        <lon>14.128293</lon>
+    </poi>
+    <poi name="Zöch Teich">
+        <lat>48.3708691</lat>
+        <lon>14.3496063</lon>
+    </poi>
+    <poi name="Feldkirchner Badesee III">
+        <lat>48.3230978</lat>
+        <lon>14.0670812</lon>
+    </poi>
+    <poi name="Koppenwinkllack'n">
+        <lat>47.5600936</lat>
+        <lon>13.7251666</lon>
+    </poi>
+    <poi name="Fuschlsee">
+        <lat>47.7940988</lat>
+        <lon>13.2925869</lon>
+    </poi>
+    <poi name="Fuschlsee">
+        <lat>47.8048616</lat>
+        <lon>13.2625589</lon>
+    </poi>
+    <poi name="Fuschlsee">
+        <lat>47.8126691</lat>
+        <lon>13.2534787</lon>
+    </poi>
+    <poi name="Unterer Schwarzsee">
+        <lat>47.1126985</lat>
+        <lon>13.3546232</lon>
+    </poi>
+    <poi name="Unterer Landschitzsee">
+        <lat>47.2558087</lat>
+        <lon>13.8375542</lon>
+    </poi>
+    <poi name="Tappenkarsee">
+        <lat>47.1963636</lat>
+        <lon>13.3225845</lon>
+    </poi>
+    <poi name="Mondsee">
+        <lat>47.852012</lat>
+        <lon>13.3537738</lon>
+    </poi>
+    <poi name="Mondsee">
+        <lat>47.8141982</lat>
+        <lon>13.4016705</lon>
+    </poi>
+    <poi name="Mondsee">
+        <lat>47.7991464</lat>
+        <lon>13.406108</lon>
+    </poi>
+    <poi name="Mondsee">
+        <lat>47.8202296</lat>
+        <lon>13.366987</lon>
+    </poi>
+    <poi name="Mondsee">
+        <lat>47.8434427</lat>
+        <lon>13.3422816</lon>
+    </poi>
+    <poi name="Autobahnsee Viehhausen">
+        <lat>47.7782615</lat>
+        <lon>12.9825943</lon>
+    </poi>
+    <poi name="Salzachsee">
+        <lat>47.8316541</lat>
+        <lon>13.0222754</lon>
+    </poi>
+    <poi name="Lieferinger Badesee">
+        <lat>47.8373417</lat>
+        <lon>13.0161363</lon>
+    </poi>
+    <poi name="Baggersee Liefering 5">
+        <lat>47.8393124</lat>
+        <lon>13.0116904</lon>
+    </poi>
+    <poi name="Auschneidersee">
+        <lat>47.7836391</lat>
+        <lon>12.9562812</lon>
+    </poi>
+    <poi name="Unterer Gerlos See">
+        <lat>47.1636057</lat>
+        <lon>12.126272</lon>
+    </poi>
+    <poi name="Seekar See">
+        <lat>47.1937297</lat>
+        <lon>12.1472712</lon>
+    </poi>
+    <poi name="Rainbach See">
+        <lat>47.1522296</lat>
+        <lon>12.1507978</lon>
+    </poi>
+    <poi name="Seebachsee">
+        <lat>47.1813578</lat>
+        <lon>12.225643</lon>
+    </poi>
+    <poi name="Eissee">
+        <lat>47.0910882</lat>
+        <lon>12.2575868</lon>
+    </poi>
+    <poi name="Eissee">
+        <lat>47.0950025</lat>
+        <lon>12.1305512</lon>
+    </poi>
+    <poi name="Eissee">
+        <lat>47.1411572</lat>
+        <lon>12.5795332</lon>
+    </poi>
+    <poi name="Wildkarsee">
+        <lat>47.1921526</lat>
+        <lon>12.1350265</lon>
+    </poi>
+    <poi name="Oberer Gerlos See">
+        <lat>47.1595277</lat>
+        <lon>12.1315992</lon>
+    </poi>
+    <poi name="Jägersee">
+        <lat>47.2380565</lat>
+        <lon>13.3299791</lon>
+    </poi>
+    <poi name="Waldbad">
+        <lat>47.7348566</lat>
+        <lon>13.0784236</lon>
+    </poi>
+    <poi name="Oberer Egelsee">
+        <lat>47.9638492</lat>
+        <lon>13.1250818</lon>
+    </poi>
+    <poi name="Kleiner Egelsee">
+        <lat>47.9664391</lat>
+        <lon>13.1249432</lon>
+    </poi>
+    <poi name="Mitteregelsee">
+        <lat>47.960291</lat>
+        <lon>13.124967</lon>
+    </poi>
+    <poi name="Unterer Egelsee">
+        <lat>47.9580932</lat>
+        <lon>13.1281929</lon>
+    </poi>
+    <poi name="Wallersee">
+        <lat>47.9297356</lat>
+        <lon>13.2042663</lon>
+    </poi>
+    <poi name="Wallersee">
+        <lat>47.9201341</lat>
+        <lon>13.2006352</lon>
+    </poi>
+    <poi name="Wallersee">
+        <lat>47.8999997</lat>
+        <lon>13.1616258</lon>
+    </poi>
+    <poi name="Wallersee">
+        <lat>47.9136175</lat>
+        <lon>13.151419</lon>
+    </poi>
+    <poi name="Wallersee">
+        <lat>47.9207791</lat>
+        <lon>13.1722565</lon>
+    </poi>
+    <poi name="Bürmooser See">
+        <lat>47.9890673</lat>
+        <lon>12.9236617</lon>
+    </poi>
+    <poi name="Baggersee Liefering 6">
+        <lat>47.8397498</lat>
+        <lon>13.011967</lon>
+    </poi>
+    <poi name="Hintersee">
+        <lat>47.1919412</lat>
+        <lon>12.472702</lon>
+    </poi>
+    <poi name="Hintersee">
+        <lat>47.7419399</lat>
+        <lon>13.2506753</lon>
+    </poi>
+    <poi name="Hintersee">
+        <lat>47.7524704</lat>
+        <lon>13.2397</lon>
+    </poi>
+    <poi name="Eibensee">
+        <lat>47.8010963</lat>
+        <lon>13.3422629</lon>
+    </poi>
+    <poi name="Mittersee">
+        <lat>47.773341</lat>
+        <lon>13.4484052</lon>
+    </poi>
+    <poi name="Stadlersee">
+        <lat>47.9949008</lat>
+        <lon>12.9453039</lon>
+    </poi>
+    <poi name="Eglsee">
+        <lat>47.7969809</lat>
+        <lon>13.3957271</lon>
+    </poi>
+    <poi name="Seelacke">
+        <lat>47.3069434</lat>
+        <lon>12.8030207</lon>
+    </poi>
+    <poi name="Ritzensee">
+        <lat>47.4198519</lat>
+        <lon>12.8467985</lon>
+    </poi>
+    <poi name="Oberhüttensee">
+        <lat>47.27854</lat>
+        <lon>13.6035171</lon>
+    </poi>
+    <poi name="Egelsee">
+        <lat>47.5983058</lat>
+        <lon>13.1723533</lon>
+    </poi>
+    <poi name="Egelsee">
+        <lat>47.5782414</lat>
+        <lon>13.3382028</lon>
+    </poi>
+    <poi name="Krottensee">
+        <lat>47.7832664</lat>
+        <lon>13.3861085</lon>
+    </poi>
+    <poi name="Baggersee 2">
+        <lat>47.7868572</lat>
+        <lon>12.9556908</lon>
+    </poi>
+    <poi name="Palfnersee">
+        <lat>47.0889361</lat>
+        <lon>13.1665973</lon>
+    </poi>
+    <poi name="Unterer Höhkarsee">
+        <lat>47.050963</lat>
+        <lon>13.1289531</lon>
+    </poi>
+    <poi name="Knappenbäudlsee">
+        <lat>47.0528686</lat>
+        <lon>13.0842095</lon>
+    </poi>
+    <poi name="Oberer Bockhartsee">
+        <lat>47.0824146</lat>
+        <lon>13.032125</lon>
+    </poi>
+    <poi name="Oberer Höhkarsee">
+        <lat>47.0457021</lat>
+        <lon>13.1402565</lon>
+    </poi>
+    <poi name="Zaunersee">
+        <lat>47.1990731</lat>
+        <lon>13.3621516</lon>
+    </poi>
+    <poi name="Kratzenbergsee">
+        <lat>47.1630737</lat>
+        <lon>12.4159164</lon>
+    </poi>
+    <poi name="Badesee Hollersbach">
+        <lat>47.276729</lat>
+        <lon>12.4137059</lon>
+    </poi>
+    <poi name="Schwarze Lache">
+        <lat>47.4747093</lat>
+        <lon>12.9380683</lon>
+    </poi>
+    <poi name="Suissensee">
+        <lat>47.775861</lat>
+        <lon>13.4385889</lon>
+    </poi>
+    <poi name="Ausee">
+        <lat>47.9192137</lat>
+        <lon>12.9562986</lon>
+    </poi>
+    <poi name="Großer See">
+        <lat>47.9986168</lat>
+        <lon>12.9238566</lon>
+    </poi>
+    <poi name="Zauchensee">
+        <lat>47.298745</lat>
+        <lon>13.4566153</lon>
+    </poi>
+    <poi name="Bürgerausee">
+        <lat>47.6240834</lat>
+        <lon>13.1399156</lon>
+    </poi>
+    <poi name="Reitecksee Badesee">
+        <lat>47.3729556</lat>
+        <lon>13.383175</lon>
+    </poi>
+    <poi name="Oberer Kolmsee">
+        <lat>47.0943743</lat>
+        <lon>13.315417</lon>
+    </poi>
+    <poi name="Unterer Kolmsee">
+        <lat>47.0963628</lat>
+        <lon>13.3149791</lon>
+    </poi>
+    <poi name="Pfringersee">
+        <lat>47.0926554</lat>
+        <lon>13.3204944</lon>
+    </poi>
+    <poi name="Winklersee">
+        <lat>47.3178395</lat>
+        <lon>13.3927098</lon>
+    </poi>
+    <poi name="Laitternsee">
+        <lat>47.308311</lat>
+        <lon>13.5485906</lon>
+    </poi>
+    <poi name="Tauernkarsee">
+        <lat>47.2843146</lat>
+        <lon>13.5218404</lon>
+    </poi>
+    <poi name="Tauernkarsee">
+        <lat>47.2418452</lat>
+        <lon>13.591682</lon>
+    </poi>
+    <poi name="Tümpel in Kasern">
+        <lat>47.8373956</lat>
+        <lon>13.0640235</lon>
+    </poi>
+    <poi name="Schleinlacke">
+        <lat>47.7699104</lat>
+        <lon>13.0385017</lon>
+    </poi>
+    <poi name="Oberer Rotgüldensee">
+        <lat>47.0876375</lat>
+        <lon>13.4023623</lon>
+    </poi>
+    <poi name="Filblingsee">
+        <lat>47.7847429</lat>
+        <lon>13.2774015</lon>
+    </poi>
+    <poi name="Badesee Eben im Pongau">
+        <lat>47.4001999</lat>
+        <lon>13.3974054</lon>
+    </poi>
+    <poi name="Krummschnabelsee">
+        <lat>47.2630125</lat>
+        <lon>13.5480072</lon>
+    </poi>
+    <poi name="Hochsee">
+        <lat>47.2660244</lat>
+        <lon>13.5468533</lon>
+    </poi>
+    <poi name="Grünwaldsee">
+        <lat>47.2635197</lat>
+        <lon>13.5429186</lon>
+    </poi>
+    <poi name="Wildsee">
+        <lat>47.2382451</lat>
+        <lon>13.5123749</lon>
+    </poi>
+    <poi name="Hundsfeldsee">
+        <lat>47.259166</lat>
+        <lon>13.564203</lon>
+    </poi>
+    <poi name="Prebersee">
+        <lat>47.1848347</lat>
+        <lon>13.8552862</lon>
+    </poi>
+    <poi name="Medelzlacke">
+        <lat>47.1184929</lat>
+        <lon>12.6257551</lon>
+    </poi>
+    <poi name="Karsee">
+        <lat>47.2349964</lat>
+        <lon>12.3600025</lon>
+    </poi>
+    <poi name="Karsee">
+        <lat>47.2007032</lat>
+        <lon>12.5586947</lon>
+    </poi>
+    <poi name="Seewaldsee">
+        <lat>47.6276572</lat>
+        <lon>13.2741933</lon>
+    </poi>
+    <poi name="Badesee">
+        <lat>47.5909705</lat>
+        <lon>13.466539</lon>
+    </poi>
+    <poi name="Badesee">
+        <lat>47.3016485</lat>
+        <lon>13.5032661</lon>
+    </poi>
+    <poi name="Böndlsee">
+        <lat>47.3138394</lat>
+        <lon>13.0425135</lon>
+    </poi>
+    <poi name="Rinderkarsee">
+        <lat>47.2019162</lat>
+        <lon>12.2042759</lon>
+    </poi>
+    <poi name="Schwarze Lacke">
+        <lat>47.1455213</lat>
+        <lon>12.550199</lon>
+    </poi>
+    <poi name="Schwarze Lacke">
+        <lat>47.1455524</lat>
+        <lon>12.5691426</lon>
+    </poi>
+    <poi name="Öllschützen Stausee">
+        <lat>47.1123965</lat>
+        <lon>13.4600611</lon>
+    </poi>
+    <poi name="Unterer Bluntausee">
+        <lat>47.5795632</lat>
+        <lon>13.142338</lon>
+    </poi>
+    <poi name="Oberer Bluntausee">
+        <lat>47.5777093</lat>
+        <lon>13.1402281</lon>
+    </poi>
+    <poi name="Fillinglacke">
+        <lat>47.5449667</lat>
+        <lon>13.12681</lon>
+    </poi>
+    <poi name="Spiegelsee">
+        <lat>47.2331436</lat>
+        <lon>13.1379039</lon>
+    </poi>
+    <poi name="Zwerfenbergsee">
+        <lat>47.283262</lat>
+        <lon>13.8095188</lon>
+    </poi>
+    <poi name="Anger See">
+        <lat>47.2882038</lat>
+        <lon>13.8128217</lon>
+    </poi>
+    <poi name="Lungauer Klaffersee">
+        <lat>47.2825465</lat>
+        <lon>13.7970141</lon>
+    </poi>
+    <poi name="Tischlerkarsee">
+        <lat>47.0869554</lat>
+        <lon>13.2416962</lon>
+    </poi>
+    <poi name="Twenger Almsee">
+        <lat>47.2202389</lat>
+        <lon>13.5999124</lon>
+    </poi>
+    <poi name="Badesee Niedernsill">
+        <lat>47.278355</lat>
+        <lon>12.6448847</lon>
+    </poi>
+    <poi name="Badesee Uttendorf">
+        <lat>47.2831173</lat>
+        <lon>12.578549</lon>
+    </poi>
+    <poi name="Plattachsee">
+        <lat>47.1695747</lat>
+        <lon>12.4863557</lon>
+    </poi>
+    <poi name="Tauernsee">
+        <lat>47.1579448</lat>
+        <lon>12.5040928</lon>
+    </poi>
+    <poi name="Langsee">
+        <lat>47.1678487</lat>
+        <lon>12.4977908</lon>
+    </poi>
+    <poi name="Ötzlsee">
+        <lat>47.1320982</lat>
+        <lon>13.292477</lon>
+    </poi>
+    <poi name="Speckeisee">
+        <lat>47.6404768</lat>
+        <lon>13.1326553</lon>
+    </poi>
+    <poi name="Lignitzsee">
+        <lat>47.2513767</lat>
+        <lon>13.7028593</lon>
+    </poi>
+    <poi name="Kleiner See">
+        <lat>47.2423156</lat>
+        <lon>13.698917</lon>
+    </poi>
+    <poi name="'Unterer' Gamskarlsee">
+        <lat>47.081574</lat>
+        <lon>13.187646</lon>
+    </poi>
+    <poi name="Gamskarlsee">
+        <lat>47.0777759</lat>
+        <lon>13.186554</lon>
+    </poi>
+    <poi name="Reedsee">
+        <lat>47.0975153</lat>
+        <lon>13.1928653</lon>
+    </poi>
+    <poi name="Ecklgrubensee">
+        <lat>47.111283</lat>
+        <lon>13.0349392</lon>
+    </poi>
+    <poi name="Erzwiessee">
+        <lat>47.093607</lat>
+        <lon>13.0589101</lon>
+    </poi>
+    <poi name="Oberer Landschitzsee">
+        <lat>47.2468309</lat>
+        <lon>13.8609098</lon>
+    </poi>
+    <poi name="Mittlerer Landschitzsee">
+        <lat>47.2477002</lat>
+        <lon>13.8499682</lon>
+    </poi>
+    <poi name="Oberer Landawirsee">
+        <lat>47.26417</lat>
+        <lon>13.7207043</lon>
+    </poi>
+    <poi name="Unterer Landawirsee">
+        <lat>47.2689725</lat>
+        <lon>13.7253784</lon>
+    </poi>
+    <poi name="Knappenkarsee">
+        <lat>47.2699135</lat>
+        <lon>13.6723804</lon>
+    </poi>
+    <poi name="Steinsee">
+        <lat>47.1674402</lat>
+        <lon>13.5679998</lon>
+    </poi>
+    <poi name="Karwassersee">
+        <lat>47.1107567</lat>
+        <lon>13.3746161</lon>
+    </poi>
+    <poi name="Fuchssee">
+        <lat>47.1913317</lat>
+        <lon>13.5364532</lon>
+    </poi>
+    <poi name="Dichtensee">
+        <lat>47.147276</lat>
+        <lon>12.4742976</lon>
+    </poi>
+    <poi name="Amaissee">
+        <lat>47.5543498</lat>
+        <lon>13.4620769</lon>
+    </poi>
+    <poi name="Seehornsee">
+        <lat>47.5154754</lat>
+        <lon>12.8392033</lon>
+    </poi>
+    <poi name="Unterer Wirpitschsee">
+        <lat>47.2353884</lat>
+        <lon>13.6086952</lon>
+    </poi>
+    <poi name="Tiefenbachsee">
+        <lat>47.2403229</lat>
+        <lon>13.6038051</lon>
+    </poi>
+    <poi name="Lindlsee">
+        <lat>47.239872</lat>
+        <lon>13.833956</lon>
+    </poi>
+    <poi name="Harrbergsee">
+        <lat>47.5816366</lat>
+        <lon>13.2398432</lon>
+    </poi>
+    <poi name="Schuhflickersee">
+        <lat>47.2637715</lat>
+        <lon>13.1485475</lon>
+    </poi>
+    <poi name="Baggersee Liefering 4">
+        <lat>47.8381247</lat>
+        <lon>13.006545</lon>
+    </poi>
+    <poi name="Blausee">
+        <lat>47.2234753</lat>
+        <lon>13.4836785</lon>
+    </poi>
+    <poi name="Blausee">
+        <lat>47.2261916</lat>
+        <lon>12.2468585</lon>
+    </poi>
+    <poi name="Wildalmsee">
+        <lat>47.1892811</lat>
+        <lon>13.566025</lon>
+    </poi>
+    <poi name="Draugsteinlacke">
+        <lat>47.210611</lat>
+        <lon>13.2834969</lon>
+    </poi>
+    <poi name="Neukarsee">
+        <lat>47.2227324</lat>
+        <lon>13.3782341</lon>
+    </poi>
+    <poi name="Schönalmsee">
+        <lat>47.2264289</lat>
+        <lon>13.6008274</lon>
+    </poi>
+    <poi name="Elisabethsee">
+        <lat>47.1776304</lat>
+        <lon>12.5298527</lon>
+    </poi>
+    <poi name="Rosaninsee">
+        <lat>46.9499164</lat>
+        <lon>13.7807947</lon>
+    </poi>
+    <poi name="Hundsteinsee">
+        <lat>47.3395202</lat>
+        <lon>12.918243</lon>
+    </poi>
+    <poi name="Vorderschlumsee">
+        <lat>47.5501608</lat>
+        <lon>13.1055086</lon>
+    </poi>
+    <poi name="Schödersee">
+        <lat>47.1137367</lat>
+        <lon>13.3201825</lon>
+    </poi>
+    <poi name="Litzlberg">
+        <lat>47.9334766</lat>
+        <lon>13.5584097</lon>
+    </poi>
+    <poi name="Florysee">
+        <lat>47.4078321</lat>
+        <lon>12.9769716</lon>
+    </poi>
+    <poi name="Holzenlacke">
+        <lat>47.2836635</lat>
+        <lon>13.2148876</lon>
+    </poi>
+    <poi name="Seekarsee">
+        <lat>47.277293</lat>
+        <lon>13.4385428</lon>
+    </poi>
+    <poi name="Seekarsee">
+        <lat>47.2132939</lat>
+        <lon>12.9410223</lon>
+    </poi>
+    <poi name="Seekarsee">
+        <lat>47.3479751</lat>
+        <lon>12.5527414</lon>
+    </poi>
+    <poi name="Schwarze Lacken">
+        <lat>47.458823</lat>
+        <lon>13.4340226</lon>
+    </poi>
+    <poi name="Natursee">
+        <lat>47.3563071</lat>
+        <lon>13.4424841</lon>
+    </poi>
+    <poi name="Waldsee">
+        <lat>47.3776856</lat>
+        <lon>12.7944987</lon>
+    </poi>
+    <poi name="Piendlsee">
+        <lat>47.2282097</lat>
+        <lon>13.7632726</lon>
+    </poi>
+    <poi name="Anderlesee">
+        <lat>46.9958528</lat>
+        <lon>13.7062251</lon>
+    </poi>
+    <poi name="Oberer Kleineisersee">
+        <lat>47.1495691</lat>
+        <lon>12.6614435</lon>
+    </poi>
+    <poi name="Unterer Kleineisersee">
+        <lat>47.1539022</lat>
+        <lon>12.6641093</lon>
+    </poi>
+    <poi name="Schwarzkarlsee">
+        <lat>47.1708228</lat>
+        <lon>12.6529491</lon>
+    </poi>
+    <poi name="Sparangerkeessee">
+        <lat>47.024234</lat>
+        <lon>13.0411902</lon>
+    </poi>
+    <poi name="Dürrenecksee">
+        <lat>47.1732242</lat>
+        <lon>13.8752184</lon>
+    </poi>
+    <poi name="Hacklsee">
+        <lat>47.2077449</lat>
+        <lon>12.6535538</lon>
+    </poi>
+    <poi name="Anifer Alterbach">
+        <lat>47.7527932</lat>
+        <lon>13.0711253</lon>
+    </poi>
+    <poi name="Grundloslacke">
+        <lat>47.9973906</lat>
+        <lon>12.9312166</lon>
+    </poi>
+    <poi name="Grübllacke">
+        <lat>47.3387465</lat>
+        <lon>13.1654788</lon>
+    </poi>
+    <poi name="Hakarsee">
+        <lat>47.3004457</lat>
+        <lon>13.4786194</lon>
+    </poi>
+    <poi name="Almsee">
+        <lat>47.4784805</lat>
+        <lon>13.5330385</lon>
+    </poi>
+    <poi name="Oberer Bärmoossee">
+        <lat>47.0945967</lat>
+        <lon>13.186117</lon>
+    </poi>
+    <poi name="Windschursee">
+        <lat>47.0917524</lat>
+        <lon>13.1777787</lon>
+    </poi>
+    <poi name="Unterer Bärmoossee">
+        <lat>47.0958453</lat>
+        <lon>13.1862275</lon>
+    </poi>
+    <poi name="Kühkarsee">
+        <lat>47.0909762</lat>
+        <lon>13.1910844</lon>
+    </poi>
+    <poi name="Schroffensee">
+        <lat>47.2736491</lat>
+        <lon>13.5857398</lon>
+    </poi>
+    <poi name="Obertrumer See">
+        <lat>47.956979</lat>
+        <lon>13.0885301</lon>
+    </poi>
+    <poi name="Obertrumer See">
+        <lat>47.9744986</lat>
+        <lon>13.0993113</lon>
+    </poi>
+    <poi name="Obertrumer See">
+        <lat>47.9727212</lat>
+        <lon>13.083213</lon>
+    </poi>
+    <poi name="Obertrumer See">
+        <lat>47.9623465</lat>
+        <lon>13.0758405</lon>
+    </poi>
+    <poi name="Obertrumer See">
+        <lat>47.94208</lat>
+        <lon>13.0713983</lon>
+    </poi>
+    <poi name="Pilatussee">
+        <lat>47.0640646</lat>
+        <lon>12.9574959</lon>
+    </poi>
+    <poi name="Schwebenlacke">
+        <lat>47.3037923</lat>
+        <lon>12.1150086</lon>
+    </poi>
+    <poi name="Griessensee">
+        <lat>47.4612904</lat>
+        <lon>12.6405743</lon>
+    </poi>
+    <poi name="Seelein in der Steinigen Grube">
+        <lat>47.4769936</lat>
+        <lon>12.9787263</lon>
+    </poi>
+    <poi name="Spiegelsee am Hochkeil">
+        <lat>47.4005819</lat>
+        <lon>13.1331346</lon>
+    </poi>
+    <poi name="Moorlacke">
+        <lat>47.9936061</lat>
+        <lon>12.9281658</lon>
+    </poi>
+    <poi name="Riedingsee">
+        <lat>47.1628418</lat>
+        <lon>13.3755486</lon>
+    </poi>
+    <poi name="Oberer Schwarzsee">
+        <lat>47.1065155</lat>
+        <lon>13.3561565</lon>
+    </poi>
+    <poi name="Oberer Rupaninsee">
+        <lat>47.2130161</lat>
+        <lon>13.6208477</lon>
+    </poi>
+    <poi name="Bockkarsee">
+        <lat>47.1379249</lat>
+        <lon>12.9127432</lon>
+    </poi>
+    <poi name="Grosser Tauernsee">
+        <lat>47.0475409</lat>
+        <lon>13.1761747</lon>
+    </poi>
+    <poi name="Woisgensee">
+        <lat>47.0395735</lat>
+        <lon>13.1344661</lon>
+    </poi>
+    <poi name="Wengsee">
+        <lat>47.4646143</lat>
+        <lon>13.2553481</lon>
+    </poi>
+    <poi name="Unterer Rupaninsee">
+        <lat>47.2165395</lat>
+        <lon>13.627867</lon>
+    </poi>
+    <poi name="Kernsee">
+        <lat>47.2056717</lat>
+        <lon>13.612751</lon>
+    </poi>
+    <poi name="Karnersee">
+        <lat>47.2096803</lat>
+        <lon>13.6354541</lon>
+    </poi>
+    <poi name="Zirbenlacke">
+        <lat>47.1614012</lat>
+        <lon>13.0536567</lon>
+    </poi>
+    <poi name="Gletschersee">
+        <lat>47.2045347</lat>
+        <lon>12.6926883</lon>
+    </poi>
+    <poi name="Brandlsee">
+        <lat>47.2248205</lat>
+        <lon>12.7704279</lon>
+    </poi>
+    <poi name="Blauer See">
+        <lat>47.2622996</lat>
+        <lon>13.3596147</lon>
+    </poi>
+    <poi name="Gletschersee Obersulzbachtal">
+        <lat>47.1183042</lat>
+        <lon>12.294581</lon>
+    </poi>
+    <poi name="Stausee">
+        <lat>47.5294351</lat>
+        <lon>12.8177457</lon>
+    </poi>
+    <poi name="Graniersee">
+        <lat>47.2268447</lat>
+        <lon>13.6754042</lon>
+    </poi>
+    <poi name="Archensee">
+        <lat>47.2429946</lat>
+        <lon>12.8993001</lon>
+    </poi>
+    <poi name="Ephemerer Tümpel beim Krautwächterhaus">
+        <lat>47.7922549</lat>
+        <lon>13.0451548</lon>
+    </poi>
+    <poi name="Goldbergsee">
+        <lat>47.0460656</lat>
+        <lon>12.9661706</lon>
+    </poi>
+    <poi name="Rothenwändersee">
+        <lat>47.1993338</lat>
+        <lon>13.4225201</lon>
+    </poi>
+    <poi name="Schafflkogelsee">
+        <lat>47.1393506</lat>
+        <lon>12.6086775</lon>
+    </poi>
+    <poi name="Kneippanlage">
+        <lat>47.7286036</lat>
+        <lon>12.9392608</lon>
+    </poi>
+    <poi name="Pfeilerlack">
+        <lat>47.5111027</lat>
+        <lon>13.2198828</lon>
+    </poi>
+    <poi name="Hochbirgsee">
+        <lat>47.1646494</lat>
+        <lon>12.4691343</lon>
+    </poi>
+    <poi name="Glanzsee">
+        <lat>47.1837905</lat>
+        <lon>12.5556282</lon>
+    </poi>
+    <poi name="Boarnlacke">
+        <lat>47.1646794</lat>
+        <lon>13.3644684</lon>
+    </poi>
+    <poi name="Essersee">
+        <lat>47.1984062</lat>
+        <lon>13.3774517</lon>
+    </poi>
+    <poi name="Gamslacke">
+        <lat>47.5009641</lat>
+        <lon>12.8538006</lon>
+    </poi>
+    <poi name="Fiebingersee">
+        <lat>47.0769684</lat>
+        <lon>12.9954092</lon>
+    </poi>
+    <poi name="Zeller See">
+        <lat>47.3301823</lat>
+        <lon>12.8106392</lon>
+    </poi>
+    <poi name="Zeller See">
+        <lat>47.3105051</lat>
+        <lon>12.816416</lon>
+    </poi>
+    <poi name="Zeller See">
+        <lat>47.3100472</lat>
+        <lon>12.8017827</lon>
+    </poi>
+    <poi name="Zeller See">
+        <lat>47.3225686</lat>
+        <lon>12.8000218</lon>
+    </poi>
+    <poi name="Zeller See">
+        <lat>47.3339838</lat>
+        <lon>12.7979121</lon>
+    </poi>
+    <poi name="Klammlsee">
+        <lat>47.2768217</lat>
+        <lon>13.5666885</lon>
+    </poi>
+    <poi name="Mattsee">
+        <lat>47.9726166</lat>
+        <lon>13.105823</lon>
+    </poi>
+    <poi name="Mattsee">
+        <lat>47.9863637</lat>
+        <lon>13.1113303</lon>
+    </poi>
+    <poi name="Mattsee">
+        <lat>47.9903792</lat>
+        <lon>13.1339379</lon>
+    </poi>
+    <poi name="Mattsee">
+        <lat>47.9893697</lat>
+        <lon>13.1461803</lon>
+    </poi>
+    <poi name="Ernstlacke">
+        <lat>47.1864785</lat>
+        <lon>13.5698322</lon>
+    </poi>
+    <poi name="Badesee Neukirchen">
+        <lat>47.2526331</lat>
+        <lon>12.2851484</lon>
+    </poi>
+    <poi name="Foißkarsee">
+        <lat>47.1731786</lat>
+        <lon>12.2408606</lon>
+    </poi>
+    <poi name="Oberer Wirpitschsee">
+        <lat>47.2323717</lat>
+        <lon>13.5986883</lon>
+    </poi>
+    <poi name="Seetalersee">
+        <lat>47.1490462</lat>
+        <lon>13.9365991</lon>
+    </poi>
+    <poi name="Mühlbachsee">
+        <lat>47.1633659</lat>
+        <lon>13.4123737</lon>
+    </poi>
+    <poi name="Jaidbachsee">
+        <lat>47.1435924</lat>
+        <lon>12.2357049</lon>
+    </poi>
+    <poi name="Kneippanlage Kurzentrum Bad Vigaun">
+        <lat>47.6704594</lat>
+        <lon>13.1328115</lon>
+    </poi>
+    <poi name="Tscheibitschsee">
+        <lat>47.2504503</lat>
+        <lon>13.5983319</lon>
+    </poi>
+    <poi name="Grüne Lacke">
+        <lat>47.172509</lat>
+        <lon>12.8648061</lon>
+    </poi>
+    <poi name="Ilgsee">
+        <lat>47.1922908</lat>
+        <lon>13.3466085</lon>
+    </poi>
+    <poi name="Hoislsee">
+        <lat>47.1865414</lat>
+        <lon>13.3485459</lon>
+    </poi>
+    <poi name="Gralatisee">
+        <lat>47.259875</lat>
+        <lon>13.7862753</lon>
+    </poi>
+    <poi name="Talkenkarlsee">
+        <lat>47.2634351</lat>
+        <lon>13.6902898</lon>
+    </poi>
+    <poi name="Zinkenkarlsee">
+        <lat>47.2675395</lat>
+        <lon>13.6871623</lon>
+    </poi>
+    <poi name="Schwarzsee">
+        <lat>47.2837878</lat>
+        <lon>13.5948829</lon>
+    </poi>
+    <poi name="Großer Paarsee">
+        <lat>47.2794715</lat>
+        <lon>13.1124658</lon>
+    </poi>
+    <poi name="Vordersee">
+        <lat>47.775126</lat>
+        <lon>13.2104703</lon>
+    </poi>
+    <poi name="Lacken">
+        <lat>47.2252906</lat>
+        <lon>13.6199664</lon>
+    </poi>
+    <poi name="Kühseelein">
+        <lat>47.2556064</lat>
+        <lon>13.8286526</lon>
+    </poi>
+    <poi name="Schafllacke">
+        <lat>47.5377056</lat>
+        <lon>13.247845</lon>
+    </poi>
+    <poi name="Ottsee">
+        <lat>47.0097688</lat>
+        <lon>13.6959879</lon>
+    </poi>
+    <poi name="ALMGUT Kneippbach">
+        <lat>47.0805097</lat>
+        <lon>13.6900533</lon>
+    </poi>
+    <poi name="Stockenboier See">
+        <lat>46.9968098</lat>
+        <lon>13.7500575</lon>
+    </poi>
+    <poi name="Leopoldskroner Weiher">
+        <lat>47.7874357</lat>
+        <lon>13.0359141</lon>
+    </poi>
+    <poi name="Goldegger See">
+        <lat>47.3167738</lat>
+        <lon>13.1027365</lon>
+    </poi>
+    <poi name="Badesee Plankenau">
+        <lat>47.3261097</lat>
+        <lon>13.1840141</lon>
+    </poi>
+    <poi name="Attersee">
+        <lat>47.9201491</lat>
+        <lon>13.5437135</lon>
+    </poi>
+    <poi name="Attersee">
+        <lat>47.9089888</lat>
+        <lon>13.5700229</lon>
+    </poi>
+    <poi name="Attersee">
+        <lat>47.8161999</lat>
+        <lon>13.5464049</lon>
+    </poi>
+    <poi name="Attersee">
+        <lat>47.8012613</lat>
+        <lon>13.485253</lon>
+    </poi>
+    <poi name="Attersee">
+        <lat>47.8577842</lat>
+        <lon>13.5306549</lon>
+    </poi>
+    <poi name="Wolfgangsee">
+        <lat>47.7206482</lat>
+        <lon>13.4839295</lon>
+    </poi>
+    <poi name="Wolfgangsee">
+        <lat>47.7428793</lat>
+        <lon>13.4323363</lon>
+    </poi>
+    <poi name="Wolfgangsee">
+        <lat>47.7728506</lat>
+        <lon>13.3769207</lon>
+    </poi>
+    <poi name="Wolfgangsee">
+        <lat>47.7589961</lat>
+        <lon>13.3685147</lon>
+    </poi>
+    <poi name="Kleiner Paarsee">
+        <lat>47.2754827</lat>
+        <lon>13.1135252</lon>
+    </poi>
+    <poi name="Gleislacke">
+        <lat>47.9997256</lat>
+        <lon>12.9301091</lon>
+    </poi>
+    <poi name="Welt des Dschungels">
+        <lat>47.9850114</lat>
+        <lon>13.2726104</lon>
+    </poi>
+    <poi name="Schafseebl">
+        <lat>47.0939536</lat>
+        <lon>12.1731801</lon>
+    </poi>
+    <poi name="Leopoldsteiner See">
+        <lat>47.5747655</lat>
+        <lon>14.8514674</lon>
+    </poi>
+    <poi name="Leopoldsteiner See">
+        <lat>47.5727293</lat>
+        <lon>14.8655921</lon>
+    </poi>
+    <poi name="Stubenbergsee">
+        <lat>47.233427</lat>
+        <lon>15.7979865</lon>
+    </poi>
+    <poi name="Erlaufsee">
+        <lat>47.795626</lat>
+        <lon>15.2644744</lon>
+    </poi>
+    <poi name="Erlaufsee">
+        <lat>47.7918902</lat>
+        <lon>15.2811062</lon>
+    </poi>
+    <poi name="Packer Stausee">
+        <lat>46.972162</lat>
+        <lon>15.0385863</lon>
+    </poi>
+    <poi name="Packer Stausee">
+        <lat>46.9753736</lat>
+        <lon>15.0074945</lon>
+    </poi>
+    <poi name="Packer Stausee">
+        <lat>46.9777914</lat>
+        <lon>15.0176994</lon>
+    </poi>
+    <poi name="Hirzmann Stausee">
+        <lat>46.9955886</lat>
+        <lon>15.0859105</lon>
+    </poi>
+    <poi name="Hirzmann Stausee">
+        <lat>46.9985113</lat>
+        <lon>15.0753432</lon>
+    </poi>
+    <poi name="Hirzmann Stausee">
+        <lat>47.0116365</lat>
+        <lon>15.0500239</lon>
+    </poi>
+    <poi name="Turrachsee">
+        <lat>46.922194</lat>
+        <lon>13.8724109</lon>
+    </poi>
+    <poi name="Hubertussee">
+        <lat>47.8092227</lat>
+        <lon>15.3748881</lon>
+    </poi>
+    <poi name="Hubertussee">
+        <lat>47.808423</lat>
+        <lon>15.3627496</lon>
+    </poi>
+    <poi name="Weißenbacher Badeteich">
+        <lat>47.5634299</lat>
+        <lon>14.2035544</lon>
+    </poi>
+    <poi name="Tauplitzsee">
+        <lat>47.5969135</lat>
+        <lon>14.0047535</lon>
+    </poi>
+    <poi name="Grüner See">
+        <lat>47.5415353</lat>
+        <lon>15.056532</lon>
+    </poi>
+    <poi name="Grüner See">
+        <lat>47.467236</lat>
+        <lon>14.4066897</lon>
+    </poi>
+    <poi name="Grüner See">
+        <lat>47.582102</lat>
+        <lon>15.3076217</lon>
+    </poi>
+    <poi name="Großer Winterleitensee">
+        <lat>47.0912371</lat>
+        <lon>14.5653414</lon>
+    </poi>
+    <poi name="Thalersee">
+        <lat>47.0689225</lat>
+        <lon>15.3685293</lon>
+    </poi>
+    <poi name="Tiebersee">
+        <lat>47.3088382</lat>
+        <lon>15.3725895</lon>
+    </poi>
+    <poi name="Sulmsee">
+        <lat>46.7770763</lat>
+        <lon>15.5132172</lon>
+    </poi>
+    <poi name="Rantensee">
+        <lat>47.2482938</lat>
+        <lon>13.8951811</lon>
+    </poi>
+    <poi name="Krallersee">
+        <lat>47.5969442</lat>
+        <lon>13.9799157</lon>
+    </poi>
+    <poi name="Gams Bad">
+        <lat>46.8665169</lat>
+        <lon>15.2258901</lon>
+    </poi>
+    <poi name="Aldrian See">
+        <lat>46.8225909</lat>
+        <lon>15.5304832</lon>
+    </poi>
+    <poi name="Seebad Riegersburg">
+        <lat>46.9975989</lat>
+        <lon>15.9393539</lon>
+    </poi>
+    <poi name="Hechtensee">
+        <lat>47.7822678</lat>
+        <lon>15.2301387</lon>
+    </poi>
+    <poi name="Badesee Burgau">
+        <lat>47.1446598</lat>
+        <lon>16.0984192</lon>
+    </poi>
+    <poi name="Kumbergsee">
+        <lat>47.1586422</lat>
+        <lon>15.5432884</lon>
+    </poi>
+    <poi name="Globuckensee">
+        <lat>47.4877622</lat>
+        <lon>14.3692595</lon>
+    </poi>
+    <poi name="Schwarzlacke">
+        <lat>47.4935979</lat>
+        <lon>14.3901358</lon>
+    </poi>
+    <poi name="Freizeitsee">
+        <lat>47.5541493</lat>
+        <lon>15.5704826</lon>
+    </poi>
+    <poi name="Weißensee">
+        <lat>47.31422</lat>
+        <lon>13.9770061</lon>
+    </poi>
+    <poi name="Unterer Kaltenbachsee">
+        <lat>47.2783344</lat>
+        <lon>14.0727809</lon>
+    </poi>
+    <poi name="Stoffensee">
+        <lat>47.3091288</lat>
+        <lon>13.9132649</lon>
+    </poi>
+    <poi name="Seekarsee">
+        <lat>47.282747</lat>
+        <lon>13.9081534</lon>
+    </poi>
+    <poi name="Seekarsee">
+        <lat>47.32873</lat>
+        <lon>13.7209329</lon>
+    </poi>
+    <poi name="Schwarzensee">
+        <lat>47.2912846</lat>
+        <lon>13.9916166</lon>
+    </poi>
+    <poi name="Schwarzensee">
+        <lat>47.6004457</lat>
+        <lon>14.0481052</lon>
+    </poi>
+    <poi name="Schwarzensee">
+        <lat>47.2910956</lat>
+        <lon>13.8696265</lon>
+    </poi>
+    <poi name="Schimpelsee">
+        <lat>47.2759159</lat>
+        <lon>13.9857428</lon>
+    </poi>
+    <poi name="Oberer Klaftersee">
+        <lat>47.3158485</lat>
+        <lon>13.9930004</lon>
+    </poi>
+    <poi name="Oberer Kaltenbachsee">
+        <lat>47.2793971</lat>
+        <lon>14.0607405</lon>
+    </poi>
+    <poi name="Mittlerer Kaltenbachsee">
+        <lat>47.2815099</lat>
+        <lon>14.0655037</lon>
+    </poi>
+    <poi name="Lemperkarsee">
+        <lat>47.273347</lat>
+        <lon>13.8697886</lon>
+    </poi>
+    <poi name="Holzkarsee">
+        <lat>47.2696836</lat>
+        <lon>13.8800567</lon>
+    </poi>
+    <poi name="Hohensee">
+        <lat>47.2890407</lat>
+        <lon>14.0092038</lon>
+    </poi>
+    <poi name="Grünsee">
+        <lat>47.2882357</lat>
+        <lon>13.9842061</lon>
+    </poi>
+    <poi name="Grünsee">
+        <lat>47.2825481</lat>
+        <lon>14.1603739</lon>
+    </poi>
+    <poi name="Griegelsee">
+        <lat>47.3024954</lat>
+        <lon>13.9992732</lon>
+    </poi>
+    <poi name="Breitenbachsee">
+        <lat>47.2770191</lat>
+        <lon>13.9974351</lon>
+    </poi>
+    <poi name="Ahornsee">
+        <lat>47.308492</lat>
+        <lon>13.9875868</lon>
+    </poi>
+    <poi name="Ahornsee">
+        <lat>47.4666608</lat>
+        <lon>13.7812453</lon>
+    </poi>
+    <poi name="Wildlochsee">
+        <lat>47.3330686</lat>
+        <lon>13.8149808</lon>
+    </poi>
+    <poi name="Unterer Sonntagskarsee">
+        <lat>47.3079657</lat>
+        <lon>13.8282657</lon>
+    </poi>
+    <poi name="Unterer Klaffersee">
+        <lat>47.2994599</lat>
+        <lon>13.791849</lon>
+    </poi>
+    <poi name="Trattensee">
+        <lat>47.3236286</lat>
+        <lon>13.8299532</lon>
+    </poi>
+    <poi name="Riesachsee">
+        <lat>47.3280134</lat>
+        <lon>13.783078</lon>
+    </poi>
+    <poi name="Rauenbergsee">
+        <lat>47.2951585</lat>
+        <lon>13.7885574</lon>
+    </poi>
+    <poi name="Greifenbergsee">
+        <lat>47.2941092</lat>
+        <lon>13.7905724</lon>
+    </poi>
+    <poi name="Klafferkogelsee">
+        <lat>47.2932956</lat>
+        <lon>13.794069</lon>
+    </poi>
+    <poi name="Pfannsee">
+        <lat>47.3507016</lat>
+        <lon>13.8086368</lon>
+    </poi>
+    <poi name="Obersee">
+        <lat>47.3500242</lat>
+        <lon>13.8170436</lon>
+    </poi>
+    <poi name="Obersee">
+        <lat>47.3430343</lat>
+        <lon>13.6021291</lon>
+    </poi>
+    <poi name="Oberer Sonntagskarsee">
+        <lat>47.3020794</lat>
+        <lon>13.8325499</lon>
+    </poi>
+    <poi name="Oberer Klaffersee">
+        <lat>47.2945187</lat>
+        <lon>13.8006055</lon>
+    </poi>
+    <poi name="Oberer Giglachsee">
+        <lat>47.2785872</lat>
+        <lon>13.6436269</lon>
+    </poi>
+    <poi name="Moaralmsee">
+        <lat>47.3569834</lat>
+        <lon>13.7908028</lon>
+    </poi>
+    <poi name="Landauersee">
+        <lat>47.3041271</lat>
+        <lon>13.6637542</lon>
+    </poi>
+    <poi name="Knappensee">
+        <lat>47.277108</lat>
+        <lon>13.669925</lon>
+    </poi>
+    <poi name="Klammsee">
+        <lat>47.298995</lat>
+        <lon>13.6476071</lon>
+    </poi>
+    <poi name="Kapuzinersee">
+        <lat>47.2951802</lat>
+        <lon>13.8067335</lon>
+    </poi>
+    <poi name="Kaltenbachsee">
+        <lat>47.3434924</lat>
+        <lon>13.7870157</lon>
+    </poi>
+    <poi name="Hüttensee">
+        <lat>47.3602104</lat>
+        <lon>13.8176078</lon>
+    </poi>
+    <poi name="Grubersee">
+        <lat>47.345737</lat>
+        <lon>13.8067763</lon>
+    </poi>
+    <poi name="Grubersee">
+        <lat>47.2557845</lat>
+        <lon>14.0355581</lon>
+    </poi>
+    <poi name="Filzsee">
+        <lat>47.3497038</lat>
+        <lon>13.8009421</lon>
+    </poi>
+    <poi name="Elendbergsee">
+        <lat>47.281995</lat>
+        <lon>13.738558</lon>
+    </poi>
+    <poi name="Eiskarsee">
+        <lat>47.282917</lat>
+        <lon>13.729452</lon>
+    </poi>
+    <poi name="Duisitzkarsee">
+        <lat>47.299015</lat>
+        <lon>13.688212</lon>
+    </poi>
+    <poi name="Unterer Buckelkarsee">
+        <lat>47.282887</lat>
+        <lon>13.678052</lon>
+    </poi>
+    <poi name="Oberer Buckelkarsee">
+        <lat>47.2855636</lat>
+        <lon>13.674425</lon>
+    </poi>
+    <poi name="Brettersee">
+        <lat>47.292828</lat>
+        <lon>13.648632</lon>
+    </poi>
+    <poi name="Steirischer Bodensee">
+        <lat>47.3698189</lat>
+        <lon>13.82325</lon>
+    </poi>
+    <poi name="Gaishorner Badesee">
+        <lat>47.4837122</lat>
+        <lon>14.5404731</lon>
+    </poi>
+    <poi name="Gaishorner Badesee">
+        <lat>47.4832492</lat>
+        <lon>14.5524208</lon>
+    </poi>
+    <poi name="Gemeinsee">
+        <lat>47.4612312</lat>
+        <lon>14.4029819</lon>
+    </poi>
+    <poi name="Steinkarsee">
+        <lat>47.4678911</lat>
+        <lon>14.2573205</lon>
+    </poi>
+    <poi name="Riednersee">
+        <lat>47.4378592</lat>
+        <lon>14.2549068</lon>
+    </poi>
+    <poi name="Plannersee">
+        <lat>47.4107304</lat>
+        <lon>14.2124205</lon>
+    </poi>
+    <poi name="Michelirlingsee">
+        <lat>47.3879349</lat>
+        <lon>14.155965</lon>
+    </poi>
+    <poi name="Kothüttensee">
+        <lat>47.395727</lat>
+        <lon>14.1911767</lon>
+    </poi>
+    <poi name="Karlsee">
+        <lat>47.3987201</lat>
+        <lon>14.1716433</lon>
+    </poi>
+    <poi name="Goldbachsee">
+        <lat>47.3890547</lat>
+        <lon>14.1794971</lon>
+    </poi>
+    <poi name="Stausee Großsölk">
+        <lat>47.392046</lat>
+        <lon>13.9809796</lon>
+    </poi>
+    <poi name="Naturbad">
+        <lat>47.5871383</lat>
+        <lon>14.3970571</lon>
+    </poi>
+    <poi name="Zwirtner See">
+        <lat>47.5764728</lat>
+        <lon>14.3206776</lon>
+    </poi>
+    <poi name="Putterersee">
+        <lat>47.520057</lat>
+        <lon>14.1322027</lon>
+    </poi>
+    <poi name="Großsee">
+        <lat>47.5999916</lat>
+        <lon>13.9930017</lon>
+    </poi>
+    <poi name="Sommersbergsee">
+        <lat>47.6185854</lat>
+        <lon>13.7371489</lon>
+    </poi>
+    <poi name="Ödensee">
+        <lat>47.5620083</lat>
+        <lon>13.8165397</lon>
+    </poi>
+    <poi name="Kammersee">
+        <lat>47.6492278</lat>
+        <lon>13.9451241</lon>
+    </poi>
+    <poi name="Hinterer Lahngangsee">
+        <lat>47.6739966</lat>
+        <lon>13.9397291</lon>
+    </poi>
+    <poi name="Elmsee">
+        <lat>47.6874403</lat>
+        <lon>13.9637974</lon>
+    </poi>
+    <poi name="Dreibrüdersee">
+        <lat>47.6779744</lat>
+        <lon>13.9230763</lon>
+    </poi>
+    <poi name="Salzastausee">
+        <lat>47.5323773</lat>
+        <lon>13.9274301</lon>
+    </poi>
+    <poi name="Salzastausee">
+        <lat>47.5192213</lat>
+        <lon>13.9389457</lon>
+    </poi>
+    <poi name="Salzastausee">
+        <lat>47.5075182</lat>
+        <lon>13.9477634</lon>
+    </poi>
+    <poi name="Salzastausee">
+        <lat>47.4957915</lat>
+        <lon>13.9502414</lon>
+    </poi>
+    <poi name="Pibersteinersee">
+        <lat>47.0552086</lat>
+        <lon>15.0655833</lon>
+    </poi>
+    <poi name="Lavantsee">
+        <lat>47.0599152</lat>
+        <lon>14.5760674</lon>
+    </poi>
+    <poi name="Schantlsee">
+        <lat>46.7482599</lat>
+        <lon>15.611657</lon>
+    </poi>
+    <poi name="Liebmannsee">
+        <lat>46.6922748</lat>
+        <lon>15.958315</lon>
+    </poi>
+    <poi name="Sackwiesensee">
+        <lat>47.5912061</lat>
+        <lon>15.0628142</lon>
+    </poi>
+    <poi name="Josersee">
+        <lat>47.5789077</lat>
+        <lon>15.0737679</lon>
+    </poi>
+    <poi name="Spiegelsee">
+        <lat>47.3457636</lat>
+        <lon>13.6003808</lon>
+    </poi>
+    <poi name="Waldsee">
+        <lat>47.7867802</lat>
+        <lon>15.3301356</lon>
+    </poi>
+    <poi name="Waldsee">
+        <lat>46.9280194</lat>
+        <lon>15.4271474</lon>
+    </poi>
+    <poi name="Waldsee">
+        <lat>47.3531384</lat>
+        <lon>13.5988631</lon>
+    </poi>
+    <poi name="Sattelsee">
+        <lat>47.2856646</lat>
+        <lon>13.787323</lon>
+    </poi>
+    <poi name="Großer Scheibelsee">
+        <lat>47.4375867</lat>
+        <lon>14.426642</lon>
+    </poi>
+    <poi name="Gellsee">
+        <lat>47.2289936</lat>
+        <lon>14.3560994</lon>
+    </poi>
+    <poi name="Etrachsee">
+        <lat>47.2253108</lat>
+        <lon>13.9775876</lon>
+    </poi>
+    <poi name="Freizeit See">
+        <lat>47.4676373</lat>
+        <lon>15.3461214</lon>
+    </poi>
+    <poi name="Dürrsee">
+        <lat>47.6048066</lat>
+        <lon>15.2832283</lon>
+    </poi>
+    <poi name="Augstsee">
+        <lat>47.6628013</lat>
+        <lon>13.7877552</lon>
+    </poi>
+    <poi name="Freibad Murau">
+        <lat>47.109248</lat>
+        <lon>14.1608439</lon>
+    </poi>
+    <poi name="Brunnsee">
+        <lat>47.6519734</lat>
+        <lon>15.0395505</lon>
+    </poi>
+    <poi name="Albert-See">
+        <lat>47.475705</lat>
+        <lon>15.7124558</lon>
+    </poi>
+    <poi name="Silbersee">
+        <lat>47.4045741</lat>
+        <lon>15.1707231</lon>
+    </poi>
+    <poi name="Silbersee">
+        <lat>46.7738785</lat>
+        <lon>15.511478</lon>
+    </poi>
+    <poi name="Badesee Kraubath">
+        <lat>47.2946899</lat>
+        <lon>14.9419489</lon>
+    </poi>
+    <poi name="Silberkarsee">
+        <lat>47.4584681</lat>
+        <lon>13.7048924</lon>
+    </poi>
+    <poi name="Goldsee">
+        <lat>47.6226008</lat>
+        <lon>14.1757635</lon>
+    </poi>
+    <poi name="Pfarrerlacke">
+        <lat>47.5498263</lat>
+        <lon>15.0371075</lon>
+    </poi>
+    <poi name="Grüne Lacke">
+        <lat>47.4404719</lat>
+        <lon>14.4092988</lon>
+    </poi>
+    <poi name="Grüne Lacke">
+        <lat>47.5318506</lat>
+        <lon>13.8230788</lon>
+    </poi>
+    <poi name="Kleiner Scheibelsee">
+        <lat>47.440146</lat>
+        <lon>14.431469</lon>
+    </poi>
+    <poi name="Gmoos">
+        <lat>47.2744107</lat>
+        <lon>15.9703683</lon>
+    </poi>
+    <poi name="Badeteich Donnersbach">
+        <lat>47.4675786</lat>
+        <lon>14.1250117</lon>
+    </poi>
+    <poi name="Nepomuk 5">
+        <lat>46.8342711</lat>
+        <lon>15.4110852</lon>
+    </poi>
+    <poi name="Nepomuk 6">
+        <lat>46.8354778</lat>
+        <lon>15.4116864</lon>
+    </poi>
+    <poi name="Nepomuk 3">
+        <lat>46.830182</lat>
+        <lon>15.4125325</lon>
+    </poi>
+    <poi name="Nepomuk 4">
+        <lat>46.832165</lat>
+        <lon>15.410506</lon>
+    </poi>
+    <poi name="Teufelssee">
+        <lat>47.6165825</lat>
+        <lon>14.9717967</lon>
+    </poi>
+    <poi name="Badesee Pichl">
+        <lat>47.3879585</lat>
+        <lon>13.6128518</lon>
+    </poi>
+    <poi name="Rudolfsee">
+        <lat>47.0227544</lat>
+        <lon>14.9537067</lon>
+    </poi>
+    <poi name="Freizeitsee Passail">
+        <lat>47.2776756</lat>
+        <lon>15.5042863</lon>
+    </poi>
+    <poi name="Mitterkarsee">
+        <lat>47.2424899</lat>
+        <lon>13.9148889</lon>
+    </poi>
+    <poi name="Hinterkarsee">
+        <lat>47.2512546</lat>
+        <lon>13.9055462</lon>
+    </poi>
+    <poi name="Oberer Wiegensee">
+        <lat>47.2562782</lat>
+        <lon>13.9048526</lon>
+    </poi>
+    <poi name="Mittlerer Hüttkarsee 2">
+        <lat>47.263601</lat>
+        <lon>13.9040686</lon>
+    </poi>
+    <poi name="Unterer Hüttkarsee">
+        <lat>47.2677964</lat>
+        <lon>13.9075118</lon>
+    </poi>
+    <poi name="Unterer Wiegensee">
+        <lat>47.2551566</lat>
+        <lon>13.9057403</lon>
+    </poi>
+    <poi name="Mittlerer Hüttkarsee 1">
+        <lat>47.2652811</lat>
+        <lon>13.9045444</lon>
+    </poi>
+    <poi name="Badeteich">
+        <lat>46.7530297</lat>
+        <lon>15.3601451</lon>
+    </poi>
+    <poi name="Freizeitanlage Sattler">
+        <lat>47.1515463</lat>
+        <lon>14.7265646</lon>
+    </poi>
+    <poi name="Kristallsee">
+        <lat>47.4477008</lat>
+        <lon>14.4658801</lon>
+    </poi>
+    <poi name="Kristallsee">
+        <lat>47.7878628</lat>
+        <lon>15.3307538</lon>
+    </poi>
+    <poi name="Badeteich Landl">
+        <lat>47.6505572</lat>
+        <lon>14.7644632</lon>
+    </poi>
+    <poi name="Naturbadesee Wald am Schoberpaß">
+        <lat>47.4518404</lat>
+        <lon>14.6631206</lon>
+    </poi>
+    <poi name="Barefoot waterway">
+        <lat>47.4374875</lat>
+        <lon>14.4670965</lon>
+    </poi>
+    <poi name="Auerlingsee">
+        <lat>47.0332202</lat>
+        <lon>14.3057832</lon>
+    </poi>
+    <poi name="Krumpensee">
+        <lat>47.4906161</lat>
+        <lon>14.9371955</lon>
+    </poi>
+    <poi name="Uhlsee">
+        <lat>47.0687444</lat>
+        <lon>16.0606278</lon>
+    </poi>
+    <poi name="Schwarzsee">
+        <lat>46.9202745</lat>
+        <lon>13.8820975</lon>
+    </poi>
+    <poi name="Badesee">
+        <lat>47.3106491</lat>
+        <lon>15.9756639</lon>
+    </poi>
+    <poi name="Badesee">
+        <lat>47.1867431</lat>
+        <lon>14.0221657</lon>
+    </poi>
+    <poi name="Wildsee">
+        <lat>47.0425387</lat>
+        <lon>14.5822791</lon>
+    </poi>
+    <poi name="Wildsee">
+        <lat>47.3253375</lat>
+        <lon>14.2316882</lon>
+    </poi>
+    <poi name="Gamlitzer Badeseen">
+        <lat>46.7190989</lat>
+        <lon>15.5644571</lon>
+    </poi>
+    <poi name="Geigentaler Lacke">
+        <lat>47.2249677</lat>
+        <lon>15.5078245</lon>
+    </poi>
+    <poi name="Ostersee">
+        <lat>47.6501908</lat>
+        <lon>13.7985979</lon>
+    </poi>
+    <poi name="Warmer See">
+        <lat>47.563365</lat>
+        <lon>13.82482</lon>
+    </poi>
+    <poi name="Haarlacke">
+        <lat>47.1082772</lat>
+        <lon>14.5327293</lon>
+    </poi>
+    <poi name="Frauenlacke">
+        <lat>47.1002244</lat>
+        <lon>14.5581758</lon>
+    </poi>
+    <poi name="Badesee Mühlen">
+        <lat>47.0378888</lat>
+        <lon>14.4821588</lon>
+    </poi>
+    <poi name="Malaisseen">
+        <lat>47.3004732</lat>
+        <lon>14.2171113</lon>
+    </poi>
+    <poi name="Ursprungsquelle Zeutschach">
+        <lat>47.0672882</lat>
+        <lon>14.3681067</lon>
+    </poi>
+    <poi name="Untersee">
+        <lat>47.3513776</lat>
+        <lon>13.599047</lon>
+    </poi>
+    <poi name="Gefrorener See">
+        <lat>47.4525305</lat>
+        <lon>14.4001052</lon>
+    </poi>
+    <poi name="Goldlacke">
+        <lat>47.3383717</lat>
+        <lon>14.7511523</lon>
+    </poi>
+    <poi name="Goldlacke">
+        <lat>47.4030583</lat>
+        <lon>14.0277202</lon>
+    </poi>
+    <poi name="Aulacke">
+        <lat>47.5555342</lat>
+        <lon>13.8537238</lon>
+    </poi>
+    <poi name="See in See">
+        <lat>47.0753165</lat>
+        <lon>14.486512</lon>
+    </poi>
+    <poi name="Stausee Sattental">
+        <lat>47.374316</lat>
+        <lon>13.8825599</lon>
+    </poi>
+    <poi name="Naturbadeteich Gruber">
+        <lat>47.3124111</lat>
+        <lon>15.8136399</lon>
+    </poi>
+    <poi name="Ingeringsee">
+        <lat>47.3453011</lat>
+        <lon>14.6596191</lon>
+    </poi>
+    <poi name="Kl. Reitersee">
+        <lat>47.4204586</lat>
+        <lon>14.3325873</lon>
+    </poi>
+    <poi name="Gr. Reitersee">
+        <lat>47.4231226</lat>
+        <lon>14.3361279</lon>
+    </poi>
+    <poi name="Unterer Verlorener See">
+        <lat>47.2968446</lat>
+        <lon>13.7939295</lon>
+    </poi>
+    <poi name="Unterer Klippensee">
+        <lat>47.29968</lat>
+        <lon>13.7966852</lon>
+    </poi>
+    <poi name="Mittlerer Klippensee">
+        <lat>47.3000132</lat>
+        <lon>13.7973626</lon>
+    </poi>
+    <poi name="Winkelsee">
+        <lat>47.2966306</lat>
+        <lon>13.7966719</lon>
+    </poi>
+    <poi name="Törlsee">
+        <lat>47.298247</lat>
+        <lon>13.7987685</lon>
+    </poi>
+    <poi name="Eberlsee">
+        <lat>47.4014355</lat>
+        <lon>14.541985</lon>
+    </poi>
+    <poi name="Zinkbodensee">
+        <lat>47.2761137</lat>
+        <lon>13.6939269</lon>
+    </poi>
+    <poi name="Oberer Zwiefler See">
+        <lat>47.2499403</lat>
+        <lon>14.0434528</lon>
+    </poi>
+    <poi name="Unterer Zwiefler See">
+        <lat>47.2473531</lat>
+        <lon>14.0505313</lon>
+    </poi>
+    <poi name="Treffnersee">
+        <lat>47.5345415</lat>
+        <lon>14.5514686</lon>
+    </poi>
+    <poi name="Schwarzlacken">
+        <lat>47.4424835</lat>
+        <lon>14.5653674</lon>
+    </poi>
+    <poi name="Miesbodensee">
+        <lat>47.4913567</lat>
+        <lon>13.8727848</lon>
+    </poi>
+    <poi name="Tubaysee">
+        <lat>47.4031552</lat>
+        <lon>14.3314991</lon>
+    </poi>
+    <poi name="Krugsee">
+        <lat>47.3574811</lat>
+        <lon>14.5728895</lon>
+    </poi>
+    <poi name="Henar-See">
+        <lat>47.6952239</lat>
+        <lon>13.8817165</lon>
+    </poi>
+    <poi name="Hahnsee">
+        <lat>47.3762054</lat>
+        <lon>14.6056527</lon>
+    </poi>
+    <poi name="Schobersee">
+        <lat>47.2921406</lat>
+        <lon>14.1671941</lon>
+    </poi>
+    <poi name="Drei Seen">
+        <lat>47.2891795</lat>
+        <lon>14.1737492</lon>
+    </poi>
+    <poi name="Funklsee">
+        <lat>47.2909042</lat>
+        <lon>14.1366907</lon>
+    </poi>
+    <poi name="Hauserer See">
+        <lat>47.0393142</lat>
+        <lon>14.0610227</lon>
+    </poi>
+    <poi name="Lindersee">
+        <lat>47.0719604</lat>
+        <lon>14.5690949</lon>
+    </poi>
+    <poi name="Pferdeschwemme">
+        <lat>47.0790704</lat>
+        <lon>15.1006945</lon>
+    </poi>
+    <poi name="Ochsenlacke">
+        <lat>47.082924</lat>
+        <lon>14.5539822</lon>
+    </poi>
+    <poi name="Tümpel">
+        <lat>47.4855425</lat>
+        <lon>14.386297</lon>
+    </poi>
+    <poi name="Märchensee">
+        <lat>47.6020324</lat>
+        <lon>13.9929984</lon>
+    </poi>
+    <poi name="Finitz See">
+        <lat>47.5337417</lat>
+        <lon>13.7976707</lon>
+    </poi>
+    <poi name="Grafenbergsee">
+        <lat>47.4674847</lat>
+        <lon>13.7650804</lon>
+    </poi>
+    <poi name="Finsterkarsee">
+        <lat>47.3508249</lat>
+        <lon>14.093383</lon>
+    </poi>
+    <poi name="Amboßlacke">
+        <lat>47.2797667</lat>
+        <lon>14.1639418</lon>
+    </poi>
+    <poi name="Rettlsee">
+        <lat>47.2501448</lat>
+        <lon>14.130538</lon>
+    </poi>
+    <poi name="Zagelsee">
+        <lat>47.2968726</lat>
+        <lon>14.1635646</lon>
+    </poi>
+    <poi name="Dieslingsee">
+        <lat>46.9552755</lat>
+        <lon>13.9446856</lon>
+    </poi>
+    <poi name="Fresher Badeteich">
+        <lat>46.7632503</lat>
+        <lon>15.8621508</lon>
+    </poi>
+    <poi name="Schwarzer See">
+        <lat>47.5304997</lat>
+        <lon>13.8183437</lon>
+    </poi>
+    <poi name="Karsee">
+        <lat>47.5314669</lat>
+        <lon>13.8141808</lon>
+    </poi>
+    <poi name="Andritz-Ursprung">
+        <lat>47.1361815</lat>
+        <lon>15.4254047</lon>
+    </poi>
+    <poi name="Rote Lacke">
+        <lat>47.6696228</lat>
+        <lon>13.883554</lon>
+    </poi>
+    <poi name="Wiesenlacke">
+        <lat>47.6930568</lat>
+        <lon>13.9233071</lon>
+    </poi>
+    <poi name="Sauofensee">
+        <lat>47.2598433</lat>
+        <lon>14.0010445</lon>
+    </poi>
+    <poi name="Oberer-Wildenkarsee">
+        <lat>47.2639305</lat>
+        <lon>13.9612088</lon>
+    </poi>
+    <poi name="Unterer-Wildenkarsee">
+        <lat>47.2607301</lat>
+        <lon>13.969356</lon>
+    </poi>
+    <poi name="Moarsee">
+        <lat>47.3691907</lat>
+        <lon>14.2417717</lon>
+    </poi>
+    <poi name="Altarm Thondorf">
+        <lat>47.0112465</lat>
+        <lon>15.4617339</lon>
+    </poi>
+    <poi name="Brunner See">
+        <lat>47.63346</lat>
+        <lon>14.1924938</lon>
+    </poi>
+    <poi name="Oberer Wildkarsee">
+        <lat>47.3032369</lat>
+        <lon>13.7357554</lon>
+    </poi>
+    <poi name="Stegerkarsee">
+        <lat>47.2986052</lat>
+        <lon>13.7529087</lon>
+    </poi>
+    <poi name="Waidhofsee">
+        <lat>47.4147459</lat>
+        <lon>14.083318</lon>
+    </poi>
+    <poi name="Gradieranlage">
+        <lat>47.4075466</lat>
+        <lon>15.2731971</lon>
+    </poi>
+    <poi name="Wasserkraftschnecke">
+        <lat>46.744266</lat>
+        <lon>15.5704748</lon>
+    </poi>
+    <poi name="Gnasersee">
+        <lat>46.7528888</lat>
+        <lon>15.6011098</lon>
+    </poi>
+    <poi name="Bischoflacke">
+        <lat>47.2755029</lat>
+        <lon>14.3520259</lon>
+    </poi>
+    <poi name="Türnsee">
+        <lat>47.6681212</lat>
+        <lon>15.1316829</lon>
+    </poi>
+    <poi name="Uitz Au">
+        <lat>47.1940901</lat>
+        <lon>14.8087467</lon>
+    </poi>
+    <poi name="Neubergsee">
+        <lat>47.5165092</lat>
+        <lon>13.8301329</lon>
+    </poi>
+    <poi name="Sundlsee">
+        <lat>47.3268308</lat>
+        <lon>14.6273817</lon>
+    </poi>
+    <poi name="Königinnensee">
+        <lat>47.3747907</lat>
+        <lon>14.5534836</lon>
+    </poi>
+    <poi name="Hirschensee">
+        <lat>47.3715539</lat>
+        <lon>14.5431656</lon>
+    </poi>
+    <poi name="Seekarlsee">
+        <lat>47.3012779</lat>
+        <lon>13.9712856</lon>
+    </poi>
+    <poi name="Oberer Seekarlsee">
+        <lat>47.2990674</lat>
+        <lon>13.9749753</lon>
+    </poi>
+    <poi name="Sulzkarsee">
+        <lat>47.5602244</lat>
+        <lon>14.6813499</lon>
+    </poi>
+    <poi name="Krottensee">
+        <lat>47.3713557</lat>
+        <lon>14.2141201</lon>
+    </poi>
+    <poi name="Obere Riednersee">
+        <lat>47.4359577</lat>
+        <lon>14.2531754</lon>
+    </poi>
+    <poi name="Hochtaler See">
+        <lat>47.4435387</lat>
+        <lon>14.1816856</lon>
+    </poi>
+    <poi name="Baggersee">
+        <lat>47.238869</lat>
+        <lon>14.8470676</lon>
+    </poi>
+    <poi name="Grübelsee">
+        <lat>47.2497383</lat>
+        <lon>13.9489406</lon>
+    </poi>
+    <poi name="Oberer Hüttkarsee">
+        <lat>47.2636376</lat>
+        <lon>13.9026539</lon>
+    </poi>
+    <poi name="Kolblacke">
+        <lat>47.3640726</lat>
+        <lon>13.9074119</lon>
+    </poi>
+    <poi name="Kalter See">
+        <lat>47.5650309</lat>
+        <lon>13.8258137</lon>
+    </poi>
+    <poi name="Panoramasee">
+        <lat>47.5742784</lat>
+        <lon>14.3993854</lon>
+    </poi>
+    <poi name="Schwarze Lacke">
+        <lat>47.3949511</lat>
+        <lon>13.7727002</lon>
+    </poi>
+    <poi name="Gaaler See">
+        <lat>47.3635085</lat>
+        <lon>14.591547</lon>
+    </poi>
+    <poi name="Schaunitzsee">
+        <lat>47.3802666</lat>
+        <lon>14.614516</lon>
+    </poi>
+    <poi name="Seeriessee">
+        <lat>47.3578929</lat>
+        <lon>13.7533009</lon>
+    </poi>
+    <poi name="Rötzbach">
+        <lat>47.1204727</lat>
+        <lon>15.3364487</lon>
+    </poi>
+    <poi name="Kranzlsee">
+        <lat>47.2966972</lat>
+        <lon>13.6056076</lon>
+    </poi>
+    <poi name="Pfandlbrunn">
+        <lat>47.5583691</lat>
+        <lon>13.9096386</lon>
+    </poi>
+    <poi name="Kroisbach">
+        <lat>47.0855947</lat>
+        <lon>15.4603381</lon>
+    </poi>
+    <poi name="Kroisbach">
+        <lat>47.0725294</lat>
+        <lon>15.448677</lon>
+    </poi>
+    <poi name="Leonhardbach">
+        <lat>47.0702095</lat>
+        <lon>15.4549817</lon>
+    </poi>
+    <poi name="Leonhardbach">
+        <lat>47.0763341</lat>
+        <lon>15.4668101</lon>
+    </poi>
+    <poi name="Mariatroster Bach">
+        <lat>47.0869021</lat>
+        <lon>15.4589838</lon>
+    </poi>
+    <poi name="Mariatroster Bach">
+        <lat>47.0962189</lat>
+        <lon>15.4680076</lon>
+    </poi>
+    <poi name="Mariatroster Bach">
+        <lat>47.0996346</lat>
+        <lon>15.4803082</lon>
+    </poi>
+    <poi name="Mariatroster Bach">
+        <lat>47.1078854</lat>
+        <lon>15.489581</lon>
+    </poi>
+    <poi name="Ragnitzbach">
+        <lat>47.0757354</lat>
+        <lon>15.5192923</lon>
+    </poi>
+    <poi name="Ragnitzbach">
+        <lat>47.0775158</lat>
+        <lon>15.476592</lon>
+    </poi>
+    <poi name="Ragnitzbach">
+        <lat>47.0764714</lat>
+        <lon>15.4914448</lon>
+    </poi>
+    <poi name="Ragnitzbach">
+        <lat>47.0739033</lat>
+        <lon>15.5072218</lon>
+    </poi>
+    <poi name="Stiftingbach">
+        <lat>47.0773794</lat>
+        <lon>15.4681235</lon>
+    </poi>
+    <poi name="Stiftingbach">
+        <lat>47.0876532</lat>
+        <lon>15.474848</lon>
+    </poi>
+    <poi name="Stiftingbach">
+        <lat>47.0896979</lat>
+        <lon>15.4868014</lon>
+    </poi>
+    <poi name="Stiftingbach">
+        <lat>47.0943837</lat>
+        <lon>15.5002495</lon>
+    </poi>
+    <poi name="Schöcklbach">
+        <lat>47.1012806</lat>
+        <lon>15.4239622</lon>
+    </poi>
+    <poi name="Schöcklbach">
+        <lat>47.1161234</lat>
+        <lon>15.4331752</lon>
+    </poi>
+    <poi name="Schöcklbach">
+        <lat>47.1245079</lat>
+        <lon>15.4417935</lon>
+    </poi>
+    <poi name="Thaler Bach">
+        <lat>47.0959137</lat>
+        <lon>15.4046985</lon>
+    </poi>
+    <poi name="Thaler Bach">
+        <lat>47.0993312</lat>
+        <lon>15.3938873</lon>
+    </poi>
+    <poi name="Marienbründl">
+        <lat>47.1968203</lat>
+        <lon>15.3592488</lon>
+    </poi>
+    <poi name="Zellerlsee">
+        <lat>47.4464229</lat>
+        <lon>13.7927551</lon>
+    </poi>
+    <poi name="Lahnganglacke">
+        <lat>47.5336066</lat>
+        <lon>14.5166738</lon>
+    </poi>
+    <poi name="Surfwelle Graz Erzherzog-Johann-Brücke">
+        <lat>47.070793</lat>
+        <lon>15.4347922</lon>
+    </poi>
+    <poi name="Kirchfelder Seelein">
+        <lat>47.6085664</lat>
+        <lon>14.156156</lon>
+    </poi>
+    <poi name="Whirlpool">
+        <lat>47.1583115</lat>
+        <lon>15.5439863</lon>
+    </poi>
+    <poi name="Unterer Giglachsee">
+        <lat>47.28008</lat>
+        <lon>13.64657</lon>
+    </poi>
+    <poi name="Unterer Giglachsee">
+        <lat>47.2865021</lat>
+        <lon>13.6550616</lon>
+    </poi>
+    <poi name="Schotterteich">
+        <lat>46.8121414</lat>
+        <lon>15.5273417</lon>
+    </poi>
+    <poi name="Alter Schlossteich">
+        <lat>47.0778664</lat>
+        <lon>15.3090698</lon>
+    </poi>
+    <poi name="Papstinteich">
+        <lat>47.0725238</lat>
+        <lon>14.3084899</lon>
+    </poi>
+    <poi name="Inselteich">
+        <lat>46.8111839</lat>
+        <lon>15.2407864</lon>
+    </poi>
+    <poi name="Stierkarsee">
+        <lat>47.3414105</lat>
+        <lon>13.8484783</lon>
+    </poi>
+    <poi name="Grüne Lagune">
+        <lat>47.2362423</lat>
+        <lon>14.8702602</lon>
+    </poi>
+    <poi name="Langmann Stausee">
+        <lat>46.9820208</lat>
+        <lon>15.099598</lon>
+    </poi>
+    <poi name="Wildensee">
+        <lat>47.71207</lat>
+        <lon>13.853883</lon>
+    </poi>
+    <poi name="Vorderer Lahngangsee">
+        <lat>47.6710881</lat>
+        <lon>13.9344532</lon>
+    </poi>
+    <poi name="Toplitzsee">
+        <lat>47.646761</lat>
+        <lon>13.9309524</lon>
+    </poi>
+    <poi name="Toplitzsee">
+        <lat>47.6423713</lat>
+        <lon>13.9215176</lon>
+    </poi>
+    <poi name="Grundlsee">
+        <lat>47.6404543</lat>
+        <lon>13.8977054</lon>
+    </poi>
+    <poi name="Grundlsee">
+        <lat>47.6314059</lat>
+        <lon>13.8916822</lon>
+    </poi>
+    <poi name="Grundlsee">
+        <lat>47.6215422</lat>
+        <lon>13.835168</lon>
+    </poi>
+    <poi name="Grundlsee">
+        <lat>47.6380082</lat>
+        <lon>13.8698576</lon>
+    </poi>
+    <poi name="Unterer Klaftersee">
+        <lat>47.3171703</lat>
+        <lon>13.9952329</lon>
+    </poi>
+    <poi name="Steirersee">
+        <lat>47.5992418</lat>
+        <lon>14.0282565</lon>
+    </poi>
+    <poi name="Plank See">
+        <lat>46.7505061</lat>
+        <lon>15.6020422</lon>
+    </poi>
+    <poi name="Schwimmbad Scheifling">
+        <lat>47.1574672</lat>
+        <lon>14.4067416</lon>
+    </poi>
+    <poi name="Kleiner Winterleitensee">
+        <lat>47.0931693</lat>
+        <lon>14.5711152</lon>
+    </poi>
+    <poi name="Rottenmanner Teich">
+        <lat>47.1587679</lat>
+        <lon>14.1158192</lon>
+    </poi>
+    <poi name="Ententeich">
+        <lat>47.1379982</lat>
+        <lon>16.0738291</lon>
+    </poi>
+    <poi name="Fischbachteich">
+        <lat>47.1304048</lat>
+        <lon>16.0847142</lon>
+    </poi>
+    <poi name="Spechtensee">
+        <lat>47.5597791</lat>
+        <lon>14.0978178</lon>
+    </poi>
+    <poi name="Unterer Wildkarsee">
+        <lat>47.3105747</lat>
+        <lon>13.7471153</lon>
+    </poi>
+    <poi name="Badesee Wildon">
+        <lat>46.8882047</lat>
+        <lon>15.5043096</lon>
+    </poi>
+    <poi name="Windorfer Teich">
+        <lat>46.9920827</lat>
+        <lon>15.3836699</lon>
+    </poi>
+    <poi name="Fischteich">
+        <lat>47.2774302</lat>
+        <lon>15.5309317</lon>
+    </poi>
+    <poi name="Karner Teich">
+        <lat>47.3078512</lat>
+        <lon>15.8141607</lon>
+    </poi>
+    <poi name="Fuchsschweifteich">
+        <lat>47.1689042</lat>
+        <lon>16.0860657</lon>
+    </poi>
+    <poi name="Altausseer See">
+        <lat>47.6423061</lat>
+        <lon>13.7749752</lon>
+    </poi>
+    <poi name="Altausseer See">
+        <lat>47.6477137</lat>
+        <lon>13.7927096</lon>
+    </poi>
+    <poi name="Pfrillsee">
+        <lat>47.5951474</lat>
+        <lon>12.1500003</lon>
+    </poi>
+    <poi name="Stimmersee">
+        <lat>47.5720829</lat>
+        <lon>12.1346828</lon>
+    </poi>
+    <poi name="Baggersee Rossau">
+        <lat>47.2661551</lat>
+        <lon>11.4460739</lon>
+    </poi>
+    <poi name="Kleiner Plansee">
+        <lat>47.4734854</lat>
+        <lon>10.7846988</lon>
+    </poi>
+    <poi name="Taubensee">
+        <lat>47.6957197</lat>
+        <lon>12.4286965</lon>
+    </poi>
+    <poi name="Seebensee">
+        <lat>47.3682824</lat>
+        <lon>10.9359702</lon>
+    </poi>
+    <poi name="Lottensee">
+        <lat>47.3261537</lat>
+        <lon>11.1302044</lon>
+    </poi>
+    <poi name="Wildmoossee">
+        <lat>47.333035</lat>
+        <lon>11.1430334</lon>
+    </poi>
+    <poi name="Gossenköllesee">
+        <lat>47.2299964</lat>
+        <lon>11.0127529</lon>
+    </poi>
+    <poi name="Gossenkölle">
+        <lat>47.2311054</lat>
+        <lon>11.0071741</lon>
+    </poi>
+    <poi name="Hirschebensee">
+        <lat>47.2145614</lat>
+        <lon>11.0436619</lon>
+    </poi>
+    <poi name="Oberer Plenderlessee">
+        <lat>47.2035993</lat>
+        <lon>11.0367579</lon>
+    </poi>
+    <poi name="Unterer Plenderlessee">
+        <lat>47.2044885</lat>
+        <lon>11.03229</lon>
+    </poi>
+    <poi name="Mittlerer Plenderlessee">
+        <lat>47.2094863</lat>
+        <lon>11.040333</lon>
+    </poi>
+    <poi name="Hundstalsee">
+        <lat>47.2229639</lat>
+        <lon>11.1352338</lon>
+    </poi>
+    <poi name="Taxer See">
+        <lat>47.2275975</lat>
+        <lon>11.1160869</lon>
+    </poi>
+    <poi name="Blaue Lacke">
+        <lat>46.9917791</lat>
+        <lon>11.1753371</lon>
+    </poi>
+    <poi name="Blaue Lacke">
+        <lat>47.2786049</lat>
+        <lon>12.0722445</lon>
+    </poi>
+    <poi name="Blaue Lacke">
+        <lat>47.3441496</lat>
+        <lon>12.3459394</lon>
+    </poi>
+    <poi name="Grünausee">
+        <lat>46.9908606</lat>
+        <lon>11.1987385</lon>
+    </poi>
+    <poi name="Lache">
+        <lat>47.4437217</lat>
+        <lon>10.5174557</lon>
+    </poi>
+    <poi name="Riedener See">
+        <lat>47.441012</lat>
+        <lon>10.6728344</lon>
+    </poi>
+    <poi name="Frauensee">
+        <lat>47.5048941</lat>
+        <lon>10.698207</lon>
+    </poi>
+    <poi name="Frauensee">
+        <lat>47.4546179</lat>
+        <lon>11.8761935</lon>
+    </poi>
+    <poi name="Baggersee">
+        <lat>47.4338977</lat>
+        <lon>10.6089695</lon>
+    </poi>
+    <poi name="Kreckelmooser See">
+        <lat>47.4817053</lat>
+        <lon>10.7351552</lon>
+    </poi>
+    <poi name="Lansersee">
+        <lat>47.2408037</lat>
+        <lon>11.4171512</lon>
+    </poi>
+    <poi name="Mühlsee">
+        <lat>47.2437269</lat>
+        <lon>11.4281139</lon>
+    </poi>
+    <poi name="Gritzer Seen">
+        <lat>46.9431413</lat>
+        <lon>12.3804128</lon>
+    </poi>
+    <poi name="Kampler See">
+        <lat>47.1257197</lat>
+        <lon>11.3307796</lon>
+    </poi>
+    <poi name="Obersee">
+        <lat>46.8898774</lat>
+        <lon>12.2053846</lon>
+    </poi>
+    <poi name="Obersee">
+        <lat>47.1382277</lat>
+        <lon>11.4849576</lon>
+    </poi>
+    <poi name="Grubalacke">
+        <lat>47.4501867</lat>
+        <lon>11.7810815</lon>
+    </poi>
+    <poi name="Natterersee">
+        <lat>47.2374246</lat>
+        <lon>11.3412957</lon>
+    </poi>
+    <poi name="Mittersee">
+        <lat>47.3693696</lat>
+        <lon>10.8647879</lon>
+    </poi>
+    <poi name="Brizzisee (Samoarsee)">
+        <lat>46.8068843</lat>
+        <lon>10.8749681</lon>
+    </poi>
+    <poi name="Igelsee">
+        <lat>47.3766918</lat>
+        <lon>10.9729747</lon>
+    </poi>
+    <poi name="Hermannskarsee">
+        <lat>47.3148565</lat>
+        <lon>10.3638956</lon>
+    </poi>
+    <poi name="Alfaier See">
+        <lat>47.0402907</lat>
+        <lon>11.3059601</lon>
+    </poi>
+    <poi name="Straßberger See">
+        <lat>47.1041782</lat>
+        <lon>10.747777</lon>
+    </poi>
+    <poi name="Ritzenrieder See">
+        <lat>47.0999614</lat>
+        <lon>10.7691478</lon>
+    </poi>
+    <poi name="Brechsee">
+        <lat>47.0957441</lat>
+        <lon>10.7924097</lon>
+    </poi>
+    <poi name="Kugleter See">
+        <lat>47.0882871</lat>
+        <lon>10.7791485</lon>
+    </poi>
+    <poi name="Kugleter See">
+        <lat>47.1349505</lat>
+        <lon>10.8187571</lon>
+    </poi>
+    <poi name="Brandsee">
+        <lat>47.2258641</lat>
+        <lon>10.8854183</lon>
+    </poi>
+    <poi name="Brandsee">
+        <lat>47.0725691</lat>
+        <lon>10.8715487</lon>
+    </poi>
+    <poi name="Urisee">
+        <lat>47.4984836</lat>
+        <lon>10.74308</lon>
+    </poi>
+    <poi name="Schwarzsee">
+        <lat>46.9325025</lat>
+        <lon>10.6958727</lon>
+    </poi>
+    <poi name="Schwarzsee">
+        <lat>47.039847</lat>
+        <lon>11.8289248</lon>
+    </poi>
+    <poi name="Schwarzsee">
+        <lat>47.1366916</lat>
+        <lon>12.5170717</lon>
+    </poi>
+    <poi name="Schwarzsee">
+        <lat>46.8567365</lat>
+        <lon>12.2977417</lon>
+    </poi>
+    <poi name="Schwarzsee">
+        <lat>47.0759771</lat>
+        <lon>10.310095</lon>
+    </poi>
+    <poi name="Schwarzsee">
+        <lat>46.9661472</lat>
+        <lon>10.9452563</lon>
+    </poi>
+    <poi name="Schwarzsee">
+        <lat>46.8613089</lat>
+        <lon>12.5331544</lon>
+    </poi>
+    <poi name="Schwarzsee">
+        <lat>47.0924007</lat>
+        <lon>12.6090299</lon>
+    </poi>
+    <poi name="Schwarzsee">
+        <lat>47.4582484</lat>
+        <lon>12.367051</lon>
+    </poi>
+    <poi name="Großer See">
+        <lat>46.9987212</lat>
+        <lon>10.6916987</lon>
+    </poi>
+    <poi name="Großer See">
+        <lat>47.1510705</lat>
+        <lon>10.4686081</lon>
+    </poi>
+    <poi name="Seeli">
+        <lat>46.902317</lat>
+        <lon>10.5563691</lon>
+    </poi>
+    <poi name="Badesee">
+        <lat>47.4461233</lat>
+        <lon>12.3223471</lon>
+    </poi>
+    <poi name="Badesee">
+        <lat>47.4186472</lat>
+        <lon>10.7866874</lon>
+    </poi>
+    <poi name="Badesee">
+        <lat>47.5220856</lat>
+        <lon>12.3483468</lon>
+    </poi>
+    <poi name="Badesee">
+        <lat>47.4329938</lat>
+        <lon>12.1541933</lon>
+    </poi>
+    <poi name="Badesee">
+        <lat>47.2408886</lat>
+        <lon>10.7222083</lon>
+    </poi>
+    <poi name="Stausee Kirchdorf">
+        <lat>47.5545645</lat>
+        <lon>12.4298233</lon>
+    </poi>
+    <poi name="Wildsee">
+        <lat>46.9930262</lat>
+        <lon>11.556494</lon>
+    </poi>
+    <poi name="Wildsee">
+        <lat>47.4299068</lat>
+        <lon>12.5371535</lon>
+    </poi>
+    <poi name="Wildsee">
+        <lat>47.321542</lat>
+        <lon>11.192916</lon>
+    </poi>
+    <poi name="Obernberger Rohrsee">
+        <lat>47.0323</lat>
+        <lon>11.412585</lon>
+    </poi>
+    <poi name="Lichtsee">
+        <lat>47.0307939</lat>
+        <lon>11.4062666</lon>
+    </poi>
+    <poi name="Lichtsee">
+        <lat>47.0895694</lat>
+        <lon>10.3887077</lon>
+    </poi>
+    <poi name="Rinnensee">
+        <lat>47.0825028</lat>
+        <lon>11.1458068</lon>
+    </poi>
+    <poi name="Simmingsee">
+        <lat>47.0013853</lat>
+        <lon>11.273676</lon>
+    </poi>
+    <poi name="Lauterersee">
+        <lat>46.9998528</lat>
+        <lon>11.2568191</lon>
+    </poi>
+    <poi name="Klammsee">
+        <lat>47.1634728</lat>
+        <lon>11.6138469</lon>
+    </poi>
+    <poi name="Klammsee">
+        <lat>46.7763603</lat>
+        <lon>12.3912122</lon>
+    </poi>
+    <poi name="Staffelsee">
+        <lat>47.1400373</lat>
+        <lon>11.6271561</lon>
+    </poi>
+    <poi name="Mölssee">
+        <lat>47.1743937</lat>
+        <lon>11.6099128</lon>
+    </poi>
+    <poi name="Seeloch">
+        <lat>47.24095</lat>
+        <lon>11.6532429</lon>
+    </poi>
+    <poi name="Durrensee">
+        <lat>47.1841714</lat>
+        <lon>11.525911</lon>
+    </poi>
+    <poi name="Blauer See">
+        <lat>47.1916934</lat>
+        <lon>11.5174935</lon>
+    </poi>
+    <poi name="Blauer See">
+        <lat>46.6985114</lat>
+        <lon>12.4359927</lon>
+    </poi>
+    <poi name="Bergersee">
+        <lat>47.1532771</lat>
+        <lon>11.1141185</lon>
+    </poi>
+    <poi name="Bergersee">
+        <lat>46.9889342</lat>
+        <lon>12.3620953</lon>
+    </poi>
+    <poi name="Wilder See">
+        <lat>47.1488031</lat>
+        <lon>11.1021244</lon>
+    </poi>
+    <poi name="Wilder See">
+        <lat>47.0767812</lat>
+        <lon>10.8772016</lon>
+    </poi>
+    <poi name="Kraspessee">
+        <lat>47.1770851</lat>
+        <lon>11.0577834</lon>
+    </poi>
+    <poi name="Wesendlkarsee">
+        <lat>47.0705606</lat>
+        <lon>11.7190508</lon>
+    </poi>
+    <poi name="Friesenbergsee">
+        <lat>47.0679665</lat>
+        <lon>11.6994859</lon>
+    </poi>
+    <poi name="Unterer Platzlsee">
+        <lat>47.2468618</lat>
+        <lon>11.9773811</lon>
+    </poi>
+    <poi name="Roßsee">
+        <lat>47.2437074</lat>
+        <lon>11.9664652</lon>
+    </poi>
+    <poi name="Pfannsee">
+        <lat>47.247538</lat>
+        <lon>11.970108</lon>
+    </poi>
+    <poi name="Torseen">
+        <lat>47.1704205</lat>
+        <lon>11.6791021</lon>
+    </poi>
+    <poi name="Junssee">
+        <lat>47.1376786</lat>
+        <lon>11.6366216</lon>
+    </poi>
+    <poi name="Eiskarsee">
+        <lat>47.1896031</lat>
+        <lon>11.6742396</lon>
+    </poi>
+    <poi name="Maurersee">
+        <lat>47.2727082</lat>
+        <lon>11.9915333</lon>
+    </poi>
+    <poi name="Scheibensee">
+        <lat>47.2668867</lat>
+        <lon>11.9820844</lon>
+    </poi>
+    <poi name="Steinkarlsee">
+        <lat>47.2671846</lat>
+        <lon>11.9723368</lon>
+    </poi>
+    <poi name="Längsee">
+        <lat>47.5998722</lat>
+        <lon>12.153917</lon>
+    </poi>
+    <poi name="Egelsee">
+        <lat>47.61383</lat>
+        <lon>12.171018</lon>
+    </poi>
+    <poi name="Egelsee">
+        <lat>47.4171407</lat>
+        <lon>11.8703222</lon>
+    </poi>
+    <poi name="Brennersee">
+        <lat>47.019627</lat>
+        <lon>11.5039444</lon>
+    </poi>
+    <poi name="Falbesoner See">
+        <lat>47.0471763</lat>
+        <lon>11.170749</lon>
+    </poi>
+    <poi name="Hintersee">
+        <lat>47.1791061</lat>
+        <lon>10.3447676</lon>
+    </poi>
+    <poi name="Vordersee">
+        <lat>47.1749685</lat>
+        <lon>10.3688912</lon>
+    </poi>
+    <poi name="Reither See">
+        <lat>47.417592</lat>
+        <lon>11.8752804</lon>
+    </poi>
+    <poi name="Schlitterer Badesee">
+        <lat>47.3832936</lat>
+        <lon>11.8395612</lon>
+    </poi>
+    <poi name="Schwarzer See">
+        <lat>46.8704835</lat>
+        <lon>10.4779556</lon>
+    </poi>
+    <poi name="Salzbodensee">
+        <lat>47.1154413</lat>
+        <lon>12.4261916</lon>
+    </poi>
+    <poi name="Fallenbachsee">
+        <lat>47.2074473</lat>
+        <lon>10.3895787</lon>
+    </poi>
+    <poi name="Radsee">
+        <lat>46.8909427</lat>
+        <lon>10.1222126</lon>
+    </poi>
+    <poi name="Schlicker See">
+        <lat>47.1430426</lat>
+        <lon>11.2665232</lon>
+    </poi>
+    <poi name="Kogelsee">
+        <lat>47.2572882</lat>
+        <lon>10.5617148</lon>
+    </poi>
+    <poi name="Steinsee">
+        <lat>47.2295111</lat>
+        <lon>10.5965063</lon>
+    </poi>
+    <poi name="Eissee">
+        <lat>47.0649971</lat>
+        <lon>12.3862024</lon>
+    </poi>
+    <poi name="Eissee">
+        <lat>47.0444594</lat>
+        <lon>11.8331981</lon>
+    </poi>
+    <poi name="Eissee">
+        <lat>46.8768538</lat>
+        <lon>10.132522</lon>
+    </poi>
+    <poi name="Eissee">
+        <lat>47.0977899</lat>
+        <lon>11.7420891</lon>
+    </poi>
+    <poi name="Grausee">
+        <lat>47.1429536</lat>
+        <lon>12.5133791</lon>
+    </poi>
+    <poi name="Grünsee">
+        <lat>47.1329101</lat>
+        <lon>12.5185932</lon>
+    </poi>
+    <poi name="Grünsee">
+        <lat>46.8633919</lat>
+        <lon>10.4785635</lon>
+    </poi>
+    <poi name="Oberer Glatzsee">
+        <lat>47.034296</lat>
+        <lon>12.7162973</lon>
+    </poi>
+    <poi name="Heiterwanger See">
+        <lat>47.461137</lat>
+        <lon>10.788833</lon>
+    </poi>
+    <poi name="Heiterwanger See">
+        <lat>47.4530047</lat>
+        <lon>10.7740985</lon>
+    </poi>
+    <poi name="Heiterwanger See">
+        <lat>47.4557118</lat>
+        <lon>10.7629425</lon>
+    </poi>
+    <poi name="Plansee">
+        <lat>47.4728818</lat>
+        <lon>10.7972761</lon>
+    </poi>
+    <poi name="Plansee">
+        <lat>47.4850971</lat>
+        <lon>10.8348491</lon>
+    </poi>
+    <poi name="Plansee">
+        <lat>47.4804623</lat>
+        <lon>10.8440641</lon>
+    </poi>
+    <poi name="Schweikertfernersee">
+        <lat>47.0325068</lat>
+        <lon>10.8046719</lon>
+    </poi>
+    <poi name="Obernberger See">
+        <lat>46.9960549</lat>
+        <lon>11.4054516</lon>
+    </poi>
+    <poi name="Floschen">
+        <lat>47.5302278</lat>
+        <lon>10.4450341</lon>
+    </poi>
+    <poi name="Buchsee">
+        <lat>47.4554892</lat>
+        <lon>11.8828961</lon>
+    </poi>
+    <poi name="Krummsee">
+        <lat>47.4564092</lat>
+        <lon>11.8822497</lon>
+    </poi>
+    <poi name="Seebl">
+        <lat>46.93818</lat>
+        <lon>12.1914104</lon>
+    </poi>
+    <poi name="Oberseitsee">
+        <lat>46.9391672</lat>
+        <lon>12.2743007</lon>
+    </poi>
+    <poi name="Weißsee">
+        <lat>46.8717713</lat>
+        <lon>10.7120393</lon>
+    </poi>
+    <poi name="Ochsenlacke">
+        <lat>46.8912415</lat>
+        <lon>12.371695</lon>
+    </poi>
+    <poi name="Winnebachsee">
+        <lat>47.0883928</lat>
+        <lon>11.0544873</lon>
+    </poi>
+    <poi name="Brunnwasser">
+        <lat>47.29324</lat>
+        <lon>10.450591</lon>
+    </poi>
+    <poi name="Weißlahn">
+        <lat>47.3230844</lat>
+        <lon>11.6575462</lon>
+    </poi>
+    <poi name="Delps See">
+        <lat>47.5049565</lat>
+        <lon>11.5099943</lon>
+    </poi>
+    <poi name="Bödensee">
+        <lat>46.9723404</lat>
+        <lon>12.2815085</lon>
+    </poi>
+    <poi name="Panoramasee">
+        <lat>47.1573134</lat>
+        <lon>11.3133641</lon>
+    </poi>
+    <poi name="Schwarzwasser See">
+        <lat>46.9922153</lat>
+        <lon>10.300045</lon>
+    </poi>
+    <poi name="Schwarzkofelsee">
+        <lat>46.9102426</lat>
+        <lon>12.8257254</lon>
+    </poi>
+    <poi name="Zunigsee">
+        <lat>46.9648342</lat>
+        <lon>12.5128656</lon>
+    </poi>
+    <poi name="Hexenlackl">
+        <lat>46.7803706</lat>
+        <lon>12.798641</lon>
+    </poi>
+    <poi name="Schafkarsee">
+        <lat>47.2584978</lat>
+        <lon>10.4969164</lon>
+    </poi>
+    <poi name="Stauanlage Stadtwerke">
+        <lat>47.5922625</lat>
+        <lon>12.233874</lon>
+    </poi>
+    <poi name="Gufelsee">
+        <lat>47.2420971</lat>
+        <lon>10.5716102</lon>
+    </poi>
+    <poi name="Unterer Parzinnsee">
+        <lat>47.2442403</lat>
+        <lon>10.5780926</lon>
+    </poi>
+    <poi name="Barrensee">
+        <lat>46.9195046</lat>
+        <lon>12.7163214</lon>
+    </poi>
+    <poi name="Pochersee">
+        <lat>47.2180282</lat>
+        <lon>10.9671424</lon>
+    </poi>
+    <poi name="Schwarzenbergsee">
+        <lat>47.0339027</lat>
+        <lon>11.0967264</lon>
+    </poi>
+    <poi name="Turmferner See">
+        <lat>47.0655678</lat>
+        <lon>11.1285299</lon>
+    </poi>
+    <poi name="Unterer Sommerwandsee">
+        <lat>47.0796094</lat>
+        <lon>11.164177</lon>
+    </poi>
+    <poi name="Wannenkarsee">
+        <lat>46.9433044</lat>
+        <lon>11.0750621</lon>
+    </poi>
+    <poi name="Gaislacher See">
+        <lat>46.9371114</lat>
+        <lon>10.9657076</lon>
+    </poi>
+    <poi name="Oberer Seekarsee">
+        <lat>46.976113</lat>
+        <lon>11.0683989</lon>
+    </poi>
+    <poi name="Klapfsee">
+        <lat>46.6650888</lat>
+        <lon>12.5801833</lon>
+    </poi>
+    <poi name="Vergrößsee">
+        <lat>47.0462285</lat>
+        <lon>10.2931125</lon>
+    </poi>
+    <poi name="Kartellsee">
+        <lat>47.0589001</lat>
+        <lon>10.2780816</lon>
+    </poi>
+    <poi name="Madleinsee">
+        <lat>47.0380201</lat>
+        <lon>10.2612119</lon>
+    </poi>
+    <poi name="Schottensee">
+        <lat>47.0081511</lat>
+        <lon>10.1992729</lon>
+    </poi>
+    <poi name="Schottensee">
+        <lat>47.0716085</lat>
+        <lon>10.3060323</lon>
+    </poi>
+    <poi name="Blankasee">
+        <lat>47.1078162</lat>
+        <lon>10.3744518</lon>
+    </poi>
+    <poi name="Blankasee">
+        <lat>47.0529218</lat>
+        <lon>10.5230307</lon>
+    </poi>
+    <poi name="Seßsee">
+        <lat>47.063187</lat>
+        <lon>10.3151214</lon>
+    </poi>
+    <poi name="Wannensee">
+        <lat>47.0334206</lat>
+        <lon>10.17269</lon>
+    </poi>
+    <poi name="Kaltenbergsee">
+        <lat>47.0942913</lat>
+        <lon>10.1448133</lon>
+    </poi>
+    <poi name="Oblasser Stausee">
+        <lat>46.9290462</lat>
+        <lon>12.6002771</lon>
+    </poi>
+    <poi name="Badesee Stillebach">
+        <lat>47.0457513</lat>
+        <lon>10.8641342</lon>
+    </poi>
+    <poi name="Grübelesee">
+        <lat>47.0295884</lat>
+        <lon>10.4060483</lon>
+    </poi>
+    <poi name="Pardatscher See">
+        <lat>46.9896676</lat>
+        <lon>10.300321</lon>
+    </poi>
+    <poi name="Dabersee">
+        <lat>47.1250392</lat>
+        <lon>12.5401807</lon>
+    </poi>
+    <poi name="Oberer Laubkarsee">
+        <lat>46.9820125</lat>
+        <lon>11.0500968</lon>
+    </poi>
+    <poi name="Unterer Laubkarsee">
+        <lat>46.9798927</lat>
+        <lon>11.0464644</lon>
+    </poi>
+    <poi name="Plodersee">
+        <lat>46.9615248</lat>
+        <lon>10.8395574</lon>
+    </poi>
+    <poi name="Salzplattensee">
+        <lat>46.947091</lat>
+        <lon>12.7412383</lon>
+    </poi>
+    <poi name="Schönrinnenkarsee">
+        <lat>47.0534116</lat>
+        <lon>11.0137554</lon>
+    </poi>
+    <poi name="Kreuzkarsee">
+        <lat>47.3296852</lat>
+        <lon>10.4195084</lon>
+    </poi>
+    <poi name="Kesselkeessee">
+        <lat>47.0032105</lat>
+        <lon>12.7259065</lon>
+    </poi>
+    <poi name="Moalandlsee">
+        <lat>47.0372031</lat>
+        <lon>10.8844439</lon>
+    </poi>
+    <poi name="Drei Seen">
+        <lat>47.0867728</lat>
+        <lon>10.8694335</lon>
+    </poi>
+    <poi name="Hauersee">
+        <lat>47.0572234</lat>
+        <lon>10.9167625</lon>
+    </poi>
+    <poi name="Unterer Spitzigsee">
+        <lat>47.0608896</lat>
+        <lon>10.912925</lon>
+    </poi>
+    <poi name="Oberer Spitzigsee">
+        <lat>47.0599888</lat>
+        <lon>10.9078327</lon>
+    </poi>
+    <poi name="Schwarze-Wand-See">
+        <lat>47.0883641</lat>
+        <lon>10.895136</lon>
+    </poi>
+    <poi name="Plattachsee">
+        <lat>47.0816592</lat>
+        <lon>10.907114</lon>
+    </poi>
+    <poi name="Weißer See">
+        <lat>47.077647</lat>
+        <lon>10.8995759</lon>
+    </poi>
+    <poi name="Schoberlacke">
+        <lat>46.9334496</lat>
+        <lon>12.6974593</lon>
+    </poi>
+    <poi name="Habicher See">
+        <lat>47.1856588</lat>
+        <lon>10.9045771</lon>
+    </poi>
+    <poi name="Stimmer-Stausee">
+        <lat>47.5740484</lat>
+        <lon>12.128556</lon>
+    </poi>
+    <poi name="Seeles Seen">
+        <lat>46.8919443</lat>
+        <lon>10.7167147</lon>
+    </poi>
+    <poi name="Samaranger See">
+        <lat>47.3487916</lat>
+        <lon>10.8261996</lon>
+    </poi>
+    <poi name="Großer Sieglsee">
+        <lat>47.4086037</lat>
+        <lon>10.4962903</lon>
+    </poi>
+    <poi name="Kleiner Siegelsee">
+        <lat>47.4085538</lat>
+        <lon>10.4950395</lon>
+    </poi>
+    <poi name="Karsee">
+        <lat>47.3327805</lat>
+        <lon>10.474477</lon>
+    </poi>
+    <poi name="Karsee">
+        <lat>47.4541973</lat>
+        <lon>11.7744106</lon>
+    </poi>
+    <poi name="Karsee">
+        <lat>46.9188613</lat>
+        <lon>11.0986831</lon>
+    </poi>
+    <poi name="Karsee">
+        <lat>47.1384907</lat>
+        <lon>12.0507659</lon>
+    </poi>
+    <poi name="Höfer See">
+        <lat>47.4977107</lat>
+        <lon>10.4908438</lon>
+    </poi>
+    <poi name="Alplsee">
+        <lat>47.4407257</lat>
+        <lon>10.4887694</lon>
+    </poi>
+    <poi name="Mainzer See">
+        <lat>46.9948385</lat>
+        <lon>10.8277134</lon>
+    </poi>
+    <poi name="Mittelberglessee">
+        <lat>47.0005413</lat>
+        <lon>10.8319716</lon>
+    </poi>
+    <poi name="Ficksee">
+        <lat>47.2366711</lat>
+        <lon>11.4229343</lon>
+    </poi>
+    <poi name="Peischelkarsee">
+        <lat>47.2675021</lat>
+        <lon>10.2836168</lon>
+    </poi>
+    <poi name="Wildmahdkarsee">
+        <lat>47.2735622</lat>
+        <lon>10.3041844</lon>
+    </poi>
+    <poi name="Pillersee">
+        <lat>47.545983</lat>
+        <lon>12.5700659</lon>
+    </poi>
+    <poi name="Pillersee">
+        <lat>47.5340967</lat>
+        <lon>12.5697436</lon>
+    </poi>
+    <poi name="Pillersee">
+        <lat>46.9030473</lat>
+        <lon>11.0412865</lon>
+    </poi>
+    <poi name="Stablsee">
+        <lat>47.3327363</lat>
+        <lon>10.58202</lon>
+    </poi>
+    <poi name="Rübezahl-Waldsee">
+        <lat>47.5033271</lat>
+        <lon>12.2757953</lon>
+    </poi>
+    <poi name="Raneburger See">
+        <lat>47.0757222</lat>
+        <lon>12.5052605</lon>
+    </poi>
+    <poi name="Wildensee">
+        <lat>47.0970066</lat>
+        <lon>12.4752601</lon>
+    </poi>
+    <poi name="Löbbensee">
+        <lat>47.1060411</lat>
+        <lon>12.4769226</lon>
+    </poi>
+    <poi name="Dichtensee">
+        <lat>47.147276</lat>
+        <lon>12.4742976</lon>
+    </poi>
+    <poi name="Gmairersee">
+        <lat>47.011698</lat>
+        <lon>10.4605679</lon>
+    </poi>
+    <poi name="Reinkarsee">
+        <lat>47.3075586</lat>
+        <lon>12.1729458</lon>
+    </poi>
+    <poi name="Großer Vermuntsee">
+        <lat>46.9399191</lat>
+        <lon>10.1370862</lon>
+    </poi>
+    <poi name="Triebenkarsee">
+        <lat>46.9510829</lat>
+        <lon>11.1338926</lon>
+    </poi>
+    <poi name="Göslessee">
+        <lat>46.9744115</lat>
+        <lon>12.283288</lon>
+    </poi>
+    <poi name="Grasstallsee">
+        <lat>47.1010304</lat>
+        <lon>10.999492</lon>
+    </poi>
+    <poi name="Baggerloch">
+        <lat>47.2906371</lat>
+        <lon>11.4817107</lon>
+    </poi>
+    <poi name="Schlosserbergsee">
+        <lat>47.5006555</lat>
+        <lon>12.4280241</lon>
+    </poi>
+    <poi name="Badesee Landl">
+        <lat>47.5886311</lat>
+        <lon>12.0386599</lon>
+    </poi>
+    <poi name="Verpeilbach">
+        <lat>47.0262846</lat>
+        <lon>10.7658614</lon>
+    </poi>
+    <poi name="Egellacke">
+        <lat>47.5005032</lat>
+        <lon>12.0042939</lon>
+    </poi>
+    <poi name="Treiensee">
+        <lat>47.3297758</lat>
+        <lon>10.6479251</lon>
+    </poi>
+    <poi name="Starkenberger See">
+        <lat>47.2565286</lat>
+        <lon>10.7464499</lon>
+    </poi>
+    <poi name="Oberer Grünausee">
+        <lat>46.9974071</lat>
+        <lon>11.2038069</lon>
+    </poi>
+    <poi name="Via Claudia See">
+        <lat>46.9530113</lat>
+        <lon>10.5122169</lon>
+    </poi>
+    <poi name="Schwefelsee">
+        <lat>47.0418766</lat>
+        <lon>11.0737976</lon>
+    </poi>
+    <poi name="Unterer Seekarsee">
+        <lat>46.9713772</lat>
+        <lon>11.0702906</lon>
+    </poi>
+    <poi name="Arnitzsee">
+        <lat>46.9481426</lat>
+        <lon>12.5022767</lon>
+    </poi>
+    <poi name="Furglersee">
+        <lat>47.0455196</lat>
+        <lon>10.5274953</lon>
+    </poi>
+    <poi name="Simonysee">
+        <lat>47.0572096</lat>
+        <lon>12.281239</lon>
+    </poi>
+    <poi name="Hirschlacke">
+        <lat>47.4637036</lat>
+        <lon>11.7974655</lon>
+    </poi>
+    <poi name="Grubersee">
+        <lat>47.4541696</lat>
+        <lon>11.7877105</lon>
+    </poi>
+    <poi name="Salfeinssee">
+        <lat>47.201257</lat>
+        <lon>11.2430181</lon>
+    </poi>
+    <poi name="Innerertensee">
+        <lat>47.2491969</lat>
+        <lon>11.9854998</lon>
+    </poi>
+    <poi name="Göfelesee">
+        <lat>47.2990021</lat>
+        <lon>10.8071708</lon>
+    </poi>
+    <poi name="Kohlstatt">
+        <lat>47.304441</lat>
+        <lon>10.8049598</lon>
+    </poi>
+    <poi name="Hangerersee">
+        <lat>46.8322713</lat>
+        <lon>11.026958</lon>
+    </poi>
+    <poi name="Nedersee">
+        <lat>46.9080308</lat>
+        <lon>11.0235088</lon>
+    </poi>
+    <poi name="Freiger See">
+        <lat>46.9769548</lat>
+        <lon>11.2184119</lon>
+    </poi>
+    <poi name="Roßkarsee">
+        <lat>47.244463</lat>
+        <lon>10.5053893</lon>
+    </poi>
+    <poi name="Itlsee">
+        <lat>46.8905614</lat>
+        <lon>11.009658</lon>
+    </poi>
+    <poi name="Soomsee">
+        <lat>46.886602</lat>
+        <lon>11.0167659</lon>
+    </poi>
+    <poi name="Kleiner See">
+        <lat>46.7670026</lat>
+        <lon>12.3673496</lon>
+    </poi>
+    <poi name="Thurntaler See">
+        <lat>46.7684109</lat>
+        <lon>12.3604873</lon>
+    </poi>
+    <poi name="Zireiner See">
+        <lat>47.4653132</lat>
+        <lon>11.8137435</lon>
+    </poi>
+    <poi name="Valschavielsee">
+        <lat>47.0206351</lat>
+        <lon>10.1273914</lon>
+    </poi>
+    <poi name="Oberer Stuckensee">
+        <lat>46.6666299</lat>
+        <lon>12.5480342</lon>
+    </poi>
+    <poi name="Gruftsee">
+        <lat>47.5468318</lat>
+        <lon>11.5902649</lon>
+    </poi>
+    <poi name="Hollbrucker See">
+        <lat>46.7021416</lat>
+        <lon>12.417403</lon>
+    </poi>
+    <poi name="Langer See">
+        <lat>47.2650596</lat>
+        <lon>11.9878612</lon>
+    </poi>
+    <poi name="Lacke">
+        <lat>47.1492805</lat>
+        <lon>10.6285936</lon>
+    </poi>
+    <poi name="Blindissee">
+        <lat>46.960853</lat>
+        <lon>12.3335473</lon>
+    </poi>
+    <poi name="Blankaseen">
+        <lat>47.1072855</lat>
+        <lon>10.3775741</lon>
+    </poi>
+    <poi name="Oberer Parzinnsee">
+        <lat>47.2468014</lat>
+        <lon>10.5730689</lon>
+    </poi>
+    <poi name="Auf der Lacke">
+        <lat>47.2124952</lat>
+        <lon>10.5366348</lon>
+    </poi>
+    <poi name="Medriolsee">
+        <lat>47.2048987</lat>
+        <lon>10.5307944</lon>
+    </poi>
+    <poi name="Mittlerer Seewisee">
+        <lat>47.1953612</lat>
+        <lon>10.4903345</lon>
+    </poi>
+    <poi name="Unterer Seewisee">
+        <lat>47.1985522</lat>
+        <lon>10.4807011</lon>
+    </poi>
+    <poi name="Oberer Seewisee">
+        <lat>47.1920636</lat>
+        <lon>10.4847538</lon>
+    </poi>
+    <poi name="Kreuzlacke">
+        <lat>47.3596221</lat>
+        <lon>12.0286024</lon>
+    </poi>
+    <poi name="Schwarze Lacke">
+        <lat>47.3620669</lat>
+        <lon>12.0316827</lon>
+    </poi>
+    <poi name="Urgsee">
+        <lat>47.083757</lat>
+        <lon>10.5662499</lon>
+    </poi>
+    <poi name="Hechtsee">
+        <lat>47.6073347</lat>
+        <lon>12.1682423</lon>
+    </poi>
+    <poi name="Goldseen">
+        <lat>46.8493671</lat>
+        <lon>10.5630143</lon>
+    </poi>
+    <poi name="Grieskogelsee">
+        <lat>46.9867572</lat>
+        <lon>10.1844033</lon>
+    </poi>
+    <poi name="Berglisee">
+        <lat>46.9694303</lat>
+        <lon>10.2491483</lon>
+    </poi>
+    <poi name="Oberer Glockhausersee">
+        <lat>47.0513903</lat>
+        <lon>10.5227285</lon>
+    </poi>
+    <poi name="Tieftalsee">
+        <lat>47.0368159</lat>
+        <lon>10.508207</lon>
+    </poi>
+    <poi name="Hexensee">
+        <lat>47.0204154</lat>
+        <lon>10.4797477</lon>
+    </poi>
+    <poi name="Schmalzgrubensee">
+        <lat>47.1013266</lat>
+        <lon>10.3529229</lon>
+    </poi>
+    <poi name="Degenhornsee">
+        <lat>46.8709248</lat>
+        <lon>12.3972361</lon>
+    </poi>
+    <poi name="Schafsee">
+        <lat>46.7757578</lat>
+        <lon>12.3913476</lon>
+    </poi>
+    <poi name="Kuhsee">
+        <lat>46.7766243</lat>
+        <lon>12.39419</lon>
+    </poi>
+    <poi name="Maistaller Lacke">
+        <lat>47.5840926</lat>
+        <lon>12.151128</lon>
+    </poi>
+    <poi name="Kranzlacke">
+        <lat>47.4123163</lat>
+        <lon>12.5034552</lon>
+    </poi>
+    <poi name="Tarntaler Lacken">
+        <lat>47.1518216</lat>
+        <lon>11.6213144</lon>
+    </poi>
+    <poi name="Zupalsee">
+        <lat>46.9569777</lat>
+        <lon>12.4373834</lon>
+    </poi>
+    <poi name="Moorsee">
+        <lat>47.5124516</lat>
+        <lon>12.1914941</lon>
+    </poi>
+    <poi name="Herzsee">
+        <lat>47.2487217</lat>
+        <lon>11.4545544</lon>
+    </poi>
+    <poi name="Erlensee">
+        <lat>47.4472926</lat>
+        <lon>12.2462528</lon>
+    </poi>
+    <poi name="Ramsgrubner See">
+        <lat>47.0784287</lat>
+        <lon>11.6237289</lon>
+    </poi>
+    <poi name="Vorderer Gatschsee">
+        <lat>47.0886964</lat>
+        <lon>10.5549557</lon>
+    </poi>
+    <poi name="Hinterer Gatschsee">
+        <lat>47.086271</lat>
+        <lon>10.5522807</lon>
+    </poi>
+    <poi name="Giggler See">
+        <lat>47.092601</lat>
+        <lon>10.5278218</lon>
+    </poi>
+    <poi name="Haldensee">
+        <lat>47.4943226</lat>
+        <lon>10.5829243</lon>
+    </poi>
+    <poi name="Haldensee">
+        <lat>47.4920707</lat>
+        <lon>10.5664959</lon>
+    </poi>
+    <poi name="Maiensee">
+        <lat>47.1239632</lat>
+        <lon>10.2238083</lon>
+    </poi>
+    <poi name="Tessenberger See">
+        <lat>46.7756307</lat>
+        <lon>12.4558608</lon>
+    </poi>
+    <poi name="Untersee">
+        <lat>47.1327571</lat>
+        <lon>11.4756839</lon>
+    </poi>
+    <poi name="Schwenzer See">
+        <lat>46.874632</lat>
+        <lon>11.0821366</lon>
+    </poi>
+    <poi name="Weidachsee">
+        <lat>47.3675683</lat>
+        <lon>11.1566402</lon>
+    </poi>
+    <poi name="Drachensee">
+        <lat>47.3589612</lat>
+        <lon>10.9331192</lon>
+    </poi>
+    <poi name="Badesee Umhausen">
+        <lat>47.1320079</lat>
+        <lon>10.9325</lon>
+    </poi>
+    <poi name="Gritschlacken">
+        <lat>46.8210319</lat>
+        <lon>12.5932204</lon>
+    </poi>
+    <poi name="Strader See">
+        <lat>47.2713507</lat>
+        <lon>10.7974897</lon>
+    </poi>
+    <poi name="Blindsee">
+        <lat>47.361765</lat>
+        <lon>10.8491692</lon>
+    </poi>
+    <poi name="Dorfer See">
+        <lat>47.0943236</lat>
+        <lon>12.6217219</lon>
+    </poi>
+    <poi name="Gartlsee">
+        <lat>46.9346286</lat>
+        <lon>12.7110878</lon>
+    </poi>
+    <poi name="Ascher See">
+        <lat>46.8072706</lat>
+        <lon>12.5016058</lon>
+    </poi>
+    <poi name="Anraser See">
+        <lat>46.8118369</lat>
+        <lon>12.5164416</lon>
+    </poi>
+    <poi name="Obstanser See">
+        <lat>46.6835631</lat>
+        <lon>12.492047</lon>
+    </poi>
+    <poi name="Laserzsee">
+        <lat>46.7622828</lat>
+        <lon>12.8022308</lon>
+    </poi>
+    <poi name="Hochgräntensee">
+        <lat>46.69079</lat>
+        <lon>12.439211</lon>
+    </poi>
+    <poi name="Abfalterer See">
+        <lat>46.7869723</lat>
+        <lon>12.4826542</lon>
+    </poi>
+    <poi name="Sichelsee">
+        <lat>46.8508334</lat>
+        <lon>12.5062474</lon>
+    </poi>
+    <poi name="Wilfernerlacke">
+        <lat>46.8480114</lat>
+        <lon>12.6009907</lon>
+    </poi>
+    <poi name="Lavantsee">
+        <lat>46.8369685</lat>
+        <lon>12.6441341</lon>
+    </poi>
+    <poi name="Alkuser See">
+        <lat>46.9060931</lat>
+        <lon>12.7307627</lon>
+    </poi>
+    <poi name="Zwischenberger Lacke">
+        <lat>46.8366163</lat>
+        <lon>12.8891103</lon>
+    </poi>
+    <poi name="Ur-Forellen">
+        <lat>47.1314807</lat>
+        <lon>10.9342277</lon>
+    </poi>
+    <poi name="Sebel-See">
+        <lat>46.9800154</lat>
+        <lon>11.2086467</lon>
+    </poi>
+    <poi name="Rifflkar">
+        <lat>46.8944</lat>
+        <lon>10.6822313</lon>
+    </poi>
+    <poi name="Schöntalsee">
+        <lat>47.2837253</lat>
+        <lon>12.0486249</lon>
+    </poi>
+    <poi name="Weithaglacke">
+        <lat>47.3444885</lat>
+        <lon>12.128706</lon>
+    </poi>
+    <poi name="Grosssee">
+        <lat>47.1388355</lat>
+        <lon>10.8104009</lon>
+    </poi>
+    <poi name="Foissbachlacke">
+        <lat>47.3354042</lat>
+        <lon>12.1362858</lon>
+    </poi>
+    <poi name="Egesensee">
+        <lat>46.9999138</lat>
+        <lon>11.1324565</lon>
+    </poi>
+    <poi name="Piburger See">
+        <lat>47.194706</lat>
+        <lon>10.8924935</lon>
+    </poi>
+    <poi name="Knappenbodensee">
+        <lat>47.1837352</lat>
+        <lon>10.402786</lon>
+    </poi>
+    <poi name="Oberer Wildalmsee">
+        <lat>47.314056</lat>
+        <lon>12.1191015</lon>
+    </poi>
+    <poi name="Mittlerer Wildalmsee">
+        <lat>47.3111188</lat>
+        <lon>12.135667</lon>
+    </poi>
+    <poi name="Unterer Wildalmsee">
+        <lat>47.3102915</lat>
+        <lon>12.1421213</lon>
+    </poi>
+    <poi name="Verborgene See">
+        <lat>46.8728741</lat>
+        <lon>10.6868759</lon>
+    </poi>
+    <poi name="Furmentekarsee">
+        <lat>46.8825759</lat>
+        <lon>10.6955025</lon>
+    </poi>
+    <poi name="Kaiserbergtalsee">
+        <lat>46.917948</lat>
+        <lon>10.6704657</lon>
+    </poi>
+    <poi name="Sinkersee">
+        <lat>46.836723</lat>
+        <lon>12.3334424</lon>
+    </poi>
+    <poi name="Hinterer See">
+        <lat>47.1510262</lat>
+        <lon>10.8142396</lon>
+    </poi>
+    <poi name="Brüllersee">
+        <lat>46.9970952</lat>
+        <lon>10.1915762</lon>
+    </poi>
+    <poi name="Angersee">
+        <lat>47.2568914</lat>
+        <lon>11.055978</lon>
+    </poi>
+    <poi name="Sieben Seen">
+        <lat>46.8482975</lat>
+        <lon>12.4070777</lon>
+    </poi>
+    <poi name="Unterer Stuckensee">
+        <lat>46.6729027</lat>
+        <lon>12.5577013</lon>
+    </poi>
+    <poi name="Geigensee">
+        <lat>46.8658845</lat>
+        <lon>12.5006184</lon>
+    </poi>
+    <poi name="Kropfsee">
+        <lat>47.2728235</lat>
+        <lon>10.8017278</lon>
+    </poi>
+    <poi name="Bittrichsee">
+        <lat>47.2253235</lat>
+        <lon>10.5417734</lon>
+    </poi>
+    <poi name="Badeteich Haderlehn">
+        <lat>47.1984475</lat>
+        <lon>10.872326</lon>
+    </poi>
+    <poi name="Lexerseabl">
+        <lat>46.8295827</lat>
+        <lon>12.5954855</lon>
+    </poi>
+    <poi name="Earschbach">
+        <lat>47.5473377</lat>
+        <lon>10.6748792</lon>
+    </poi>
+    <poi name="Schwarzmilzsee">
+        <lat>47.299842</lat>
+        <lon>10.306514</lon>
+    </poi>
+    <poi name="(Hoch-)torsee">
+        <lat>47.3616639</lat>
+        <lon>12.4712552</lon>
+    </poi>
+    <poi name="Fundussee">
+        <lat>47.1115067</lat>
+        <lon>10.8902954</lon>
+    </poi>
+    <poi name="Pitze">
+        <lat>47.1461787</lat>
+        <lon>10.5906478</lon>
+    </poi>
+    <poi name="Hüttekarsee">
+        <lat>46.9048402</lat>
+        <lon>10.667242</lon>
+    </poi>
+    <poi name="Langseebl">
+        <lat>46.8972363</lat>
+        <lon>12.7420377</lon>
+    </poi>
+    <poi name="Oberer See">
+        <lat>46.8249271</lat>
+        <lon>12.4155991</lon>
+    </poi>
+    <poi name="Remasseen">
+        <lat>46.8418652</lat>
+        <lon>12.3745584</lon>
+    </poi>
+    <poi name="Unterer See">
+        <lat>46.8234674</lat>
+        <lon>12.4139928</lon>
+    </poi>
+    <poi name="Gschrittsee">
+        <lat>46.8781955</lat>
+        <lon>12.3318299</lon>
+    </poi>
+    <poi name="Falkommsee">
+        <lat>46.8764066</lat>
+        <lon>12.4081806</lon>
+    </poi>
+    <poi name="Sankt-Josef-See">
+        <lat>46.9424165</lat>
+        <lon>12.1732123</lon>
+    </poi>
+    <poi name="Jochsee">
+        <lat>46.732841</lat>
+        <lon>12.6136274</lon>
+    </poi>
+    <poi name="Bocksteinsee">
+        <lat>46.8550473</lat>
+        <lon>12.5394367</lon>
+    </poi>
+    <poi name="Mondsee">
+        <lat>46.8614677</lat>
+        <lon>12.5310128</lon>
+    </poi>
+    <poi name="Oberer Ganitzsee">
+        <lat>46.8731174</lat>
+        <lon>12.5578582</lon>
+    </poi>
+    <poi name="Ochsenalmseen">
+        <lat>46.8447063</lat>
+        <lon>12.5805619</lon>
+    </poi>
+    <poi name="Ochsensee">
+        <lat>46.8563326</lat>
+        <lon>12.5217648</lon>
+    </poi>
+    <poi name="Pumpersee">
+        <lat>46.8678543</lat>
+        <lon>12.4925155</lon>
+    </poi>
+    <poi name="Unterer Ganitzsee">
+        <lat>46.8676814</lat>
+        <lon>12.5576772</lon>
+    </poi>
+    <poi name="Zagoritzsee">
+        <lat>46.8533641</lat>
+        <lon>12.5529545</lon>
+    </poi>
+    <poi name="Alplesseen">
+        <lat>46.944923</lat>
+        <lon>12.2588857</lon>
+    </poi>
+    <poi name="Eggsee">
+        <lat>46.96161</lat>
+        <lon>12.2311033</lon>
+    </poi>
+    <poi name="Eggsee">
+        <lat>46.9710256</lat>
+        <lon>12.2275311</lon>
+    </poi>
+    <poi name="Großbachsee">
+        <lat>46.9608615</lat>
+        <lon>12.2459954</lon>
+    </poi>
+    <poi name="Beim See">
+        <lat>47.0951732</lat>
+        <lon>12.5779809</lon>
+    </poi>
+    <poi name="Keespölachsee">
+        <lat>47.1370979</lat>
+        <lon>12.4640646</lon>
+    </poi>
+    <poi name="Schandlasee">
+        <lat>47.1221132</lat>
+        <lon>12.5655192</lon>
+    </poi>
+    <poi name="Trelebitschsee">
+        <lat>46.9023426</lat>
+        <lon>12.7544848</lon>
+    </poi>
+    <poi name="Hairlacher See">
+        <lat>47.103723</lat>
+        <lon>10.8624896</lon>
+    </poi>
+    <poi name="Rifflersee">
+        <lat>47.0810318</lat>
+        <lon>11.7303315</lon>
+    </poi>
+    <poi name="Steinkasersee">
+        <lat>47.1775241</lat>
+        <lon>11.5716304</lon>
+    </poi>
+    <poi name="Brendlsee">
+        <lat>47.3661111</lat>
+        <lon>10.9579181</lon>
+    </poi>
+    <poi name="Gruesee">
+        <lat>47.1525612</lat>
+        <lon>10.9807163</lon>
+    </poi>
+    <poi name="Oberer Spinnsee">
+        <lat>47.0712005</lat>
+        <lon>10.5334266</lon>
+    </poi>
+    <poi name="Peerler See">
+        <lat>47.0024986</lat>
+        <lon>10.9797985</lon>
+    </poi>
+    <poi name="Unterer Spinnsee">
+        <lat>47.0759884</lat>
+        <lon>10.5402852</lon>
+    </poi>
+    <poi name="Wartkogelsee">
+        <lat>47.016333</lat>
+        <lon>10.9548174</lon>
+    </poi>
+    <poi name="Karlessee">
+        <lat>46.9951138</lat>
+        <lon>10.676244</lon>
+    </poi>
+    <poi name="Kromsee">
+        <lat>47.3001837</lat>
+        <lon>10.6676426</lon>
+    </poi>
+    <poi name="Schiefersee">
+        <lat>47.2150297</lat>
+        <lon>10.5173364</lon>
+    </poi>
+    <poi name="Grüntalsee">
+        <lat>47.2447314</lat>
+        <lon>10.5170314</lon>
+    </poi>
+    <poi name="Kleines Seabl">
+        <lat>46.693135</lat>
+        <lon>12.4355702</lon>
+    </poi>
+    <poi name="Wodesee">
+        <lat>47.0977318</lat>
+        <lon>10.6469699</lon>
+    </poi>
+    <poi name="Steinberggruber">
+        <lat>47.3334713</lat>
+        <lon>11.9978575</lon>
+    </poi>
+    <poi name="Füllhornsee">
+        <lat>46.7083266</lat>
+        <lon>12.4047633</lon>
+    </poi>
+    <poi name="Pize">
+        <lat>47.1472049</lat>
+        <lon>10.5638488</lon>
+    </poi>
+    <poi name="Krummer See">
+        <lat>47.0858465</lat>
+        <lon>10.7819468</lon>
+    </poi>
+    <poi name="schwarze Lackn">
+        <lat>47.2071352</lat>
+        <lon>11.5721252</lon>
+    </poi>
+    <poi name="Grametsee">
+        <lat>47.1080713</lat>
+        <lon>10.5667254</lon>
+    </poi>
+    <poi name="Knoppigsee">
+        <lat>47.1614419</lat>
+        <lon>10.2281732</lon>
+    </poi>
+    <poi name="Stubaier Gesundheitssee">
+        <lat>47.0986337</lat>
+        <lon>11.2798203</lon>
+    </poi>
+    <poi name="Alter See">
+        <lat>46.8078675</lat>
+        <lon>12.790217</lon>
+    </poi>
+    <poi name="Sulzenausee">
+        <lat>46.9863604</lat>
+        <lon>11.1536389</lon>
+    </poi>
+    <poi name="Reintaler See">
+        <lat>47.4621086</lat>
+        <lon>11.9011527</lon>
+    </poi>
+    <poi name="Reintaler See">
+        <lat>47.4588312</lat>
+        <lon>11.8901795</lon>
+    </poi>
+    <poi name="Kleinalkuser See">
+        <lat>46.9023481</lat>
+        <lon>12.7309639</lon>
+    </poi>
+    <poi name="Hornblicksee">
+        <lat>47.5002859</lat>
+        <lon>12.4462205</lon>
+    </poi>
+    <poi name="Goldriedsee">
+        <lat>46.9872402</lat>
+        <lon>12.590868</lon>
+    </poi>
+    <poi name="Uneholdensee">
+        <lat>46.8547344</lat>
+        <lon>12.3880193</lon>
+    </poi>
+    <poi name="Kleine Berglisee">
+        <lat>46.9697529</lat>
+        <lon>10.2496951</lon>
+    </poi>
+    <poi name="Oanbatzsee">
+        <lat>46.8462998</lat>
+        <lon>12.3987186</lon>
+    </poi>
+    <poi name="Plattasee">
+        <lat>46.8466894</lat>
+        <lon>12.4092659</lon>
+    </poi>
+    <poi name="Butzensee">
+        <lat>46.8476698</lat>
+        <lon>12.4118058</lon>
+    </poi>
+    <poi name="Niglasbach">
+        <lat>47.1610724</lat>
+        <lon>11.7455859</lon>
+    </poi>
+    <poi name="Nassereither See">
+        <lat>47.3170787</lat>
+        <lon>10.8385974</lon>
+    </poi>
+    <poi name="Kesselsee">
+        <lat>46.9635782</lat>
+        <lon>12.3019983</lon>
+    </poi>
+    <poi name="Winnerquelle">
+        <lat>47.4291906</lat>
+        <lon>11.8347219</lon>
+    </poi>
+    <poi name="Kneippanlage Münster">
+        <lat>47.4289738</lat>
+        <lon>11.8364123</lon>
+    </poi>
+    <poi name="Tristacher See">
+        <lat>46.8077557</lat>
+        <lon>12.797621</lon>
+    </poi>
+    <poi name="Brantlalmsee">
+        <lat>47.4667939</lat>
+        <lon>12.2329287</lon>
+    </poi>
+    <poi name="Gletschersee">
+        <lat>47.0095079</lat>
+        <lon>11.0813034</lon>
+    </poi>
+    <poi name="Instein See">
+        <lat>46.7801562</lat>
+        <lon>12.7876326</lon>
+    </poi>
+    <poi name="Kneippanlage">
+        <lat>47.2315305</lat>
+        <lon>11.4099309</lon>
+    </poi>
+    <poi name="Kneippanlage">
+        <lat>47.5120306</lat>
+        <lon>12.3041925</lon>
+    </poi>
+    <poi name="Beim See'le">
+        <lat>47.359219</lat>
+        <lon>11.4156947</lon>
+    </poi>
+    <poi name="Tränkstelle">
+        <lat>47.2595918</lat>
+        <lon>11.3853382</lon>
+    </poi>
+    <poi name="Mattingsee">
+        <lat>47.1945717</lat>
+        <lon>10.9540384</lon>
+    </poi>
+    <poi name="Biber">
+        <lat>47.2810549</lat>
+        <lon>11.3979936</lon>
+    </poi>
+    <poi name="Rierersee">
+        <lat>47.0187321</lat>
+        <lon>10.3732014</lon>
+    </poi>
+    <poi name="Timok´s water games">
+        <lat>47.4578466</lat>
+        <lon>12.5398278</lon>
+    </poi>
+    <poi name="Karseeblan">
+        <lat>46.9957982</lat>
+        <lon>10.9832435</lon>
+    </poi>
+    <poi name="Mutterberger See">
+        <lat>47.0169049</lat>
+        <lon>11.1295467</lon>
+    </poi>
+    <poi name="Trocknungsteich">
+        <lat>47.5533023</lat>
+        <lon>10.6572509</lon>
+    </poi>
+    <poi name="Möserer See">
+        <lat>47.316674</lat>
+        <lon>11.1435973</lon>
+    </poi>
+    <poi name="Badesee Badl">
+        <lat>47.4790308</lat>
+        <lon>11.9785226</lon>
+    </poi>
+    <poi name="Scheidsee">
+        <lat>47.0119248</lat>
+        <lon>10.1398209</lon>
+    </poi>
+    <poi name="Weißensee">
+        <lat>47.3635298</lat>
+        <lon>10.8739662</lon>
+    </poi>
+    <poi name="Lauchsee">
+        <lat>47.4706133</lat>
+        <lon>12.53472</lon>
+    </poi>
+    <poi name="Badesee (Baggersee)">
+        <lat>47.0600906</lat>
+        <lon>10.6606713</lon>
+    </poi>
+    <poi name="Fernsteinsee">
+        <lat>47.3451673</lat>
+        <lon>10.8193812</lon>
+    </poi>
+    <poi name="Winkelbergsee">
+        <lat>47.1022343</lat>
+        <lon>10.9337355</lon>
+    </poi>
+    <poi name="Thiersee">
+        <lat>47.5918656</lat>
+        <lon>12.1186178</lon>
+    </poi>
+    <poi name="Meerauge">
+        <lat>47.3645374</lat>
+        <lon>12.0386334</lon>
+    </poi>
+    <poi name="Vilsalpsee">
+        <lat>47.4605946</lat>
+        <lon>10.4959351</lon>
+    </poi>
+    <poi name="Vilsalpsee">
+        <lat>47.4675178</lat>
+        <lon>10.507419</lon>
+    </poi>
+    <poi name="Achensee">
+        <lat>47.4998543</lat>
+        <lon>11.7073719</lon>
+    </poi>
+    <poi name="Achensee">
+        <lat>47.4322677</lat>
+        <lon>11.733047</lon>
+    </poi>
+    <poi name="Achensee">
+        <lat>47.4411033</lat>
+        <lon>11.7038029</lon>
+    </poi>
+    <poi name="Achensee">
+        <lat>47.4664219</lat>
+        <lon>11.7037942</lon>
+    </poi>
+    <poi name="Achensee">
+        <lat>47.4882428</lat>
+        <lon>11.7047091</lon>
+    </poi>
+    <poi name="Rifflsee">
+        <lat>46.9644646</lat>
+        <lon>10.8501463</lon>
+    </poi>
+    <poi name="Flathsee">
+        <lat>47.0992535</lat>
+        <lon>10.5340502</lon>
+    </poi>
+    <poi name="Wasensee">
+        <lat>47.08604</lat>
+        <lon>10.538254</lon>
+    </poi>
+    <poi name="Wiesensee">
+        <lat>47.4947686</lat>
+        <lon>12.6078286</lon>
+    </poi>
+    <poi name="Mühleggsee">
+        <lat>47.3684656</lat>
+        <lon>11.1632694</lon>
+    </poi>
+    <poi name="Achensee Badebereich Achenkirch">
+        <lat>47.4997787</lat>
+        <lon>11.7073351</lon>
+    </poi>
+    <poi name="Walchsee">
+        <lat>47.6462825</lat>
+        <lon>12.3317101</lon>
+    </poi>
+    <poi name="Walchsee">
+        <lat>47.6470144</lat>
+        <lon>12.3181845</lon>
+    </poi>
+    <poi name="Gieringer Weiher">
+        <lat>47.4708466</lat>
+        <lon>12.3634824</lon>
+    </poi>
+    <poi name="Wettersee">
+        <lat>47.1435466</lat>
+        <lon>10.8446978</lon>
+    </poi>
+    <poi name="Auge Gottes">
+        <lat>47.1147463</lat>
+        <lon>12.4250657</lon>
+    </poi>
+    <poi name="Hintersteiner See">
+        <lat>47.5430321</lat>
+        <lon>12.2194054</lon>
+    </poi>
+    <poi name="Hintersteiner See">
+        <lat>47.5395477</lat>
+        <lon>12.2046362</lon>
+    </poi>
+    <poi name="Berglsteiner See">
+        <lat>47.4723166</lat>
+        <lon>11.9115903</lon>
+    </poi>
+    <poi name="Schochenalpsee">
+        <lat>47.2799512</lat>
+        <lon>10.2956698</lon>
+    </poi>
+    <poi name="Nachbauersee">
+        <lat>47.2029683</lat>
+        <lon>9.6717896</lon>
+    </poi>
+    <poi name="Baggersee">
+        <lat>47.2163881</lat>
+        <lon>9.6595713</lon>
+    </poi>
+    <poi name="Baggerloch Nägele">
+        <lat>47.2806053</lat>
+        <lon>9.5832746</lon>
+    </poi>
+    <poi name="Baggerloch Wilhelm &amp; Mayer">
+        <lat>47.2823454</lat>
+        <lon>9.5839454</lon>
+    </poi>
+    <poi name="Baggerloch Hilti &amp; Jehle">
+        <lat>47.2795675</lat>
+        <lon>9.5854715</lon>
+    </poi>
+    <poi name="Baggersee Klostergatter">
+        <lat>47.2727421</lat>
+        <lon>9.5823405</lon>
+    </poi>
+    <poi name="Leckner See">
+        <lat>47.4746059</lat>
+        <lon>10.0338274</lon>
+    </poi>
+    <poi name="Staufensee">
+        <lat>47.3816464</lat>
+        <lon>9.7791055</lon>
+    </poi>
+    <poi name="Fallersee">
+        <lat>47.2142586</lat>
+        <lon>9.736103</lon>
+    </poi>
+    <poi name="Körbersee">
+        <lat>47.2530901</lat>
+        <lon>10.1079647</lon>
+    </poi>
+    <poi name="Kalbelesee">
+        <lat>47.264903</lat>
+        <lon>10.1211235</lon>
+    </poi>
+    <poi name="Jannersee">
+        <lat>47.4707874</lat>
+        <lon>9.709498</lon>
+    </poi>
+    <poi name="Egelsee">
+        <lat>47.272522</lat>
+        <lon>9.6556111</lon>
+    </poi>
+    <poi name="Egelsee">
+        <lat>47.2222679</lat>
+        <lon>9.5627139</lon>
+    </poi>
+    <poi name="Sautränke">
+        <lat>47.2527067</lat>
+        <lon>9.6063213</lon>
+    </poi>
+    <poi name="Triboltingerbohl">
+        <lat>47.6683037</lat>
+        <lon>9.1259608</lon>
+    </poi>
+    <poi name="Kopf">
+        <lat>47.6704327</lat>
+        <lon>9.1264299</lon>
+    </poi>
+    <poi name="Güfelsee">
+        <lat>47.2897962</lat>
+        <lon>9.5804995</lon>
+    </poi>
+    <poi name="Alter Rhein">
+        <lat>47.4058538</lat>
+        <lon>9.6542308</lon>
+    </poi>
+    <poi name="Alter Rhein">
+        <lat>47.3744252</lat>
+        <lon>9.6681345</lon>
+    </poi>
+    <poi name="Alter Rhein">
+        <lat>47.3847863</lat>
+        <lon>9.6741048</lon>
+    </poi>
+    <poi name="Alter Rhein">
+        <lat>47.3961374</lat>
+        <lon>9.6641878</lon>
+    </poi>
+    <poi name="Schleienloch">
+        <lat>47.493714</lat>
+        <lon>9.6742263</lon>
+    </poi>
+    <poi name="Schwarzsee">
+        <lat>47.0692411</lat>
+        <lon>9.9820115</lon>
+    </poi>
+    <poi name="Schwarzsee">
+        <lat>47.0483015</lat>
+        <lon>10.1071117</lon>
+    </poi>
+    <poi name="Herzsee">
+        <lat>47.0635012</lat>
+        <lon>9.9801762</lon>
+    </poi>
+    <poi name="Totalpsee">
+        <lat>47.0543832</lat>
+        <lon>9.7277549</lon>
+    </poi>
+    <poi name="Naturbad Bruggerloch">
+        <lat>47.4523267</lat>
+        <lon>9.6590227</lon>
+    </poi>
+    <poi name="Hirschsee">
+        <lat>47.0776082</lat>
+        <lon>9.6684813</lon>
+    </poi>
+    <poi name="Hoy">
+        <lat>47.5492569</lat>
+        <lon>9.6967301</lon>
+    </poi>
+    <poi name="Alte Rüttenen">
+        <lat>47.2742268</lat>
+        <lon>9.5802293</lon>
+    </poi>
+    <poi name="Serressee">
+        <lat>46.9643162</lat>
+        <lon>9.9799874</lon>
+    </poi>
+    <poi name="Zürser See">
+        <lat>47.1745351</lat>
+        <lon>10.1354319</lon>
+    </poi>
+    <poi name="Tobelsee">
+        <lat>47.0406536</lat>
+        <lon>9.8714516</lon>
+    </poi>
+    <poi name="Hochalpsee">
+        <lat>47.2805976</lat>
+        <lon>10.1206265</lon>
+    </poi>
+    <poi name="Tschalengasee">
+        <lat>47.1726706</lat>
+        <lon>9.7731679</lon>
+    </poi>
+    <poi name="Badehaus Seehotel am Kaiserstrand">
+        <lat>47.526177</lat>
+        <lon>9.7438871</lon>
+    </poi>
+    <poi name="Sterzer See">
+        <lat>47.2822043</lat>
+        <lon>10.1692045</lon>
+    </poi>
+    <poi name="Stafelalpsee">
+        <lat>47.2671628</lat>
+        <lon>9.8933115</lon>
+    </poi>
+    <poi name="Seebach">
+        <lat>47.2576866</lat>
+        <lon>10.1863023</lon>
+    </poi>
+    <poi name="Moorsee">
+        <lat>47.4223744</lat>
+        <lon>9.8074059</lon>
+    </poi>
+    <poi name="Blauer See">
+        <lat>47.2927108</lat>
+        <lon>9.8480241</lon>
+    </poi>
+    <poi name="Sünser See">
+        <lat>47.2978937</lat>
+        <lon>9.8406092</lon>
+    </poi>
+    <poi name="Flexensee">
+        <lat>47.1590558</lat>
+        <lon>10.1655379</lon>
+    </poi>
+    <poi name="Wiegensee">
+        <lat>46.9759851</lat>
+        <lon>10.0916675</lon>
+    </poi>
+    <poi name="Tilisunasee">
+        <lat>47.0271292</lat>
+        <lon>9.8782535</lon>
+    </poi>
+    <poi name="Oberer Alpguessee">
+        <lat>47.0376643</lat>
+        <lon>10.0302123</lon>
+    </poi>
+    <poi name="Unterer Alpguessee">
+        <lat>47.0423644</lat>
+        <lon>10.0254102</lon>
+    </poi>
+    <poi name="Pfannensee">
+        <lat>47.0512338</lat>
+        <lon>10.1259318</lon>
+    </poi>
+    <poi name="Kälbersee">
+        <lat>47.0678952</lat>
+        <lon>9.9770576</lon>
+    </poi>
+    <poi name="Kessisee">
+        <lat>47.0198994</lat>
+        <lon>10.1212049</lon>
+    </poi>
+    <poi name="Zeinissee">
+        <lat>46.9809022</lat>
+        <lon>10.1220958</lon>
+    </poi>
+    <poi name="Golmer Seen">
+        <lat>47.0604208</lat>
+        <lon>9.81884</lon>
+    </poi>
+    <poi name="Eibelesee">
+        <lat>47.5293921</lat>
+        <lon>9.9679103</lon>
+    </poi>
+    <poi name="Monzabonsee">
+        <lat>47.1971697</lat>
+        <lon>10.1707822</lon>
+    </poi>
+    <poi name="Vallülasee">
+        <lat>46.9493582</lat>
+        <lon>10.1186375</lon>
+    </poi>
+    <poi name="Roter Stein">
+        <lat>47.092288</lat>
+        <lon>9.876918</lon>
+    </poi>
+    <poi name="Ufer Konstanzer Bucht">
+        <lat>47.5744371</lat>
+        <lon>9.3743059</lon>
+    </poi>
+    <poi name="Ufer Konstanzer Bucht">
+        <lat>47.5904881</lat>
+        <lon>9.3331067</lon>
+    </poi>
+    <poi name="Ufer Konstanzer Bucht">
+        <lat>47.6126703</lat>
+        <lon>9.2955442</lon>
+    </poi>
+    <poi name="Ufer Konstanzer Bucht">
+        <lat>47.6278396</lat>
+        <lon>9.2534795</lon>
+    </poi>
+    <poi name="Ufer Konstanzer Bucht">
+        <lat>47.6460632</lat>
+        <lon>9.2026458</lon>
+    </poi>
+    <poi name="Gandasee">
+        <lat>46.950222</lat>
+        <lon>9.8968549</lon>
+    </poi>
+    <poi name="Gretscher See">
+        <lat>47.0763201</lat>
+        <lon>10.0477844</lon>
+    </poi>
+    <poi name="Schafkarsee">
+        <lat>47.0777558</lat>
+        <lon>10.1178985</lon>
+    </poi>
+    <poi name="Kaltenbergsee">
+        <lat>47.0940308</lat>
+        <lon>10.1401448</lon>
+    </poi>
+    <poi name="Moorbad Oberköhler">
+        <lat>47.5168748</lat>
+        <lon>9.9002057</lon>
+    </poi>
+    <poi name="Alpsee">
+        <lat>47.1617905</lat>
+        <lon>10.1053472</lon>
+    </poi>
+    <poi name="Oberer See">
+        <lat>46.9937137</lat>
+        <lon>10.0170674</lon>
+    </poi>
+    <poi name="Torasee">
+        <lat>47.104894</lat>
+        <lon>9.9375198</lon>
+    </poi>
+    <poi name="Eissee">
+        <lat>46.8768538</lat>
+        <lon>10.132522</lon>
+    </poi>
+    <poi name="Fulasee">
+        <lat>47.1031023</lat>
+        <lon>9.9281853</lon>
+    </poi>
+    <poi name="Stubner See">
+        <lat>47.1311883</lat>
+        <lon>10.1487785</lon>
+    </poi>
+    <poi name="Oberer Maroisee">
+        <lat>47.1237812</lat>
+        <lon>10.1794474</lon>
+    </poi>
+    <poi name="Unterer Maroisee">
+        <lat>47.121719</lat>
+        <lon>10.178168</lon>
+    </poi>
+    <poi name="Gapfohlner Seeli">
+        <lat>47.270548</lat>
+        <lon>9.7741863</lon>
+    </poi>
+    <poi name="Buabagumpa">
+        <lat>47.2840761</lat>
+        <lon>9.7034337</lon>
+    </poi>
+    <poi name="Oberer blauer See">
+        <lat>47.1156391</lat>
+        <lon>10.032062</lon>
+    </poi>
+    <poi name="Unterer blauer See">
+        <lat>47.1156271</lat>
+        <lon>10.0310447</lon>
+    </poi>
+    <poi name="Lehmgrube Meiningen">
+        <lat>47.3108577</lat>
+        <lon>9.5917592</lon>
+    </poi>
+    <poi name="Dörnlesee">
+        <lat>47.4534413</lat>
+        <lon>9.9103009</lon>
+    </poi>
+    <poi name="Seewaldsee">
+        <lat>47.2469489</lat>
+        <lon>9.9289381</lon>
+    </poi>
+    <poi name="Litznersee">
+        <lat>46.8866219</lat>
+        <lon>10.0473349</lon>
+    </poi>
+    <poi name="Seele">
+        <lat>47.2663806</lat>
+        <lon>9.9940099</lon>
+    </poi>
+    <poi name="Stausee Subersach">
+        <lat>47.4343325</lat>
+        <lon>9.9999993</lon>
+    </poi>
+    <poi name="Ochsa Seele">
+        <lat>47.1240066</lat>
+        <lon>9.6582542</lon>
+    </poi>
+    <poi name="Kneippanlage Staufnerweg">
+        <lat>47.4756781</lat>
+        <lon>9.7298493</lon>
+    </poi>
+    <poi name="Jöchleseele">
+        <lat>47.2696588</lat>
+        <lon>10.0223208</lon>
+    </poi>
+    <poi name="Versettlasee">
+        <lat>46.9719639</lat>
+        <lon>9.9983391</lon>
+    </poi>
+    <poi name="Kessi-Schlucht">
+        <lat>47.2455251</lat>
+        <lon>9.9790943</lon>
+    </poi>
+    <poi name="Ratzbach">
+        <lat>47.3056272</lat>
+        <lon>9.6641759</lon>
+    </poi>
+    <poi name="Mole West">
+        <lat>47.6375322</lat>
+        <lon>9.224055</lon>
+    </poi>
+    <poi name="Mole Ost">
+        <lat>47.636972</lat>
+        <lon>9.2252335</lon>
+    </poi>
+    <poi name="Bodensee">
+        <lat>47.5253697</lat>
+        <lon>9.6447661</lon>
+    </poi>
+    <poi name="Bodensee">
+        <lat>47.5508322</lat>
+        <lon>9.7020459</lon>
+    </poi>
+    <poi name="Bodensee">
+        <lat>47.6499946</lat>
+        <lon>9.4689801</lon>
+    </poi>
+    <poi name="Bodensee">
+        <lat>47.7231606</lat>
+        <lon>9.0146336</lon>
+    </poi>
+    <poi name="Bodensee">
+        <lat>47.5293371</lat>
+        <lon>9.4146033</lon>
+    </poi>
+    <poi name="Scheidsee">
+        <lat>47.0119248</lat>
+        <lon>10.1398209</lon>
+    </poi>
+    <poi name="Langer See">
+        <lat>47.0515484</lat>
+        <lon>10.1432795</lon>
+    </poi>
+    <poi name="Galinasee">
+        <lat>47.2077607</lat>
+        <lon>9.6648781</lon>
+    </poi>
+    <poi name="Baggersee Untere Au">
+        <lat>47.2242473</lat>
+        <lon>9.6347092</lon>
+    </poi>
+    <poi name="Unterer Vallülasee">
+        <lat>46.9423791</lat>
+        <lon>10.1018484</lon>
+    </poi>
+    <poi name="Binzaweiher">
+        <lat>47.2228337</lat>
+        <lon>9.5549114</lon>
+    </poi>
+    <poi name="Formarinsee">
+        <lat>47.1678884</lat>
+        <lon>9.9934707</lon>
+    </poi>
+    <poi name="Lagune">
+        <lat>47.505987</lat>
+        <lon>9.6651416</lon>
+    </poi>
+    <poi name="Schwarzer See">
+        <lat>47.2384129</lat>
+        <lon>9.6589407</lon>
+    </poi>
+    <poi name="Butzensee">
+        <lat>47.2302844</lat>
+        <lon>10.0944567</lon>
+    </poi>
+    <poi name="Auhafenteich">
+        <lat>47.5028604</lat>
+        <lon>9.6895545</lon>
+    </poi>
+    <poi name="Stauweiher Andelsbuch">
+        <lat>47.4019634</lat>
+        <lon>9.8791859</lon>
+    </poi>
+    <poi name="Unterer See">
+        <lat>46.9944006</lat>
+        <lon>10.0154517</lon>
+    </poi>
+    <poi name="Transportbetongrube">
+        <lat>48.2762796</lat>
+        <lon>16.4986712</lon>
+    </poi>
+    <poi name="Schießstattlacke">
+        <lat>48.2397338</lat>
+        <lon>16.4220258</lon>
+    </poi>
+    <poi name="Badeteich Süßenbrunn">
+        <lat>48.2771138</lat>
+        <lon>16.487253</lon>
+    </poi>
+    <poi name="Campingplatz Badeteich Süßenbrunn">
+        <lat>48.2722818</lat>
+        <lon>16.4794151</lon>
+    </poi>
+    <poi name="Grüner See">
+        <lat>48.1547442</lat>
+        <lon>16.3409359</lon>
+    </poi>
+    <poi name="Schwanensee">
+        <lat>48.1504706</lat>
+        <lon>16.3992388</lon>
+    </poi>
+    <poi name="Mittelwasser">
+        <lat>48.1602219</lat>
+        <lon>16.5613946</lon>
+    </poi>
+    <poi name="Groß-Enzersdorfer Arm">
+        <lat>48.1896964</lat>
+        <lon>16.5400536</lon>
+    </poi>
+    <poi name="Groß-Enzersdorfer Arm">
+        <lat>48.2016747</lat>
+        <lon>16.5331553</lon>
+    </poi>
+    <poi name="Groß-Enzersdorfer Arm">
+        <lat>48.2012199</lat>
+        <lon>16.5216956</lon>
+    </poi>
+    <poi name="Eberschüttwasser">
+        <lat>48.1632188</lat>
+        <lon>16.5288088</lon>
+    </poi>
+    <poi name="Eberschüttwasser">
+        <lat>48.1681141</lat>
+        <lon>16.538093</lon>
+    </poi>
+    <poi name="Meiergrube">
+        <lat>48.2717453</lat>
+        <lon>16.4837254</lon>
+    </poi>
+    <poi name="Schellensee">
+        <lat>48.1237692</lat>
+        <lon>16.3043336</lon>
+    </poi>
+    <poi name="Krausgrube">
+        <lat>48.2753939</lat>
+        <lon>16.5050656</lon>
+    </poi>
+    <poi name="Badeteich Jessernig">
+        <lat>48.2705051</lat>
+        <lon>16.4788379</lon>
+    </poi>
+    <poi name="Lusthauswasser">
+        <lat>48.1918991</lat>
+        <lon>16.4418815</lon>
+    </poi>
+    <poi name="Minichlacke">
+        <lat>48.1517555</lat>
+        <lon>16.2507486</lon>
+    </poi>
+    <poi name="Schwarzes Loch">
+        <lat>48.1565908</lat>
+        <lon>16.5296179</lon>
+    </poi>
+    <poi name="Silbersee">
+        <lat>48.2089229</lat>
+        <lon>16.2628933</lon>
+    </poi>
+    <poi name="Kratersee">
+        <lat>48.1638894</lat>
+        <lon>16.5277407</lon>
+    </poi>
+    <poi name="Unteres Heustadelwasser">
+        <lat>48.1974803</lat>
+        <lon>16.4302997</lon>
+    </poi>
+    <poi name="Toter Grund">
+        <lat>48.1869297</lat>
+        <lon>16.4692712</lon>
+    </poi>
+    <poi name="Seeschlacht">
+        <lat>48.1856075</lat>
+        <lon>16.4804822</lon>
+    </poi>
+    <poi name="Seeschlacht">
+        <lat>48.1690878</lat>
+        <lon>16.4473688</lon>
+    </poi>
+    <poi name="Rosenlacke">
+        <lat>48.2025932</lat>
+        <lon>16.4175036</lon>
+    </poi>
+    <poi name="Joseph Haydn">
+        <lat>48.1992395</lat>
+        <lon>16.3527838</lon>
+    </poi>
+    <poi name="Oberleitner Wasser">
+        <lat>48.1989632</lat>
+        <lon>16.4969819</lon>
+    </poi>
+    <poi name="Vierzigerteich">
+        <lat>48.2355859</lat>
+        <lon>16.3366543</lon>
+    </poi>
+    <poi name="Tritonwasser">
+        <lat>48.2151929</lat>
+        <lon>16.4283475</lon>
+    </poi>
+    <poi name="Alte Naufahrt">
+        <lat>48.1951191</lat>
+        <lon>16.474241</lon>
+    </poi>
+    <poi name="Dechantlacke">
+        <lat>48.1915064</lat>
+        <lon>16.4765308</lon>
+    </poi>
+    <poi name="Krauskopfpelikan">
+        <lat>48.1819007</lat>
+        <lon>16.3064965</lon>
+    </poi>
+    <poi name="Schwanenteich 1">
+        <lat>48.240993</lat>
+        <lon>16.275453</lon>
+    </poi>
+    <poi name="Schwanenteich 2">
+        <lat>48.2407261</lat>
+        <lon>16.2760539</lon>
+    </poi>
+    <poi name="Stadtparkteich">
+        <lat>48.2049481</lat>
+        <lon>16.3798135</lon>
+    </poi>
+    <poi name="Schleuse Nußdorf">
+        <lat>48.2569079</lat>
+        <lon>16.3710664</lon>
+    </poi>
+    <poi name="Auteich">
+        <lat>48.2345085</lat>
+        <lon>16.3306383</lon>
+    </poi>
+    <poi name="Bergsee">
+        <lat>48.2354731</lat>
+        <lon>16.331142</lon>
+    </poi>
+    <poi name="Waldteich">
+        <lat>48.235338</lat>
+        <lon>16.3307437</lon>
+    </poi>
+    <poi name="Mauthnerwasser">
+        <lat>48.1904052</lat>
+        <lon>16.4481572</lon>
+    </poi>
+    <poi name="Filmteich">
+        <lat>48.1467423</lat>
+        <lon>16.4020976</lon>
+    </poi>
+    <poi name="Oberes Heustadelwasser">
+        <lat>48.1972332</lat>
+        <lon>16.4259266</lon>
+    </poi>
+</pois>
