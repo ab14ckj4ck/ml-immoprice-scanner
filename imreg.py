@@ -1,5 +1,5 @@
 from scraper.source1_scraper import baseScraper
-from datamanipulation.cleanData import cleanData
+from datamanipulation.austriaFeatureEngineering import engineerFeatures
 from mlModels.regression.runRegression import runModels
 import logging
 
@@ -23,7 +23,7 @@ def main(SOURCE_1=True, SCRAPE_SOURCE_1=True, CLEAN_DATA=False, MODELS=False, PA
 
     if CLEAN_DATA:
         logging.info("Starting Source 1 Data Cleaning")
-        cleanData()
+        engineerFeatures()
         logging.info("Finished Source 1 Data Cleaning")
 
     if MODELS:

@@ -1,4 +1,11 @@
+"""
+This module defines enumeration-like classes and constants used throughout the
+immopreis-regression project to ensure consistent referencing of database columns,
+feature names, and file paths.
+"""
+
 class Listings:
+    """Column names for the raw listings data."""
     ID = "id"
     LINK = "link"
     PRICE = "price"
@@ -52,10 +59,13 @@ class Listings:
 
 
 class HistoryListings:
+    """Column names for historical listing tracking."""
     HIST_ID = "hist_id"
 
 
 class Features:
+    """Column names for engineered features used in the regression model."""
+    ID = "id"
     LOG_PPM2 = "log_ppm2"
     LOG_ESTATE_RATIO = "log_estate_ratio"
     LOCATION_CLUSTER = "location_cluster"
@@ -63,6 +73,9 @@ class Features:
     LOG_DISTANCE_TO_MAJOR_CITY = "log_distance_to_major_city"
     LOG_DISTANCE_TO_TOURISM = "log_distance_to_tourism"
     LOG_DISTANCE_TRAIN_STATION = "log_distance_train_station"
+    LOG_COUNT_5KM = "log_count_poi_5km"
+    LOG_COUNT_10KM = "log_count_poi_10km"
+    LOG_COUNT_25KM = "log_count_poi_25km"
     STATE_VIE = "state_vie"
     STATE_NOE = "state_noe"
     STATE_OOE = "state_ooe"
@@ -80,6 +93,7 @@ class Features:
 
 
 class Mappings:
+    """Mappings for data normalization and lists of optional fields."""
     STATE_MAPPING = {
         "kaernten": "state_ktn",
         "wien": "state_vie",
@@ -117,6 +131,7 @@ class Mappings:
     ]
 
 class DataFiles:
+    """File paths for external data sources used in feature engineering."""
     CITIES_FILE = "data/cities.xml"
     MAJOR_CITIES_FILE = "data/major-cities.xml"
     TRAIN_STATIONS_FILE = "data/train-stations.xml"

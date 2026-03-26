@@ -1,0 +1,102 @@
+<major_cities>
+    <major_city name="Wien">
+        <lat>48.2082</lat>
+        <lon>16.3738</lon>
+    </major_city>
+    <major_city name="Graz">
+        <lat>47.0707</lat>
+        <lon>15.4395</lon>
+    </major_city>
+    <major_city name="Linz">
+        <lat>48.3069</lat>
+        <lon>14.2858</lon>
+    </major_city>
+    <major_city name="Salzburg">
+        <lat>47.8095</lat>
+        <lon>13.0550</lon>
+    </major_city>
+    <major_city name="Innsbruck">
+        <lat>47.2692</lat>
+        <lon>11.4041</lon>
+    </major_city>
+    <major_city name="Klagenfurt">
+        <lat>46.6247</lat>
+        <lon>14.3053</lon>
+    </major_city>
+    <major_city name="Villach">
+        <lat>46.6103</lat>
+        <lon>13.8558</lon>
+    </major_city>
+    <major_city name="Wels">
+        <lat>48.1667</lat>
+        <lon>14.0333</lon>
+    </major_city>
+    <major_city name="St. Pölten">
+        <lat>48.2040</lat>
+        <lon>15.6230</lon>
+    </major_city>
+    <major_city name="Dornbirn">
+        <lat>47.4125</lat>
+        <lon>9.7415</lon>
+    </major_city>
+    <major_city name="Wiener Neustadt">
+        <lat>47.8167</lat>
+        <lon>16.2500</lon>
+    </major_city>
+    <major_city name="Steyr">
+        <lat>48.0427</lat>
+        <lon>14.4213</lon>
+    </major_city>
+    <major_city name="Feldkirch">
+        <lat>47.2413</lat>
+        <lon>9.5986</lon>
+    </major_city>
+    <major_city name="Bregenz">
+        <lat>47.5031</lat>
+        <lon>9.7471</lon>
+    </major_city>
+    <major_city name="Leonding">
+        <lat>48.2797</lat>
+        <lon>14.2533</lon>
+    </major_city>
+    <major_city name="Klosterneuburg">
+        <lat>48.3050</lat>
+        <lon>16.3250</lon>
+    </major_city>
+    <major_city name="Baden">
+        <lat>48.0050</lat>
+        <lon>16.2320</lon>
+    </major_city>
+    <major_city name="Wolfsberg">
+        <lat>46.8400</lat>
+        <lon>14.8400</lon>
+    </major_city>
+    <major_city name="Leoben">
+        <lat>47.3833</lat>
+        <lon>15.1000</lon>
+    </major_city>
+    <major_city name="Krems">
+        <lat>48.4100</lat>
+        <lon>15.6000</lon>
+    </major_city>
+    <major_city name="Traun">
+        <lat>48.2200</lat>
+        <lon>14.2330</lon>
+    </major_city>
+    <major_city name="Amstetten">
+        <lat>48.1200</lat>
+        <lon>14.8700</lon>
+    </major_city>
+    <major_city name="Kapfenberg">
+        <lat>47.4440</lat>
+        <lon>15.2930</lon>
+    </major_city>
+    <major_city name="Mödling">
+        <lat>48.0833</lat>
+        <lon>16.2833</lon>
+    </major_city>
+    <major_city name="Hallein">
+        <lat>47.6833</lat>
+        <lon>13.1000</lon>
+    </major_city>
+</major_cities>

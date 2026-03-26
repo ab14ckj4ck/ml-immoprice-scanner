@@ -233,6 +233,14 @@ def getAttr(item, name):
 
 
 def getLink(item):
+    """
+    Constructs the full URL for a listing using its SEO_URL attribute.
+
+    Args:
+        item (dict): The listing item dictionary.
+    Returns:
+        str|None: The full URL or None if SEO_URL is missing.
+    """
     seo = getAttr(item, "SEO_URL")
     if not seo:
         return None
@@ -241,6 +249,14 @@ def getLink(item):
 
 # noinspection PyBroadException
 def getPrice(item):
+    """
+    Extracts the PRICE attribute and converts it to a float.
+
+    Args:
+        item (dict): The listing item dictionary.
+    Returns:
+        float|None: The price as a float, or None if extraction fails.
+    """
     price = getAttr(item, "PRICE")
     try:
         price = float(price)
@@ -250,11 +266,27 @@ def getPrice(item):
 
 
 def getRent(item):
+    """
+    Extracts the monthly rent attribute and converts it to a float.
+
+    Args:
+        item (dict): The listing item dictionary.
+    Returns:
+        float|None: The rent as a float, or None if missing.
+    """
     rent = getAttr(item, "RENT/PER_MONTH_LETTINGS")
     return float(rent) if rent else None
 
 
 def getSafetyDeposit(item):
+    """
+    Extracts the safety deposit (Kaution) from the detail data.
+
+    Args:
+        item (dict): The detail data dictionary.
+    Returns:
+        float|None: The deposit amount as a float, or None if not applicable.
+    """
     if not item:
         return None
 
@@ -270,17 +302,41 @@ def getSafetyDeposit(item):
 
 
 def getLivingArea(item):
+    """
+    Extracts the living area size from the item attributes.
+
+    Args:
+        item (dict): The listing item dictionary.
+    Returns:
+        float|None: The living area in square meters.
+    """
     val = getAttr(item, "ESTATE_SIZE/LIVING_AREA")
     return float(val) if val else None
 
 
 def getEstateSize(item):
+    """
+    Extracts the total estate/plot size from the item attributes.
+
+    Args:
+        item (dict): The listing item dictionary.
+    Returns:
+        float|None: The estate size in square meters.
+    """
     val = getAttr(item, "ESTATE_SIZE")
     return float(val) if val else None
 
 
 # noinspection PyBroadException
 def getRooms(item):
+    """
+    Extracts the number of rooms from the item attributes.
+
+    Args:
+        item (dict): The listing item dictionary.
+    Returns:
+        int|None: The number of rooms, or None if 0 or invalid.
+    """
     val = getAttr(item, "NUMBER_OF_ROOMS")
     try:
         num = int(val) if val else None
@@ -290,11 +346,27 @@ def getRooms(item):
 
 
 def getPostcode(item):
+    """
+    Extracts the postcode from the item attributes.
+
+    Args:
+        item (dict): The listing item dictionary.
+    Returns:
+        str|None: The postcode.
+    """
     return getAttr(item, "POSTCODE")
 
 
 # noinspection PyBroadException
 def getCoordinates(item):
+    """
+    Extracts and splits the COORDINATES attribute into latitude and longitude.
+
+    Args:
+        item (dict): The listing item dictionary.
+    Returns:
+        tuple: (latitude float|None, longitude float|None).
+    """
     coords = getAttr(item, "COORDINATES")
     if not coords:
         return None, None
@@ -306,20 +378,52 @@ def getCoordinates(item):
 
 
 def getLocationQuality(item):
+    """
+    Extracts the location quality score.
+
+    Args:
+        item (dict): The listing item dictionary.
+    Returns:
+        float|None: The location quality value.
+    """
     val = getAttr(item, "LOCATION_QUALITY")
     return float(val) if val else None
 
 
 def getPropertyType(item):
+    """
+    Extracts the property type (e.g., House, Apartment).
+
+    Args:
+        item (dict): The listing item dictionary.
+    Returns:
+        str|None: The property type.
+    """
     return getAttr(item, "PROPERTY_TYPE")
 
 
 def getPublished(item):
+    """
+    Extracts the publication timestamp.
+
+    Args:
+        item (dict): The listing item dictionary.
+    Returns:
+        int|None: The publication date as an integer.
+    """
     val = getAttr(item, "PUBLISHED")
     return int(val) if val else None
 
 
 def getHeating(item):
+    """
+    Parses heating information from the detail data and returns a mapping of heating types.
+
+    Args:
+        item (dict): The detail data dictionary.
+    Returns:
+        dict: A dictionary of boolean flags (0 or 1) for various heating types.
+    """
     h = item.get("heizung", "").lower() if item else ""
     return {
         Listings.IS_OIL: int("öl" in h),
@@ -338,6 +442,15 @@ def getHeating(item):
 
 
 def hasFeature(item, key):
+    """
+    Checks if a specific feature keyword exists in the detail data keys or values.
+
+    Args:
+        item (dict): The detail data dictionary.
+        key (str): The keyword to search for.
+    Returns:
+        int: 1 if found, 0 otherwise.
+    """
     if not item:
         return 0
     if key in item:
@@ -348,6 +461,14 @@ def hasFeature(item, key):
 
 
 def getFeatureNumber(val):
+    """
+    Cleans a string value (removing currency symbols and formatting) and extracts the first number.
+
+    Args:
+        val (str|int|float): The value to parse.
+    Returns:
+        float|None: The extracted number as a float.
+    """
     if not val:
         return None
 
@@ -363,6 +484,14 @@ def getFeatureNumber(val):
 
 
 def getAccommodations(item):
+    """
+    Parses accommodation features (balcony, garage, etc.) and energy ratings from detail data.
+
+    Args:
+        item (dict): The detail data dictionary.
+    Returns:
+        dict: A dictionary containing feature flags and sizes.
+    """
     if not item:
         return {}
 

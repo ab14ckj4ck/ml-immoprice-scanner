@@ -69,7 +69,8 @@ def loadLocationData(path, target):
     tree = ET.parse(path)
     root = tree.getroot()
 
-    dataset = root.findall(target)
+    elements = root.findall(target)
+    dataset = []
 
     for d in elements:
         data = {

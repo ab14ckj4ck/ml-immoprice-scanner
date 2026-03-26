@@ -1,7 +1,6 @@
 database/.env
-data/base-links.xml
-data/source1-name.txt
-data/source1.txt
+data/*.txt
+data/*.xml
 .venv/*
 __pycache__/*
 .idea/*
