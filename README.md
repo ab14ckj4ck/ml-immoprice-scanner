@@ -48,8 +48,8 @@ This project covers the full workflow from **data acquisition → preprocessing 
     [x] Add geospatial features
     [x] Implement log_price model
     [ ] Implement ppm2 model
-    [ ] Add austria module
-    [x] Add GUI
+    [x] Add austria module
+    [ ] Add GUI
 
 ---
 
