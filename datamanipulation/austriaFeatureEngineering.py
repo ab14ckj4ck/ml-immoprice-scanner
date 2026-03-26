@@ -14,8 +14,6 @@ TARGET_POI = "poi"
 URBAN_THRESHOLD = 25
 PAGES = 20
 
-
-
 logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
                     format='%(asctime)s - %(levelname)s - %(message)s')
 

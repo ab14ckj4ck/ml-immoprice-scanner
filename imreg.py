@@ -3,7 +3,7 @@ from datamanipulation.austriaFeatureEngineering import engineerFeatures
 from mlModels.regression.runRegression import runModels
 import logging
 
-def main(SOURCE_1=True, SCRAPE_SOURCE_1=True, CLEAN_DATA=False, MODELS=False, PAGES=20, ROWS=100):
+def main(SOURCE_1=False, SCRAPE_SOURCE_1=False, CLEAN_DATA=False, MODELS=False, PAGES=20, ROWS=100):
     """
     Main entry point for the scraper application.
 
