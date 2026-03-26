@@ -9,4 +9,3 @@ kCheatsheet.md
 *.log
 mlModels/kmeans/data/*.pkl
 mlModels/regression/data/*.pkl
-utils/*

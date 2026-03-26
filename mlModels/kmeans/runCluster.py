@@ -3,7 +3,7 @@ from mlModels.kmeans.data.data import getData
 import logging
 
 
-logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
+logging.basicConfig(filename='app.log', level=logging.INFO, filemode='w',
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 def runCluster():

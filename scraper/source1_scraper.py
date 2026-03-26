@@ -5,26 +5,21 @@ and optionally scrapes detailed information for each listing.
 The data is then cleaned and stored in a database.
 """
 
-import re, json, logging
-import numpy as np
-import pandas as pd
 from datetime import date
-
 from datamanipulation.loaders import loadBaseLinks
 from database.db import getConnection
 from database.db_insertion import upsertListings, insertHistory, updateListings
 from scraper.source1_detail_scraper import detailScraper, fetch
 from userinteraction.gui.guiData import getTerminateFlag
-from data.enums import Listings, Mappings
+from utils.enums import Listings, Mappings, ScraperValues
 
-STATES = ("kaernten",)
-UPPER_PAGE_RANGE = 3
-ID_LENGTH = 4
-ROWS = 100
-BATCH_SIZE = 20
-PAGE_SIZE = 20
+import re, json, logging
+import numpy as np
+import pandas as pd
+import time
 
-logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
+
+logging.basicConfig(filename='app.log', level=logging.INFO, filemode='w',
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 
@@ -60,7 +55,7 @@ def readSource(path="data/source1.txt"):
         return f.read().strip()
 
 
-def buildPageUrls(base_links, pages=UPPER_PAGE_RANGE, rows=ROWS):
+def buildPageUrls(base_links, pages=5, rows=30):
     """
     Constructs a list of URLs to scrape based on base links, states, and page ranges.
 
@@ -73,7 +68,7 @@ def buildPageUrls(base_links, pages=UPPER_PAGE_RANGE, rows=ROWS):
     """
     urls = []
     for l in base_links:
-        for s in STATES:
+        for s in ScraperValues.STATES:
             url = l[Listings.URL]
 
             url = url + s + "?rows=" + str(rows)
@@ -165,7 +160,7 @@ def parseNextData(data, fin_type, scrape_details, total_items, processed_items, 
 
             result = {
                 Listings.ID: id_,
-                Listings.LINK: detail_link,
+                Listings.URL: detail_link,
                 Listings.PRICE: getPrice(item),
                 Listings.RENT: getRent(item),
                 Listings.SAFETY_DEPOSIT: getSafetyDeposit(detail_data),
@@ -192,7 +187,7 @@ def parseNextData(data, fin_type, scrape_details, total_items, processed_items, 
             results.append(result)
 
         except Exception as e:
-            print("Parse error: ", e)
+            logging.exception(f"Exception while parsing: {detail_link}: ")
             continue
 
     return results, processed_items, known_results
@@ -430,7 +425,7 @@ def getHeating(item):
         Listings.IS_BIO: int("bio" in h),
         Listings.IS_ELECTRO: int("elektrisch" in h),
         Listings.IS_PELLETS: int("pellets" in h),
-        Listings.PHOTOVOLTAIK: int("photovoltaik" in h),
+        Listings.IS_PHOTOVOLTAIK: int("photovoltaik" in h),
         Listings.IS_GEOTHERMAL: int("erdwärme" in h),
         Listings.IS_AIR_HEATING: int("luftwärmepumpe" in h),
         Listings.IS_FLOOR: int("fußbodenheizung" in h),
@@ -574,7 +569,7 @@ def getAllIds(conn):
     return pd.read_sql("SELECT id, price, scraped_at FROM listings", conn)
 
 
-def baseScraper(pages, scrape_details=True, rows=ROWS):
+def baseScraper(pages, scrape_details=True, rows=30):
     """
     Main entry point for the scraping process. Orchestrates URL building,
     fetching, parsing, and database insertion.
@@ -590,9 +585,10 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
     seen_ids = set()
     known_listings = 0
     new_listings = 0
-
     counter_known_listings = 0
     counter_new_listings = 0
+    sleep_time = 1
+    status_code = 0
 
     conn = getConnection()
     cur = conn.cursor()
@@ -609,11 +605,22 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
     print(f"Scraping {len(urls)} pages...\n")
 
     for i, u in enumerate(urls, start=1):
-        html = fetch(u[Listings.URL])
-        if not html:
-            continue
+        html = ""
 
-        if "<title>" in html:
+        while status_code != 200:
+            html, status_code = fetch(u[Listings.URL])
+            if not html:
+                continue
+
+            if status_code != 200:
+                sleep_time = min(sleep_time * 2, ScraperValues.MAX_SLEEP_TIME)
+            else:
+                sleep_time = max(sleep_time * 0.9, ScraperValues.MIN_SLEEP_TIME)
+
+            time.sleep(sleep_time)
+
+        status_code = 0
+        if html != "" and "<title>" in html:
             title = html.split("<title>")[1].split("</title>")[0]
             logging.error("Blocked by Bot-stop INFO: %s", title)
 
@@ -650,10 +657,10 @@ def baseScraper(pages, scrape_details=True, rows=ROWS):
             return
 
         try:
-            if len(buffer) >= BATCH_SIZE or i == len(urls) or len(history_buffer) >= BATCH_SIZE:
-                upsertListings(buffer, conn=conn, cur=cur, PAGE_SIZE=PAGE_SIZE)
-                insertHistory(history_buffer, cur=cur, PAGE_SIZE=PAGE_SIZE)
-                updateListings(history_buffer, cur=cur, PAGE_SIZE=PAGE_SIZE)
+            if len(buffer) >= ScraperValues.BATCH_SIZE or i == len(urls) or len(history_buffer) >= ScraperValues.BATCH_SIZE:
+                upsertListings(buffer, conn=conn, cur=cur, PAGE_SIZE=ScraperValues.PAGE_SIZE)
+                insertHistory(history_buffer, cur=cur, PAGE_SIZE=ScraperValues.PAGE_SIZE)
+                updateListings(history_buffer, cur=cur, PAGE_SIZE=ScraperValues.PAGE_SIZE)
 
                 if counter_new_listings > 100 or counter_known_listings > 100:
                     logging.info(

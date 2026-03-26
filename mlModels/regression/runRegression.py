@@ -16,7 +16,7 @@ DROP_COLS_APT = ["is_mfh", "is_efh", "is_lh", "is_villa", "is_dhh",
 
 DROP_COLS_HOUSE = ["is_dgw", "is_egw", "is_gc", "is_gw", "is_ms", "is_phw", "is_apt", "is_wg"]
 
-logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
+logging.basicConfig(filename='app.log', level=logging.INFO, filemode='w',
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 

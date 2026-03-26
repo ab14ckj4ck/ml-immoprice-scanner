@@ -6,23 +6,12 @@ attributes like price, deposit (Kaution), energy certificates (HWB, fGEE), and g
 listing attributes from the page structure.
 """
 
-import requests, re, time, random, logging
 from bs4 import BeautifulSoup
+from utils.enums import ScraperValues
 
-ENERGY_MAP = {
-    "A++": 9,
-    "A+": 8,
-    "A": 7,
-    "B": 6,
-    "C": 5,
-    "D": 4,
-    "E": 3,
-    "F": 2,
-    "G": 1
-}
+import requests, re, time, random, logging
 
-
-logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
+logging.basicConfig(filename='app.log', level=logging.INFO, filemode='w',
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 def readSource(path="data/source1.txt"):
@@ -51,10 +40,10 @@ def fetch(url, retries=3):
     Returns:
         str: The HTML content if successful, None otherwise.
     """
-    for attempt in range(retries):
-        time.sleep(random.uniform(2, 6))
+    response = None
 
-        if random.random() < 0.1:
+    for attempt in range(retries):
+        if random.random() < 0.05:
             time.sleep(random.uniform(5,random.uniform(5,15)))
 
         headers = {
@@ -69,21 +58,13 @@ def fetch(url, retries=3):
 
         try:
             response = session.get(url, headers=headers, timeout=10)
-
-            if response.status_code == 200:
-                return response.text
-
-            if response.status_code == 429:
-                logging.warning("⚠️ Rate limited → sleeping...")
-                time.sleep(random.uniform(20, 60))
-
-            else:
-                logging.warning(f"Triggered response code {response.status_code}")
+            break
 
         except Exception as e:
             logging.exception("Fetch error:", e)
+            raise Exception("Fetch error!")
 
-    return None
+    return response.text, response.status_code
 
 
 # noinspection PyArgumentList
@@ -142,11 +123,11 @@ def parseEnergy(soup):
 
     if hwb_class:
         cls = hwb_class.group(1).upper()
-        data["hwb_class"] = ENERGY_MAP.get(cls, 0)
+        data["hwb_class"] = ScraperValues.ENERGY_MAP.get(cls, 0)
 
     if fgee_class:
         cls = fgee_class.group(1).upper()
-        data["fgee_class"] = ENERGY_MAP.get(cls, 0)
+        data["fgee_class"] = ScraperValues.ENERGY_MAP.get(cls, 0)
 
     return data
 
@@ -190,10 +171,23 @@ def detailScraper(url):
     Returns:
         dict: A combined dictionary of all scraped attributes, price info, and energy data.
     """
-    html = fetch(url)
-    if not html:
-        logging.warning("Unreachable detail page in listings: %s", url)
-        return {}
+    sleep_time = 1
+    status_code = 0
+    html = ""
+    while status_code != 200:
+        html, status_code = fetch(url)
+        if not html:
+            logging.warning("Unreachable detail page in listings: %s", url)
+            return {}
+
+        if status_code != 200:
+            sleep_time = min(sleep_time * 2, ScraperValues.MAX_SLEEP_TIME)
+        else:
+            sleep_time = max(sleep_time * 0.9, ScraperValues.MIN_SLEEP_TIME)
+
+        time.sleep(sleep_time)
+
+    status_code = 0
 
     soup = BeautifulSoup(html, "lxml")
 

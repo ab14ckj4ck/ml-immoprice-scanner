@@ -11,7 +11,7 @@ import logging
 CV = True
 CV_FOLDS = 5
 
-logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
+logging.basicConfig(filename='app.log', level=logging.INFO, filemode='w',
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 

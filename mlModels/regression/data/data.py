@@ -2,7 +2,7 @@ from database.db import getConnection
 import pandas as pd
 import logging
 
-logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
+logging.basicConfig(filename='app.log', level=logging.INFO, filemode='w',
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 def getData(filter_type: str, filter_val: str, table: str):

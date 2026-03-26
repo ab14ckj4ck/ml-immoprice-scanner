@@ -1,5 +1,5 @@
 from psycopg2.extras import execute_batch
-from data.enums import Listings, Features
+from utils.enums import Listings, Features
 
 
 def upsertListings(listings, PAGE_SIZE, conn=None, cur=None):
@@ -17,7 +17,7 @@ def upsertListings(listings, PAGE_SIZE, conn=None, cur=None):
 
     query = """
             INSERT INTO listings (id,
-                                  link,
+                                  url,
                                   price,
                                   rent,
                                   safety_deposit,
@@ -74,7 +74,7 @@ def upsertListings(listings, PAGE_SIZE, conn=None, cur=None):
                                            safety_deposit = EXCLUDED.safety_deposit,
                                            scraped_at     = EXCLUDED.scraped_at
             """
-    values = [(l[Listings.ID], l[Listings.LINK], l[Listings.PRICE], l[Listings.RENT], l[Listings.SAFETY_DEPOSIT],
+    values = [(l[Listings.ID], l[Listings.URL], l[Listings.PRICE], l[Listings.RENT], l[Listings.SAFETY_DEPOSIT],
                l[Listings.LIVING_AREA], l[Listings.ESTATE_SIZE], l[Listings.ROOMS], l[Listings.POSTCODE],
                l[Listings.STATE], l[Listings.LAT], l[Listings.LON], l[Listings.LOCATION_QUALITY],
                l[Listings.PROPERTY_TYPE], l[Listings.FINANCE_TYPE], l[Listings.PUBLISHED], l[Listings.SCRAPED_AT],
@@ -82,10 +82,11 @@ def upsertListings(listings, PAGE_SIZE, conn=None, cur=None):
                l[Listings.HAS_CELLAR], l[Listings.HAS_PARKING], l[Listings.HAS_CLOSET], l[Listings.HAS_BALCONY],
                l[Listings.BALCONY_SIZE], l[Listings.HAS_GARDEN], l[Listings.GARDEN_SIZE], l[Listings.HAS_TERRACE],
                l[Listings.TERRACE_SIZE], l[Listings.HAS_LOGGIA], l[Listings.LOGGIA_SIZE], l[Listings.HAS_WINTERGARDEN],
-               l[Listings.WINTERGARDEN_SIZE], l["oil"], l["bio"], l["electro"], l["pellets"], l["photovoltaik"],
-               l["geothermal"], l["air_heating"], l["floor_heating"], l["central_heating"], l["ceiling_heating"],
-               l["oven_heating"], l["infrared_heating"], l["hwb"], l["hwb_class"], l["fgee"], l["fgee_class"],) for l in
-        listings]
+               l[Listings.WINTERGARDEN_SIZE], l[Listings.IS_OIL], l[Listings.IS_BIO], l[Listings.IS_ELECTRO],
+               l[Listings.IS_PELLETS], l[Listings.IS_PHOTOVOLTAIK], l[Listings.IS_GEOTHERMAL],
+               l[Listings.IS_AIR_HEATING], l[Listings.IS_FLOOR], l[Listings.IS_CENTRAL], l[Listings.IS_CEILING],
+               l[Listings.IS_OVEN], l[Listings.IS_INFRARED], l[Listings.HWB], l[Listings.HWB_CLASS], l[Listings.FGEE],
+               l[Listings.FGEE_CLASS]) for l in listings]
     execute_batch(cur, query, values, page_size=PAGE_SIZE)
 
 
@@ -173,10 +174,11 @@ def insertFeatures(features, PAGE_SIZE, conn=None, cur=None):
             """
     values = [(f[Features.ID], f[Features.LOG_PPM2], f[Features.LOG_ESTATE_RATIO], f[Features.LOCATION_CLUSTER],
                f[Features.LOG_DISTANCE_TO_NEAREST_CITY], f[Features.LOG_DISTANCE_TO_MAJOR_CITY],
-               f[Features.LOG_DISTANCE_TO_TOURISM], f[Features.LOG_DISTANCE_TRAIN_STATION], f[Features.STATE_VIE],
-               f[Features.STATE_NOE], f[Features.STATE_OOE], f[Features.STATE_SBG], f[Features.STATE_BGL],
-               f[Features.STATE_STK], f[Features.STATE_KTN], f[Features.STATE_TRL], f[Features.STATE_VBG],
-               f[Features.LOG_BALCONY_SIZE], f[Features.LOG_GARDEN_SIZE], f[Features.LOG_TERRACE_SIZE],
-               f[Features.LOG_LOGGIA_SIZE], f[Features.LOG_WINTERGARDEN_SIZE]) for f in features]
+               f[Features.LOG_DISTANCE_TO_TOURISM], f[Features.LOG_DISTANCE_TRAIN_STATION], f[Features.LOG_COUNT_5KM],
+               f[Features.LOG_COUNT_10KM], f[Features.LOG_COUNT_25KM], f[Features.STATE_VIE], f[Features.STATE_NOE],
+               f[Features.STATE_OOE], f[Features.STATE_SBG], f[Features.STATE_BGL], f[Features.STATE_STK],
+               f[Features.STATE_KTN], f[Features.STATE_TRL], f[Features.STATE_VBG], f[Features.LOG_BALCONY_SIZE],
+               f[Features.LOG_GARDEN_SIZE], f[Features.LOG_TERRACE_SIZE], f[Features.LOG_LOGGIA_SIZE],
+               f[Features.LOG_WINTERGARDEN_SIZE]) for f in features]
 
     execute_batch(cur, query, values, page_size=PAGE_SIZE)

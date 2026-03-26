@@ -1,7 +1,7 @@
 CREATE TABLE listings
 (
     id                TEXT PRIMARY KEY,
-    link              TEXT,
+    url              TEXT,
 
     price             FLOAT,
     rent              FLOAT,

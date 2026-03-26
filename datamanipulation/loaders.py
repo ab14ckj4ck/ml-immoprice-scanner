@@ -1,10 +1,11 @@
+from utils.enums import LoaderValues
+
 import xml.etree.ElementTree as ET
 import logging
 
-VALID_IMMO_TYPES = ("house", "apartment", "projects")
-VALID_FIN_TYPES = ("rent", "buy")  # TODO implement "project" handling
 
-logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
+
+logging.basicConfig(filename='app.log', level=logging.INFO, filemode='w',
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 def readSource(path="data/source1-name.txt"):
@@ -35,25 +36,25 @@ def loadBaseLinks(path="data/base-links.xml"):
     links = []
     name = readSource()
 
-    for link_group in root.findall("link"):
-        if link_group.get("category") != name:
+    for link_group in root.findall(LoaderValues.LINK):
+        if link_group.get(LoaderValues.CATEGORY) != name:
             continue
 
-        for immo in link_group.findall("immo"):
-            immo_type = immo.get("category")
-            if immo_type not in VALID_IMMO_TYPES:
+        for immo in link_group.findall(LoaderValues.IMMO):
+            immo_type = immo.get(LoaderValues.CATEGORY)
+            if immo_type not in LoaderValues.VALID_IMMO_TYPES:
                 continue
 
-            for t in immo.findall("type"):
-                fin_type = t.get("category")
-                if fin_type not in VALID_FIN_TYPES:
+            for t in immo.findall(LoaderValues.TYPE):
+                fin_type = t.get(LoaderValues.CATEGORY)
+                if fin_type not in LoaderValues.VALID_FIN_TYPES:
                     continue
 
-                link = t.find("link").text
+                link = t.find(LoaderValues.LINK).text
 
                 links.append({
-                    "url": link,
-                    "fin_type": fin_type,
+                    LoaderValues.URL: link,
+                    LoaderValues.FIN_TYPE: fin_type,
                 })
 
     return links
@@ -74,9 +75,9 @@ def loadLocationData(path, target):
 
     for d in elements:
         data = {
-            "name": d.get("name"),
-            "lat": float(d.find("lat").text),
-            "lon": float(d.find("lon").text),
+            LoaderValues.NAME: d.get(LoaderValues.NAME),
+            LoaderValues.LAT: float(d.find(LoaderValues.LAT).text),
+            LoaderValues.LON: float(d.find(LoaderValues.LON).text),
         }
         dataset.append(data)
 

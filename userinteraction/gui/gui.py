@@ -16,7 +16,7 @@ import joblib, threading, logging, subprocess, time
 geolocator = Nominatim(user_agent="ImmoScraper")
 is_running = False
 
-logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
+logging.basicConfig(filename='app.log', level=logging.INFO, filemode='w',
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 def getCoordinates(addr):

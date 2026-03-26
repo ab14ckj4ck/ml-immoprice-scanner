@@ -1,20 +1,15 @@
 from database.db import getConnection
 from database.db_insertion import insertFeatures
 from datamanipulation.loaders import loadLocationData
-from data.enums import *
+from utils.enums import *
 
 import numpy as np
 import pandas as pd
 import logging
 
-TARGET_CITY = "city"
-TARGET_MAJOR_CITY = "major_city"
-TARGET_STATION = "station"
-TARGET_POI = "poi"
-URBAN_THRESHOLD = 25
-PAGES = 20
 
-logging.basicConfig(filename='app.log', level=logging.INFO, filemode='a',
+
+logging.basicConfig(filename='app.log', level=logging.INFO, filemode='w',
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 
@@ -130,21 +125,21 @@ def engineerFeatures():
     df_features[Features.LOCATION_CLUSTER] = -1 # placeholder
 
     # calc distance features
-    cities = loadLocationData(path=DataFiles.CITIES_FILE, target=TARGET_CITY)
+    cities = loadLocationData(path=DataFiles.CITIES_FILE, target=FEValues.TARGET_CITY)
     poi, delete_5, delete_10, delete_25 = findNearestPointOfInterest(df, cities)
     df_features[Features.LOG_DISTANCE_TO_NEAREST_CITY] = np.log(poi + 1)
 
-    major_cities = loadLocationData(path=DataFiles.MAJOR_CITIES_FILE, target=TARGET_MAJOR_CITY)
+    major_cities = loadLocationData(path=DataFiles.MAJOR_CITIES_FILE, target=FEValues.TARGET_MAJOR_CITY)
     poi, delete_5, delete_10, delete_25 = findNearestPointOfInterest(df, major_cities)
     df_features[Features.LOG_DISTANCE_TO_MAJOR_CITY] = np.log(poi + 1)
 
-    train_stations = loadLocationData(path=DataFiles.TRAIN_STATIONS_FILE, target=TARGET_STATION)
+    train_stations = loadLocationData(path=DataFiles.TRAIN_STATIONS_FILE, target=FEValues.TARGET_STATION)
     poi, delete_5, delete_10, delete_25 = findNearestPointOfInterest(df, train_stations)
     df_features[Features.LOG_DISTANCE_TRAIN_STATION] = np.log(poi + 1)
 
-    pois = loadLocationData(path=DataFiles.POI_FILE, target=TARGET_POI)
+    pois = loadLocationData(path=DataFiles.POI_FILE, target=FEValues.TARGET_POI)
     poi, count_5km, count_10km, count_25km = findNearestPointOfInterest(df, pois)
-    df_features[Features.LOG_DISTANCE_TO_TOURISM] = np.log(pois + 1)
+    df_features[Features.LOG_DISTANCE_TO_TOURISM] = np.log(poi + 1)
     df_features[Features.LOG_COUNT_5KM] = np.log(count_5km + 1)
     df_features[Features.LOG_COUNT_10KM] = np.log(count_10km + 1)
     df_features[Features.LOG_COUNT_25KM] = np.log(count_25km + 1)
@@ -159,4 +154,8 @@ def engineerFeatures():
     df_features[Features.LOG_LOGGIA_SIZE] = np.log(df[Listings.LOGGIA_SIZE] + 1)
     df_features[Features.LOG_WINTERGARDEN_SIZE] = np.log(df[Listings.WINTERGARDEN_SIZE] + 1)
 
-    insertFeatures(df_features, PAGES, conn, cur)
+    insertFeatures(df_features.to_dict(orient="records"), FEValues.PAGES, conn, cur)
+
+    conn.commit()
+    cur.close()
+    conn.close()
