@@ -33872,4 +33872,24 @@
         <lat>47.952767</lat>
         <lon>16.4135964</lon>
     </poi>
+    <poi name="Lange Lacke_0">
+        <lat>47.767064</lat>
+        <lon>16.880755</lon>
+    </poi>
+    <poi name="Lange Lacke_1">
+        <lat>47.756818</lat>
+        <lon>16.880516</lon>
+    </poi>
+    <poi name="Lange Lacke_2">
+        <lat>47.760682</lat>
+        <lon>16.866019</lon>
+    </poi>
+    <poi name="Lange Lacke_3">
+        <lat>47.759363</lat>
+        <lon>16.854694</lon>
+    </poi>
+    <poi name="Lange Lacke_4">
+        <lat>47.766974</lat>
+        <lon>16.855798</lon>
+    </poi>
 </pois>

@@ -5,7 +5,7 @@ import numpy as np
 # =========================
 # CONFIG
 # =========================
-INPUT_FILE = "lake.json"
+INPUT_FILE = "lake_carinthia.json"
 OUTPUT_FILE = "lakes_pois.xml"
 
 MIN_SIZE_DEG = 0.02   # ~2km
