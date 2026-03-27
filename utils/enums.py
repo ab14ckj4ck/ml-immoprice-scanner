@@ -90,7 +90,7 @@ class DataFiles:
 
 
 class ScraperValues:
-    STATES = ("kaernten", "wien")  # TODO implement buttons for this values to GUI
+    STATES = ("kaernten", "wien", "steiermark", "oberoesterreich", "niederoesterreich", "burgenland", "salzburg", "tirol", "vorarlberg")  # TODO implement buttons for this values to GUI
     MAX_SLEEP_TIME = 15
     MIN_SLEEP_TIME = 0.5
     ENERGY_MAP = {"A++": 9, "A+": 8, "A": 7, "B": 6, "C": 5, "D": 4, "E": 3, "F": 2, "G": 1}
@@ -127,8 +127,9 @@ class TestParam:
     TEST_LOADERS = True
 
 
+# TODO Implement runModel again
 class ModelParam:
-    REGRESSION = False # TODO THIS IS NOT WORKING ANYMORE
+    REGRESSION = False
     CV_FOLDS = 5
     HOUSES = True
     APARTMENTS = True

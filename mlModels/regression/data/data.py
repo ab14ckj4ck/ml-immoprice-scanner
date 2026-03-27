@@ -3,8 +3,6 @@ from utils.enums import Listings, Features, PropType, Mappings
 import pandas as pd
 import logging
 
-# TODO THIS IS NOT WORKING ANYMORE
-
 logging.basicConfig(filename='app.log', level=logging.INFO, filemode='w',
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
