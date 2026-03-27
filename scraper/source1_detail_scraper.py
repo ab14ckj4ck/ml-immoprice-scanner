@@ -61,8 +61,7 @@ def fetch(url, retries=3):
             break
 
         except Exception as e:
-            logging.exception("Fetch error:", e)
-            raise Exception("Fetch error!")
+            logging.exception("Fetch error: %s", e)
 
     return response.text, response.status_code
 
@@ -147,11 +146,12 @@ def parseAttributes(soup):
 
     for item in items:
         title = item.find("span")
-        value = item.find_all("div")[-1]
-
-        if not title or not value:
+        divs = item.find_all("div")
+        
+        if not title or not divs:
             continue
 
+        value = divs[-1]
         key = title.text.strip()
         val = value.text.strip()
 

@@ -94,8 +94,8 @@ class ScraperValues:
     MAX_SLEEP_TIME = 15
     MIN_SLEEP_TIME = 0.5
     ENERGY_MAP = {"A++": 9, "A+": 8, "A": 7, "B": 6, "C": 5, "D": 4, "E": 3, "F": 2, "G": 1}
-    BATCH_SIZE = 20
-    PAGE_SIZE = 20
+    BATCH_SIZE = 200
+    PAGE_SIZE = 200
 
 
 class FEValues:
@@ -125,6 +125,8 @@ class TestParam:
     TEST_SOURCE_1_DETAIL = True
     TEST_CLEAN = True
     TEST_LOADERS = True
+    TEST_AUSTRIA_FE = True
+    TEST_DB = True
 
 
 # TODO Implement runModel again
