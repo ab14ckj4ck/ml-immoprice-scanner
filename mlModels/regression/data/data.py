@@ -1,11 +1,14 @@
 from database.db import getConnection
+from utils.enums import Listings, Features, PropType, Mappings
 import pandas as pd
 import logging
+
+# TODO THIS IS NOT WORKING ANYMORE
 
 logging.basicConfig(filename='app.log', level=logging.INFO, filemode='w',
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
-def getData(filter_type: str, filter_val: str, table: str):
+def getData(filter_type: str, filter_val: str):
     """
     Fetches and merges rental features and listings from the database.
     Args:
@@ -17,79 +20,33 @@ def getData(filter_type: str, filter_val: str, table: str):
         pd.DataFrame: A dataframe containing selected features and target variables.
     """
     conn = getConnection()
-    df_features = None
-    if table == "rent_features":
-        df_features = pd.read_sql(f"SELECT * FROM rent_features", conn)
-    elif table == "buy_features":
-        df_features = pd.read_sql(f"SELECT * FROM buy_features", conn)
-    else:
-        logging.error("Invalid table name to fetch data for clustering from")
-
+    df_features = pd.read_sql("SELECT * FROM features", conn)
     df_listings = pd.read_sql("SELECT * FROM listings", conn)
 
-    df = df_features.merge(df_listings, on="id")
+    df = df_features.merge(df_listings, on=Listings.ID)
     df = df[df[filter_type] == filter_val]
 
     df = df[
         [
-            "id", "living_area", "estate_size", "rooms", "has_carport", "has_elevator", "has_kitchen",
-            "has_garage", "finance_type",
-            "has_cellar", "has_parking", "has_closet", "has_balcony", "balcony_size", "has_garden",
-            "garden_size",
-            "has_terrace", "terrace_size", "has_loggia", "loggia_size", "has_wintergarden", "wintergarden_size",
-            "is_oil", "is_bio", "is_electro", "is_pellets", "is_photovoltaik", "is_geothermal", "is_air_heating",
-            "is_floor", "is_central", "is_ceiling", "is_oven", "is_infrared", "hwb", "fgee",
-            "log_price", "estate_ratio", "rpm2", "balcony_ratio", "garden_ratio", "wintergarden_ratio", "terrace_ratio",
-            "rooms_per_property", "distance_nearest_city", "distance_villach", "distance_klagenfurt",
-            "distance_nearest_lake",
-            "is_urban", "area_per_room", "is_mfh", "is_efh", "is_lh", "is_villa", "is_dhh", "is_sbc", "is_rh", "is_ab",
-            "is_bh", "is_gh", "is_dgw", "is_egw", "is_gc", "is_gw", "is_ms", "is_phw", "is_apt", "is_wg",
-            "log_living_area", "log_estate_size", "log_balcony_size", "log_garden_size", "log_terrace_size",
-            "log_loggia_size", "log_wintergarden_size", "log_distance_nearest_city", "log_distance_nearest_lake",
-            "log_distance_villach", "log_distance_klagenfurt"
+            Listings.ID, Listings.LIVING_AREA, Listings.ROOMS, Listings.PROPERTY_TYPE, Listings.HAS_CARPORT,
+            Listings.HAS_ELEVATOR, Listings.HAS_KITCHEN, Listings.HAS_GARAGE, Listings.HAS_CELLAR,
+            Listings.HAS_PARKING, Listings.HAS_CLOSET, Listings.IS_OIL, Listings.IS_BIO, Listings.IS_ELECTRO,
+            Listings.IS_PELLETS, Listings.IS_PHOTOVOLTAIK, Listings.IS_GEOTHERMAL, Listings.IS_AIR_HEATING,
+            Listings.IS_FLOOR, Listings.IS_CENTRAL, Listings.IS_CEILING, Listings.IS_OVEN, Listings.IS_INFRARED,
+            Listings.HWB, Listings.HWB_CLASS, Listings.FGEE, Listings.FGEE_CLASS,
+
+            Features.LOG_PRICE, Features.LOG_ESTATE_RATIO,
+            Features.LOG_DISTANCE_TO_NEAREST_CITY, Features.LOG_DISTANCE_TO_MAJOR_CITY,
+            Features.LOG_DISTANCE_TO_TOURISM, Features.LOG_DISTANCE_TRAIN_STATION,
+            Features.LOG_COUNT_5KM, Features.LOG_COUNT_10KM, Features.LOG_COUNT_25KM,
+            Features.STATE_VIE, Features.STATE_NOE, Features.STATE_OOE, Features.STATE_SBG, Features.STATE_BGL,
+            Features.STATE_STK, Features.STATE_KTN, Features.STATE_TRL, Features.STATE_VBG,
+            Features.LOG_BALCONY_SIZE, Features.LOG_GARDEN_SIZE, Features.LOG_TERRACE_SIZE,
+            Features.LOG_LOGGIA_SIZE, Features.LOG_WINTERGARDEN_SIZE
         ]
     ]
     conn.close()
     return df
-
-
-def housingTypeSplit(df_X, df_y):
-    """
-    Splits the dataset into houses and apartments based on specific boolean columns.
-
-    Args:
-        df_X (pd.DataFrame): Feature matrix.
-        df_y (pd.Series): Target vector.
-
-    Returns:
-        tuple: (df_house_X, df_house_y, df_apt_X, df_apt_y)
-    """
-    house_cols = [
-        "is_mfh", "is_efh", "is_lh", "is_villa", "is_dhh",
-        "is_sbc", "is_rh", "is_ab", "is_bh", "is_gh"
-    ]
-
-    apt_cols = [
-        "is_dgw", "is_egw", "is_gc", "is_gw",
-        "is_ms", "is_phw", "is_apt", "is_wg"
-    ]
-
-    house_mask = df_X[house_cols].any(axis=1)
-    apt_mask = df_X[apt_cols].any(axis=1)
-
-    df_house_X = df_X[house_mask]
-    df_house_y = df_y[house_mask]
-
-    df_apt_X = df_X[apt_mask]
-    df_apt_y = df_y[apt_mask]
-
-    df_apt_X = df_apt_X.drop(columns=house_mask, errors="ignore")
-    df_apt_y = df_apt_y.drop(columns=house_mask, errors="ignore")
-
-    df_house_X = df_house_X.drop(columns=apt_mask, errors="ignore")
-    df_house_y = df_house_y.drop(columns=apt_mask, errors="ignore")
-
-    return df_house_X, df_house_y, df_apt_X, df_apt_y
 
 
 def getRegressionData(df):
@@ -98,22 +55,32 @@ def getRegressionData(df):
     splitting by housing type.
 
     Args:
-        df (pd.DataFrame): The raw merged dataframe from getData().
+        df (pd.DataFrame): The raw merged dataframe from getClusterData().
 
     Returns:
         tuple: Split feature matrices and target vectors for houses and apartments. df_house_X, df_house_y, df_apt_X, df_apt_y
     """
     df = df.copy()
-
-    df_y = df["log_price"]
-
-    df_X = df.drop(columns=[
-        "id", "log_price", "living_area", "estate_size", "balcony_size",
-        "garden_size", "terrace_size", "loggia_size", "wintergarden_size",
-        "distance_nearest_city", "distance_villach", "distance_klagenfurt", "distance_nearest_lake",
-        "rpm2", "rooms_per_property", "area_per_room", "lat", "lon", "hwb",
+    df = df.drop(columns=[
+        Listings.ID
     ])
 
-    df_house_X, df_house_y, df_apt_X, df_apt_y = housingTypeSplit(df_X, df_y)
+    rent_null_rooms_mask = (df[Listings.ROOMS].isnull()) & (df[Listings.PROPERTY_TYPE].isin(Mappings.APARTMENT_COLS))
+    df = df[~rent_null_rooms_mask]
+    df = df.drop(columns=Mappings.DROP_COLS, errors="ignore")
+
+    house_mask = df[Listings.PROPERTY_TYPE].isin(Mappings.HOUSE_COLS)
+    apt_mask = df[Listings.PROPERTY_TYPE].isin(Mappings.APARTMENT_COLS)
+
+    df_house_X = df[house_mask]
+    df_house_y = df_house_X[Features.LOG_PRICE]
+    df_house_X = df_house_X.drop(columns=Features.LOG_PRICE, errors="ignore")
+
+    df_apt_X = df[apt_mask]
+    df_apt_y = df_apt_X[Features.LOG_PRICE]
+    df_apt_X = df_apt_X.drop(columns=Features.LOG_PRICE, errors="ignore")
+
+    df_house_X = df_house_X.drop(columns=Listings.PROPERTY_TYPE, errors="ignore")
+    df_apt_X = df_apt_X.drop(columns=Listings.PROPERTY_TYPE, errors="ignore")
 
     return df_house_X, df_house_y, df_apt_X, df_apt_y

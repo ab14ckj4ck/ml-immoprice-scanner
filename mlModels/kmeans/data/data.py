@@ -2,7 +2,7 @@ from database.db import getConnection
 import pandas as pd
 
 
-def getData():
+def getClusterData():
     conn = getConnection()
     df = pd.read_sql("SELECT * FROM listings", conn)
 

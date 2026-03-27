@@ -145,9 +145,8 @@ def insertFeatures(features, PAGE_SIZE, conn=None, cur=None):
 
     query = """
             INSERT INTO features (id,
-                                  log_ppm2,
+                                  log_price,
                                   log_estate_ratio,
-                                  location_cluster,
                                   log_distance_to_nearest_city,
                                   log_distance_to_major_city,
                                   log_distance_to_tourism,
@@ -169,10 +168,10 @@ def insertFeatures(features, PAGE_SIZE, conn=None, cur=None):
                                   log_terrace_size,
                                   log_loggia_size,
                                   log_wintergarden_size)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             ON CONFLICT (id) DO NOTHING
             """
-    values = [(f[Features.ID], f[Features.LOG_PPM2], f[Features.LOG_ESTATE_RATIO], f[Features.LOCATION_CLUSTER],
+    values = [(f[Features.ID], f[Features.LOG_PRICE], f[Features.LOG_ESTATE_RATIO],
                f[Features.LOG_DISTANCE_TO_NEAREST_CITY], f[Features.LOG_DISTANCE_TO_MAJOR_CITY],
                f[Features.LOG_DISTANCE_TO_TOURISM], f[Features.LOG_DISTANCE_TRAIN_STATION], f[Features.LOG_COUNT_5KM],
                f[Features.LOG_COUNT_10KM], f[Features.LOG_COUNT_25KM], f[Features.STATE_VIE], f[Features.STATE_NOE],

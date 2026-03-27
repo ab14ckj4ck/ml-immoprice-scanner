@@ -45,10 +45,10 @@ class Listings:
     IS_CEILING = "is_ceiling"
     IS_OVEN = "is_oven"
     IS_INFRARED = "is_infrared"
-    HWB = "HWB"
-    HWB_CLASS = "HWB_class"
-    FGEE = "fgEE"
-    FGEE_CLASS = "fgEE_class"
+    HWB = "hwb"
+    HWB_CLASS = "hwb_class"
+    FGEE = "fgee"
+    FGEE_CLASS = "fgee_class"
 
 
 class HistoryListings:
@@ -57,9 +57,8 @@ class HistoryListings:
 
 class Features:
     ID = "id"
-    LOG_PPM2 = "log_ppm2"
+    LOG_PRICE = "log_price"
     LOG_ESTATE_RATIO = "log_estate_ratio"
-    LOCATION_CLUSTER = "location_cluster"
     LOG_DISTANCE_TO_NEAREST_CITY = "log_distance_to_nearest_city"
     LOG_DISTANCE_TO_MAJOR_CITY = "log_distance_to_major_city"
     LOG_DISTANCE_TO_TOURISM = "log_distance_to_tourism"
@@ -83,66 +82,21 @@ class Features:
     LOG_WINTERGARDEN_SIZE = "log_wintergarden_size"
 
 
-class Mappings:
-    STATE_MAPPING = {
-        "kaernten": "state_ktn",
-        "wien": "state_vie",
-        "steiermark": "state_stk",
-        "niederoesterreich": "state_noe",
-        "oberoesterreich": "state_ooe",
-        "burgendland": "state_bgl",
-        "salzburg": "state_sbg",
-        "tirol": "state_trl",
-        "vorarlberg": "state_vbg"
-    }
-
-    OPTIONAL_DATA = [
-        "has_carport",
-        "has_elevator",
-        "has_kitchen",
-        "has_garage",
-        "has_cellar",
-        "has_parking",
-        "has_closet",
-        "has_balcony",
-        "has_garden",
-        "has_terrace",
-        "has_loggia",
-        "has_wintergarden",
-        "balcony_size",
-        "garden_size",
-        "terrace_size",
-        "loggia_size",
-        "wintergarden_size",
-        "hwb",
-        "hwb_class",
-        "fgee",
-        "fgee_class"
-    ]
-
 class DataFiles:
     CITIES_FILE = "data/cities.xml"
     MAJOR_CITIES_FILE = "data/major-cities.xml"
     TRAIN_STATIONS_FILE = "data/train-stations.xml"
     POI_FILE = "data/pois.xml"
 
+
 class ScraperValues:
-    STATES = ("kaernten", "wien") # TODO implement buttons for this values to GUI
+    STATES = ("kaernten", "wien")  # TODO implement buttons for this values to GUI
     MAX_SLEEP_TIME = 15
     MIN_SLEEP_TIME = 0.5
-    ENERGY_MAP = {
-        "A++": 9,
-        "A+": 8,
-        "A": 7,
-        "B": 6,
-        "C": 5,
-        "D": 4,
-        "E": 3,
-        "F": 2,
-        "G": 1
-    }
+    ENERGY_MAP = {"A++": 9, "A+": 8, "A": 7, "B": 6, "C": 5, "D": 4, "E": 3, "F": 2, "G": 1}
     BATCH_SIZE = 20
     PAGE_SIZE = 20
+
 
 class FEValues:
     TARGET_CITY = "city"
@@ -150,6 +104,7 @@ class FEValues:
     TARGET_STATION = "station"
     TARGET_POI = "poi"
     PAGES = 20
+
 
 class LoaderValues:
     VALID_IMMO_TYPES = ("house", "apartment", "projects")
@@ -164,9 +119,72 @@ class LoaderValues:
     LAT = "lat"
     LON = "lon"
 
+
 class TestParam:
     TEST_SOURCE_1 = True
     TEST_SOURCE_1_DETAIL = True
     TEST_CLEAN = True
     TEST_LOADERS = True
 
+
+class ModelParam:
+    REGRESSION = False # TODO THIS IS NOT WORKING ANYMORE
+    CV_FOLDS = 5
+    HOUSES = True
+    APARTMENTS = True
+    RENT = True
+    BUY = True
+
+
+class PropType:
+    ALM_BERG = "Almhütte/Berghütte"
+    FARMHOUSE = "Bauernhaus"
+    BUNGALOW = "Bungalow"
+    SEMI_DETACHED = "Doppelhaushälfte"
+    SINGLE_FAMILY = "Einfamilienhaus"
+    MULTI_FAMILY = "Mehrfamilienhaus"
+    COOP_HOUSE = "Genossenschaftshaus"
+    COUNTRY_HOUSE = "Landhaus"
+    TERRACED = "Reihenhaus"
+    SHELL_CONSTRUCTION = "Rohbau"
+    CASTLE_CHALET = "Schloss/Burg/Chalet"
+    VILLA = "Villa"
+
+    ROOF_APARTMENT = "Dachgeschosswohnung"
+    GROUND_APARTMENT = "Erdgeschoßwohnung"
+    GARCONNIERE = "Garconniere"
+    COOP_APARTMENT = "Genossenschaftswohnung"
+    LOFT_STUDIO = "Loft/Studio"
+    MAISONETTE = "Maisonette"
+    PENTHOUSE = "Penthousewohnung"
+    APARTMENT = "Wohnung"
+    ROOM_SHARED = "Zimmer/WG"
+
+    ATTIC_RAW = "Rohdachboden"
+    GARDEN_HOUSE = "Gartenhaus"
+    OTHER = "Sonstige"
+
+class Mappings:
+    STATE_MAPPING = {"kaernten": Features.STATE_KTN, "wien": Features.STATE_VIE, "steiermark": Features.STATE_STK,
+        "niederoesterreich": Features.STATE_NOE, "oberoesterreich": Features.STATE_OOE, "burgendland": Features.STATE_BGL,
+        "salzburg": Features.STATE_SBG, "tirol": Features.STATE_TRL, "vorarlberg": Features.STATE_VBG}
+
+    OPTIONAL_DATA = ["has_carport", "has_elevator", "has_kitchen", "has_garage", "has_cellar", "has_parking",
+        "has_closet", "has_balcony", "has_garden", "has_terrace", "has_loggia", "has_wintergarden", "balcony_size",
+        "garden_size", "terrace_size", "loggia_size", "wintergarden_size", "hwb", "hwb_class", "fgee", "fgee_class"]
+
+    HOUSE_COLS = [
+        PropType.MULTI_FAMILY, PropType.SINGLE_FAMILY, PropType.COUNTRY_HOUSE, PropType.VILLA, PropType.SEMI_DETACHED,
+        PropType.CASTLE_CHALET, PropType.TERRACED, PropType.ALM_BERG, PropType.FARMHOUSE, PropType.BUNGALOW,
+        PropType.COOP_HOUSE
+    ]
+
+    APARTMENT_COLS = [
+        PropType.ROOF_APARTMENT, PropType.GROUND_APARTMENT, PropType.GARCONNIERE, PropType.COOP_APARTMENT,
+        PropType.LOFT_STUDIO, PropType.MAISONETTE, PropType.PENTHOUSE, PropType.APARTMENT,
+        PropType.ROOM_SHARED
+    ]
+
+    DROP_COLS = [
+        Listings.HWB, Listings.HWB_CLASS, Listings.FGEE, Listings.FGEE_CLASS, Features.LOG_ESTATE_RATIO
+    ]

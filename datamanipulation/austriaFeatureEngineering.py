@@ -119,10 +119,8 @@ def engineerFeatures():
     df_features[Features.ID] = df[Listings.ID]
 
     # calc features
-    df_features[Features.LOG_PPM2] = np.log(df[Listings.PRICE] / df[Listings.LIVING_AREA] + 1)
+    df_features[Features.LOG_PRICE] = np.log(df[Listings.PRICE] + 1)
     df_features[Features.LOG_ESTATE_RATIO] = np.log(df[Listings.ESTATE_SIZE] / df[Listings.LIVING_AREA] + 1)
-
-    df_features[Features.LOCATION_CLUSTER] = -1 # placeholder
 
     # calc distance features
     cities = loadLocationData(path=DataFiles.CITIES_FILE, target=FEValues.TARGET_CITY)

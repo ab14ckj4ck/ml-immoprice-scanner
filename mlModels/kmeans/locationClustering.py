@@ -6,31 +6,40 @@ Calinski-Harabasz) to determine the optimal number of clusters for geographical
 segmentation.
 """
 
+from sklearn.cluster import KMeans
+from sklearn.metrics import silhouette_score, davies_bouldin_score, calinski_harabasz_score
+from kneed import KneeLocator
 import numpy as np
 import pandas as pd
 import math, joblib
 
-from sklearn.cluster import KMeans
-from sklearn.metrics import silhouette_score, davies_bouldin_score, calinski_harabasz_score
-from sklearn.preprocessing import StandardScaler
-from kneed import KneeLocator
+
+def projectCoords(coords):
+    lat = coords[:, 0]
+    lon = coords[:, 1]
+
+    lat_rad = np.radians(lat)
+    lon_rad = np.radians(lon)
+
+    x = lon_rad * np.cos(lat_rad)
+    y = lat_rad
+
+    return np.column_stack((x, y))
 
 def trainLocationModel(df, n_clusters=14, seed=42):
     coords = df[["lat", "lon"]].values
-    scaler = StandardScaler()
-    coords_scaled = scaler.fit_transform(coords)
+    coords_scaled = projectCoords(coords)
 
     kmeans = KMeans(n_clusters=n_clusters, random_state=seed)
     kmeans.fit(coords_scaled)
 
-    joblib.dump(scaler, "mlModels/kmeans/data/scaler.pkl")
     joblib.dump(kmeans, "mlModels/kmeans/data/kmeans.pkl")
 
-    return scaler, kmeans
+    return kmeans
 
-def addLocationFeature(df, scaler, kmeans, n_clusters=14):
+def addLocationFeature(df, kmeans, n_clusters=14):
     coords = df[["lat", "lon"]].values
-    coords_scaled = scaler.transform(coords)
+    coords_scaled = projectCoords(coords)
     clusters = kmeans.predict(coords_scaled)
 
     df = df.copy()
@@ -58,7 +67,7 @@ def findBestFittingK(df, seed=42, lower=2, upper=15):
             6: df_k6,
     """
     coords = df[["lat", "lon"]].values
-    scaled_coords = StandardScaler().fit_transform(coords)
+    scaled_coords = projectCoords(coords)
     ellbow_vals, silhouette_vals, gap_vals, davies_vals, calinski_vals = findKMethod(scaled_coords, random_state=seed, lower_range=lower, upper_range=upper)
 
     candidates = [kneedleAlgorithm(ellbow_vals, lower, upper),

@@ -9,3 +9,5 @@ kneed
 xgboost
 joblib
 geopy
+
+matplotlib

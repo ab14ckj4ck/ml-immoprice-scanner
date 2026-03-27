@@ -1,6 +1,5 @@
 from scraper.source1_scraper import baseScraper
 from datamanipulation.austriaFeatureEngineering import engineerFeatures
-from mlModels.regression.runRegression import runModels
 import logging
 
 def main(SOURCE_1=False, SCRAPE_SOURCE_1=False, CLEAN_DATA=True, MODELS=False, PAGES=1, ROWS=10):
@@ -28,7 +27,6 @@ def main(SOURCE_1=False, SCRAPE_SOURCE_1=False, CLEAN_DATA=True, MODELS=False, P
 
     if MODELS:
         logging.info("Starting Models")
-        runModels()
 
 def asciiArt():
     print(r".___                        _________                                  ")

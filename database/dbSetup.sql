@@ -1,7 +1,7 @@
 CREATE TABLE listings
 (
     id                TEXT PRIMARY KEY,
-    url              TEXT,
+    url               TEXT,
 
     price             FLOAT,
     rent              FLOAT,
@@ -82,10 +82,8 @@ CREATE TABLE history_listings
 CREATE TABLE features
 (
     id                           TEXT PRIMARY KEY REFERENCES listings (id),
-    log_ppm2                     FLOAT,
+    log_price                    FLOAT,
     log_estate_ratio             FLOAT,
-
-    location_cluster             FLOAT,
 
     log_distance_to_nearest_city FLOAT,
     log_distance_to_major_city   FLOAT,
