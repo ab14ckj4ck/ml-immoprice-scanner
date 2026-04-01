@@ -88,7 +88,7 @@ class TestDbInsertion(unittest.TestCase):
     def test_insertFeatures(self):
         feature = {
             Features.ID: "1",
-            Features.LOG_PRICE: 11.5,
+            Features.PPM2: 11.5,
             Features.LOG_ESTATE_RATIO: 0.5,
             Features.LOG_DISTANCE_TO_NEAREST_CITY: 1.0,
             Features.LOG_DISTANCE_TO_MAJOR_CITY: 2.0,

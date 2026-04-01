@@ -26,6 +26,9 @@ def getData(filter_type: str, filter_val: str):
 
     df = df[
         [
+            Listings.LAT, Listings.LON, # TODO for KNN ipynb
+            Listings.POSTCODE,
+
             Listings.ID, Listings.LIVING_AREA, Listings.ROOMS, Listings.PROPERTY_TYPE, Listings.HAS_CARPORT,
             Listings.HAS_ELEVATOR, Listings.HAS_KITCHEN, Listings.HAS_GARAGE, Listings.HAS_CELLAR,
             Listings.HAS_PARKING, Listings.HAS_CLOSET, Listings.IS_OIL, Listings.IS_BIO, Listings.IS_ELECTRO,
@@ -33,7 +36,7 @@ def getData(filter_type: str, filter_val: str):
             Listings.IS_FLOOR, Listings.IS_CENTRAL, Listings.IS_CEILING, Listings.IS_OVEN, Listings.IS_INFRARED,
             Listings.HWB, Listings.HWB_CLASS, Listings.FGEE, Listings.FGEE_CLASS,
 
-            Features.LOG_PRICE, Features.LOG_ESTATE_RATIO,
+            Features.PPM2, Features.LOG_ESTATE_RATIO,
             Features.LOG_DISTANCE_TO_NEAREST_CITY, Features.LOG_DISTANCE_TO_MAJOR_CITY,
             Features.LOG_DISTANCE_TO_TOURISM, Features.LOG_DISTANCE_TRAIN_STATION,
             Features.LOG_COUNT_5KM, Features.LOG_COUNT_10KM, Features.LOG_COUNT_25KM,
@@ -71,12 +74,12 @@ def getRegressionData(df):
     apt_mask = df[Listings.PROPERTY_TYPE].isin(Mappings.APARTMENT_COLS)
 
     df_house_X = df[house_mask]
-    df_house_y = df_house_X[Features.LOG_PRICE]
-    df_house_X = df_house_X.drop(columns=Features.LOG_PRICE, errors="ignore")
+    df_house_y = df_house_X[Features.PPM2]
+    df_house_X = df_house_X.drop(columns=Features.PPM2, errors="ignore")
 
     df_apt_X = df[apt_mask]
-    df_apt_y = df_apt_X[Features.LOG_PRICE]
-    df_apt_X = df_apt_X.drop(columns=Features.LOG_PRICE, errors="ignore")
+    df_apt_y = df_apt_X[Features.PPM2]
+    df_apt_X = df_apt_X.drop(columns=Features.PPM2, errors="ignore")
 
     df_house_X = df_house_X.drop(columns=Listings.PROPERTY_TYPE, errors="ignore")
     df_apt_X = df_apt_X.drop(columns=Listings.PROPERTY_TYPE, errors="ignore")

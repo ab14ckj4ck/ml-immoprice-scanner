@@ -119,7 +119,7 @@ def engineerFeatures():
     df_features[Features.ID] = df[Listings.ID]
 
     # calc features
-    df_features[Features.LOG_PRICE] = np.log(df[Listings.PRICE] + 1)
+    df_features[Features.PPM2] = df[Listings.PRICE] / df[Listings.ESTATE_SIZE]
     df_features[Features.LOG_ESTATE_RATIO] = np.log(df[Listings.ESTATE_SIZE] / df[Listings.LIVING_AREA] + 1)
 
     # calc distance features

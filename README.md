@@ -46,8 +46,8 @@ This project covers the full workflow from **data acquisition → preprocessing 
     [x] Create a database
     [x] Create urban classification feature
     [x] Add geospatial features
-    [x] Implement log_price model
-    [ ] Implement ppm2 model
+    [ ] Implement log_price model
+    [x] Implement ppm2 model
     [x] Add austria module
     [ ] Add GUI
 

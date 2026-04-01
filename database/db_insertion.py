@@ -145,7 +145,7 @@ def insertFeatures(features, PAGE_SIZE, conn=None, cur=None):
 
     query = """
             INSERT INTO features (id,
-                                  log_price,
+                                  ppm2,
                                   log_estate_ratio,
                                   log_distance_to_nearest_city,
                                   log_distance_to_major_city,
@@ -171,7 +171,7 @@ def insertFeatures(features, PAGE_SIZE, conn=None, cur=None):
             VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             ON CONFLICT (id) DO NOTHING
             """
-    values = [(f[Features.ID], f[Features.LOG_PRICE], f[Features.LOG_ESTATE_RATIO],
+    values = [(f[Features.ID], f[Features.PPM2], f[Features.LOG_ESTATE_RATIO],
                f[Features.LOG_DISTANCE_TO_NEAREST_CITY], f[Features.LOG_DISTANCE_TO_MAJOR_CITY],
                f[Features.LOG_DISTANCE_TO_TOURISM], f[Features.LOG_DISTANCE_TRAIN_STATION], f[Features.LOG_COUNT_5KM],
                f[Features.LOG_COUNT_10KM], f[Features.LOG_COUNT_25KM], f[Features.STATE_VIE], f[Features.STATE_NOE],

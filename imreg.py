@@ -2,7 +2,7 @@ from scraper.source1_scraper import baseScraper
 from datamanipulation.austriaFeatureEngineering import engineerFeatures
 import logging
 
-def main(SOURCE_1=False, SCRAPE_SOURCE_1=False, CLEAN_DATA=True, MODELS=False, PAGES=1, ROWS=10):
+def main(SOURCE_1=True, SCRAPE_SOURCE_1=False, CLEAN_DATA=True, MODELS=False, PAGES=100, ROWS=100):
     """
     Main entry point for the scraper application.
 

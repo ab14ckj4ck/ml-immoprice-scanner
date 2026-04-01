@@ -82,7 +82,7 @@ CREATE TABLE history_listings
 CREATE TABLE features
 (
     id                           TEXT PRIMARY KEY REFERENCES listings (id),
-    log_price                    FLOAT,
+    ppm2                         FLOAT,
     log_estate_ratio             FLOAT,
 
     log_distance_to_nearest_city FLOAT,

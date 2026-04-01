@@ -57,7 +57,7 @@ class HistoryListings:
 
 class Features:
     ID = "id"
-    LOG_PRICE = "log_price"
+    PPM2 = "ppm2"
     LOG_ESTATE_RATIO = "log_estate_ratio"
     LOG_DISTANCE_TO_NEAREST_CITY = "log_distance_to_nearest_city"
     LOG_DISTANCE_TO_MAJOR_CITY = "log_distance_to_major_city"
@@ -90,7 +90,9 @@ class DataFiles:
 
 
 class ScraperValues:
-    STATES = ("kaernten", "wien", "steiermark", "oberoesterreich", "niederoesterreich", "burgenland", "salzburg", "tirol", "vorarlberg")  # TODO implement buttons for this values to GUI
+    #STATES = ("kaernten", "wien", "steiermark", "oberoesterreich", "niederoesterreich", "burgenland", "salzburg",
+    #          "tirol", "vorarlberg")  # TODO implement buttons for this values to GUI
+    STATES = ("burgenland", "salzburg", "tirol")
     MAX_SLEEP_TIME = 15
     MIN_SLEEP_TIME = 0.5
     ENERGY_MAP = {"A++": 9, "A+": 8, "A": 7, "B": 6, "C": 5, "D": 4, "E": 3, "F": 2, "G": 1}
@@ -167,27 +169,23 @@ class PropType:
     GARDEN_HOUSE = "Gartenhaus"
     OTHER = "Sonstige"
 
+
 class Mappings:
     STATE_MAPPING = {"kaernten": Features.STATE_KTN, "wien": Features.STATE_VIE, "steiermark": Features.STATE_STK,
-        "niederoesterreich": Features.STATE_NOE, "oberoesterreich": Features.STATE_OOE, "burgendland": Features.STATE_BGL,
-        "salzburg": Features.STATE_SBG, "tirol": Features.STATE_TRL, "vorarlberg": Features.STATE_VBG}
+                     "niederoesterreich": Features.STATE_NOE, "oberoesterreich": Features.STATE_OOE,
+                     "burgendland": Features.STATE_BGL, "salzburg": Features.STATE_SBG, "tirol": Features.STATE_TRL,
+                     "vorarlberg": Features.STATE_VBG}
 
     OPTIONAL_DATA = ["has_carport", "has_elevator", "has_kitchen", "has_garage", "has_cellar", "has_parking",
-        "has_closet", "has_balcony", "has_garden", "has_terrace", "has_loggia", "has_wintergarden", "balcony_size",
-        "garden_size", "terrace_size", "loggia_size", "wintergarden_size", "hwb", "hwb_class", "fgee", "fgee_class"]
+                     "has_closet", "has_balcony", "has_garden", "has_terrace", "has_loggia", "has_wintergarden",
+                     "balcony_size", "garden_size", "terrace_size", "loggia_size", "wintergarden_size", "hwb",
+                     "hwb_class", "fgee", "fgee_class"]
 
-    HOUSE_COLS = [
-        PropType.MULTI_FAMILY, PropType.SINGLE_FAMILY, PropType.COUNTRY_HOUSE, PropType.VILLA, PropType.SEMI_DETACHED,
-        PropType.CASTLE_CHALET, PropType.TERRACED, PropType.ALM_BERG, PropType.FARMHOUSE, PropType.BUNGALOW,
-        PropType.COOP_HOUSE
-    ]
+    HOUSE_COLS = [PropType.MULTI_FAMILY, PropType.SINGLE_FAMILY, PropType.COUNTRY_HOUSE, PropType.VILLA,
+        PropType.SEMI_DETACHED, PropType.CASTLE_CHALET, PropType.TERRACED, PropType.ALM_BERG, PropType.FARMHOUSE,
+        PropType.BUNGALOW, PropType.COOP_HOUSE]
 
-    APARTMENT_COLS = [
-        PropType.ROOF_APARTMENT, PropType.GROUND_APARTMENT, PropType.GARCONNIERE, PropType.COOP_APARTMENT,
-        PropType.LOFT_STUDIO, PropType.MAISONETTE, PropType.PENTHOUSE, PropType.APARTMENT,
-        PropType.ROOM_SHARED
-    ]
+    APARTMENT_COLS = [PropType.ROOF_APARTMENT, PropType.GROUND_APARTMENT, PropType.GARCONNIERE, PropType.COOP_APARTMENT,
+        PropType.LOFT_STUDIO, PropType.MAISONETTE, PropType.PENTHOUSE, PropType.APARTMENT, PropType.ROOM_SHARED]
 
-    DROP_COLS = [
-        Listings.HWB, Listings.HWB_CLASS, Listings.FGEE, Listings.FGEE_CLASS, Features.LOG_ESTATE_RATIO
-    ]
+    DROP_COLS = [Listings.HWB, Listings.HWB_CLASS, Listings.FGEE, Listings.FGEE_CLASS, Features.LOG_ESTATE_RATIO]

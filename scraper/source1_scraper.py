@@ -147,6 +147,8 @@ def parseNextData(data, fin_type, scrape_details, total_items, processed_items, 
 
         try:
             detail_data = detailScraper(detail_link) if (detail_link and scrape_details) else None
+            if not detail_data:
+                continue
 
             if detail_data:
                 detail_data = {k.lower(): v for k, v in detail_data.items()}
@@ -610,6 +612,7 @@ def baseScraper(pages, scrape_details=True, rows=30):
         while status_code != 200:
             html, status_code = fetch(u[Listings.URL])
             if not html:
+                sleep(5)
                 continue
 
             if status_code != 200:

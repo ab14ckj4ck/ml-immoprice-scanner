@@ -7,6 +7,8 @@ listing attributes from the page structure.
 """
 
 from bs4 import BeautifulSoup
+from numpy.f2py.auxfuncs import throw_error
+
 from utils.enums import ScraperValues
 
 import requests, re, time, random, logging
@@ -58,6 +60,8 @@ def fetch(url, retries=3):
 
         try:
             response = session.get(url, headers=headers, timeout=10)
+            if not response:
+                continue
             break
 
         except Exception as e:
